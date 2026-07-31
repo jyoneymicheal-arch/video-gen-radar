@@ -3,15 +3,15 @@
   "stars": [
     {
       "full_name": "calesthio/OpenMontage",
-      "stars": 44320
+      "stars": 44322
     },
     {
       "full_name": "heygen-com/hyperframes",
-      "stars": 38912
+      "stars": 38914
     },
     {
       "full_name": "google-ai-edge/mediapipe",
-      "stars": 36401
+      "stars": 36402
     },
     {
       "full_name": "huggingface/diffusers",
@@ -35,7 +35,7 @@
     },
     {
       "full_name": "browser-use/video-use",
-      "stars": 18197
+      "stars": 18198
     },
     {
       "full_name": "AaronFeng753/Waifu2x-Extension-GUI",
@@ -51,7 +51,7 @@
     },
     {
       "full_name": "waooAI/waoowaoo",
-      "stars": 13420
+      "stars": 13421
     },
     {
       "full_name": "HBAI-Ltd/Toonflow-app",
@@ -67,7 +67,7 @@
     },
     {
       "full_name": "HKUDS/ViMax",
-      "stars": 11543
+      "stars": 11546
     },
     {
       "full_name": "leandromoreira/ffmpeg-libav-tutorial",
@@ -79,7 +79,7 @@
     },
     {
       "full_name": "debpalash/OmniVoice-Studio",
-      "stars": 9340
+      "stars": 9342
     },
     {
       "full_name": "gyroflow/gyroflow",
@@ -91,7 +91,7 @@
     },
     {
       "full_name": "lipku/LiveTalking",
-      "stars": 8583
+      "stars": 8584
     },
     {
       "full_name": "duixcom/Duix-Mobile",
@@ -127,7 +127,7 @@
     },
     {
       "full_name": "Forget-C/Jellyfish",
-      "stars": 5800
+      "stars": 5801
     },
     {
       "full_name": "vllm-project/vllm-omni",
@@ -143,7 +143,7 @@
     },
     {
       "full_name": "YILS-LIN/short-video-factory",
-      "stars": 5035
+      "stars": 5034
     },
     {
       "full_name": "WyattBlue/auto-editor",
@@ -155,7 +155,7 @@
     },
     {
       "full_name": "buxuku/SmartSub",
-      "stars": 4402
+      "stars": 4403
     },
     {
       "full_name": "EvolvingLMMs-Lab/lmms-eval",
@@ -227,7 +227,7 @@
     },
     {
       "full_name": "Vincentwei1021/video-shotcraft",
-      "stars": 2954
+      "stars": 2955
     },
     {
       "full_name": "staxrip/staxrip",
@@ -243,15 +243,15 @@
     },
     {
       "full_name": "Anil-matcha/awesome-generative-ai-apps",
-      "stars": 2794
+      "stars": 2795
+    },
+    {
+      "full_name": "dramaclaw/dramaclaw",
+      "stars": 2777
     },
     {
       "full_name": "Agentchengfeng/chengfeng-videocut-skills",
       "stars": 2777
-    },
-    {
-      "full_name": "dramaclaw/dramaclaw",
-      "stars": 2776
     },
     {
       "full_name": "FurkanGozukara/Stable-Diffusion",
@@ -303,7 +303,7 @@
     },
     {
       "full_name": "AgnesAI-Labs/AgnesAI-Models",
-      "stars": 2172
+      "stars": 2176
     },
     {
       "full_name": "trykimu/videoeditor",
@@ -311,7 +311,7 @@
     },
     {
       "full_name": "rushindrasinha/youtube-shorts-pipeline",
-      "stars": 2142
+      "stars": 2146
     },
     {
       "full_name": "snapotter-hq/SnapOtter",
@@ -367,7 +367,7 @@
     },
     {
       "full_name": "mltframework/mlt",
-      "stars": 1820
+      "stars": 1821
     },
     {
       "full_name": "IliasHad/edit-mind",
@@ -435,7 +435,7 @@
     },
     {
       "full_name": "Lynpoint/CyberVerse",
-      "stars": 1510
+      "stars": 1511
     },
     {
       "full_name": "Agents365-ai/video-podcast-maker",
@@ -567,7 +567,7 @@
     },
     {
       "full_name": "pyang5166/gbro-collage-broll",
-      "stars": 905
+      "stars": 906
     },
     {
       "full_name": "marcelo-earth/generative-manim",
@@ -591,7 +591,7 @@
     },
     {
       "full_name": "pireel/pireel",
-      "stars": 856
+      "stars": 855
     },
     {
       "full_name": "OpenDCAI/OpenWorldLib",
@@ -607,7 +607,7 @@
     },
     {
       "full_name": "Alisa0808/vox-director",
-      "stars": 827
+      "stars": 830
     },
     {
       "full_name": "1038lab/ComfyUI-QwenVL",
@@ -671,11 +671,11 @@
     },
     {
       "full_name": "0xsline/OpenChatCut",
-      "stars": 718
+      "stars": 719
     },
     {
       "full_name": "beshuaxian/higgsfield-seedance2-jineng",
-      "stars": 718
+      "stars": 719
     },
     {
       "full_name": "nvidia-cosmos/cosmos-transfer2.5",
