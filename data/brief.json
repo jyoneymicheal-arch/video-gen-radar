@@ -1,9 +1,9 @@
 {
-  "date": "2026-07-31",
-  "generatedAt": "2026-07-31T13:43:40.101Z",
+  "date": "2026-08-01",
+  "generatedAt": "2026-08-01T03:16:25.279Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：接口与集成、交互与可控性、编辑与后期能力",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了接口与集成；palmier-pro 推进了交互与可控性；hyperframes 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：接口与集成、稳定性与容错、功能演进",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了接口与集成；palmier-pro 推进了稳定性与容错；lmms-eval 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -11,12 +11,12 @@
       "repo": "ArcReel/ArcReel",
       "owner": "ArcReel",
       "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/e6a65c2930ffe466220d13345f0b00e8d78bb6d2",
+      "url": "https://github.com/ArcReel/ArcReel/commit/fd1c4fa5d417c9e711d83fa8506f45625a5bdff6",
       "date": "2026-07-31",
-      "headline": "ArcReel 在文档 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在接口与集成：feat(character): 用 TTS 生成角色参考音频样本",
-      "approach": "技术方案：commit「feat(character): 用 TTS 生成角色参考音频样本」落在 CONTEXT.md、docs/openai-docs/文本转语音-TTS.md、frontend/eslint.config.js、frontend/src/actions/generation.ts 等 40 个文件，改动量 +2475 / -78，归类为「接口与集成」。",
+      "headline": "ArcReel 在Python 后端 / 模型侧 + 前端 / 应用层 + 服务端接口提交了一次成块的结构性改动，主题集中在接口与集成：feat(assets): 全局资产库带声音入库，画布提示存量片段的声音差异",
+      "approach": "技术方案：commit「feat(assets): 全局资产库带声音入库，画布提示存量片段的声音差异」落在 alembic/versions/d10f1df40f96_add_audio_path_to_assets.py、frontend/src/api.test.ts、frontend/src/components/assets/AssetCard.test.tsx、frontend/src/components/assets/AssetFormModal.test.tsx 等 49 个文件，改动量 +1309 / -32，归类为「接口与集成」。",
       "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 40 个文件（如 CONTEXT.md、docs/openai-docs/文本转语音-TTS.md、frontend/eslint.config.js），新增 2475 行 / 删除 78 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 49 个文件（如 alembic/versions/d10f1df40f96_add_audio_path_to_assets.py、frontend/src/api.test.ts、frontend/src/components/assets/AssetCard.test.tsx），新增 1309 行 / 删除 32 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "接口与集成"
     },
     {
@@ -24,35 +24,35 @@
       "repo": "palmier-io/palmier-pro",
       "owner": "palmier-io",
       "name": "palmier-pro",
-      "url": "https://github.com/palmier-io/palmier-pro/commit/c1061bd7060a4d7a8d4b897b7e108eb497e9eb0b",
-      "date": "2026-07-30",
-      "headline": "palmier-pro 在界面组件 + 测试提交了一次大规模重构级改动，主题集中在交互与可控性：[ui] Add appearance settings",
-      "approach": "技术方案：commit「[ui] Add appearance settings」落在 Sources/PalmierPro/Account/IdentityViews.swift、Sources/PalmierPro/Agent/Panel/AgentInputBox.swift、Sources/PalmierPro/Agent/Panel/AgentMessageView.swift、Sources/PalmierPro/Agent/Panel/MarkdownText.swift 等 69 个文件，改动量 +1421 / -267，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 69 个文件（如 Sources/PalmierPro/Account/IdentityViews.swift、Sources/PalmierPro/Agent/Panel/AgentInputBox.swift、Sources/PalmierPro/Agent/Panel/AgentMessageView.swift），新增 1421 行 / 删除 267 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "url": "https://github.com/palmier-io/palmier-pro/commit/98de811dc48f49b2f99f88d9dd4ddf8a30fb47e5",
+      "date": "2026-07-31",
+      "headline": "palmier-pro 在配置与参数 + 文档 + 界面组件提交了一次大规模重构级改动，主题集中在稳定性与容错：[fix] Land localization stack on main",
+      "approach": "技术方案：commit「[fix] Land localization stack on main」落在 .github/workflows/ci.yml、AGENTS.md、Sources/PalmierPro/Account/AccountPopoverCard.swift、Sources/PalmierPro/Account/AccountService.swift 等 171 个文件，改动量 +17321 / -1422，归类为「稳定性与容错」。",
+      "why": "为什么重要：持续的容错修复通常出现在真实用户量上来之后，是投产程度的侧面证据。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 171 个文件（如 .github/workflows/ci.yml、AGENTS.md、Sources/PalmierPro/Account/AccountPopoverCard.swift），新增 17321 行 / 删除 1422 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "稳定性与容错"
     },
     {
       "index": "03",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/1d636f603c6502e1d1421b0d04e67e47765f835f",
+      "repo": "EvolvingLMMs-Lab/lmms-eval",
+      "owner": "EvolvingLMMs-Lab",
+      "name": "lmms-eval",
+      "url": "https://github.com/EvolvingLMMs-Lab/lmms-eval/commit/9a337637931c6817ab794d7a32f2f135fb17ca1b",
       "date": "2026-07-31",
-      "headline": "hyperframes 在文档 + 前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：refactor(producer): share plan execution builder",
-      "approach": "技术方案：commit「refactor(producer): share plan execution builder」落在 docs/packages/aws-lambda.mdx、docs/packages/gcp-cloud-run.mdx、examples/aws-lambda/README.md、packages/aws-lambda/README.md 等 25 个文件，改动量 +494 / -171，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 25 个文件（如 docs/packages/aws-lambda.mdx、docs/packages/gcp-cloud-run.mdx、examples/aws-lambda/README.md），新增 494 行 / 删除 171 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "headline": "lmms-eval 在文档 + 配置与参数 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在功能演进：feat: add Multi-Crit benchmark",
+      "approach": "技术方案：commit「feat: add Multi-Crit benchmark」落在 docs/advanced/current_tasks.md、lmms_eval/tasks/multi_crit/README.md、lmms_eval/tasks/multi_crit/_default_template_yaml、lmms_eval/tasks/multi_crit/multi_crit.yaml 等 7 个文件，改动量 +856 / -0，归类为「功能演进」。",
+      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 7 个文件（如 docs/advanced/current_tasks.md、lmms_eval/tasks/multi_crit/README.md、lmms_eval/tasks/multi_crit/_default_template_yaml），新增 856 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "功能演进"
     }
   ],
   "watch": {
-    "repo": "huggingface/diffusers",
-    "url": "https://github.com/huggingface/diffusers/commit/8b33b473324423a9773d121c7caccb13601493a1",
-    "date": "2026-07-30",
-    "text": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次成块的结构性改动，主题集中在接口与集成：[quantization] SDNQ core loading",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +545 / -1。"
+    "repo": "dramaclaw/dramaclaw",
+    "url": "https://github.com/dramaclaw/dramaclaw/commit/f090f81435532826270a472aeaab249167cfe24d",
+    "date": "2026-07-31",
+    "text": "dramaclaw 在配置与参数 + 前端 / 应用层 + 界面组件提交了一次成块的结构性改动，主题集中在功能演进：feat(ingest): support common screenplay scene headings",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +544 / -156。"
   },
   "scanned": 26,
-  "candidates": 59
+  "candidates": 51
 }
