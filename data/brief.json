@@ -1,9 +1,9 @@
 {
-  "date": "2026-08-01",
-  "generatedAt": "2026-08-01T03:16:25.279Z",
+  "date": "2026-08-02",
+  "generatedAt": "2026-08-02T03:16:50.070Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：接口与集成、稳定性与容错、功能演进",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了接口与集成；palmier-pro 推进了稳定性与容错；lmms-eval 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、交互与可控性、功能演进",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了编辑与后期能力；palmier-pro 推进了交互与可控性；lmms-eval 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -11,26 +11,26 @@
       "repo": "ArcReel/ArcReel",
       "owner": "ArcReel",
       "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/fd1c4fa5d417c9e711d83fa8506f45625a5bdff6",
-      "date": "2026-07-31",
-      "headline": "ArcReel 在Python 后端 / 模型侧 + 前端 / 应用层 + 服务端接口提交了一次成块的结构性改动，主题集中在接口与集成：feat(assets): 全局资产库带声音入库，画布提示存量片段的声音差异",
-      "approach": "技术方案：commit「feat(assets): 全局资产库带声音入库，画布提示存量片段的声音差异」落在 alembic/versions/d10f1df40f96_add_audio_path_to_assets.py、frontend/src/api.test.ts、frontend/src/components/assets/AssetCard.test.tsx、frontend/src/components/assets/AssetFormModal.test.tsx 等 49 个文件，改动量 +1309 / -32，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 49 个文件（如 alembic/versions/d10f1df40f96_add_audio_path_to_assets.py、frontend/src/api.test.ts、frontend/src/components/assets/AssetCard.test.tsx），新增 1309 行 / 删除 32 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
+      "url": "https://github.com/ArcReel/ArcReel/commit/7724774df7ca55aedb33e2dbb50a268e3821942f",
+      "date": "2026-08-01",
+      "headline": "ArcReel 在文档 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(reference-video): 剧集参考路径改为按单元设定时长",
+      "approach": "技术方案：commit「feat(reference-video): 剧集参考路径改为按单元设定时长」落在 agent_runtime_profile/.claude/agents/split-reference-video-units.md、agent_runtime_profile/.claude/references/generation-modes.md、agent_runtime_profile/.claude/skills/manage-project/SKILL.md、frontend/src/api.test.ts 等 67 个文件，改动量 +2459 / -634，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 67 个文件（如 agent_runtime_profile/.claude/agents/split-reference-video-units.md、agent_runtime_profile/.claude/references/generation-modes.md、agent_runtime_profile/.claude/skills/manage-project/SKILL.md），新增 2459 行 / 删除 634 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     },
     {
       "index": "02",
       "repo": "palmier-io/palmier-pro",
       "owner": "palmier-io",
       "name": "palmier-pro",
-      "url": "https://github.com/palmier-io/palmier-pro/commit/98de811dc48f49b2f99f88d9dd4ddf8a30fb47e5",
-      "date": "2026-07-31",
-      "headline": "palmier-pro 在配置与参数 + 文档 + 界面组件提交了一次大规模重构级改动，主题集中在稳定性与容错：[fix] Land localization stack on main",
-      "approach": "技术方案：commit「[fix] Land localization stack on main」落在 .github/workflows/ci.yml、AGENTS.md、Sources/PalmierPro/Account/AccountPopoverCard.swift、Sources/PalmierPro/Account/AccountService.swift 等 171 个文件，改动量 +17321 / -1422，归类为「稳定性与容错」。",
-      "why": "为什么重要：持续的容错修复通常出现在真实用户量上来之后，是投产程度的侧面证据。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 171 个文件（如 .github/workflows/ci.yml、AGENTS.md、Sources/PalmierPro/Account/AccountPopoverCard.swift），新增 17321 行 / 删除 1422 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "稳定性与容错"
+      "url": "https://github.com/palmier-io/palmier-pro/commit/94394bbf8a28475534643a175849a8b80da3d678",
+      "date": "2026-08-01",
+      "headline": "palmier-pro 在界面组件 + 测试提交了一次成块的结构性改动，主题集中在交互与可控性：[feat] Add guided onboarding flow",
+      "approach": "技术方案：commit「[feat] Add guided onboarding flow」落在 Sources/PalmierPro/App/AppState.swift、Sources/PalmierPro/Home/HomeView.swift、Sources/PalmierPro/Home/Onboarding/OnboardingModels.swift、Sources/PalmierPro/Home/Onboarding/OnboardingOverlay.swift 等 25 个文件，改动量 +1048 / -160，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 25 个文件（如 Sources/PalmierPro/App/AppState.swift、Sources/PalmierPro/Home/HomeView.swift、Sources/PalmierPro/Home/Onboarding/OnboardingModels.swift），新增 1048 行 / 删除 160 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     },
     {
       "index": "03",
@@ -47,12 +47,12 @@
     }
   ],
   "watch": {
-    "repo": "dramaclaw/dramaclaw",
-    "url": "https://github.com/dramaclaw/dramaclaw/commit/f090f81435532826270a472aeaab249167cfe24d",
-    "date": "2026-07-31",
-    "text": "dramaclaw 在配置与参数 + 前端 / 应用层 + 界面组件提交了一次成块的结构性改动，主题集中在功能演进：feat(ingest): support common screenplay scene headings",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +544 / -156。"
+    "repo": "huggingface/diffusers",
+    "url": "https://github.com/huggingface/diffusers/commit/4b8e466bfda053b25ac3e13444fcd5e7e706f3cb",
+    "date": "2026-08-01",
+    "text": "diffusers 在Python 后端 / 模型侧提交了一次小而聚焦的改动，主题集中在模型与推理链路：Add missing `Args:` entries to scheduler docstrings",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +46 / -2。"
   },
   "scanned": 26,
-  "candidates": 51
+  "candidates": 37
 }
