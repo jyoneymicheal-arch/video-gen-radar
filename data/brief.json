@@ -1,58 +1,58 @@
 {
-  "date": "2026-08-02",
-  "generatedAt": "2026-08-02T03:16:50.070Z",
+  "date": "2026-08-03",
+  "generatedAt": "2026-08-03T03:18:41.820Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、交互与可控性、功能演进",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了编辑与后期能力；palmier-pro 推进了交互与可控性；lmms-eval 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：交互与可控性、模型与推理链路、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：FastVideo 推进了交互与可控性；diffusers 推进了模型与推理链路；LiveTalking 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "ArcReel/ArcReel",
-      "owner": "ArcReel",
-      "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/7724774df7ca55aedb33e2dbb50a268e3821942f",
-      "date": "2026-08-01",
-      "headline": "ArcReel 在文档 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(reference-video): 剧集参考路径改为按单元设定时长",
-      "approach": "技术方案：commit「feat(reference-video): 剧集参考路径改为按单元设定时长」落在 agent_runtime_profile/.claude/agents/split-reference-video-units.md、agent_runtime_profile/.claude/references/generation-modes.md、agent_runtime_profile/.claude/skills/manage-project/SKILL.md、frontend/src/api.test.ts 等 67 个文件，改动量 +2459 / -634，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 67 个文件（如 agent_runtime_profile/.claude/agents/split-reference-video-units.md、agent_runtime_profile/.claude/references/generation-modes.md、agent_runtime_profile/.claude/skills/manage-project/SKILL.md），新增 2459 行 / 删除 634 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
-    },
-    {
-      "index": "02",
-      "repo": "palmier-io/palmier-pro",
-      "owner": "palmier-io",
-      "name": "palmier-pro",
-      "url": "https://github.com/palmier-io/palmier-pro/commit/94394bbf8a28475534643a175849a8b80da3d678",
-      "date": "2026-08-01",
-      "headline": "palmier-pro 在界面组件 + 测试提交了一次成块的结构性改动，主题集中在交互与可控性：[feat] Add guided onboarding flow",
-      "approach": "技术方案：commit「[feat] Add guided onboarding flow」落在 Sources/PalmierPro/App/AppState.swift、Sources/PalmierPro/Home/HomeView.swift、Sources/PalmierPro/Home/Onboarding/OnboardingModels.swift、Sources/PalmierPro/Home/Onboarding/OnboardingOverlay.swift 等 25 个文件，改动量 +1048 / -160，归类为「交互与可控性」。",
+      "repo": "hao-ai-lab/FastVideo",
+      "owner": "hao-ai-lab",
+      "name": "FastVideo",
+      "url": "https://github.com/hao-ai-lab/FastVideo/commit/bc7a804618e23de17d76f88ac7a09d0007e3dd0e",
+      "date": "2026-08-02",
+      "headline": "FastVideo 在测试 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在交互与可控性：[bugfix]: harden FastVideo Studio UI reliability and accessibility",
+      "approach": "技术方案：commit「[bugfix]: harden FastVideo Studio UI reliability and accessibility」落在 apps/fastvideo_studio/e2e/create-job.spec.ts、apps/fastvideo_studio/e2e/gallery.spec.ts、apps/fastvideo_studio/e2e/shell.spec.ts、apps/fastvideo_studio/package-lock.json 等 46 个文件，改动量 +2100 / -285，归类为「交互与可控性」。",
       "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 25 个文件（如 Sources/PalmierPro/App/AppState.swift、Sources/PalmierPro/Home/HomeView.swift、Sources/PalmierPro/Home/Onboarding/OnboardingModels.swift），新增 1048 行 / 删除 160 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 46 个文件（如 apps/fastvideo_studio/e2e/create-job.spec.ts、apps/fastvideo_studio/e2e/gallery.spec.ts、apps/fastvideo_studio/e2e/shell.spec.ts），新增 2100 行 / 删除 285 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "交互与可控性"
     },
     {
+      "index": "02",
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/4b8e466bfda053b25ac3e13444fcd5e7e706f3cb",
+      "date": "2026-08-01",
+      "headline": "diffusers 在Python 后端 / 模型侧提交了一次小而聚焦的改动，主题集中在模型与推理链路：Add missing `Args:` entries to scheduler docstrings",
+      "approach": "技术方案：commit「Add missing `Args:` entries to scheduler docstrings」落在 src/diffusers/schedulers/scheduling_cosine_dpmsolver_multistep.py、src/diffusers/schedulers/scheduling_ddim_cogvideox.py、src/diffusers/schedulers/scheduling_ddim_inverse.py、src/diffusers/schedulers/scheduling_dpm_cogvideox.py 等 8 个文件，改动量 +46 / -2，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 8 个文件（如 src/diffusers/schedulers/scheduling_cosine_dpmsolver_multistep.py、src/diffusers/schedulers/scheduling_ddim_cogvideox.py、src/diffusers/schedulers/scheduling_ddim_inverse.py），新增 46 行 / 删除 2 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
+    },
+    {
       "index": "03",
-      "repo": "EvolvingLMMs-Lab/lmms-eval",
-      "owner": "EvolvingLMMs-Lab",
-      "name": "lmms-eval",
-      "url": "https://github.com/EvolvingLMMs-Lab/lmms-eval/commit/9a337637931c6817ab794d7a32f2f135fb17ca1b",
-      "date": "2026-07-31",
-      "headline": "lmms-eval 在文档 + 配置与参数 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在功能演进：feat: add Multi-Crit benchmark",
-      "approach": "技术方案：commit「feat: add Multi-Crit benchmark」落在 docs/advanced/current_tasks.md、lmms_eval/tasks/multi_crit/README.md、lmms_eval/tasks/multi_crit/_default_template_yaml、lmms_eval/tasks/multi_crit/multi_crit.yaml 等 7 个文件，改动量 +856 / -0，归类为「功能演进」。",
-      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 7 个文件（如 docs/advanced/current_tasks.md、lmms_eval/tasks/multi_crit/README.md、lmms_eval/tasks/multi_crit/_default_template_yaml），新增 856 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "功能演进"
+      "repo": "lipku/LiveTalking",
+      "owner": "lipku",
+      "name": "LiveTalking",
+      "url": "https://github.com/lipku/LiveTalking/commit/c963ad409c556918b7d23999bf87c47a7c05c932",
+      "date": "2026-08-02",
+      "headline": "LiveTalking 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次实质性改动，主题集中在接口与集成：feat: add WHEP support and new routes",
+      "approach": "技术方案：commit「feat: add WHEP support and new routes」落在 README-EN.md、README.md、app.py、docs/api.md 等 6 个文件，改动量 +191 / -43，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 6 个文件（如 README-EN.md、README.md、app.py），新增 191 行 / 删除 43 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "huggingface/diffusers",
-    "url": "https://github.com/huggingface/diffusers/commit/4b8e466bfda053b25ac3e13444fcd5e7e706f3cb",
-    "date": "2026-08-01",
-    "text": "diffusers 在Python 后端 / 模型侧提交了一次小而聚焦的改动，主题集中在模型与推理链路：Add missing `Args:` entries to scheduler docstrings",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +46 / -2。"
+    "repo": "Agentchengfeng/chengfeng-videocut-skills",
+    "url": "https://github.com/Agentchengfeng/chengfeng-videocut-skills/commit/a853f3b17f07b5e1b0715a141daa71ec0c89bfa0",
+    "date": "2026-08-02",
+    "text": "chengfeng-videocut-skills 在文档 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：预检收编为唯一真本；环境入口并入检查更新；剪口播重构成五步三段式",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +235 / -263。"
   },
   "scanned": 26,
-  "candidates": 37
+  "candidates": 42
 }
