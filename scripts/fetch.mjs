@@ -61,7 +61,10 @@ function buildQueries(sinceDate) {
 
 /**
  * Load a baseline snapshot for star-delta computation.
- * Prefers the snapshot closest to 24h ago (and at least 8h old) so that
+ *
+ * Uses the `generatedAt` timestamp stored INSIDE each snapshot file — file
+ * mtimes are unreliable because a CI checkout rewrites them all to "now".
+ * Prefers the snapshot closest to 24h old (and at least 8h old) so that
  * running the pipeline twice in one day does not zero-out the deltas.
  */
 async function loadPrevious(now) {
@@ -70,40 +73,33 @@ async function loadPrevious(now) {
   try {
     const files = (await fs.readdir(snapDir)).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
     for (const f of files) {
-      const date = f.replace('.json', '');
-      // Snapshots are written at run time; use the file mtime for precision.
-      const stat = await fs.stat(path.join(snapDir, f));
-      const ageMs = now - stat.mtimeMs;
+      let json;
+      try {
+        json = JSON.parse(await fs.readFile(path.join(snapDir, f), 'utf8'));
+      } catch {
+        continue;
+      }
+      // Fall back to midnight of the snapshot date for older files.
+      const stamp = json.generatedAt ? new Date(json.generatedAt).getTime() : new Date(`${json.date}T00:00:00Z`).getTime();
+      if (!Number.isFinite(stamp)) continue;
+      const ageMs = now - stamp;
       if (ageMs < 8 * 3600_000) continue; // too fresh to be a useful baseline
       const distance = Math.abs(ageMs - DAY);
-      if (!best || distance < best.distance) best = { file: f, date, ageMs, distance };
+      if (!best || distance < best.distance) {
+        best = { date: json.date, ageMs, distance, stars: json.stars || [] };
+      }
     }
   } catch {
     /* no snapshots yet */
   }
 
   if (best) {
-    try {
-      const json = JSON.parse(await fs.readFile(path.join(snapDir, best.file), 'utf8'));
-      const map = new Map();
-      for (const r of json.stars || []) map.set(r.full_name, { stars: r.stars });
-      return { map, date: best.date, spanDays: best.ageMs / DAY };
-    } catch {
-      /* fall through */
-    }
+    const map = new Map();
+    for (const r of best.stars) map.set(r.full_name, { stars: r.stars });
+    return { map, date: best.date, spanDays: best.ageMs / DAY };
   }
 
-  // Fallback: previous repos.json (may be only minutes old — then skip deltas).
-  try {
-    const json = JSON.parse(await fs.readFile(path.join(DATA, 'repos.json'), 'utf8'));
-    const spanDays = json.generatedAt ? (now - new Date(json.generatedAt).getTime()) / DAY : 0;
-    if (spanDays < 8 / 24) return { map: new Map(), date: json.generatedDate, spanDays: 0 };
-    const map = new Map();
-    for (const r of json.repos || []) map.set(r.full_name, { stars: r.stars });
-    return { map, date: json.generatedDate, spanDays };
-  } catch {
-    return { map: new Map(), date: null, spanDays: 0 };
-  }
+  return { map: new Map(), date: null, spanDays: 0 };
 }
 
 /** Count commits in the last 30 days on the default branch (cheap: 1 request). */
@@ -228,16 +224,47 @@ async function main() {
   await fs.writeFile(path.join(DATA, 'repos.json'), JSON.stringify(payload, null, 2));
 
   // Append an immutable daily snapshot for future delta computation.
+  // If a snapshot already exists for today, keep the EARLIEST one so that
+  // tomorrow's delta is measured across a full day.
   const snapDir = path.join(DATA, 'snapshots');
   await fs.mkdir(snapDir, { recursive: true });
-  await fs.writeFile(
-    path.join(snapDir, `${iso(now)}.json`),
-    JSON.stringify(
-      { date: iso(now), stars: out.map((r) => ({ full_name: r.full_name, stars: r.stars })) },
-      null,
-      2,
-    ),
-  );
+  const snapPath = path.join(snapDir, `${iso(now)}.json`);
+  let writeSnap = true;
+  try {
+    const existing = JSON.parse(await fs.readFile(snapPath, 'utf8'));
+    if (existing.generatedAt) writeSnap = false; // preserve the first run of the day
+  } catch {
+    /* no snapshot for today yet */
+  }
+  if (writeSnap) {
+    await fs.writeFile(
+      snapPath,
+      JSON.stringify(
+        {
+          date: iso(now),
+          generatedAt: new Date(now).toISOString(),
+          stars: out.map((r) => ({ full_name: r.full_name, stars: r.stars })),
+        },
+        null,
+        2,
+      ),
+    );
+  } else {
+    console.log(`  · snapshot for ${iso(now)} already exists — keeping the earlier baseline`);
+  }
+
+  // Prune snapshots older than 30 days to keep the repo small.
+  try {
+    for (const f of await fs.readdir(snapDir)) {
+      const m = f.match(/^(\d{4}-\d{2}-\d{2})\.json$/);
+      if (!m) continue;
+      if (now - new Date(`${m[1]}T00:00:00Z`).getTime() > 30 * DAY) {
+        await fs.unlink(path.join(snapDir, f));
+      }
+    }
+  } catch {
+    /* ignore */
+  }
 
   const withDelta = out.filter((r) => r.starsToday !== null).length;
   console.log(`✔ wrote data/repos.json — ${out.length} repos (${withDelta} with star delta)`);
