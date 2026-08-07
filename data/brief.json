@@ -1,39 +1,13 @@
 {
-  "date": "2026-08-06",
-  "generatedAt": "2026-08-06T02:48:09.432Z",
+  "date": "2026-08-07",
+  "generatedAt": "2026-08-07T02:47:47.514Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：接口与集成、模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了接口与集成；vllm-omni 推进了模型与推理链路；SmartSub 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：流水线与编排、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：SmartSub 推进了流水线与编排；vllm-omni 推进了模型与推理链路；lmms-eval 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/f53d552036a0d1bd5570782a39cd40cfabf112bc",
-      "date": "2026-08-05",
-      "headline": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次大规模重构级改动，主题集中在接口与集成：Add MiniMax-H3",
-      "approach": "技术方案：commit「Add MiniMax-H3」落在 docs/source/en/_toctree.yml、docs/source/en/api/models/autoencoderkl_minimax_h3.md、docs/source/en/api/models/autoencoderkl_minimax_h3_audio.md、docs/source/en/api/models/minimax_h3_transformer3d.md 等 40 个文件，改动量 +10256 / -8，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 40 个文件（如 docs/source/en/_toctree.yml、docs/source/en/api/models/autoencoderkl_minimax_h3.md、docs/source/en/api/models/autoencoderkl_minimax_h3_audio.md），新增 10256 行 / 删除 8 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
-    },
-    {
-      "index": "02",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/1c2a81f6d84aea4fff53bd2f894c2a287c237245",
-      "date": "2026-08-06",
-      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(minimax-h3): enable 2x RTX 4090/5090 with DLO",
-      "approach": "技术方案：commit「feat(minimax-h3): enable 2x RTX 4090/5090 with DLO」落在 docs/contributing/ci/test_examples/l4_performance_tests.inc.md、recipes/MiniMaxAI/MiniMax-H3-5090.md、recipes/MiniMaxAI/MiniMax-H3.md、tests/diffusion/attention/test_cudnn_attn.py 等 28 个文件，改动量 +1658 / -162，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 28 个文件（如 docs/contributing/ci/test_examples/l4_performance_tests.inc.md、recipes/MiniMaxAI/MiniMax-H3-5090.md、recipes/MiniMaxAI/MiniMax-H3.md），新增 1658 行 / 删除 162 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
-    },
-    {
-      "index": "03",
       "repo": "buxuku/SmartSub",
       "owner": "buxuku",
       "name": "SmartSub",
@@ -44,15 +18,41 @@
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 17 个文件（如 docs/docs/features/tts-dubbing.md、main/helpers/dubbing/dubbingProcessor.ts、main/helpers/dubbing/sessionStore.ts），新增 1441 行 / 删除 47 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
+    },
+    {
+      "index": "02",
+      "repo": "vllm-project/vllm-omni",
+      "owner": "vllm-project",
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/48298030d4b3c320b858dd98934c01babdd320ce",
+      "date": "2026-08-06",
+      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次成块的结构性改动，主题集中在模型与推理链路：[Diffusion] Add Minimax-H3 modular pipeline support",
+      "approach": "技术方案：commit「[Diffusion] Add Minimax-H3 modular pipeline support」落在 recipes/MiniMaxAI/MiniMax-H3-MUSA.md、recipes/MiniMaxAI/MiniMax-H3-NPU.md、recipes/MiniMaxAI/MiniMax-H3.md、tests/diffusion/cache/test_cache_backends.py 等 25 个文件，改动量 +844 / -178，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 25 个文件（如 recipes/MiniMaxAI/MiniMax-H3-MUSA.md、recipes/MiniMaxAI/MiniMax-H3-NPU.md、recipes/MiniMaxAI/MiniMax-H3.md），新增 844 行 / 删除 178 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
+    },
+    {
+      "index": "03",
+      "repo": "EvolvingLMMs-Lab/lmms-eval",
+      "owner": "EvolvingLMMs-Lab",
+      "name": "lmms-eval",
+      "url": "https://github.com/EvolvingLMMs-Lab/lmms-eval/commit/75571cfe0fa36ca5ec2e6aa2bb268f9d38295af3",
+      "date": "2026-08-06",
+      "headline": "lmms-eval 在Python 后端 / 模型侧 + 配置与参数提交了一次成块的结构性改动，主题集中在模型与推理链路：[Model] Add Neo-OV model support and SI benchmark configs",
+      "approach": "技术方案：commit「[Model] Add Neo-OV model support and SI benchmark configs」落在 lmms_eval/models/__init__.py、lmms_eval/models/chat/neo_ov.py、lmms_eval/tasks/3dsrbench/_default_template_yaml、lmms_eval/tasks/3dsrbench/utils.py 等 24 个文件，改动量 +988 / -31，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 24 个文件（如 lmms_eval/models/__init__.py、lmms_eval/models/chat/neo_ov.py、lmms_eval/tasks/3dsrbench/_default_template_yaml），新增 988 行 / 删除 31 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "dramaclaw/dramaclaw",
-    "url": "https://github.com/dramaclaw/dramaclaw/commit/ea097d50c376d1d698e0e277d49071f84a74bdb0",
+    "repo": "Agentchengfeng/chengfeng-videocut-skills",
+    "url": "https://github.com/Agentchengfeng/chengfeng-videocut-skills/commit/2be3442af931a6e26731eab3127013b05777d3e9",
     "date": "2026-08-05",
-    "text": "dramaclaw 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(canvas): 图片/视频模型设置与连线上限改由后台媒体模型配置下发",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3126 / -681。"
+    "text": "chengfeng-videocut-skills 在配置与参数 + 文档 + 服务端接口提交了一次大规模重构级改动，主题集中在性能与资源占用：Plugin 0.10.7：桌面版与全部 Skills 共用 Runtime",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +6099 / -399。"
   },
   "scanned": 26,
-  "candidates": 61
+  "candidates": 62
 }
