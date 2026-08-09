@@ -1,9 +1,9 @@
 {
-  "date": "2026-08-08",
-  "generatedAt": "2026-08-08T01:50:00.671Z",
+  "date": "2026-08-09",
+  "generatedAt": "2026-08-09T01:56:48.153Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了模型与推理链路；mediapipe 推进了流水线与编排；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：模型与推理链路、流水线与编排、交互与可控性",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了模型与推理链路；mediapipe 推进了流水线与编排；story-to-handdrawn-video 推进了交互与可控性。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -34,25 +34,25 @@
     },
     {
       "index": "03",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/44e38d7b3879107e501acfd833765ef07c60ace6",
+      "repo": "gnipbao/story-to-handdrawn-video",
+      "owner": "gnipbao",
+      "name": "story-to-handdrawn-video",
+      "url": "https://github.com/gnipbao/story-to-handdrawn-video/commit/bfdb1f747aab241678f28bd5de1f5c956dd409b6",
       "date": "2026-08-08",
-      "headline": "vllm-omni 在Python 后端 / 模型侧 + 测试提交了一次成块的结构性改动，主题集中在模型与推理链路：[Diffusion] Fix DLO DP concurrent request execution",
-      "approach": "技术方案：commit「[Diffusion] Fix DLO DP concurrent request execution」落在 examples/offline_inference/minimax_h3/dlo_dp2_lifecycle.py、tests/diffusion/test_async_output_worker.py、tests/diffusion/test_diffusion_engine.py、tests/diffusion/test_diffusion_ipc.py 等 14 个文件，改动量 +1148 / -128，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 14 个文件（如 examples/offline_inference/minimax_h3/dlo_dp2_lifecycle.py、tests/diffusion/test_async_output_worker.py、tests/diffusion/test_diffusion_engine.py），新增 1148 行 / 删除 128 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "headline": "story-to-handdrawn-video 在文档 + 配置与参数 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在交互与可控性：Add 20-style hand-drawn library",
+      "approach": "技术方案：commit「Add 20-style hand-drawn library」落在 CHANGELOG.md、README.md、package-lock.json、package.json 等 38 个文件，改动量 +884 / -47，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 38 个文件（如 CHANGELOG.md、README.md、package-lock.json），新增 884 行 / 删除 47 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     }
   ],
   "watch": {
-    "repo": "EvolvingLMMs-Lab/lmms-eval",
-    "url": "https://github.com/EvolvingLMMs-Lab/lmms-eval/commit/75571cfe0fa36ca5ec2e6aa2bb268f9d38295af3",
-    "date": "2026-08-06",
-    "text": "lmms-eval 在Python 后端 / 模型侧 + 配置与参数提交了一次成块的结构性改动，主题集中在模型与推理链路：[Model] Add Neo-OV model support and SI benchmark configs",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +988 / -31。"
+    "repo": "vllm-project/vllm-omni",
+    "url": "https://github.com/vllm-project/vllm-omni/commit/f663d120c78e225976d6cd07b2f93a5c5e13012d",
+    "date": "2026-08-08",
+    "text": "vllm-omni 在文档 + 配置与参数 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Misc] Add vLLM-Omni PR review skill",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1639 / -0。"
   },
   "scanned": 26,
-  "candidates": 54
+  "candidates": 51
 }
