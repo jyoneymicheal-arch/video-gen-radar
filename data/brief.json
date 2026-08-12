@@ -1,23 +1,23 @@
 {
-  "date": "2026-08-11",
-  "generatedAt": "2026-08-11T01:56:42.274Z",
+  "date": "2026-08-12",
+  "generatedAt": "2026-08-12T02:09:20.566Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：流水线与编排、接口与集成、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了流水线与编排；dramaclaw 推进了接口与集成；LightX2V 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了模型与推理链路；dramaclaw 推进了接口与集成；shuohao-skills 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/9734578e6065d6dec8993c4e30a978263c3eaa8b",
-      "date": "2026-08-10",
-      "headline": "hyperframes 在配置与参数 + 文档 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：feat(registry): bring back the video-primitive moves",
-      "approach": "技术方案：commit「feat(registry): bring back the video-primitive moves」落在 .github/workflows/catalog-previews.yml、.github/workflows/ci.yml、.oxlintrc.json、docs/catalog/blocks/app-showcase.mdx 等 300 个文件，改动量 +255395 / -5582，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 300 个文件（如 .github/workflows/catalog-previews.yml、.github/workflows/ci.yml、.oxlintrc.json），新增 255395 行 / 删除 5582 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "ArcReel/ArcReel",
+      "owner": "ArcReel",
+      "name": "ArcReel",
+      "url": "https://github.com/ArcReel/ArcReel/commit/ed17daaa6900f7158b884624160fa2eca1095d9a",
+      "date": "2026-08-12",
+      "headline": "ArcReel 在文档 + 服务端接口 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(视频): 广告参考路线直出统一视频单元",
+      "approach": "技术方案：commit「feat(视频): 广告参考路线直出统一视频单元」落在 CONTEXT.md、agent_runtime_profile/.claude/skills/generate-video/SKILL.md、agent_runtime_profile/.claude/skills/manga-workflow/SKILL.ad.md、agent_runtime_profile/CLAUDE.ad.md 等 108 个文件，改动量 +3291 / -7995，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 108 个文件（如 CONTEXT.md、agent_runtime_profile/.claude/skills/generate-video/SKILL.md、agent_runtime_profile/.claude/skills/manga-workflow/SKILL.ad.md），新增 3291 行 / 删除 7995 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "02",
@@ -34,25 +34,25 @@
     },
     {
       "index": "03",
-      "repo": "ModelTC/LightX2V",
-      "owner": "ModelTC",
-      "name": "LightX2V",
-      "url": "https://github.com/ModelTC/LightX2V/commit/e02a77daab5f5c88a1ab965a714d9fec9fb0909c",
-      "date": "2026-08-10",
-      "headline": "LightX2V 在配置与参数 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在模型与推理链路：feat(minimax-h3): add LoRA inference and DMD training support",
-      "approach": "技术方案：commit「feat(minimax-h3): add LoRA inference and DMD training support」落在 configs/minimax_h3/minimax_h3_t2av_dmd_lora_4step.json、lightx2v/models/networks/minimax_h3/lora.py、lightx2v/models/networks/minimax_h3/model.py、lightx2v/models/runners/minimax_h3/minimax_h3_runner.py 等 16 个文件，改动量 +1080 / -8，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 16 个文件（如 configs/minimax_h3/minimax_h3_t2av_dmd_lora_4step.json、lightx2v/models/networks/minimax_h3/lora.py、lightx2v/models/networks/minimax_h3/model.py），新增 1080 行 / 删除 8 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "eternityspring/shuohao-skills",
+      "owner": "eternityspring",
+      "name": "shuohao-skills",
+      "url": "https://github.com/eternityspring/shuohao-skills/commit/446841f0c6641cb59e0bb6772dd0ff8383ffc0d4",
+      "date": "2026-08-11",
+      "headline": "shuohao-skills 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在接口与集成：feat(novel-art): 新 skill——美术设定集（场景 + 叙事道具）",
+      "approach": "技术方案：commit「feat(novel-art): 新 skill——美术设定集（场景 + 叙事道具）」落在 CHANGELOG.md、README.en.md、README.md、skills/novel-art/README.en.md 等 15 个文件，改动量 +2359 / -5，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 15 个文件（如 CHANGELOG.md、README.en.md、README.md），新增 2359 行 / 删除 5 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "hao-ai-lab/FastVideo",
-    "url": "https://github.com/hao-ai-lab/FastVideo/commit/0653f8f3af712bc2e69226a164ecf353f6d55ec2",
-    "date": "2026-08-10",
-    "text": "FastVideo 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次大规模重构级改动，主题集中在模型与推理链路：[new-model] Add V2A: native MMAudio inference pipeline",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +6266 / -1124。"
+    "repo": "vllm-project/vllm-omni",
+    "url": "https://github.com/vllm-project/vllm-omni/commit/58007c0084b2a4411da57811e74290365ac80f04",
+    "date": "2026-08-11",
+    "text": "vllm-omni 在配置与参数 + 测试 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：[New Model] Support IndexTTS 2.5",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +7128 / -524。"
   },
   "scanned": 26,
-  "candidates": 54
+  "candidates": 51
 }
