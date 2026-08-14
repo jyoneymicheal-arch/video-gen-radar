@@ -1,58 +1,58 @@
 {
-  "date": "2026-08-13",
-  "generatedAt": "2026-08-13T02:11:13.891Z",
+  "date": "2026-08-14",
+  "generatedAt": "2026-08-14T02:09:11.411Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、接口与集成",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了编辑与后期能力；shuohao-skills 推进了接口与集成；diffusers 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：接口与集成、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenMontage 推进了接口与集成；hyperframes 推进了流水线与编排；diffusers 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "ArcReel/ArcReel",
-      "owner": "ArcReel",
-      "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/ed71819aadf81015c0af4b3f5db0815607e04fae",
-      "date": "2026-08-12",
-      "headline": "ArcReel 在前端 / 应用层 + 测试 + 服务端接口提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(video): 支持使用当前旁白生成单个视频",
-      "approach": "技术方案：commit「feat(video): 支持使用当前旁白生成单个视频」落在 frontend/src/actions/generation.test.ts、frontend/src/actions/generation.ts、frontend/src/api.test.ts、frontend/src/api.ts 等 80 个文件，改动量 +9773 / -776，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 80 个文件（如 frontend/src/actions/generation.test.ts、frontend/src/actions/generation.ts、frontend/src/api.test.ts），新增 9773 行 / 删除 776 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "repo": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "name": "OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage/commit/8cdd37f523d6c1cf6d1cd33fb1971175ef0ce9dc",
+      "date": "2026-08-13",
+      "headline": "OpenMontage 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在接口与集成：feat: add Gemini Omni, Seedance 2.5, and MiniMax H3 routes",
+      "approach": "技术方案：commit「feat: add Gemini Omni, Seedance 2.5, and MiniMax H3 routes」落在 .agents/skills/comfyui/SKILL.md、.agents/skills/gemini-omni/SKILL.md、.agents/skills/minimax-h3/SKILL.md、.agents/skills/seedance-2-5/SKILL.md 等 18 个文件，改动量 +2896 / -497，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 18 个文件（如 .agents/skills/comfyui/SKILL.md、.agents/skills/gemini-omni/SKILL.md、.agents/skills/minimax-h3/SKILL.md），新增 2896 行 / 删除 497 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     },
     {
       "index": "02",
-      "repo": "eternityspring/shuohao-skills",
-      "owner": "eternityspring",
-      "name": "shuohao-skills",
-      "url": "https://github.com/eternityspring/shuohao-skills/commit/446841f0c6641cb59e0bb6772dd0ff8383ffc0d4",
-      "date": "2026-08-11",
-      "headline": "shuohao-skills 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在接口与集成：feat(novel-art): 新 skill——美术设定集（场景 + 叙事道具）",
-      "approach": "技术方案：commit「feat(novel-art): 新 skill——美术设定集（场景 + 叙事道具）」落在 CHANGELOG.md、README.en.md、README.md、skills/novel-art/README.en.md 等 15 个文件，改动量 +2359 / -5，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 15 个文件（如 CHANGELOG.md、README.en.md、README.md），新增 2359 行 / 删除 5 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/d6c4774ef41c54f66dc02c6dd433facee822a8f8",
+      "date": "2026-08-13",
+      "headline": "hyperframes 在前端 / 应用层 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：feat(studio): instrument the audio FX rack, including work an agent did",
+      "approach": "技术方案：commit「feat(studio): instrument the audio FX rack, including work an agent did」落在 packages/cli/src/server/telemetryIdentity.test.ts、packages/cli/src/server/telemetryIdentity.ts、packages/studio/src/components/editor/audioFxTelemetry.test.ts、packages/studio/src/components/editor/audioFxTelemetry.ts 等 27 个文件，改动量 +2887 / -1451，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 27 个文件（如 packages/cli/src/server/telemetryIdentity.test.ts、packages/cli/src/server/telemetryIdentity.ts、packages/studio/src/components/editor/audioFxTelemetry.test.ts），新增 2887 行 / 删除 1451 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     },
     {
       "index": "03",
       "repo": "huggingface/diffusers",
       "owner": "huggingface",
       "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/3a2f35d4efa4c059c8bfb3bc0d6c906264895c81",
-      "date": "2026-08-12",
-      "headline": "diffusers 在文档 + 配置与参数 + 服务端接口提交了一次大规模重构级改动，主题集中在接口与集成：Wan-Animate-2 (authored by @kelseyee)",
-      "approach": "技术方案：commit「Wan-Animate-2 (authored by @kelseyee)」落在 .ai/testing.md、docs/source/en/_toctree.yml、docs/source/en/api/models/wan_animate_2_transformer_3d.md、docs/source/en/api/pipelines/wan_animate_2.md 等 28 个文件，改动量 +4276 / -5，归类为「接口与集成」。",
+      "url": "https://github.com/huggingface/diffusers/commit/2da7040be1a2e5f2fcbc8b985083342a308f5a86",
+      "date": "2026-08-13",
+      "headline": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次大规模重构级改动，主题集中在接口与集成：Add MiniMax Music 3",
+      "approach": "技术方案：commit「Add MiniMax Music 3」落在 docs/source/en/_toctree.yml、docs/source/en/api/models/minimax_music3_transformer.md、docs/source/en/api/pipelines/minimax_music3.md、scripts/convert_minimax_music3_to_diffusers.py 等 27 个文件，改动量 +2496 / -1，归类为「接口与集成」。",
       "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 28 个文件（如 .ai/testing.md、docs/source/en/_toctree.yml、docs/source/en/api/models/wan_animate_2_transformer_3d.md），新增 4276 行 / 删除 5 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 27 个文件（如 docs/source/en/_toctree.yml、docs/source/en/api/models/minimax_music3_transformer.md、docs/source/en/api/pipelines/minimax_music3.md），新增 2496 行 / 删除 1 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "palmier-io/palmier-pro",
-    "url": "https://github.com/palmier-io/palmier-pro/commit/810756dc6a9d6e378fcf7a334c222f780ce8b3b8",
-    "date": "2026-08-13",
-    "text": "palmier-pro 在界面组件 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：[feat] Add track-hosted keyframe lanes",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +2087 / -872。"
+    "repo": "ArcReel/ArcReel",
+    "url": "https://github.com/ArcReel/ArcReel/commit/46e77e052f86b806a40d951e1a7ba73546be4b06",
+    "date": "2026-08-14",
+    "text": "ArcReel 在前端 / 应用层 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(video): 统一成片预览、下载与剪映导出",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +5112 / -1942。"
   },
   "scanned": 26,
-  "candidates": 43
+  "candidates": 53
 }
