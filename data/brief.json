@@ -1,9 +1,9 @@
 {
-  "date": "2026-08-14",
-  "generatedAt": "2026-08-14T02:09:11.411Z",
+  "date": "2026-08-15",
+  "generatedAt": "2026-08-15T01:22:41.582Z",
   "lede": {
     "bold": "今天的开源信号集中在2 个方向：接口与集成、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenMontage 推进了接口与集成；hyperframes 推进了流水线与编排；diffusers 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenMontage 推进了接口与集成；video-shotcraft 推进了流水线与编排；shuohao-skills 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -21,38 +21,38 @@
     },
     {
       "index": "02",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/d6c4774ef41c54f66dc02c6dd433facee822a8f8",
-      "date": "2026-08-13",
-      "headline": "hyperframes 在前端 / 应用层 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：feat(studio): instrument the audio FX rack, including work an agent did",
-      "approach": "技术方案：commit「feat(studio): instrument the audio FX rack, including work an agent did」落在 packages/cli/src/server/telemetryIdentity.test.ts、packages/cli/src/server/telemetryIdentity.ts、packages/studio/src/components/editor/audioFxTelemetry.test.ts、packages/studio/src/components/editor/audioFxTelemetry.ts 等 27 个文件，改动量 +2887 / -1451，归类为「流水线与编排」。",
+      "repo": "Vincentwei1021/video-shotcraft",
+      "owner": "Vincentwei1021",
+      "name": "video-shotcraft",
+      "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/0d6f0b57f0d4d6700761644c07f7ef03c3e50234",
+      "date": "2026-08-14",
+      "headline": "video-shotcraft 在文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在流水线与编排：feat: 剪映工程导出成为 skill 正式能力（Mac 11.2 实测验收）",
+      "approach": "技术方案：commit「feat: 剪映工程导出成为 skill 正式能力（Mac 11.2 实测验收）」落在 README.md、README_CN.md、README_JA.md、SKILL.md 等 10 个文件，改动量 +907 / -3，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 27 个文件（如 packages/cli/src/server/telemetryIdentity.test.ts、packages/cli/src/server/telemetryIdentity.ts、packages/studio/src/components/editor/audioFxTelemetry.test.ts），新增 2887 行 / 删除 1451 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 README.md、README_CN.md、README_JA.md），新增 907 行 / 删除 3 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
       "index": "03",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/2da7040be1a2e5f2fcbc8b985083342a308f5a86",
-      "date": "2026-08-13",
-      "headline": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次大规模重构级改动，主题集中在接口与集成：Add MiniMax Music 3",
-      "approach": "技术方案：commit「Add MiniMax Music 3」落在 docs/source/en/_toctree.yml、docs/source/en/api/models/minimax_music3_transformer.md、docs/source/en/api/pipelines/minimax_music3.md、scripts/convert_minimax_music3_to_diffusers.py 等 27 个文件，改动量 +2496 / -1，归类为「接口与集成」。",
+      "repo": "eternityspring/shuohao-skills",
+      "owner": "eternityspring",
+      "name": "shuohao-skills",
+      "url": "https://github.com/eternityspring/shuohao-skills/commit/04a0c318c9aa6b2736705918dc50b3b512577dd3",
+      "date": "2026-08-14",
+      "headline": "shuohao-skills 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在接口与集成：feat(novel-storyboard): 新 skill——给 AI 短剧出分镜（段/分镜/分镜图三层 + H3 投产包）",
+      "approach": "技术方案：commit「feat(novel-storyboard): 新 skill——给 AI 短剧出分镜（段/分镜/分镜图三层 + H3 投产包）」落在 .gitignore、CHANGELOG.md、CLAUDE.md、README.en.md 等 17 个文件，改动量 +3152 / -5，归类为「接口与集成」。",
       "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 27 个文件（如 docs/source/en/_toctree.yml、docs/source/en/api/models/minimax_music3_transformer.md、docs/source/en/api/pipelines/minimax_music3.md），新增 2496 行 / 删除 1 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 17 个文件（如 .gitignore、CHANGELOG.md、CLAUDE.md），新增 3152 行 / 删除 5 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "ArcReel/ArcReel",
-    "url": "https://github.com/ArcReel/ArcReel/commit/46e77e052f86b806a40d951e1a7ba73546be4b06",
-    "date": "2026-08-14",
-    "text": "ArcReel 在前端 / 应用层 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(video): 统一成片预览、下载与剪映导出",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +5112 / -1942。"
+    "repo": "GetStream/Vision-Agents",
+    "url": "https://github.com/GetStream/Vision-Agents/commit/a935f32ac5f152af794d18b6c7b1aae67b774f50",
+    "date": "2026-08-13",
+    "text": "Vision-Agents 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在功能演进：feat(telnyx): add Telnyx LLM, STT and TTS",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1615 / -3。"
   },
   "scanned": 26,
-  "candidates": 53
+  "candidates": 66
 }
