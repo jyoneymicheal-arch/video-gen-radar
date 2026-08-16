@@ -1,26 +1,39 @@
 {
-  "date": "2026-08-15",
-  "generatedAt": "2026-08-15T01:22:41.582Z",
+  "date": "2026-08-16",
+  "generatedAt": "2026-08-16T01:28:26.554Z",
   "lede": {
     "bold": "今天的开源信号集中在2 个方向：接口与集成、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenMontage 推进了接口与集成；video-shotcraft 推进了流水线与编排；shuohao-skills 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：remove-ai-watermarks 推进了接口与集成；ArcReel 推进了流水线与编排；video-shotcraft 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "calesthio/OpenMontage",
-      "owner": "calesthio",
-      "name": "OpenMontage",
-      "url": "https://github.com/calesthio/OpenMontage/commit/8cdd37f523d6c1cf6d1cd33fb1971175ef0ce9dc",
-      "date": "2026-08-13",
-      "headline": "OpenMontage 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在接口与集成：feat: add Gemini Omni, Seedance 2.5, and MiniMax H3 routes",
-      "approach": "技术方案：commit「feat: add Gemini Omni, Seedance 2.5, and MiniMax H3 routes」落在 .agents/skills/comfyui/SKILL.md、.agents/skills/gemini-omni/SKILL.md、.agents/skills/minimax-h3/SKILL.md、.agents/skills/seedance-2-5/SKILL.md 等 18 个文件，改动量 +2896 / -497，归类为「接口与集成」。",
+      "repo": "wiltodelta/remove-ai-watermarks",
+      "owner": "wiltodelta",
+      "name": "remove-ai-watermarks",
+      "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/432b63b6d7d34a5811fd87b3c4e4aca92fced6c5",
+      "date": "2026-08-15",
+      "headline": "remove-ai-watermarks 在文档 + 服务端接口 + 配置与参数提交了一次成块的结构性改动，主题集中在接口与集成：Add verified text restoration",
+      "approach": "技术方案：commit「Add verified text restoration」落在 README.md、data/evaluations/fidelity/README.md、docs/cli.md、docs/installation.md 等 21 个文件，改动量 +974 / -255，归类为「接口与集成」。",
       "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 18 个文件（如 .agents/skills/comfyui/SKILL.md、.agents/skills/gemini-omni/SKILL.md、.agents/skills/minimax-h3/SKILL.md），新增 2896 行 / 删除 497 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 21 个文件（如 README.md、data/evaluations/fidelity/README.md、docs/cli.md），新增 974 行 / 删除 255 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "接口与集成"
     },
     {
       "index": "02",
+      "repo": "ArcReel/ArcReel",
+      "owner": "ArcReel",
+      "name": "ArcReel",
+      "url": "https://github.com/ArcReel/ArcReel/commit/6adc823af6af4ccf4f5216f99a336f3d6497a7a3",
+      "date": "2026-08-15",
+      "headline": "ArcReel 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次大规模重构级改动，主题集中在流水线与编排：feat(agent): 生成结果逐项返回成功/失败/受阻，失效产物不再重复付费重生",
+      "approach": "技术方案：commit「feat(agent): 生成结果逐项返回成功/失败/受阻，失效产物不再重复付费重生」落在 agent_runtime_profile/.claude/references/generation-results.md、agent_runtime_profile/.claude/skills/generate-assets/SKILL.md、agent_runtime_profile/.claude/skills/generate-grid/SKILL.md、agent_runtime_profile/.claude/skills/generate-narration-audio/SKILL.md 等 25 个文件，改动量 +4351 / -859，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 25 个文件（如 agent_runtime_profile/.claude/references/generation-results.md、agent_runtime_profile/.claude/skills/generate-assets/SKILL.md、agent_runtime_profile/.claude/skills/generate-grid/SKILL.md），新增 4351 行 / 删除 859 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
+    },
+    {
+      "index": "03",
       "repo": "Vincentwei1021/video-shotcraft",
       "owner": "Vincentwei1021",
       "name": "video-shotcraft",
@@ -31,28 +44,15 @@
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 README.md、README_CN.md、README_JA.md），新增 907 行 / 删除 3 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
-    },
-    {
-      "index": "03",
-      "repo": "eternityspring/shuohao-skills",
-      "owner": "eternityspring",
-      "name": "shuohao-skills",
-      "url": "https://github.com/eternityspring/shuohao-skills/commit/04a0c318c9aa6b2736705918dc50b3b512577dd3",
-      "date": "2026-08-14",
-      "headline": "shuohao-skills 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在接口与集成：feat(novel-storyboard): 新 skill——给 AI 短剧出分镜（段/分镜/分镜图三层 + H3 投产包）",
-      "approach": "技术方案：commit「feat(novel-storyboard): 新 skill——给 AI 短剧出分镜（段/分镜/分镜图三层 + H3 投产包）」落在 .gitignore、CHANGELOG.md、CLAUDE.md、README.en.md 等 17 个文件，改动量 +3152 / -5，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 17 个文件（如 .gitignore、CHANGELOG.md、CLAUDE.md），新增 3152 行 / 删除 5 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "GetStream/Vision-Agents",
-    "url": "https://github.com/GetStream/Vision-Agents/commit/a935f32ac5f152af794d18b6c7b1aae67b774f50",
-    "date": "2026-08-13",
-    "text": "Vision-Agents 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在功能演进：feat(telnyx): add Telnyx LLM, STT and TTS",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1615 / -3。"
+    "repo": "heygen-com/hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes/commit/b9a4dfcbe56de5141b9a379ff30605cf23984d1e",
+    "date": "2026-08-15",
+    "text": "hyperframes 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在功能演进：feat(registry): add avatar promo and Slack notification templates",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3722 / -2。"
   },
   "scanned": 26,
-  "candidates": 66
+  "candidates": 56
 }
