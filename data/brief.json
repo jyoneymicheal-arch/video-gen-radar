@@ -1,9 +1,9 @@
 {
-  "date": "2026-08-16",
-  "generatedAt": "2026-08-16T01:28:26.554Z",
+  "date": "2026-08-17",
+  "generatedAt": "2026-08-17T01:24:50.450Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：接口与集成、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：remove-ai-watermarks 推进了接口与集成；ArcReel 推进了流水线与编排；video-shotcraft 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：接口与集成、流水线与编排、功能演进",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：remove-ai-watermarks 推进了接口与集成；ArcReel 推进了流水线与编排；hyperframes 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -24,35 +24,35 @@
       "repo": "ArcReel/ArcReel",
       "owner": "ArcReel",
       "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/6adc823af6af4ccf4f5216f99a336f3d6497a7a3",
-      "date": "2026-08-15",
-      "headline": "ArcReel 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次大规模重构级改动，主题集中在流水线与编排：feat(agent): 生成结果逐项返回成功/失败/受阻，失效产物不再重复付费重生",
-      "approach": "技术方案：commit「feat(agent): 生成结果逐项返回成功/失败/受阻，失效产物不再重复付费重生」落在 agent_runtime_profile/.claude/references/generation-results.md、agent_runtime_profile/.claude/skills/generate-assets/SKILL.md、agent_runtime_profile/.claude/skills/generate-grid/SKILL.md、agent_runtime_profile/.claude/skills/generate-narration-audio/SKILL.md 等 25 个文件，改动量 +4351 / -859，归类为「流水线与编排」。",
+      "url": "https://github.com/ArcReel/ArcReel/commit/5bbc8c5022ac37a820e59bd8730497dce1c14eaa",
+      "date": "2026-08-16",
+      "headline": "ArcReel 在文档 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：feat(workflow): 智能体按服务端制作计划推进并如实分轴报告产物状态",
+      "approach": "技术方案：commit「feat(workflow): 智能体按服务端制作计划推进并如实分轴报告产物状态」落在 agent_runtime_profile/.claude/agents/analyze-assets.md、agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/normalize-drama-script.md、agent_runtime_profile/.claude/agents/split-narration-segments.md 等 31 个文件，改动量 +1248 / -447，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 25 个文件（如 agent_runtime_profile/.claude/references/generation-results.md、agent_runtime_profile/.claude/skills/generate-assets/SKILL.md、agent_runtime_profile/.claude/skills/generate-grid/SKILL.md），新增 4351 行 / 删除 859 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 31 个文件（如 agent_runtime_profile/.claude/agents/analyze-assets.md、agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/normalize-drama-script.md），新增 1248 行 / 删除 447 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
       "index": "03",
-      "repo": "Vincentwei1021/video-shotcraft",
-      "owner": "Vincentwei1021",
-      "name": "video-shotcraft",
-      "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/0d6f0b57f0d4d6700761644c07f7ef03c3e50234",
-      "date": "2026-08-14",
-      "headline": "video-shotcraft 在文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在流水线与编排：feat: 剪映工程导出成为 skill 正式能力（Mac 11.2 实测验收）",
-      "approach": "技术方案：commit「feat: 剪映工程导出成为 skill 正式能力（Mac 11.2 实测验收）」落在 README.md、README_CN.md、README_JA.md、SKILL.md 等 10 个文件，改动量 +907 / -3，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 README.md、README_CN.md、README_JA.md），新增 907 行 / 删除 3 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/b9a4dfcbe56de5141b9a379ff30605cf23984d1e",
+      "date": "2026-08-15",
+      "headline": "hyperframes 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在功能演进：feat(registry): add avatar promo and Slack notification templates",
+      "approach": "技术方案：commit「feat(registry): add avatar promo and Slack notification templates」落在 .gitignore、docs/catalog/blocks/heygen-avatar-promo-card.mdx、docs/catalog/blocks/slack-notification-ad.mdx、docs/docs.json 等 32 个文件，改动量 +3722 / -2，归类为「功能演进」。",
+      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 32 个文件（如 .gitignore、docs/catalog/blocks/heygen-avatar-promo-card.mdx、docs/catalog/blocks/slack-notification-ad.mdx），新增 3722 行 / 删除 2 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "功能演进"
     }
   ],
   "watch": {
-    "repo": "heygen-com/hyperframes",
-    "url": "https://github.com/heygen-com/hyperframes/commit/b9a4dfcbe56de5141b9a379ff30605cf23984d1e",
-    "date": "2026-08-15",
-    "text": "hyperframes 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在功能演进：feat(registry): add avatar promo and Slack notification templates",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3722 / -2。"
+    "repo": "palmier-io/palmier-pro",
+    "url": "https://github.com/palmier-io/palmier-pro/commit/89ce887e90b4432f3953265ba2b0cc7b710cece5",
+    "date": "2026-08-16",
+    "text": "palmier-pro 在界面组件 + 测试提交了一次大规模重构级改动，主题集中在交互与可控性：[ui] Restyle editor chrome and panel toolbars",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1189 / -791。"
   },
   "scanned": 26,
-  "candidates": 56
+  "candidates": 39
 }
