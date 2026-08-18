@@ -1,58 +1,58 @@
 {
-  "date": "2026-08-17",
-  "generatedAt": "2026-08-17T01:24:50.450Z",
+  "date": "2026-08-18",
+  "generatedAt": "2026-08-18T01:21:42.869Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：接口与集成、流水线与编排、功能演进",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：remove-ai-watermarks 推进了接口与集成；ArcReel 推进了流水线与编排；hyperframes 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；LightX2V 推进了模型与推理链路；shuohao-skills 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "wiltodelta/remove-ai-watermarks",
-      "owner": "wiltodelta",
-      "name": "remove-ai-watermarks",
-      "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/432b63b6d7d34a5811fd87b3c4e4aca92fced6c5",
-      "date": "2026-08-15",
-      "headline": "remove-ai-watermarks 在文档 + 服务端接口 + 配置与参数提交了一次成块的结构性改动，主题集中在接口与集成：Add verified text restoration",
-      "approach": "技术方案：commit「Add verified text restoration」落在 README.md、data/evaluations/fidelity/README.md、docs/cli.md、docs/installation.md 等 21 个文件，改动量 +974 / -255，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 21 个文件（如 README.md、data/evaluations/fidelity/README.md、docs/cli.md），新增 974 行 / 删除 255 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
-    },
-    {
-      "index": "02",
-      "repo": "ArcReel/ArcReel",
-      "owner": "ArcReel",
-      "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/5bbc8c5022ac37a820e59bd8730497dce1c14eaa",
-      "date": "2026-08-16",
-      "headline": "ArcReel 在文档 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：feat(workflow): 智能体按服务端制作计划推进并如实分轴报告产物状态",
-      "approach": "技术方案：commit「feat(workflow): 智能体按服务端制作计划推进并如实分轴报告产物状态」落在 agent_runtime_profile/.claude/agents/analyze-assets.md、agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/normalize-drama-script.md、agent_runtime_profile/.claude/agents/split-narration-segments.md 等 31 个文件，改动量 +1248 / -447，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 31 个文件（如 agent_runtime_profile/.claude/agents/analyze-assets.md、agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/normalize-drama-script.md），新增 1248 行 / 删除 447 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
-    },
-    {
-      "index": "03",
       "repo": "heygen-com/hyperframes",
       "owner": "heygen-com",
       "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/b9a4dfcbe56de5141b9a379ff30605cf23984d1e",
-      "date": "2026-08-15",
-      "headline": "hyperframes 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在功能演进：feat(registry): add avatar promo and Slack notification templates",
-      "approach": "技术方案：commit「feat(registry): add avatar promo and Slack notification templates」落在 .gitignore、docs/catalog/blocks/heygen-avatar-promo-card.mdx、docs/catalog/blocks/slack-notification-ad.mdx、docs/docs.json 等 32 个文件，改动量 +3722 / -2，归类为「功能演进」。",
-      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 32 个文件（如 .gitignore、docs/catalog/blocks/heygen-avatar-promo-card.mdx、docs/catalog/blocks/slack-notification-ad.mdx），新增 3722 行 / 删除 2 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "功能演进"
+      "url": "https://github.com/heygen-com/hyperframes/commit/5058236eda13cc31536e39bd37cf7eb4f9a99025",
+      "date": "2026-08-18",
+      "headline": "hyperframes 在前端 / 应用层 + 测试 + 服务端接口提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(studio): prompt to install FFmpeg before Export, not after",
+      "approach": "技术方案：commit「feat(studio): prompt to install FFmpeg before Export, not after」落在 packages/cli/src/browser/ffmpeg.test.ts、packages/cli/src/browser/ffmpeg.ts、packages/cli/src/browser/preflight.ts、packages/cli/src/server/studioServer.test.ts 等 23 个文件，改动量 +1043 / -121，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 packages/cli/src/browser/ffmpeg.test.ts、packages/cli/src/browser/ffmpeg.ts、packages/cli/src/browser/preflight.ts），新增 1043 行 / 删除 121 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
+    },
+    {
+      "index": "02",
+      "repo": "ModelTC/LightX2V",
+      "owner": "ModelTC",
+      "name": "LightX2V",
+      "url": "https://github.com/ModelTC/LightX2V/commit/a0e56cb5532d04200462f24312a7893d7206cd92",
+      "date": "2026-08-17",
+      "headline": "LightX2V 在配置与参数 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：feat: add LTX-2.5 and Wan-Animate-2 inference support",
+      "approach": "技术方案：commit「feat: add LTX-2.5 and Wan-Animate-2 inference support」落在 configs/ltx2/ltx2_5_distilled.json、configs/ltx2/ltx2_5_distilled_8gpu.json、configs/minimax_h3/dmd/minimax_h3_bf16_4step_single_gpu_offload.json、configs/minimax_h3/dmd/minimax_h3_fp8_4step.json 等 80 个文件，改动量 +5875 / -248，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 80 个文件（如 configs/ltx2/ltx2_5_distilled.json、configs/ltx2/ltx2_5_distilled_8gpu.json、configs/minimax_h3/dmd/minimax_h3_bf16_4step_single_gpu_offload.json），新增 5875 行 / 删除 248 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
+    },
+    {
+      "index": "03",
+      "repo": "eternityspring/shuohao-skills",
+      "owner": "eternityspring",
+      "name": "shuohao-skills",
+      "url": "https://github.com/eternityspring/shuohao-skills/commit/0fd109dd03e226b83f7980fd221b087e39932a67",
+      "date": "2026-08-17",
+      "headline": "shuohao-skills 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(shot-recipes): 新 skill——AI 视频的镜头语汇卡库（配方卡 + 技法卡两族，71 张）",
+      "approach": "技术方案：commit「feat(shot-recipes): 新 skill——AI 视频的镜头语汇卡库（配方卡 + 技法卡两族，71 张）」落在 .gitignore、skills/shot-recipes/README.en.md、skills/shot-recipes/README.md、skills/shot-recipes/SKILL.md 等 168 个文件，改动量 +14890 / -0，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 168 个文件（如 .gitignore、skills/shot-recipes/README.en.md、skills/shot-recipes/README.md），新增 14890 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     }
   ],
   "watch": {
     "repo": "palmier-io/palmier-pro",
-    "url": "https://github.com/palmier-io/palmier-pro/commit/89ce887e90b4432f3953265ba2b0cc7b710cece5",
-    "date": "2026-08-16",
-    "text": "palmier-pro 在界面组件 + 测试提交了一次大规模重构级改动，主题集中在交互与可控性：[ui] Restyle editor chrome and panel toolbars",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1189 / -791。"
+    "url": "https://github.com/palmier-io/palmier-pro/commit/01c2006fca096623d80ad6ff4cf40c2ed3aabb2a",
+    "date": "2026-08-17",
+    "text": "palmier-pro 在界面组件 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：[ui/agent] Add marker review workflow to timeline index",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +848 / -114。"
   },
   "scanned": 26,
-  "candidates": 39
+  "candidates": 50
 }
