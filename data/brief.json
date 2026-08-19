@@ -1,58 +1,58 @@
 {
-  "date": "2026-08-18",
-  "generatedAt": "2026-08-18T01:21:42.869Z",
+  "date": "2026-08-19",
+  "generatedAt": "2026-08-19T01:23:16.859Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；LightX2V 推进了模型与推理链路；shuohao-skills 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：流水线与编排、交互与可控性",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了流水线与编排；diffusers 推进了流水线与编排；palmier-pro 推进了交互与可控性。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/5058236eda13cc31536e39bd37cf7eb4f9a99025",
+      "repo": "ArcReel/ArcReel",
+      "owner": "ArcReel",
+      "name": "ArcReel",
+      "url": "https://github.com/ArcReel/ArcReel/commit/e505735c6b9e984acef9a6fbf43ff59f34f760c2",
       "date": "2026-08-18",
-      "headline": "hyperframes 在前端 / 应用层 + 测试 + 服务端接口提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(studio): prompt to install FFmpeg before Export, not after",
-      "approach": "技术方案：commit「feat(studio): prompt to install FFmpeg before Export, not after」落在 packages/cli/src/browser/ffmpeg.test.ts、packages/cli/src/browser/ffmpeg.ts、packages/cli/src/browser/preflight.ts、packages/cli/src/server/studioServer.test.ts 等 23 个文件，改动量 +1043 / -121，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 packages/cli/src/browser/ffmpeg.test.ts、packages/cli/src/browser/ffmpeg.ts、packages/cli/src/browser/preflight.ts），新增 1043 行 / 删除 121 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "headline": "ArcReel 在前端 / 应用层 + 测试 + 服务端接口提交了一次成块的结构性改动，主题集中在流水线与编排：feat(i18n): 创作者界面与用户可见文案统一产品语言",
+      "approach": "技术方案：commit「feat(i18n): 创作者界面与用户可见文案统一产品语言」落在 frontend/src/actions/generation.test.ts、frontend/src/api.test.ts、frontend/src/api.ts、frontend/src/branding.ts 等 63 个文件，改动量 +745 / -543，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 63 个文件（如 frontend/src/actions/generation.test.ts、frontend/src/api.test.ts、frontend/src/api.ts），新增 745 行 / 删除 543 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     },
     {
       "index": "02",
-      "repo": "ModelTC/LightX2V",
-      "owner": "ModelTC",
-      "name": "LightX2V",
-      "url": "https://github.com/ModelTC/LightX2V/commit/a0e56cb5532d04200462f24312a7893d7206cd92",
-      "date": "2026-08-17",
-      "headline": "LightX2V 在配置与参数 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：feat: add LTX-2.5 and Wan-Animate-2 inference support",
-      "approach": "技术方案：commit「feat: add LTX-2.5 and Wan-Animate-2 inference support」落在 configs/ltx2/ltx2_5_distilled.json、configs/ltx2/ltx2_5_distilled_8gpu.json、configs/minimax_h3/dmd/minimax_h3_bf16_4step_single_gpu_offload.json、configs/minimax_h3/dmd/minimax_h3_fp8_4step.json 等 80 个文件，改动量 +5875 / -248，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 80 个文件（如 configs/ltx2/ltx2_5_distilled.json、configs/ltx2/ltx2_5_distilled_8gpu.json、configs/minimax_h3/dmd/minimax_h3_bf16_4step_single_gpu_offload.json），新增 5875 行 / 删除 248 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/425b113c211c42ec26ff646cbdbaa7d83adb46b5",
+      "date": "2026-08-18",
+      "headline": "diffusers 在配置与参数 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：[tests] refactor pipeline-level quantization tests",
+      "approach": "技术方案：commit「[tests] refactor pipeline-level quantization tests」落在 .github/workflows/nightly_tests.yml、src/diffusers/quantizers/bitsandbytes/bnb_quantizer.py、src/diffusers/quantizers/torchao/torchao_quantizer.py、tests/models/testing_utils/quantization.py 等 23 个文件，改动量 +2099 / -3811，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 .github/workflows/nightly_tests.yml、src/diffusers/quantizers/bitsandbytes/bnb_quantizer.py、src/diffusers/quantizers/torchao/torchao_quantizer.py），新增 2099 行 / 删除 3811 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     },
     {
       "index": "03",
-      "repo": "eternityspring/shuohao-skills",
-      "owner": "eternityspring",
-      "name": "shuohao-skills",
-      "url": "https://github.com/eternityspring/shuohao-skills/commit/0fd109dd03e226b83f7980fd221b087e39932a67",
-      "date": "2026-08-17",
-      "headline": "shuohao-skills 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(shot-recipes): 新 skill——AI 视频的镜头语汇卡库（配方卡 + 技法卡两族，71 张）",
-      "approach": "技术方案：commit「feat(shot-recipes): 新 skill——AI 视频的镜头语汇卡库（配方卡 + 技法卡两族，71 张）」落在 .gitignore、skills/shot-recipes/README.en.md、skills/shot-recipes/README.md、skills/shot-recipes/SKILL.md 等 168 个文件，改动量 +14890 / -0，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 168 个文件（如 .gitignore、skills/shot-recipes/README.en.md、skills/shot-recipes/README.md），新增 14890 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "repo": "palmier-io/palmier-pro",
+      "owner": "palmier-io",
+      "name": "palmier-pro",
+      "url": "https://github.com/palmier-io/palmier-pro/commit/67703c5a965fd03dc724c60858d29afae9549764",
+      "date": "2026-08-18",
+      "headline": "palmier-pro 在主代码路径提交了一次大规模重构级改动，主题集中在交互与可控性：[ui] Update and add app localizations",
+      "approach": "技术方案：commit「[ui] Update and add app localizations」落在 Sources/PalmierPro/Resources/Localization/ar.lproj/Localizable.strings、Sources/PalmierPro/Resources/Localization/bn.lproj/Localizable.strings、Sources/PalmierPro/Resources/Localization/cs.lproj/InfoPlist.strings、Sources/PalmierPro/Resources/Localization/cs.lproj/Localizable.strings 等 40 个文件，改动量 +16603 / -364，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 40 个文件（如 Sources/PalmierPro/Resources/Localization/ar.lproj/Localizable.strings、Sources/PalmierPro/Resources/Localization/bn.lproj/Localizable.strings、Sources/PalmierPro/Resources/Localization/cs.lproj/InfoPlist.strings），新增 16603 行 / 删除 364 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     }
   ],
   "watch": {
-    "repo": "palmier-io/palmier-pro",
-    "url": "https://github.com/palmier-io/palmier-pro/commit/01c2006fca096623d80ad6ff4cf40c2ed3aabb2a",
-    "date": "2026-08-17",
-    "text": "palmier-pro 在界面组件 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：[ui/agent] Add marker review workflow to timeline index",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +848 / -114。"
+    "repo": "hao-ai-lab/FastVideo",
+    "url": "https://github.com/hao-ai-lab/FastVideo/commit/8537dcd6ded64052327c4c8e2d7acdfa903c845e",
+    "date": "2026-08-18",
+    "text": "FastVideo 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：[feat]: Apple Silicon MLX runtime — INT8 Wan2.1 and Wan2.2 inference",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +13180 / -5。"
   },
   "scanned": 26,
-  "candidates": 50
+  "candidates": 62
 }
