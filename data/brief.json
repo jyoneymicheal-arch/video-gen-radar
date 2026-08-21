@@ -1,35 +1,35 @@
 {
-  "date": "2026-08-20",
-  "generatedAt": "2026-08-20T01:22:42.126Z",
+  "date": "2026-08-21",
+  "generatedAt": "2026-08-21T01:26:35.515Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：接口与集成、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了接口与集成；dramaclaw 推进了流水线与编排；ArcReel 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了模型与推理链路；youtube-automation-agent 推进了流水线与编排；ArcReel 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/360bef807475899c2e4d7d99c2f371148a78b1a7",
-      "date": "2026-08-19",
-      "headline": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次大规模重构级改动，主题集中在接口与集成：Feat -- Stable Audio 3",
-      "approach": "技术方案：commit「Feat -- Stable Audio 3」落在 docs/source/en/_toctree.yml、docs/source/en/api/models/autoencoder_same.md、docs/source/en/api/models/stable_audio_3_transformer.md、docs/source/en/api/pipelines/stable_audio_3.md 等 24 个文件，改动量 +5424 / -0，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 24 个文件（如 docs/source/en/_toctree.yml、docs/source/en/api/models/autoencoder_same.md、docs/source/en/api/models/stable_audio_3_transformer.md），新增 5424 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
-    },
-    {
-      "index": "02",
       "repo": "dramaclaw/dramaclaw",
       "owner": "dramaclaw",
       "name": "dramaclaw",
-      "url": "https://github.com/dramaclaw/dramaclaw/commit/a3d1da4e740e97d032697313b6ba1810bd4784da",
-      "date": "2026-08-19",
-      "headline": "dramaclaw 在前端 / 应用层 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：feat(canvas): 图生图节点风格图墙，45 套短剧风格，图片走 OSS",
-      "approach": "技术方案：commit「feat(canvas): 图生图节点风格图墙，45 套短剧风格，图片走 OSS」落在 .env.example、.gitignore、frontend/src/__tests__/api/style-templates-shape.test.ts、frontend/src/__tests__/features/canvas/duplicate-style-edges.test.ts 等 41 个文件，改动量 +4473 / -454，归类为「流水线与编排」。",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/40c5bd9a1b5d4725f453b8e055b5b51e8129d32d",
+      "date": "2026-08-20",
+      "headline": "dramaclaw 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在模型与推理链路：feat: manage model channels by capability",
+      "approach": "技术方案：commit「feat: manage model channels by capability」落在 docs/en/getting-started/configuring-models.md、docs/zh/getting-started/configuring-models.md、frontend/public/locales/en/translation.json、frontend/public/locales/zh/translation.json 等 11 个文件，改动量 +1033 / -140，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 11 个文件（如 docs/en/getting-started/configuring-models.md、docs/zh/getting-started/configuring-models.md、frontend/public/locales/en/translation.json），新增 1033 行 / 删除 140 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
+    },
+    {
+      "index": "02",
+      "repo": "darkzOGx/youtube-automation-agent",
+      "owner": "darkzOGx",
+      "name": "youtube-automation-agent",
+      "url": "https://github.com/darkzOGx/youtube-automation-agent/commit/0aea8517344967c61beeb4d25040023b512dc8cb",
+      "date": "2026-08-20",
+      "headline": "youtube-automation-agent 在文档 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：Add closed-loop channel learning",
+      "approach": "技术方案：commit「Add closed-loop channel learning」落在 CHANGELOG.md、README.md、agents/analytics-optimization-agent.js、agents/content-strategy-agent.js 等 13 个文件，改动量 +963 / -64，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 41 个文件（如 .env.example、.gitignore、frontend/src/__tests__/api/style-templates-shape.test.ts），新增 4473 行 / 删除 454 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 CHANGELOG.md、README.md、agents/analytics-optimization-agent.js），新增 963 行 / 删除 64 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
@@ -37,22 +37,22 @@
       "repo": "ArcReel/ArcReel",
       "owner": "ArcReel",
       "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/270aba6d94d04ea2bd3fc874ec8b7b004a3725bf",
-      "date": "2026-08-19",
-      "headline": "ArcReel 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次成块的结构性改动，主题集中在流水线与编排：feat(agent): 智能体改用与界面一致的正式叫法，生成摘要不再露出工具名与状态枚举",
-      "approach": "技术方案：commit「feat(agent): 智能体改用与界面一致的正式叫法，生成摘要不再露出工具名与状态枚举」落在 agent_runtime_profile/.claude/agents/analyze-assets.md、agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/generate-assets.md、agent_runtime_profile/.claude/agents/normalize-drama-script.md 等 34 个文件，改动量 +590 / -290，归类为「流水线与编排」。",
+      "url": "https://github.com/ArcReel/ArcReel/commit/4a60b1ec169a9055cffe4ecc20e5ca03928e433a",
+      "date": "2026-08-20",
+      "headline": "ArcReel 在文档 + 配置与参数 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：chore(skills): 引入 impeccable 设计 skill 与 PRODUCT.md 产品档案",
+      "approach": "技术方案：commit「chore(skills): 引入 impeccable 设计 skill 与 PRODUCT.md 产品档案」落在 .agents/skills/impeccable/SKILL.md、.agents/skills/impeccable/agents/impeccable_asset_producer.toml、.agents/skills/impeccable/agents/impeccable_documenter.toml、.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml 等 300 个文件，改动量 +145778 / -262，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 34 个文件（如 agent_runtime_profile/.claude/agents/analyze-assets.md、agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/generate-assets.md），新增 590 行 / 删除 290 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 300 个文件（如 .agents/skills/impeccable/SKILL.md、.agents/skills/impeccable/agents/impeccable_asset_producer.toml、.agents/skills/impeccable/agents/impeccable_documenter.toml），新增 145778 行 / 删除 262 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     }
   ],
   "watch": {
-    "repo": "vllm-project/vllm-omni",
-    "url": "https://github.com/vllm-project/vllm-omni/commit/6f55a06fab90509d94b34bfc682312ca6e55fea2",
-    "date": "2026-08-19",
-    "text": "vllm-omni 在文档 + 测试 + 配置与参数提交了一次成块的结构性改动，主题集中在模型与推理链路：[Docs] Remove stale stage config references",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +569 / -797。"
+    "repo": "huggingface/diffusers",
+    "url": "https://github.com/huggingface/diffusers/commit/0eff7f0664817868596b55c1a8c5a6c210258eba",
+    "date": "2026-08-20",
+    "text": "diffusers 在文档 + 配置与参数 + 服务端接口提交了一次成块的结构性改动，主题集中在模型与推理链路：[docs] Clean up links",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +77 / -588。"
   },
   "scanned": 26,
-  "candidates": 60
+  "candidates": 51
 }
