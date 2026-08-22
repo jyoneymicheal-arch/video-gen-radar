@@ -1,13 +1,26 @@
 {
-  "date": "2026-08-21",
-  "generatedAt": "2026-08-21T01:26:35.515Z",
+  "date": "2026-08-22",
+  "generatedAt": "2026-08-22T01:22:15.148Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了模型与推理链路；youtube-automation-agent 推进了流水线与编排；ArcReel 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、模型与推理链路、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了编辑与后期能力；dramaclaw 推进了模型与推理链路；youtube-automation-agent 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
+      "repo": "ArcReel/ArcReel",
+      "owner": "ArcReel",
+      "name": "ArcReel",
+      "url": "https://github.com/ArcReel/ArcReel/commit/6d8174ae17f76967419ffe4c869bd389fc24d6cb",
+      "date": "2026-08-21",
+      "headline": "ArcReel 在文档 + 前端 / 应用层 + 界面组件提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(step1): narration 补齐隔离草稿通道，三条路线写边界一致",
+      "approach": "技术方案：commit「feat(step1): narration 补齐隔离草稿通道，三条路线写边界一致」落在 CONTEXT.md、agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/split-narration-segments.md、agent_runtime_profile/.claude/skills/generate-script/SKILL.md 等 31 个文件，改动量 +1774 / -460，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 31 个文件（如 CONTEXT.md、agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/split-narration-segments.md），新增 1774 行 / 删除 460 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
+    },
+    {
+      "index": "02",
       "repo": "dramaclaw/dramaclaw",
       "owner": "dramaclaw",
       "name": "dramaclaw",
@@ -20,7 +33,7 @@
       "theme": "模型与推理链路"
     },
     {
-      "index": "02",
+      "index": "03",
       "repo": "darkzOGx/youtube-automation-agent",
       "owner": "darkzOGx",
       "name": "youtube-automation-agent",
@@ -31,28 +44,15 @@
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 CHANGELOG.md、README.md、agents/analytics-optimization-agent.js），新增 963 行 / 删除 64 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
-    },
-    {
-      "index": "03",
-      "repo": "ArcReel/ArcReel",
-      "owner": "ArcReel",
-      "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/4a60b1ec169a9055cffe4ecc20e5ca03928e433a",
-      "date": "2026-08-20",
-      "headline": "ArcReel 在文档 + 配置与参数 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：chore(skills): 引入 impeccable 设计 skill 与 PRODUCT.md 产品档案",
-      "approach": "技术方案：commit「chore(skills): 引入 impeccable 设计 skill 与 PRODUCT.md 产品档案」落在 .agents/skills/impeccable/SKILL.md、.agents/skills/impeccable/agents/impeccable_asset_producer.toml、.agents/skills/impeccable/agents/impeccable_documenter.toml、.agents/skills/impeccable/agents/impeccable_finish_reviewer.toml 等 300 个文件，改动量 +145778 / -262，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 300 个文件（如 .agents/skills/impeccable/SKILL.md、.agents/skills/impeccable/agents/impeccable_asset_producer.toml、.agents/skills/impeccable/agents/impeccable_documenter.toml），新增 145778 行 / 删除 262 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
     }
   ],
   "watch": {
-    "repo": "huggingface/diffusers",
-    "url": "https://github.com/huggingface/diffusers/commit/0eff7f0664817868596b55c1a8c5a6c210258eba",
-    "date": "2026-08-20",
-    "text": "diffusers 在文档 + 配置与参数 + 服务端接口提交了一次成块的结构性改动，主题集中在模型与推理链路：[docs] Clean up links",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +77 / -588。"
+    "repo": "heygen-com/hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes/commit/0e9a4f371d4cff4e853640ea87caf76814af5278",
+    "date": "2026-08-22",
+    "text": "hyperframes 在文档 + 前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(audio): open the audio FX, group and mute features to everyone",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +378 / -86。"
   },
   "scanned": 26,
-  "candidates": 51
+  "candidates": 48
 }
