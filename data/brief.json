@@ -1,9 +1,9 @@
 {
-  "date": "2026-08-22",
-  "generatedAt": "2026-08-22T01:22:15.148Z",
+  "date": "2026-08-23",
+  "generatedAt": "2026-08-23T01:35:45.292Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了编辑与后期能力；dramaclaw 推进了模型与推理链路；youtube-automation-agent 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、流水线与编排、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了编辑与后期能力；youtube-automation-agent 推进了流水线与编排；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -21,38 +21,38 @@
     },
     {
       "index": "02",
-      "repo": "dramaclaw/dramaclaw",
-      "owner": "dramaclaw",
-      "name": "dramaclaw",
-      "url": "https://github.com/dramaclaw/dramaclaw/commit/40c5bd9a1b5d4725f453b8e055b5b51e8129d32d",
-      "date": "2026-08-20",
-      "headline": "dramaclaw 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在模型与推理链路：feat: manage model channels by capability",
-      "approach": "技术方案：commit「feat: manage model channels by capability」落在 docs/en/getting-started/configuring-models.md、docs/zh/getting-started/configuring-models.md、frontend/public/locales/en/translation.json、frontend/public/locales/zh/translation.json 等 11 个文件，改动量 +1033 / -140，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 11 个文件（如 docs/en/getting-started/configuring-models.md、docs/zh/getting-started/configuring-models.md、frontend/public/locales/en/translation.json），新增 1033 行 / 删除 140 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
-    },
-    {
-      "index": "03",
       "repo": "darkzOGx/youtube-automation-agent",
       "owner": "darkzOGx",
       "name": "youtube-automation-agent",
-      "url": "https://github.com/darkzOGx/youtube-automation-agent/commit/0aea8517344967c61beeb4d25040023b512dc8cb",
-      "date": "2026-08-20",
-      "headline": "youtube-automation-agent 在文档 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：Add closed-loop channel learning",
-      "approach": "技术方案：commit「Add closed-loop channel learning」落在 CHANGELOG.md、README.md、agents/analytics-optimization-agent.js、agents/content-strategy-agent.js 等 13 个文件，改动量 +963 / -64，归类为「流水线与编排」。",
+      "url": "https://github.com/darkzOGx/youtube-automation-agent/commit/bd7ac90e20d2aa638e6b6b7693099a4f1662b4a4",
+      "date": "2026-08-22",
+      "headline": "youtube-automation-agent 在文档 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：feat: add shorts repurposing studio",
+      "approach": "技术方案：commit「feat: add shorts repurposing studio」落在 CHANGELOG.md、README.md、agents/publishing-scheduling-agent.js、dashboard/app.js 等 10 个文件，改动量 +862 / -18，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 CHANGELOG.md、README.md、agents/analytics-optimization-agent.js），新增 963 行 / 删除 64 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 CHANGELOG.md、README.md、agents/publishing-scheduling-agent.js），新增 862 行 / 删除 18 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
+    },
+    {
+      "index": "03",
+      "repo": "vllm-project/vllm-omni",
+      "owner": "vllm-project",
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/2e096788a6337b0bf7ac22c30bb9afa2afb8f3d4",
+      "date": "2026-08-22",
+      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在模型与推理链路：[CI]Remove SoulX-Singer support",
+      "approach": "技术方案：commit「[CI]Remove SoulX-Singer support」落在 .gitignore、docs/models/supported_models.md、docs/user_guide/diffusion/cpu_offload.md、examples/offline_inference/text_to_speech/README.md 等 51 个文件，改动量 +1 / -9575，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 51 个文件（如 .gitignore、docs/models/supported_models.md、docs/user_guide/diffusion/cpu_offload.md），新增 1 行 / 删除 9575 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "heygen-com/hyperframes",
-    "url": "https://github.com/heygen-com/hyperframes/commit/0e9a4f371d4cff4e853640ea87caf76814af5278",
+    "repo": "worldwonderer/drama-skills",
+    "url": "https://github.com/worldwonderer/drama-skills/commit/879bddcadf9a6cc6bd6314334012fc72042ac092",
     "date": "2026-08-22",
-    "text": "hyperframes 在文档 + 前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(audio): open the audio FX, group and mute features to everyone",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +378 / -86。"
+    "text": "drama-skills 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：refactor: finalize creator-first workflow",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1349 / -2168。"
   },
   "scanned": 26,
-  "candidates": 48
+  "candidates": 38
 }
