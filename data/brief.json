@@ -1,9 +1,9 @@
 {
-  "date": "2026-08-23",
-  "generatedAt": "2026-08-23T01:35:45.292Z",
+  "date": "2026-08-24",
+  "generatedAt": "2026-08-24T01:27:17.888Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、流水线与编排、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了编辑与后期能力；youtube-automation-agent 推进了流水线与编排；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：流水线与编排、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了流水线与编排；youtube-automation-agent 推进了流水线与编排；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -11,25 +11,25 @@
       "repo": "ArcReel/ArcReel",
       "owner": "ArcReel",
       "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/6d8174ae17f76967419ffe4c869bd389fc24d6cb",
-      "date": "2026-08-21",
-      "headline": "ArcReel 在文档 + 前端 / 应用层 + 界面组件提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(step1): narration 补齐隔离草稿通道，三条路线写边界一致",
-      "approach": "技术方案：commit「feat(step1): narration 补齐隔离草稿通道，三条路线写边界一致」落在 CONTEXT.md、agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/split-narration-segments.md、agent_runtime_profile/.claude/skills/generate-script/SKILL.md 等 31 个文件，改动量 +1774 / -460，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 31 个文件（如 CONTEXT.md、agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/split-narration-segments.md），新增 1774 行 / 删除 460 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "url": "https://github.com/ArcReel/ArcReel/commit/2892f0f15dcd10fb2ab1489c5c40aac2ab9d3e74",
+      "date": "2026-08-23",
+      "headline": "ArcReel 在配置与参数 + 测试 + 文档提交了一次成块的结构性改动，主题集中在流水线与编排：feat(test-gate): audit_tests --check 挂 CI，eslint 三件套与命名/熔断禁令启用",
+      "approach": "技术方案：commit「feat(test-gate): audit_tests --check 挂 CI，eslint 三件套与命名/熔断禁令启用」落在 .github/workflows/test.yml、AGENTS.md、CONTRIBUTING.md、docs/adr/0059-router-level-auth-single-truth-source.md 等 73 个文件，改动量 +1096 / -296，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 73 个文件（如 .github/workflows/test.yml、AGENTS.md、CONTRIBUTING.md），新增 1096 行 / 删除 296 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     },
     {
       "index": "02",
       "repo": "darkzOGx/youtube-automation-agent",
       "owner": "darkzOGx",
       "name": "youtube-automation-agent",
-      "url": "https://github.com/darkzOGx/youtube-automation-agent/commit/bd7ac90e20d2aa638e6b6b7693099a4f1662b4a4",
-      "date": "2026-08-22",
-      "headline": "youtube-automation-agent 在文档 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：feat: add shorts repurposing studio",
-      "approach": "技术方案：commit「feat: add shorts repurposing studio」落在 CHANGELOG.md、README.md、agents/publishing-scheduling-agent.js、dashboard/app.js 等 10 个文件，改动量 +862 / -18，归类为「流水线与编排」。",
+      "url": "https://github.com/darkzOGx/youtube-automation-agent/commit/07c145a4df4a61fa3704fd7e79930e1ccde36aad",
+      "date": "2026-08-23",
+      "headline": "youtube-automation-agent 在文档 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：feat: add controlled growth experiments",
+      "approach": "技术方案：commit「feat: add controlled growth experiments」落在 CHANGELOG.md、README.md、agents/publishing-scheduling-agent.js、dashboard/app.js 等 11 个文件，改动量 +1144 / -10，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 CHANGELOG.md、README.md、agents/publishing-scheduling-agent.js），新增 862 行 / 删除 18 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 11 个文件（如 CHANGELOG.md、README.md、agents/publishing-scheduling-agent.js），新增 1144 行 / 删除 10 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
@@ -37,22 +37,22 @@
       "repo": "vllm-project/vllm-omni",
       "owner": "vllm-project",
       "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/2e096788a6337b0bf7ac22c30bb9afa2afb8f3d4",
-      "date": "2026-08-22",
-      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在模型与推理链路：[CI]Remove SoulX-Singer support",
-      "approach": "技术方案：commit「[CI]Remove SoulX-Singer support」落在 .gitignore、docs/models/supported_models.md、docs/user_guide/diffusion/cpu_offload.md、examples/offline_inference/text_to_speech/README.md 等 51 个文件，改动量 +1 / -9575，归类为「模型与推理链路」。",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/1e2a6446f79da72b66e15f684d0256244c725916",
+      "date": "2026-08-23",
+      "headline": "vllm-omni 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：[CI] Remove AudioX and MammothModa2 support",
+      "approach": "技术方案：commit「[CI] Remove AudioX and MammothModa2 support」落在 docs/api/README.md、docs/models/supported_models.md、docs/user_guide/diffusion_features.md、examples/offline_inference/audex/README.md 等 59 个文件，改动量 +42 / -7029，归类为「模型与推理链路」。",
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 51 个文件（如 .gitignore、docs/models/supported_models.md、docs/user_guide/diffusion/cpu_offload.md），新增 1 行 / 删除 9575 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 59 个文件（如 docs/api/README.md、docs/models/supported_models.md、docs/user_guide/diffusion_features.md），新增 42 行 / 删除 7029 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "worldwonderer/drama-skills",
-    "url": "https://github.com/worldwonderer/drama-skills/commit/879bddcadf9a6cc6bd6314334012fc72042ac092",
+    "repo": "eternityspring/shuohao-skills",
+    "url": "https://github.com/eternityspring/shuohao-skills/commit/4813f87d16711cc3c8ebf9c509e6063d63616115",
     "date": "2026-08-22",
-    "text": "drama-skills 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：refactor: finalize creator-first workflow",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1349 / -2168。"
+    "text": "shuohao-skills 在文档 + 测试 + 配置与参数提交了一次大规模重构级改动，主题集中在编辑与后期能力：refactor: move shot-recipes to video skills repository",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +38 / -14924。"
   },
   "scanned": 26,
-  "candidates": 38
+  "candidates": 47
 }
