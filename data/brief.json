@@ -1,58 +1,58 @@
 {
-  "date": "2026-08-25",
-  "generatedAt": "2026-08-25T01:24:06.073Z",
+  "date": "2026-08-26",
+  "generatedAt": "2026-08-26T01:27:22.168Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、流水线与编排、接口与集成",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；youtube-automation-agent 推进了流水线与编排；SnapOtter 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：流水线与编排、交互与可控性、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了流水线与编排；ResearchStudio 推进了交互与可控性；diffusers 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/045b3a4fd7df71b46f4432c114f70fb25d13b551",
+      "repo": "ArcReel/ArcReel",
+      "owner": "ArcReel",
+      "name": "ArcReel",
+      "url": "https://github.com/ArcReel/ArcReel/commit/8869763232bddf664c3bce30721067f236044deb",
       "date": "2026-08-24",
-      "headline": "hyperframes 在配置与参数 + 前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(cli): report which catalog items a render actually used",
-      "approach": "技术方案：commit「feat(cli): report which catalog items a render actually used」落在 bun.lock、docs/schema/hyperframes.json、packages/cli/package.json、packages/cli/src/commands/add.ts 等 18 个文件，改动量 +1127 / -38，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 18 个文件（如 bun.lock、docs/schema/hyperframes.json、packages/cli/package.json），新增 1127 行 / 删除 38 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
-    },
-    {
-      "index": "02",
-      "repo": "darkzOGx/youtube-automation-agent",
-      "owner": "darkzOGx",
-      "name": "youtube-automation-agent",
-      "url": "https://github.com/darkzOGx/youtube-automation-agent/commit/07c145a4df4a61fa3704fd7e79930e1ccde36aad",
-      "date": "2026-08-23",
-      "headline": "youtube-automation-agent 在文档 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：feat: add controlled growth experiments",
-      "approach": "技术方案：commit「feat: add controlled growth experiments」落在 CHANGELOG.md、README.md、agents/publishing-scheduling-agent.js、dashboard/app.js 等 11 个文件，改动量 +1144 / -10，归类为「流水线与编排」。",
+      "headline": "ArcReel 在文档 + 前端 / 应用层 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：feat(agent): support revisioned draft workflows",
+      "approach": "技术方案：commit「feat(agent): support revisioned draft workflows」落在 agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/normalize-drama-script.md、agent_runtime_profile/.claude/agents/split-narration-segments.md、agent_runtime_profile/.claude/agents/split-reference-video-units.md 等 23 个文件，改动量 +1738 / -1295，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 11 个文件（如 CHANGELOG.md、README.md、agents/publishing-scheduling-agent.js），新增 1144 行 / 删除 10 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/normalize-drama-script.md、agent_runtime_profile/.claude/agents/split-narration-segments.md），新增 1738 行 / 删除 1295 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
+      "index": "02",
+      "repo": "microsoft/ResearchStudio",
+      "owner": "microsoft",
+      "name": "ResearchStudio",
+      "url": "https://github.com/microsoft/ResearchStudio/commit/ab39cfc08e521882a4dde2e448932a39ef5e1b73",
+      "date": "2026-08-25",
+      "headline": "ResearchStudio 在主代码路径提交了一次成块的结构性改动，主题集中在交互与可控性：Add Trending Paper public page",
+      "approach": "技术方案：commit「Add Trending Paper public page」落在 docs/trending-paper/daily.css、docs/trending-paper/daily.js、docs/trending-paper/fonts/InterVariable.woff2、docs/trending-paper/icons/arxiv.svg 等 7 个文件，改动量 +1350 / -0，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 7 个文件（如 docs/trending-paper/daily.css、docs/trending-paper/daily.js、docs/trending-paper/fonts/InterVariable.woff2），新增 1350 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
+    },
+    {
       "index": "03",
-      "repo": "snapotter-hq/SnapOtter",
-      "owner": "snapotter-hq",
-      "name": "SnapOtter",
-      "url": "https://github.com/snapotter-hq/SnapOtter/commit/e88a30f34f7c6ede3be42e3cfd7fa926e48ea58e",
-      "date": "2026-08-24",
-      "headline": "SnapOtter 在文档 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在接口与集成：feat(api,docker): connect to Postgres with DML rights instead of superuser",
-      "approach": "技术方案：commit「feat(api,docker): connect to Postgres with DML rights instead of superuser」落在 .env.example、DOCKERHUB.md、README.md、SECURITY.md 等 51 个文件，改动量 +2658 / -108，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 51 个文件（如 .env.example、DOCKERHUB.md、README.md），新增 2658 行 / 删除 108 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/b9bc22bd579f591f8909a2d104ddca72688e6488",
+      "date": "2026-08-25",
+      "headline": "diffusers 在文档 + 服务端接口提交了一次成块的结构性改动，主题集中在模型与推理链路：make examples in docs device agnostic",
+      "approach": "技术方案：commit「make examples in docs device agnostic」落在 docs/source/en/advanced_inference/outpaint.md、docs/source/en/api/models/allegro_transformer3d.md、docs/source/en/api/models/asymmetricautoencoderkl.md、docs/source/en/api/models/autoencoder_dc.md 等 150 个文件，改动量 +472 / -455，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 150 个文件（如 docs/source/en/advanced_inference/outpaint.md、docs/source/en/api/models/allegro_transformer3d.md、docs/source/en/api/models/asymmetricautoencoderkl.md），新增 472 行 / 删除 455 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "vllm-project/vllm-omni",
-    "url": "https://github.com/vllm-project/vllm-omni/commit/4af0ddc1c2cf007dbbe69d9abab9f415dde805e6",
+    "repo": "Vincentwei1021/video-shotcraft",
+    "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/80b3f5d8fa4cc6b4933331ea2efa52c4d39ad028",
     "date": "2026-08-25",
-    "text": "vllm-omni 在配置与参数 + 测试 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：[Test] Cleanup for helpers",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +4122 / -4195。"
+    "text": "video-shotcraft 在文档 + 界面组件 + 服务端接口提交了一次大规模重构级改动，主题集中在接口与集成：demos: 为 9 张依赖 template 场景的镜头卡补独立参考实现",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1989 / -23。"
   },
   "scanned": 26,
-  "candidates": 66
+  "candidates": 60
 }
