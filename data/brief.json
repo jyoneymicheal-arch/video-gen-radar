@@ -1,58 +1,58 @@
 {
-  "date": "2026-08-26",
-  "generatedAt": "2026-08-26T01:27:22.168Z",
+  "date": "2026-08-27",
+  "generatedAt": "2026-08-27T08:16:51.562Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：流水线与编排、交互与可控性、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了流水线与编排；ResearchStudio 推进了交互与可控性；diffusers 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：流水线与编排、模型与推理链路、交互与可控性",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：KrillinAI 推进了流水线与编排；Sana 推进了模型与推理链路；dramaclaw 推进了交互与可控性。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "ArcReel/ArcReel",
-      "owner": "ArcReel",
-      "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/8869763232bddf664c3bce30721067f236044deb",
-      "date": "2026-08-24",
-      "headline": "ArcReel 在文档 + 前端 / 应用层 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：feat(agent): support revisioned draft workflows",
-      "approach": "技术方案：commit「feat(agent): support revisioned draft workflows」落在 agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/normalize-drama-script.md、agent_runtime_profile/.claude/agents/split-narration-segments.md、agent_runtime_profile/.claude/agents/split-reference-video-units.md 等 23 个文件，改动量 +1738 / -1295，归类为「流水线与编排」。",
+      "repo": "krillinai/KrillinAI",
+      "owner": "krillinai",
+      "name": "KrillinAI",
+      "url": "https://github.com/krillinai/KrillinAI/commit/2ea113bff152f3bd58e6fe158e70f0569d9c4bc9",
+      "date": "2026-08-27",
+      "headline": "KrillinAI 在服务端接口 + 配置与参数提交了一次大规模重构级改动，主题集中在流水线与编排：feat: add OpenCreator runtime integration and harden translation",
+      "approach": "技术方案：commit「feat: add OpenCreator runtime integration and harden translation」落在 .gitignore、api/opencreator/v1/schema.json、cmd/cli/main.go、cmd/cli/main_test.go 等 49 个文件，改动量 +3802 / -152，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 agent_runtime_profile/.claude/agents/create-episode-script.md、agent_runtime_profile/.claude/agents/normalize-drama-script.md、agent_runtime_profile/.claude/agents/split-narration-segments.md），新增 1738 行 / 删除 1295 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 49 个文件（如 .gitignore、api/opencreator/v1/schema.json、cmd/cli/main.go），新增 3802 行 / 删除 152 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
       "index": "02",
-      "repo": "microsoft/ResearchStudio",
-      "owner": "microsoft",
-      "name": "ResearchStudio",
-      "url": "https://github.com/microsoft/ResearchStudio/commit/ab39cfc08e521882a4dde2e448932a39ef5e1b73",
-      "date": "2026-08-25",
-      "headline": "ResearchStudio 在主代码路径提交了一次成块的结构性改动，主题集中在交互与可控性：Add Trending Paper public page",
-      "approach": "技术方案：commit「Add Trending Paper public page」落在 docs/trending-paper/daily.css、docs/trending-paper/daily.js、docs/trending-paper/fonts/InterVariable.woff2、docs/trending-paper/icons/arxiv.svg 等 7 个文件，改动量 +1350 / -0，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 7 个文件（如 docs/trending-paper/daily.css、docs/trending-paper/daily.js、docs/trending-paper/fonts/InterVariable.woff2），新增 1350 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "repo": "NVlabs/Sana",
+      "owner": "NVlabs",
+      "name": "Sana",
+      "url": "https://github.com/NVlabs/Sana/commit/220c7fe4dbdb4293c453bf668b2cf55d6a9e8f9f",
+      "date": "2026-08-27",
+      "headline": "Sana 在文档 + 配置与参数 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：feat: open-source Sana-Video 2.0",
+      "approach": "技术方案：commit「feat: open-source Sana-Video 2.0」落在 README.md、asset/docs/model_zoo.md、asset/docs/sana_video2.md、asset/samples/sana_video2_5b_720p_demo.txt 等 19 个文件，改动量 +1934 / -14，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 19 个文件（如 README.md、asset/docs/model_zoo.md、asset/docs/sana_video2.md），新增 1934 行 / 删除 14 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "03",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/b9bc22bd579f591f8909a2d104ddca72688e6488",
-      "date": "2026-08-25",
-      "headline": "diffusers 在文档 + 服务端接口提交了一次成块的结构性改动，主题集中在模型与推理链路：make examples in docs device agnostic",
-      "approach": "技术方案：commit「make examples in docs device agnostic」落在 docs/source/en/advanced_inference/outpaint.md、docs/source/en/api/models/allegro_transformer3d.md、docs/source/en/api/models/asymmetricautoencoderkl.md、docs/source/en/api/models/autoencoder_dc.md 等 150 个文件，改动量 +472 / -455，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 150 个文件（如 docs/source/en/advanced_inference/outpaint.md、docs/source/en/api/models/allegro_transformer3d.md、docs/source/en/api/models/asymmetricautoencoderkl.md），新增 472 行 / 删除 455 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/43b399850ffd1131fd7496ed6cc595a8252b3452",
+      "date": "2026-08-27",
+      "headline": "dramaclaw 在文档 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在交互与可控性：feat(ui): 创作工作台体验打磨（rebase ui-yz0826）+ 拖放提示卡绘制修正",
+      "approach": "技术方案：commit「feat(ui): 创作工作台体验打磨（rebase ui-yz0826）+ 拖放提示卡绘制修正」落在 docs/changes/2026-08-26.md、frontend/public/images/ingest-add.png、frontend/public/locales/en/translation.json、frontend/public/locales/zh/translation.json 等 53 个文件，改动量 +2819 / -2018，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 53 个文件（如 docs/changes/2026-08-26.md、frontend/public/images/ingest-add.png、frontend/public/locales/en/translation.json），新增 2819 行 / 删除 2018 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     }
   ],
   "watch": {
-    "repo": "Vincentwei1021/video-shotcraft",
-    "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/80b3f5d8fa4cc6b4933331ea2efa52c4d39ad028",
-    "date": "2026-08-25",
-    "text": "video-shotcraft 在文档 + 界面组件 + 服务端接口提交了一次大规模重构级改动，主题集中在接口与集成：demos: 为 9 张依赖 template 场景的镜头卡补独立参考实现",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1989 / -23。"
+    "repo": "huggingface/diffusers",
+    "url": "https://github.com/huggingface/diffusers/commit/2371082217eec63ab3a82756d8ff92b072ad66f7",
+    "date": "2026-08-27",
+    "text": "diffusers 在Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[tests] refactor sdxl tests.",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1348 / -1744。"
   },
   "scanned": 26,
-  "candidates": 60
+  "candidates": 48
 }
