@@ -1,9 +1,9 @@
 {
-  "date": "2026-08-28",
-  "generatedAt": "2026-08-28T10:18:37.122Z",
+  "date": "2026-08-29",
+  "generatedAt": "2026-08-29T06:18:09.504Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：流水线与编排、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：KrillinAI 推进了流水线与编排；Sana 推进了模型与推理链路；dramaclaw 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：接口与集成、流水线与编排、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：KrillinAI 推进了接口与集成；dramaclaw 推进了流水线与编排；lmms-eval 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -11,29 +11,16 @@
       "repo": "krillinai/KrillinAI",
       "owner": "krillinai",
       "name": "KrillinAI",
-      "url": "https://github.com/krillinai/KrillinAI/commit/2ea113bff152f3bd58e6fe158e70f0569d9c4bc9",
-      "date": "2026-08-27",
-      "headline": "KrillinAI 在服务端接口 + 配置与参数提交了一次大规模重构级改动，主题集中在流水线与编排：feat: add OpenCreator runtime integration and harden translation",
-      "approach": "技术方案：commit「feat: add OpenCreator runtime integration and harden translation」落在 .gitignore、api/opencreator/v1/schema.json、cmd/cli/main.go、cmd/cli/main_test.go 等 49 个文件，改动量 +3802 / -152，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 49 个文件（如 .gitignore、api/opencreator/v1/schema.json、cmd/cli/main.go），新增 3802 行 / 删除 152 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "url": "https://github.com/krillinai/KrillinAI/commit/0a16abf63c2e3ff14721ec713d259810dc7c5681",
+      "date": "2026-08-28",
+      "headline": "KrillinAI 在配置与参数提交了一次大规模重构级改动，主题集中在接口与集成：feat(tts): add multi-provider dubbing support",
+      "approach": "技术方案：commit「feat(tts): add multi-provider dubbing support」落在 cmd/cli/main.go、cmd/cli/main_test.go、config/config-example.toml、config/config.go 等 36 个文件，改动量 +1914 / -369，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 36 个文件（如 cmd/cli/main.go、cmd/cli/main_test.go、config/config-example.toml），新增 1914 行 / 删除 369 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     },
     {
       "index": "02",
-      "repo": "NVlabs/Sana",
-      "owner": "NVlabs",
-      "name": "Sana",
-      "url": "https://github.com/NVlabs/Sana/commit/220c7fe4dbdb4293c453bf668b2cf55d6a9e8f9f",
-      "date": "2026-08-27",
-      "headline": "Sana 在文档 + 配置与参数 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：feat: open-source Sana-Video 2.0",
-      "approach": "技术方案：commit「feat: open-source Sana-Video 2.0」落在 README.md、asset/docs/model_zoo.md、asset/docs/sana_video2.md、asset/samples/sana_video2_5b_720p_demo.txt 等 19 个文件，改动量 +1934 / -14，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 19 个文件（如 README.md、asset/docs/model_zoo.md、asset/docs/sana_video2.md），新增 1934 行 / 删除 14 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
-    },
-    {
-      "index": "03",
       "repo": "dramaclaw/dramaclaw",
       "owner": "dramaclaw",
       "name": "dramaclaw",
@@ -44,15 +31,28 @@
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 29 个文件（如 frontend/src/__tests__/features/canvas/anchored-menu-placement.test.ts、frontend/src/__tests__/features/canvas/node-selection.test.ts、frontend/src/__tests__/features/canvas/prompt-mention-material-replace.test.tsx），新增 2563 行 / 删除 133 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
+    },
+    {
+      "index": "03",
+      "repo": "EvolvingLMMs-Lab/lmms-eval",
+      "owner": "EvolvingLMMs-Lab",
+      "name": "lmms-eval",
+      "url": "https://github.com/EvolvingLMMs-Lab/lmms-eval/commit/593851645597652776b39c812f99064b35aa29f4",
+      "date": "2026-08-27",
+      "headline": "lmms-eval 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：chore: adopt Ruff formatter and default lint rules",
+      "approach": "技术方案：commit「chore: adopt Ruff formatter and default lint rules」落在 .github/workflows/lint.yml、.pre-commit-config.yaml、CONTRIBUTING.md、lmms_eval/__main__.py 等 300 个文件，改动量 +1546 / -1886，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 300 个文件（如 .github/workflows/lint.yml、.pre-commit-config.yaml、CONTRIBUTING.md），新增 1546 行 / 删除 1886 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "vllm-project/vllm-omni",
-    "url": "https://github.com/vllm-project/vllm-omni/commit/da94c3ebe15c78f5c580936f6b18a6d97d03539b",
+    "repo": "hao-ai-lab/FastVideo",
+    "url": "https://github.com/hao-ai-lab/FastVideo/commit/3987b9ddcd102ecfebb73900a3f306701487b46b",
     "date": "2026-08-28",
-    "text": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在接口与集成：[Bugfix][MiniCPM-o] Bind omni-duplex video frames to the unit they close",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1530 / -144。"
+    "text": "FastVideo 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在接口与集成：[feat] Align multimodal OpenAI serving APIs",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1812 / -424。"
   },
   "scanned": 26,
-  "candidates": 45
+  "candidates": 46
 }
