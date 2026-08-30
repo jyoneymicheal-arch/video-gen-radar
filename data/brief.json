@@ -1,9 +1,9 @@
 {
-  "date": "2026-08-29",
-  "generatedAt": "2026-08-29T06:18:09.504Z",
+  "date": "2026-08-30",
+  "generatedAt": "2026-08-30T04:27:41.710Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：接口与集成、流水线与编排、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：KrillinAI 推进了接口与集成；dramaclaw 推进了流水线与编排；lmms-eval 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：接口与集成、流水线与编排、性能与资源占用",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：KrillinAI 推进了接口与集成；dramaclaw 推进了流水线与编排；cangjie-skill 推进了性能与资源占用。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -34,16 +34,16 @@
     },
     {
       "index": "03",
-      "repo": "EvolvingLMMs-Lab/lmms-eval",
-      "owner": "EvolvingLMMs-Lab",
-      "name": "lmms-eval",
-      "url": "https://github.com/EvolvingLMMs-Lab/lmms-eval/commit/593851645597652776b39c812f99064b35aa29f4",
-      "date": "2026-08-27",
-      "headline": "lmms-eval 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：chore: adopt Ruff formatter and default lint rules",
-      "approach": "技术方案：commit「chore: adopt Ruff formatter and default lint rules」落在 .github/workflows/lint.yml、.pre-commit-config.yaml、CONTRIBUTING.md、lmms_eval/__main__.py 等 300 个文件，改动量 +1546 / -1886，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 300 个文件（如 .github/workflows/lint.yml、.pre-commit-config.yaml、CONTRIBUTING.md），新增 1546 行 / 删除 1886 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "kangarooking/cangjie-skill",
+      "owner": "kangarooking",
+      "name": "cangjie-skill",
+      "url": "https://github.com/kangarooking/cangjie-skill/commit/4b922d77288767802715e47eb76e97d65041083e",
+      "date": "2026-08-30",
+      "headline": "cangjie-skill 在配置与参数 + 文档 + 测试提交了一次大规模重构级改动，主题集中在性能与资源占用：feat: release cangjie skill v2.5.0",
+      "approach": "技术方案：commit「feat: release cangjie skill v2.5.0」落在 .github/workflows/pipeline-check.yml、.gitignore、CHANGELOG.md、README.md 等 297 个文件，改动量 +28508 / -549，归类为「性能与资源占用」。",
+      "why": "为什么重要：性能改动决定这类工具能否在消费级硬件或规模化任务里真正跑起来。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 297 个文件（如 .github/workflows/pipeline-check.yml、.gitignore、CHANGELOG.md），新增 28508 行 / 删除 549 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "性能与资源占用"
     }
   ],
   "watch": {
@@ -54,5 +54,5 @@
     "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1812 / -424。"
   },
   "scanned": 26,
-  "candidates": 46
+  "candidates": 50
 }

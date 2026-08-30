@@ -1,0 +1,766 @@
+{
+  "date": "2026-08-30",
+  "generatedAt": "2026-08-30T04:27:41.710Z",
+  "stars": [
+    {
+      "full_name": "calesthio/OpenMontage",
+      "stars": 54179
+    },
+    {
+      "full_name": "heygen-com/hyperframes",
+      "stars": 43096
+    },
+    {
+      "full_name": "google-ai-edge/mediapipe",
+      "stars": 36773
+    },
+    {
+      "full_name": "huggingface/diffusers",
+      "stars": 34405
+    },
+    {
+      "full_name": "facefusion/facefusion",
+      "stars": 29731
+    },
+    {
+      "full_name": "ATH-MaaS/Pixelle-Video",
+      "stars": 27490
+    },
+    {
+      "full_name": "Anil-matcha/Open-Generative-AI",
+      "stars": 27372
+    },
+    {
+      "full_name": "browser-use/video-use",
+      "stars": 21577
+    },
+    {
+      "full_name": "KlingAIResearch/LivePortrait",
+      "stars": 18984
+    },
+    {
+      "full_name": "AaronFeng753/Waifu2x-Extension-GUI",
+      "stars": 16931
+    },
+    {
+      "full_name": "leandromoreira/digital_video_introduction",
+      "stars": 16305
+    },
+    {
+      "full_name": "Zulko/moviepy",
+      "stars": 14870
+    },
+    {
+      "full_name": "HBAI-Ltd/Toonflow-app",
+      "stars": 14856
+    },
+    {
+      "full_name": "chatfire-AI/huobao-drama",
+      "stars": 14301
+    },
+    {
+      "full_name": "palmier-io/palmier-pro",
+      "stars": 14191
+    },
+    {
+      "full_name": "waooAI/waoowaoo",
+      "stars": 13885
+    },
+    {
+      "full_name": "Tencent-Hunyuan/HunyuanVideo",
+      "stars": 12490
+    },
+    {
+      "full_name": "HKUDS/ViMax",
+      "stars": 12149
+    },
+    {
+      "full_name": "krillinai/KrillinAI",
+      "stars": 11288
+    },
+    {
+      "full_name": "leandromoreira/ffmpeg-libav-tutorial",
+      "stars": 11039
+    },
+    {
+      "full_name": "gyroflow/gyroflow",
+      "stars": 9378
+    },
+    {
+      "full_name": "lipku/LiveTalking",
+      "stars": 9274
+    },
+    {
+      "full_name": "kangarooking/cangjie-skill",
+      "stars": 9179
+    },
+    {
+      "full_name": "NVlabs/Sana",
+      "stars": 8890
+    },
+    {
+      "full_name": "duixcom/Duix-Mobile",
+      "stars": 8203
+    },
+    {
+      "full_name": "GetStream/Vision-Agents",
+      "stars": 8105
+    },
+    {
+      "full_name": "nadermx/backgroundremover",
+      "stars": 8024
+    },
+    {
+      "full_name": "zhouxiaoka/autoclip",
+      "stars": 7114
+    },
+    {
+      "full_name": "Vincentwei1021/video-shotcraft",
+      "stars": 6691
+    },
+    {
+      "full_name": "vllm-project/vllm-omni",
+      "stars": 6463
+    },
+    {
+      "full_name": "promptslab/Awesome-Prompt-Engineering",
+      "stars": 6300
+    },
+    {
+      "full_name": "Forget-C/Jellyfish",
+      "stars": 6232
+    },
+    {
+      "full_name": "OpenShot/openshot-qt",
+      "stars": 6221
+    },
+    {
+      "full_name": "modelscope/FunClip",
+      "stars": 6199
+    },
+    {
+      "full_name": "showlab/Awesome-Video-Diffusion",
+      "stars": 5763
+    },
+    {
+      "full_name": "wiltodelta/remove-ai-watermarks",
+      "stars": 5319
+    },
+    {
+      "full_name": "YILS-LIN/short-video-factory",
+      "stars": 5196
+    },
+    {
+      "full_name": "Breakthrough/PySceneDetect",
+      "stars": 5134
+    },
+    {
+      "full_name": "WyattBlue/auto-editor",
+      "stars": 5101
+    },
+    {
+      "full_name": "AgnesAI-Labs/AgnesAI-Models",
+      "stars": 5020
+    },
+    {
+      "full_name": "buxuku/SmartSub",
+      "stars": 4816
+    },
+    {
+      "full_name": "Anil-matcha/AI-Youtube-Shorts-Generator",
+      "stars": 4778
+    },
+    {
+      "full_name": "dramaclaw/dramaclaw",
+      "stars": 4528
+    },
+    {
+      "full_name": "nexu-io/html-video",
+      "stars": 4477
+    },
+    {
+      "full_name": "Robbyant/lingbot-world",
+      "stars": 4398
+    },
+    {
+      "full_name": "EvolvingLMMs-Lab/lmms-eval",
+      "stars": 4383
+    },
+    {
+      "full_name": "ArcReel/ArcReel",
+      "stars": 4269
+    },
+    {
+      "full_name": "GuanYixuan/pyJianYingDraft",
+      "stars": 4251
+    },
+    {
+      "full_name": "SamurAIGPT/Generative-Media-Skills",
+      "stars": 4187
+    },
+    {
+      "full_name": "hao-ai-lab/FastVideo",
+      "stars": 4166
+    },
+    {
+      "full_name": "Lightricks/ComfyUI-LTXVideo",
+      "stars": 4107
+    },
+    {
+      "full_name": "tmoroney/auto-subs",
+      "stars": 4103
+    },
+    {
+      "full_name": "yuanzhongqiao/printfilm",
+      "stars": 3931
+    },
+    {
+      "full_name": "SandAI-org/MAGI-1",
+      "stars": 3774
+    },
+    {
+      "full_name": "thu-ml/TurboDiffusion",
+      "stars": 3628
+    },
+    {
+      "full_name": "GVCLab/PersonaLive",
+      "stars": 3585
+    },
+    {
+      "full_name": "OpenGVLab/Ask-Anything",
+      "stars": 3347
+    },
+    {
+      "full_name": "FireRedTeam/FireRed-OpenStoryline",
+      "stars": 3343
+    },
+    {
+      "full_name": "Djdefrag/QualityScaler",
+      "stars": 3144
+    },
+    {
+      "full_name": "Anil-matcha/awesome-generative-ai-apps",
+      "stars": 3090
+    },
+    {
+      "full_name": "SharpAI/DeepCamera",
+      "stars": 3025
+    },
+    {
+      "full_name": "staxrip/staxrip",
+      "stars": 2972
+    },
+    {
+      "full_name": "Agentchengfeng/chengfeng-videocut-skills",
+      "stars": 2946
+    },
+    {
+      "full_name": "bghira/SimpleTuner",
+      "stars": 2911
+    },
+    {
+      "full_name": "luoluoluo22/jianying-editor-skill",
+      "stars": 2904
+    },
+    {
+      "full_name": "darkzOGx/youtube-automation-agent",
+      "stars": 2795
+    },
+    {
+      "full_name": "FurkanGozukara/Stable-Diffusion",
+      "stars": 2763
+    },
+    {
+      "full_name": "ModelTC/LightX2V",
+      "stars": 2749
+    },
+    {
+      "full_name": "anonfaded/FadCam",
+      "stars": 2735
+    },
+    {
+      "full_name": "YusufB5/ASCILINE",
+      "stars": 2684
+    },
+    {
+      "full_name": "DanielSWolf/rhubarb-lip-sync",
+      "stars": 2587
+    },
+    {
+      "full_name": "NVlabs/LongLive",
+      "stars": 2582
+    },
+    {
+      "full_name": "microsoft/ResearchStudio",
+      "stars": 2563
+    },
+    {
+      "full_name": "vita-epfl/Stable-Video-Infinity",
+      "stars": 2558
+    },
+    {
+      "full_name": "eternityspring/shuohao-skills",
+      "stars": 2415
+    },
+    {
+      "full_name": "snapotter-hq/SnapOtter",
+      "stars": 2388
+    },
+    {
+      "full_name": "zai-org/GLM-V",
+      "stars": 2377
+    },
+    {
+      "full_name": "OpenGVLab/InternVideo",
+      "stars": 2370
+    },
+    {
+      "full_name": "NarratorAI-Studio/narrator-ai-cli-skill",
+      "stars": 2367
+    },
+    {
+      "full_name": "ZeroLu/awesome-seedance",
+      "stars": 2349
+    },
+    {
+      "full_name": "ChenHsing/Awesome-Video-Diffusion-Models",
+      "stars": 2316
+    },
+    {
+      "full_name": "rushindrasinha/youtube-shorts-pipeline",
+      "stars": 2254
+    },
+    {
+      "full_name": "trykimu/videoeditor",
+      "stars": 2198
+    },
+    {
+      "full_name": "getopenscreen/openscreen",
+      "stars": 2174
+    },
+    {
+      "full_name": "zebbern/no-cost-ai",
+      "stars": 2170
+    },
+    {
+      "full_name": "PKU-YuanGroup/Helios",
+      "stars": 2112
+    },
+    {
+      "full_name": "walterlow/freecut",
+      "stars": 2112
+    },
+    {
+      "full_name": "digitalsamba/claude-code-video-toolkit",
+      "stars": 2024
+    },
+    {
+      "full_name": "TianZerL/Anime4KCPP",
+      "stars": 2022
+    },
+    {
+      "full_name": "showlab/Code2Video",
+      "stars": 2009
+    },
+    {
+      "full_name": "leofan90/Awesome-World-Models",
+      "stars": 1990
+    },
+    {
+      "full_name": "Anil-matcha/ai-creator-academy",
+      "stars": 1982
+    },
+    {
+      "full_name": "AcademySoftwareFoundation/OpenTimelineIO",
+      "stars": 1966
+    },
+    {
+      "full_name": "Vchitect/Latte",
+      "stars": 1948
+    },
+    {
+      "full_name": "YouMind-OpenLab/awesome-seedance-2-prompts",
+      "stars": 1918
+    },
+    {
+      "full_name": "visual-layer/fastdup",
+      "stars": 1907
+    },
+    {
+      "full_name": "szczyglis-dev/py-gpt",
+      "stars": 1896
+    },
+    {
+      "full_name": "bugbakery/audapolis",
+      "stars": 1891
+    },
+    {
+      "full_name": "NVIDIA-AI-Blueprints/video-search-and-summarization",
+      "stars": 1834
+    },
+    {
+      "full_name": "mltframework/mlt",
+      "stars": 1834
+    },
+    {
+      "full_name": "OpenImagingLab/FlashVSR",
+      "stars": 1806
+    },
+    {
+      "full_name": "shuyu-labs/BigBanana-AI-Director",
+      "stars": 1797
+    },
+    {
+      "full_name": "IliasHad/edit-mind",
+      "stars": 1792
+    },
+    {
+      "full_name": "HKUDS/VideoAgent",
+      "stars": 1770
+    },
+    {
+      "full_name": "x007xyz/flycut-caption",
+      "stars": 1755
+    },
+    {
+      "full_name": "Vchitect/VBench",
+      "stars": 1751
+    },
+    {
+      "full_name": "HITsz-TMG/VideoClaw",
+      "stars": 1737
+    },
+    {
+      "full_name": "gnipbao/story-to-handdrawn-video",
+      "stars": 1718
+    },
+    {
+      "full_name": "s60sc/ESP32-CAM_MJPEG2SD",
+      "stars": 1707
+    },
+    {
+      "full_name": "jd-opensource/JoyAI-Video-Edit",
+      "stars": 1693
+    },
+    {
+      "full_name": "diffusionstudio/editor",
+      "stars": 1681
+    },
+    {
+      "full_name": "Alisa0808/vox-director",
+      "stars": 1634
+    },
+    {
+      "full_name": "yincongcyincong/MuseBot",
+      "stars": 1623
+    },
+    {
+      "full_name": "Lynpoint/CyberVerse",
+      "stars": 1618
+    },
+    {
+      "full_name": "Agents365-ai/video-podcast-maker",
+      "stars": 1588
+    },
+    {
+      "full_name": "MiniMax-AI/MiniMax-MCP",
+      "stars": 1571
+    },
+    {
+      "full_name": "OpenShot/libopenshot",
+      "stars": 1541
+    },
+    {
+      "full_name": "tin2tin/Pallaidium",
+      "stars": 1523
+    },
+    {
+      "full_name": "bytedance/SALMONN",
+      "stars": 1519
+    },
+    {
+      "full_name": "BrokenSource/DepthFlow",
+      "stars": 1516
+    },
+    {
+      "full_name": "met4citizen/TalkingHead",
+      "stars": 1509
+    },
+    {
+      "full_name": "xuanyustudio/LocalMiniDrama",
+      "stars": 1478
+    },
+    {
+      "full_name": "0xsline/OpenChatCut",
+      "stars": 1461
+    },
+    {
+      "full_name": "nv-tlabs/GEN3C",
+      "stars": 1409
+    },
+    {
+      "full_name": "tejaswigowda/ffmpeg-webCLI",
+      "stars": 1395
+    },
+    {
+      "full_name": "Stonewuu/ai-fusion-video",
+      "stars": 1377
+    },
+    {
+      "full_name": "scraed/LanPaint",
+      "stars": 1368
+    },
+    {
+      "full_name": "zenstory-ai/drama-skills",
+      "stars": 1367
+    },
+    {
+      "full_name": "nvidia-cosmos/cosmos-predict2.5",
+      "stars": 1355
+    },
+    {
+      "full_name": "bytedance/Lance",
+      "stars": 1331
+    },
+    {
+      "full_name": "Yuan-ManX/ai-game-devtools",
+      "stars": 1321
+    },
+    {
+      "full_name": "bytedance/Bernini",
+      "stars": 1291
+    },
+    {
+      "full_name": "plemeri/transparent-background",
+      "stars": 1278
+    },
+    {
+      "full_name": "nyanmisaka/ffmpeg-rockchip",
+      "stars": 1275
+    },
+    {
+      "full_name": "alibaba/Tora",
+      "stars": 1241
+    },
+    {
+      "full_name": "OStudi/short-video-generator-AI",
+      "stars": 1225
+    },
+    {
+      "full_name": "muxinc/next-video",
+      "stars": 1222
+    },
+    {
+      "full_name": "pyang5166/gbro-collage-broll",
+      "stars": 1219
+    },
+    {
+      "full_name": "PurpleDoubleD/locally-uncensored",
+      "stars": 1218
+    },
+    {
+      "full_name": "wladradchenko/wunjo.wladradchenko.ru",
+      "stars": 1169
+    },
+    {
+      "full_name": "etro-js/etro",
+      "stars": 1148
+    },
+    {
+      "full_name": "OpenMOSS/MOVA",
+      "stars": 1105
+    },
+    {
+      "full_name": "pireel/pireel",
+      "stars": 1091
+    },
+    {
+      "full_name": "caydey/ffshare",
+      "stars": 1089
+    },
+    {
+      "full_name": "wide-trace/open-higgsfield",
+      "stars": 1075
+    },
+    {
+      "full_name": "Makememo/MemoAI",
+      "stars": 1058
+    },
+    {
+      "full_name": "SamurAIGPT/muapi-cli",
+      "stars": 1043
+    },
+    {
+      "full_name": "videoflow/videoflow",
+      "stars": 1034
+    },
+    {
+      "full_name": "octimot/StoryToolkitAI",
+      "stars": 1007
+    },
+    {
+      "full_name": "gausian-AI/Gausian_native_editor",
+      "stars": 1006
+    },
+    {
+      "full_name": "jipraks/yt-short-clipper",
+      "stars": 975
+    },
+    {
+      "full_name": "worldbench/awesome-3d-4d-world-models",
+      "stars": 974
+    },
+    {
+      "full_name": "cclank/lanshu-create-ai-presenter-video",
+      "stars": 972
+    },
+    {
+      "full_name": "cuixing158/Awesome-CV-MasterHub",
+      "stars": 972
+    },
+    {
+      "full_name": "ant-research/4DAnyone",
+      "stars": 943
+    },
+    {
+      "full_name": "Robbyant/lingbot-video",
+      "stars": 938
+    },
+    {
+      "full_name": "thu-ml/Causal-Forcing",
+      "stars": 938
+    },
+    {
+      "full_name": "marcelo-earth/generative-manim",
+      "stars": 915
+    },
+    {
+      "full_name": "ddalcu/mlx-serve",
+      "stars": 910
+    },
+    {
+      "full_name": "f0e/blur",
+      "stars": 893
+    },
+    {
+      "full_name": "jeremy-prt/bloub",
+      "stars": 881
+    },
+    {
+      "full_name": "bacalhau-project/bacalhau",
+      "stars": 870
+    },
+    {
+      "full_name": "OpenDCAI/OpenWorldLib",
+      "stars": 864
+    },
+    {
+      "full_name": "1038lab/ComfyUI-QwenVL",
+      "stars": 864
+    },
+    {
+      "full_name": "IgorShadurin/app.yumcut.com",
+      "stars": 864
+    },
+    {
+      "full_name": "wassgha/rescript",
+      "stars": 833
+    },
+    {
+      "full_name": "thu-ml/DiT-Extrapolation",
+      "stars": 825
+    },
+    {
+      "full_name": "EvolvingLMMs-Lab/lmms-engine",
+      "stars": 824
+    },
+    {
+      "full_name": "kandinskylab/kandinsky-5",
+      "stars": 816
+    },
+    {
+      "full_name": "jasmcaus/caer",
+      "stars": 816
+    },
+    {
+      "full_name": "SamurAIGPT/Text-To-Video-AI",
+      "stars": 815
+    },
+    {
+      "full_name": "Haervwe/open-webui-tools",
+      "stars": 801
+    },
+    {
+      "full_name": "NVlabs/rcm",
+      "stars": 794
+    },
+    {
+      "full_name": "beshuaxian/higgsfield-seedance2-jineng",
+      "stars": 788
+    },
+    {
+      "full_name": "WeChatCV/Stand-In",
+      "stars": 786
+    },
+    {
+      "full_name": "NikoDemon80/ComfyUI-H3-Motion-Context",
+      "stars": 782
+    },
+    {
+      "full_name": "haasn/libplacebo",
+      "stars": 776
+    },
+    {
+      "full_name": "mayuelala/Awesome-Controllable-Video-Generation",
+      "stars": 769
+    },
+    {
+      "full_name": "mohyware/clip-js",
+      "stars": 768
+    },
+    {
+      "full_name": "DAVIAN-Robotics/EgoX",
+      "stars": 749
+    },
+    {
+      "full_name": "jianzhnie/awesome-text-to-video",
+      "stars": 741
+    },
+    {
+      "full_name": "nvidia-cosmos/cosmos-transfer2.5",
+      "stars": 730
+    },
+    {
+      "full_name": "yzhang2016/video-generation-survey",
+      "stars": 726
+    },
+    {
+      "full_name": "LucasHJin/vit",
+      "stars": 725
+    },
+    {
+      "full_name": "s1dashu/director",
+      "stars": 723
+    },
+    {
+      "full_name": "simchowitzlabpublic/nano-world-model",
+      "stars": 721
+    },
+    {
+      "full_name": "lidge-jun/ima2-gen",
+      "stars": 720
+    },
+    {
+      "full_name": "devhyper/open-video-editor",
+      "stars": 720
+    },
+    {
+      "full_name": "scikit-video/scikit-video",
+      "stars": 709
+    },
+    {
+      "full_name": "svg-project/Sparse-VideoGen",
+      "stars": 708
+    }
+  ]
+}
