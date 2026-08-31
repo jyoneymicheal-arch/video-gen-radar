@@ -1,58 +1,58 @@
 {
-  "date": "2026-08-30",
-  "generatedAt": "2026-08-30T04:27:41.710Z",
+  "date": "2026-08-31",
+  "generatedAt": "2026-08-31T04:32:04.320Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：接口与集成、流水线与编排、性能与资源占用",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：KrillinAI 推进了接口与集成；dramaclaw 推进了流水线与编排；cangjie-skill 推进了性能与资源占用。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了流水线与编排；hyperframes 推进了流水线与编排；vllm-omni 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "krillinai/KrillinAI",
-      "owner": "krillinai",
-      "name": "KrillinAI",
-      "url": "https://github.com/krillinai/KrillinAI/commit/0a16abf63c2e3ff14721ec713d259810dc7c5681",
-      "date": "2026-08-28",
-      "headline": "KrillinAI 在配置与参数提交了一次大规模重构级改动，主题集中在接口与集成：feat(tts): add multi-provider dubbing support",
-      "approach": "技术方案：commit「feat(tts): add multi-provider dubbing support」落在 cmd/cli/main.go、cmd/cli/main_test.go、config/config-example.toml、config/config.go 等 36 个文件，改动量 +1914 / -369，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 36 个文件（如 cmd/cli/main.go、cmd/cli/main_test.go、config/config-example.toml），新增 1914 行 / 删除 369 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/82e309a2b1b1748e0148efd65743a27092c59dcd",
+      "date": "2026-08-31",
+      "headline": "diffusers 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在流水线与编排：Add LTX-2.5 DFR pipeline (keyframe slots, spatial detailing, tiled temporal rounds)",
+      "approach": "技术方案：commit「Add LTX-2.5 DFR pipeline (keyframe slots, spatial detailing, tiled temporal rounds)」落在 docs/source/en/api/pipelines/ltx2.md、scripts/convert_ltx2_to_diffusers.py、src/diffusers/__init__.py、src/diffusers/models/transformers/transformer_ltx2.py 等 16 个文件，改动量 +5674 / -8，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 16 个文件（如 docs/source/en/api/pipelines/ltx2.md、scripts/convert_ltx2_to_diffusers.py、src/diffusers/__init__.py），新增 5674 行 / 删除 8 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     },
     {
       "index": "02",
-      "repo": "dramaclaw/dramaclaw",
-      "owner": "dramaclaw",
-      "name": "dramaclaw",
-      "url": "https://github.com/dramaclaw/dramaclaw/commit/85a5961a13aa28f1b1fed4cd4bf684943e8ce6c1",
-      "date": "2026-08-28",
-      "headline": "dramaclaw 在前端 / 应用层 + 测试 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：feat(canvas): 图片 / 视频节点的「参考」拾取与提示词素材替换",
-      "approach": "技术方案：commit「feat(canvas): 图片 / 视频节点的「参考」拾取与提示词素材替换」落在 frontend/src/__tests__/features/canvas/anchored-menu-placement.test.ts、frontend/src/__tests__/features/canvas/node-selection.test.ts、frontend/src/__tests__/features/canvas/prompt-mention-material-replace.test.tsx、frontend/src/__tests__/features/canvas/reference-pick.test.ts 等 29 个文件，改动量 +2563 / -133，归类为「流水线与编排」。",
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/3337cc899071c40e0bf3c6bc030d91c499c639d0",
+      "date": "2026-08-30",
+      "headline": "hyperframes 在前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：feat(studio): give an agent eyes with studio_frame",
+      "approach": "技术方案：commit「feat(studio): give an agent eyes with studio_frame」落在 packages/studio/src/webmcp/StudioAgentTools.tsx、packages/studio/src/webmcp/tools/frameTools.test.ts、packages/studio/src/webmcp/tools/frameTools.ts、packages/studio/src/webmcp/tools/inspectTools.test.ts 等 9 个文件，改动量 +860 / -61，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 29 个文件（如 frontend/src/__tests__/features/canvas/anchored-menu-placement.test.ts、frontend/src/__tests__/features/canvas/node-selection.test.ts、frontend/src/__tests__/features/canvas/prompt-mention-material-replace.test.tsx），新增 2563 行 / 删除 133 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 9 个文件（如 packages/studio/src/webmcp/StudioAgentTools.tsx、packages/studio/src/webmcp/tools/frameTools.test.ts、packages/studio/src/webmcp/tools/frameTools.ts），新增 860 行 / 删除 61 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
       "index": "03",
-      "repo": "kangarooking/cangjie-skill",
-      "owner": "kangarooking",
-      "name": "cangjie-skill",
-      "url": "https://github.com/kangarooking/cangjie-skill/commit/4b922d77288767802715e47eb76e97d65041083e",
-      "date": "2026-08-30",
-      "headline": "cangjie-skill 在配置与参数 + 文档 + 测试提交了一次大规模重构级改动，主题集中在性能与资源占用：feat: release cangjie skill v2.5.0",
-      "approach": "技术方案：commit「feat: release cangjie skill v2.5.0」落在 .github/workflows/pipeline-check.yml、.gitignore、CHANGELOG.md、README.md 等 297 个文件，改动量 +28508 / -549，归类为「性能与资源占用」。",
-      "why": "为什么重要：性能改动决定这类工具能否在消费级硬件或规模化任务里真正跑起来。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 297 个文件（如 .github/workflows/pipeline-check.yml、.gitignore、CHANGELOG.md），新增 28508 行 / 删除 549 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "性能与资源占用"
+      "repo": "vllm-project/vllm-omni",
+      "owner": "vllm-project",
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/86b85c078bc041e04aee4c4d9167fb10fb1994c7",
+      "date": "2026-08-31",
+      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：[Feature][MiniMax-H3] Fuse the FastH3 four-step adapter at load time",
+      "approach": "技术方案：commit「[Feature][MiniMax-H3] Fuse the FastH3 four-step adapter at load time」落在 recipes/MiniMaxAI/MiniMax-H3.md、tests/diffusion/distributed/test_a2a_permute.py、tests/diffusion/models/minimax_h3/test_minimax_h3_contract.py、tests/diffusion/models/minimax_h3/test_minimax_h3_fasth3.py 等 13 个文件，改动量 +1420 / -54，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 recipes/MiniMaxAI/MiniMax-H3.md、tests/diffusion/distributed/test_a2a_permute.py、tests/diffusion/models/minimax_h3/test_minimax_h3_contract.py），新增 1420 行 / 删除 54 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     }
   ],
   "watch": {
-    "repo": "hao-ai-lab/FastVideo",
-    "url": "https://github.com/hao-ai-lab/FastVideo/commit/3987b9ddcd102ecfebb73900a3f306701487b46b",
-    "date": "2026-08-28",
-    "text": "FastVideo 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在接口与集成：[feat] Align multimodal OpenAI serving APIs",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1812 / -424。"
+    "repo": "kangarooking/cangjie-skill",
+    "url": "https://github.com/kangarooking/cangjie-skill/commit/4b922d77288767802715e47eb76e97d65041083e",
+    "date": "2026-08-30",
+    "text": "cangjie-skill 在配置与参数 + 文档 + 测试提交了一次大规模重构级改动，主题集中在性能与资源占用：feat: release cangjie skill v2.5.0",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +28508 / -549。"
   },
   "scanned": 26,
-  "candidates": 50
+  "candidates": 49
 }
