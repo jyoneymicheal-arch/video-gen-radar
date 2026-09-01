@@ -1,58 +1,58 @@
 {
-  "date": "2026-08-31",
-  "generatedAt": "2026-08-31T04:32:04.320Z",
+  "date": "2026-09-01",
+  "generatedAt": "2026-09-01T04:14:31.942Z",
   "lede": {
-    "bold": "今天的开源信号集中在流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了流水线与编排；hyperframes 推进了流水线与编排；vllm-omni 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：交互与可控性、流水线与编排、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了交互与可控性；diffusers 推进了流水线与编排；FastVideo 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/82e309a2b1b1748e0148efd65743a27092c59dcd",
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/619ab518959830937c2010ba7e6aa7c73bd71dd7",
       "date": "2026-08-31",
-      "headline": "diffusers 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在流水线与编排：Add LTX-2.5 DFR pipeline (keyframe slots, spatial detailing, tiled temporal rounds)",
-      "approach": "技术方案：commit「Add LTX-2.5 DFR pipeline (keyframe slots, spatial detailing, tiled temporal rounds)」落在 docs/source/en/api/pipelines/ltx2.md、scripts/convert_ltx2_to_diffusers.py、src/diffusers/__init__.py、src/diffusers/models/transformers/transformer_ltx2.py 等 16 个文件，改动量 +5674 / -8，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 16 个文件（如 docs/source/en/api/pipelines/ltx2.md、scripts/convert_ltx2_to_diffusers.py、src/diffusers/__init__.py），新增 5674 行 / 删除 8 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "headline": "dramaclaw 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在交互与可控性：feat(ui): 虾导消息与画布体验打磨（承接 #417）",
+      "approach": "技术方案：commit「feat(ui): 虾导消息与画布体验打磨（承接 #417）」落在 docs/changes/2026-08-28.md、frontend/public/images/avatar-claw.png、frontend/public/images/avatar-motion.mp4、frontend/public/images/xia-dao-launcher.mp4 等 24 个文件，改动量 +839 / -400，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 24 个文件（如 docs/changes/2026-08-28.md、frontend/public/images/avatar-claw.png、frontend/public/images/avatar-motion.mp4），新增 839 行 / 删除 400 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     },
     {
       "index": "02",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/3337cc899071c40e0bf3c6bc030d91c499c639d0",
-      "date": "2026-08-30",
-      "headline": "hyperframes 在前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：feat(studio): give an agent eyes with studio_frame",
-      "approach": "技术方案：commit「feat(studio): give an agent eyes with studio_frame」落在 packages/studio/src/webmcp/StudioAgentTools.tsx、packages/studio/src/webmcp/tools/frameTools.test.ts、packages/studio/src/webmcp/tools/frameTools.ts、packages/studio/src/webmcp/tools/inspectTools.test.ts 等 9 个文件，改动量 +860 / -61，归类为「流水线与编排」。",
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/61a11f2191b504a2bd2e67ace751f6c65fa5ab8e",
+      "date": "2026-09-01",
+      "headline": "diffusers 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：[tests] refactor o and p series pipeline tests",
+      "approach": "技术方案：commit「[tests] refactor o and p series pipeline tests」落在 .ai/references/testing.md、src/diffusers/pipelines/omnigen/pipeline_omnigen.py、tests/pipelines/animatediff/test_animatediff.py、tests/pipelines/animatediff/test_animatediff_controlnet.py 等 36 个文件，改动量 +1796 / -3095，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 9 个文件（如 packages/studio/src/webmcp/StudioAgentTools.tsx、packages/studio/src/webmcp/tools/frameTools.test.ts、packages/studio/src/webmcp/tools/frameTools.ts），新增 860 行 / 删除 61 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 36 个文件（如 .ai/references/testing.md、src/diffusers/pipelines/omnigen/pipeline_omnigen.py、tests/pipelines/animatediff/test_animatediff.py），新增 1796 行 / 删除 3095 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
       "index": "03",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/86b85c078bc041e04aee4c4d9167fb10fb1994c7",
+      "repo": "hao-ai-lab/FastVideo",
+      "owner": "hao-ai-lab",
+      "name": "FastVideo",
+      "url": "https://github.com/hao-ai-lab/FastVideo/commit/620bc36dc44fab81e6c266445b61c45d6a8b18ad",
       "date": "2026-08-31",
-      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：[Feature][MiniMax-H3] Fuse the FastH3 four-step adapter at load time",
-      "approach": "技术方案：commit「[Feature][MiniMax-H3] Fuse the FastH3 four-step adapter at load time」落在 recipes/MiniMaxAI/MiniMax-H3.md、tests/diffusion/distributed/test_a2a_permute.py、tests/diffusion/models/minimax_h3/test_minimax_h3_contract.py、tests/diffusion/models/minimax_h3/test_minimax_h3_fasth3.py 等 13 个文件，改动量 +1420 / -54，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 recipes/MiniMaxAI/MiniMax-H3.md、tests/diffusion/distributed/test_a2a_permute.py、tests/diffusion/models/minimax_h3/test_minimax_h3_contract.py），新增 1420 行 / 删除 54 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "headline": "FastVideo 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在模型与推理链路：[docs]: Cookbook catalog improvements",
+      "approach": "技术方案：commit「[docs]: Cookbook catalog improvements」落在 docs/assets/cookbook-recipes.json、docs/assets/cookbook.js、docs/assets/custom.css、docs/cookbook/cosmos.md 等 22 个文件，改动量 +750 / -387，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 22 个文件（如 docs/assets/cookbook-recipes.json、docs/assets/cookbook.js、docs/assets/custom.css），新增 750 行 / 删除 387 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "kangarooking/cangjie-skill",
-    "url": "https://github.com/kangarooking/cangjie-skill/commit/4b922d77288767802715e47eb76e97d65041083e",
-    "date": "2026-08-30",
-    "text": "cangjie-skill 在配置与参数 + 文档 + 测试提交了一次大规模重构级改动，主题集中在性能与资源占用：feat: release cangjie skill v2.5.0",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +28508 / -549。"
+    "repo": "wiltodelta/remove-ai-watermarks",
+    "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/11ca7d6054ce7da60c768dc4d805f8451393bacf",
+    "date": "2026-08-31",
+    "text": "remove-ai-watermarks 在文档提交了一次大规模重构级改动，主题集中在功能演进：Add frozen photo-classifier research archive to docs",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +2725 / -1。"
   },
   "scanned": 26,
-  "candidates": 49
+  "candidates": 60
 }
