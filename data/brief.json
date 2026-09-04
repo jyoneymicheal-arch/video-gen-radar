@@ -1,9 +1,9 @@
 {
-  "date": "2026-09-03",
-  "generatedAt": "2026-09-03T03:37:17.258Z",
+  "date": "2026-09-04",
+  "generatedAt": "2026-09-04T03:37:08.667Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：交互与可控性、接口与集成",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Open-Generative-AI 推进了交互与可控性；gyroflow 推进了交互与可控性；video-shotcraft 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：交互与可控性、模型与推理链路、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Open-Generative-AI 推进了交互与可控性；vllm-omni 推进了模型与推理链路；dramaclaw 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -21,38 +21,38 @@
     },
     {
       "index": "02",
-      "repo": "gyroflow/gyroflow",
-      "owner": "gyroflow",
-      "name": "gyroflow",
-      "url": "https://github.com/gyroflow/gyroflow/commit/25bceebf8ac024638435460f2c00869a569dce65",
-      "date": "2026-09-01",
-      "headline": "gyroflow 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Add serbian language",
-      "approach": "技术方案：commit「Add serbian language」落在 Cargo.lock、resources/translations/_extract_crowdin.bat、resources/translations/cs.qm、resources/translations/cs.ts 等 51 个文件，改动量 +18592 / -10880，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 51 个文件（如 Cargo.lock、resources/translations/_extract_crowdin.bat、resources/translations/cs.qm），新增 18592 行 / 删除 10880 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "repo": "vllm-project/vllm-omni",
+      "owner": "vllm-project",
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/e43c7875445e3b5efc51f2eb5d20080980909914",
+      "date": "2026-09-04",
+      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Add BAGEL step execution and continuous batching",
+      "approach": "技术方案：commit「[Model] Add BAGEL step execution and continuous batching」落在 docs/design/feature/diffusion_continuous_batching.md、docs/user_guide/diffusion/execution_modes.md、docs/user_guide/diffusion_features.md、docs/user_guide/examples/online_serving/bagel.md 等 24 个文件，改动量 +1965 / -108，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 24 个文件（如 docs/design/feature/diffusion_continuous_batching.md、docs/user_guide/diffusion/execution_modes.md、docs/user_guide/diffusion_features.md），新增 1965 行 / 删除 108 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "03",
-      "repo": "Vincentwei1021/video-shotcraft",
-      "owner": "Vincentwei1021",
-      "name": "video-shotcraft",
-      "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/6c116cbd24eeb43c99d396696b509f8d88e58789",
-      "date": "2026-09-01",
-      "headline": "video-shotcraft 在文档 + 服务端接口 + 配置与参数提交了一次成块的结构性改动，主题集中在接口与集成：feat: 新增两张镜头卡——环形卡阵标题开场 / 首词推近组句",
-      "approach": "技术方案：commit「feat: 新增两张镜头卡——环形卡阵标题开场 / 首词推近组句」落在 README.md、README_CN.md、README_JA.md、SKILL.md 等 15 个文件，改动量 +1166 / -36，归类为「接口与集成」。",
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/301a0d4e1207d6923bcb29fada815824315e7119",
+      "date": "2026-09-03",
+      "headline": "dramaclaw 在Python 后端 / 模型侧 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在接口与集成：fix: move blocking route work off event loop",
+      "approach": "技术方案：commit「fix: move blocking route work off event loop」落在 license-inventory.csv、src/novelvideo/api/app.py、src/novelvideo/api/routes/characters.py、src/novelvideo/api/routes/episodes.py 等 26 个文件，改动量 +6479 / -477，归类为「接口与集成」。",
       "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 15 个文件（如 README.md、README_CN.md、README_JA.md），新增 1166 行 / 删除 36 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 26 个文件（如 license-inventory.csv、src/novelvideo/api/app.py、src/novelvideo/api/routes/characters.py），新增 6479 行 / 删除 477 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "YILS-LIN/short-video-factory",
-    "url": "https://github.com/YILS-LIN/short-video-factory/commit/2b08227bd8af600ea11eb74b9faf2ace6dbbb074",
-    "date": "2026-09-01",
-    "text": "short-video-factory 在配置与参数 + 前端 / 应用层 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(app): 新增字幕渲染引擎",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1122 / -29。"
+    "repo": "wiltodelta/remove-ai-watermarks",
+    "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/d391cc42d1435dfd930d7388b5790039672c5d13",
+    "date": "2026-09-03",
+    "text": "remove-ai-watermarks 在文档 + 服务端接口 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在接口与集成：Add post-fill validation for visible watermarks",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +498 / -29。"
   },
   "scanned": 26,
-  "candidates": 50
+  "candidates": 39
 }
