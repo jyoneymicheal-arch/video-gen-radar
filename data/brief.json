@@ -1,58 +1,58 @@
 {
-  "date": "2026-09-04",
-  "generatedAt": "2026-09-04T03:37:08.667Z",
+  "date": "2026-09-05",
+  "generatedAt": "2026-09-05T03:37:20.692Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：交互与可控性、模型与推理链路、接口与集成",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Open-Generative-AI 推进了交互与可控性；vllm-omni 推进了模型与推理链路；dramaclaw 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：接口与集成、功能演进、稳定性与容错",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：remove-ai-watermarks 推进了接口与集成；diffusers 推进了功能演进；gyroflow 推进了稳定性与容错。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "Anil-matcha/Open-Generative-AI",
-      "owner": "Anil-matcha",
-      "name": "Open-Generative-AI",
-      "url": "https://github.com/Anil-matcha/Open-Generative-AI/commit/4a1d93411806df398bdeb94827678d1536ad38a9",
-      "date": "2026-09-02",
-      "headline": "Open-Generative-AI 在前端 / 应用层 + 界面组件 + 配置与参数提交了一次大规模重构级改动，主题集中在交互与可控性：Add Chinese (zh) localization support, extensible to future locales",
-      "approach": "技术方案：commit「Add Chinese (zh) localization support, extensible to future locales」落在 app/layout.js、app/zh/assistant/page.js、app/zh/page.js、app/zh/studio/[[...slug]]/page.js 等 53 个文件，改动量 +3123 / -809，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 53 个文件（如 app/layout.js、app/zh/assistant/page.js、app/zh/page.js），新增 3123 行 / 删除 809 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "repo": "wiltodelta/remove-ai-watermarks",
+      "owner": "wiltodelta",
+      "name": "remove-ai-watermarks",
+      "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/d391cc42d1435dfd930d7388b5790039672c5d13",
+      "date": "2026-09-03",
+      "headline": "remove-ai-watermarks 在文档 + 服务端接口 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在接口与集成：Add post-fill validation for visible watermarks",
+      "approach": "技术方案：commit「Add post-fill validation for visible watermarks」落在 README.md、docs/cli.md、docs/known-limitations.md、docs/module-internals.md 等 12 个文件，改动量 +498 / -29，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 12 个文件（如 README.md、docs/cli.md、docs/known-limitations.md），新增 498 行 / 删除 29 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     },
     {
       "index": "02",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/e43c7875445e3b5efc51f2eb5d20080980909914",
-      "date": "2026-09-04",
-      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Add BAGEL step execution and continuous batching",
-      "approach": "技术方案：commit「[Model] Add BAGEL step execution and continuous batching」落在 docs/design/feature/diffusion_continuous_batching.md、docs/user_guide/diffusion/execution_modes.md、docs/user_guide/diffusion_features.md、docs/user_guide/examples/online_serving/bagel.md 等 24 个文件，改动量 +1965 / -108，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 24 个文件（如 docs/design/feature/diffusion_continuous_batching.md、docs/user_guide/diffusion/execution_modes.md、docs/user_guide/diffusion_features.md），新增 1965 行 / 删除 108 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/253be5e64549d7859853892085dc8f686a1c6a3f",
+      "date": "2026-09-05",
+      "headline": "diffusers 在Python 后端 / 模型侧 + 测试提交了一次成块的结构性改动，主题集中在功能演进：add modular blockset for wan 2.2 vace",
+      "approach": "技术方案：commit「add modular blockset for wan 2.2 vace」落在 src/diffusers/__init__.py、src/diffusers/modular_pipelines/__init__.py、src/diffusers/modular_pipelines/modular_pipeline.py、src/diffusers/modular_pipelines/wan/__init__.py 等 14 个文件，改动量 +809 / -3，归类为「功能演进」。",
+      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 14 个文件（如 src/diffusers/__init__.py、src/diffusers/modular_pipelines/__init__.py、src/diffusers/modular_pipelines/modular_pipeline.py），新增 809 行 / 删除 3 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "功能演进"
     },
     {
       "index": "03",
-      "repo": "dramaclaw/dramaclaw",
-      "owner": "dramaclaw",
-      "name": "dramaclaw",
-      "url": "https://github.com/dramaclaw/dramaclaw/commit/301a0d4e1207d6923bcb29fada815824315e7119",
-      "date": "2026-09-03",
-      "headline": "dramaclaw 在Python 后端 / 模型侧 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在接口与集成：fix: move blocking route work off event loop",
-      "approach": "技术方案：commit「fix: move blocking route work off event loop」落在 license-inventory.csv、src/novelvideo/api/app.py、src/novelvideo/api/routes/characters.py、src/novelvideo/api/routes/episodes.py 等 26 个文件，改动量 +6479 / -477，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 26 个文件（如 license-inventory.csv、src/novelvideo/api/app.py、src/novelvideo/api/routes/characters.py），新增 6479 行 / 删除 477 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
+      "repo": "gyroflow/gyroflow",
+      "owner": "gyroflow",
+      "name": "gyroflow",
+      "url": "https://github.com/gyroflow/gyroflow/commit/d918ab3594e539f25a67a9f1d2b8e042798f61f7",
+      "date": "2026-09-04",
+      "headline": "gyroflow 在配置与参数 + 底层内核 / 算子 + 界面组件提交了一次大规模重构级改动，主题集中在稳定性与容错：Fix all Sony issues, add breathing compensation and fix focal length smoothing. Fixes #849",
+      "approach": "技术方案：commit「Fix all Sony issues, add breathing compensation and fix focal length smoothing. Fixes #849」落在 Cargo.lock、src/controller.rs、src/core/Cargo.lock、src/core/Cargo.toml 等 69 个文件，改动量 +5617 / -2844，归类为「稳定性与容错」。",
+      "why": "为什么重要：持续的容错修复通常出现在真实用户量上来之后，是投产程度的侧面证据。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 69 个文件（如 Cargo.lock、src/controller.rs、src/core/Cargo.lock），新增 5617 行 / 删除 2844 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "稳定性与容错"
     }
   ],
   "watch": {
-    "repo": "wiltodelta/remove-ai-watermarks",
-    "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/d391cc42d1435dfd930d7388b5790039672c5d13",
-    "date": "2026-09-03",
-    "text": "remove-ai-watermarks 在文档 + 服务端接口 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在接口与集成：Add post-fill validation for visible watermarks",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +498 / -29。"
+    "repo": "heygen-com/hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes/commit/64ce9fdf1f67321d067ce91bb22fc2f7925df3c9",
+    "date": "2026-09-05",
+    "text": "hyperframes 在配置与参数 + 文档 + 服务端接口提交了一次实质性改动，主题集中在接口与集成：chore: release v0.8.28",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +153 / -16。"
   },
   "scanned": 26,
-  "candidates": 39
+  "candidates": 45
 }
