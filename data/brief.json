@@ -1,9 +1,9 @@
 {
-  "date": "2026-09-08",
-  "generatedAt": "2026-09-08T03:43:23.478Z",
+  "date": "2026-09-09",
+  "generatedAt": "2026-09-09T03:48:31.883Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：流水线与编排、接口与集成、交互与可控性",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenCreator 推进了流水线与编排；SmartSub 推进了接口与集成；hyperframes 推进了交互与可控性。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：流水线与编排、交互与可控性",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenCreator 推进了流水线与编排；openshot-qt 推进了交互与可控性；dramaclaw 推进了交互与可控性。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -21,38 +21,38 @@
     },
     {
       "index": "02",
-      "repo": "buxuku/SmartSub",
-      "owner": "buxuku",
-      "name": "SmartSub",
-      "url": "https://github.com/buxuku/SmartSub/commit/7382716852d5b615df9cf6e3bb73a6062bcb3cc5",
-      "date": "2026-09-06",
-      "headline": "SmartSub 在服务端接口 + 配置与参数 + 界面组件提交了一次大规模重构级改动，主题集中在接口与集成：Feat/issue 428 provider fallback",
-      "approach": "技术方案：commit「Feat/issue 428 provider fallback」落在 main/helpers/fileProcessor.ts、main/helpers/ipcParameterHandlers.ts、main/helpers/ipcProofreadHandlers.ts、main/helpers/parameterProcessor.ts 等 32 个文件，改动量 +2460 / -206，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 32 个文件（如 main/helpers/fileProcessor.ts、main/helpers/ipcParameterHandlers.ts、main/helpers/ipcProofreadHandlers.ts），新增 2460 行 / 删除 206 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
+      "repo": "OpenShot/openshot-qt",
+      "owner": "OpenShot",
+      "name": "openshot-qt",
+      "url": "https://github.com/OpenShot/openshot-qt/commit/a0aacd27dc849c968ca85a83fd18270fcc66f5b3",
+      "date": "2026-09-08",
+      "headline": "openshot-qt 在Python 后端 / 模型侧 + 配置与参数 + 测试提交了一次成块的结构性改动，主题集中在交互与可控性：Add shared feedback and update notification banners",
+      "approach": "技术方案：commit「Add shared feedback and update notification banners」落在 freeze.py、installer/version_parser.py、src/classes/app.py、src/classes/distribution.py 等 26 个文件，改动量 +1383 / -41，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 26 个文件（如 freeze.py、installer/version_parser.py、src/classes/app.py），新增 1383 行 / 删除 41 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     },
     {
       "index": "03",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/e5d89f770fbe01d8c243999dac59f3c39a62d66d",
-      "date": "2026-09-08",
-      "headline": "hyperframes 在前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在交互与可控性：feat(check): flag connectors that point at nothing and stylesheets that leak into the frame",
-      "approach": "技术方案：commit「feat(check): flag connectors that point at nothing and stylesheets that leak into the frame」落在 packages/cli/src/commands/layout-audit.browser.js、packages/cli/src/commands/layout-audit.browser.test.ts、packages/cli/src/utils/checkBrowser.ts、packages/cli/src/utils/layoutAudit.test.ts 等 7 个文件，改动量 +702 / -6，归类为「交互与可控性」。",
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/8e7caac110ef94696c0db980f72f6821ac4264fd",
+      "date": "2026-09-09",
+      "headline": "dramaclaw 在配置与参数 + 前端 / 应用层 + 测试提交了一次大规模重构级改动，主题集中在交互与可控性：feat(i18n): add Vietnamese (vi) locale",
+      "approach": "技术方案：commit「feat(i18n): add Vietnamese (vi) locale」落在 frontend/public/locales/en/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json、frontend/src/__tests__/i18n/locales-json.test.ts 等 12 个文件，改动量 +7520 / -46，归类为「交互与可控性」。",
       "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 7 个文件（如 packages/cli/src/commands/layout-audit.browser.js、packages/cli/src/commands/layout-audit.browser.test.ts、packages/cli/src/utils/checkBrowser.ts），新增 702 行 / 删除 6 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 12 个文件（如 frontend/public/locales/en/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json），新增 7520 行 / 删除 46 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "交互与可控性"
     }
   ],
   "watch": {
-    "repo": "zhouxiaoka/autoclip",
-    "url": "https://github.com/zhouxiaoka/autoclip/commit/aaf863bbd7bba99c64bc53284d41c0ed19034387",
-    "date": "2026-09-07",
-    "text": "autoclip 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次大规模重构级改动，主题集中在流水线与编排：出片质量工程化 + 发布导出：按时长切、对齐字幕、渲 9:16 成片",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +2198 / -71。"
+    "repo": "jub0t/Concat",
+    "url": "https://github.com/jub0t/Concat/commit/315ecdd52abfc9ea0cc27e96988a66a98923829f",
+    "date": "2026-09-08",
+    "text": "Concat 在文档 + 配置与参数 + 服务端接口提交了一次大规模重构级改动，主题集中在接口与集成：Add the Concat API as one dispatcher crate",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1503 / -60。"
   },
   "scanned": 26,
-  "candidates": 43
+  "candidates": 56
 }
