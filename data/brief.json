@@ -1,58 +1,58 @@
 {
-  "date": "2026-09-16",
-  "generatedAt": "2026-09-16T03:59:14.163Z",
+  "date": "2026-09-17",
+  "generatedAt": "2026-09-17T04:05:54.005Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：接口与集成、编辑与后期能力",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了接口与集成；Concat 推进了编辑与后期能力；diffusers 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、交互与可控性、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；FFmpegFreeUI 推进了交互与可控性；ArcReel 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "dramaclaw/dramaclaw",
-      "owner": "dramaclaw",
-      "name": "dramaclaw",
-      "url": "https://github.com/dramaclaw/dramaclaw/commit/93193dc9789ef259d92b6f5755934006e06c5ca2",
-      "date": "2026-09-14",
-      "headline": "dramaclaw 在配置与参数 + 前端 / 应用层 + 界面组件提交了一次大规模重构级改动，主题集中在接口与集成：feat: 新增积分充值与独立结账体验",
-      "approach": "技术方案：commit「feat: 新增积分充值与独立结账体验」落在 frontend/public/locales/en/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json、frontend/src/__tests__/components/credits/credit-center-payment-visibility.test.tsx 等 32 个文件，改动量 +4858 / -1121，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 32 个文件（如 frontend/public/locales/en/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json），新增 4858 行 / 删除 1121 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
-    },
-    {
-      "index": "02",
-      "repo": "jub0t/Concat",
-      "owner": "jub0t",
-      "name": "Concat",
-      "url": "https://github.com/jub0t/Concat/commit/9ef1b9466e8cdf75e8b3b4bbf3eda4eee5b08652",
-      "date": "2026-09-15",
-      "headline": "Concat 在服务端接口 + 配置与参数 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(export): HEVC and AV1, ten-bit, colour tags, and HDR sources brought in right",
-      "approach": "技术方案：commit「feat(export): HEVC and AV1, ten-bit, colour tags, and HDR sources brought in right」落在 engine/crates/concat-api/src/lib.rs、engine/crates/concat-api/src/message.rs、engine/crates/concat-export/src/lib.rs、engine/crates/concat-host/src/export.rs 等 24 个文件，改动量 +773 / -50，归类为「编辑与后期能力」。",
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/71bb88719e10ab7002dafd61478d2c84c255ba42",
+      "date": "2026-09-17",
+      "headline": "hyperframes 在前端 / 应用层 + 测试 + 服务端接口提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(telemetry): render output-shape, adapter, count, and environment properties",
+      "approach": "技术方案：commit「feat(telemetry): render output-shape, adapter, count, and environment properties」落在 packages/cli/src/browser/preflight.test.ts、packages/cli/src/browser/preflight.ts、packages/cli/src/commands/render.ts、packages/cli/src/commands/render/execute.ts 等 15 个文件，改动量 +1373 / -38，归类为「编辑与后期能力」。",
       "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 24 个文件（如 engine/crates/concat-api/src/lib.rs、engine/crates/concat-api/src/message.rs、engine/crates/concat-export/src/lib.rs），新增 773 行 / 删除 50 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 15 个文件（如 packages/cli/src/browser/preflight.test.ts、packages/cli/src/browser/preflight.ts、packages/cli/src/commands/render.ts），新增 1373 行 / 删除 38 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "编辑与后期能力"
     },
     {
+      "index": "02",
+      "repo": "Lake1059/FFmpegFreeUI",
+      "owner": "Lake1059",
+      "name": "FFmpegFreeUI",
+      "url": "https://github.com/Lake1059/FFmpegFreeUI/commit/456dd9bee19689c6c91e89b0955a758a9ed34ac0",
+      "date": "2026-09-16",
+      "headline": "FFmpegFreeUI 在测试 + 文档提交了一次成块的结构性改动，主题集中在交互与可控性：feat(ui): refine light theme and add VMAF AUTO",
+      "approach": "技术方案：commit「feat(ui): refine light theme and add VMAF AUTO」落在 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/界面主题_v6.vb、FFmpegFreeUI/功能/编码队列展示策略_v6.vb、FFmpegFreeUI/界面 v6 主页面/Form_v6_编码队列.vb 等 13 个文件，改动量 +984 / -142，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/界面主题_v6.vb、FFmpegFreeUI/功能/编码队列展示策略_v6.vb），新增 984 行 / 删除 142 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
+    },
+    {
       "index": "03",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/759164b7ad116e091e9d3e222211c9aa27d835f6",
-      "date": "2026-09-14",
-      "headline": "diffusers 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在接口与集成：[Cosmos3] Mixed W8A8/W8A16 denoising for ModelOpt FP8 checkpoints",
-      "approach": "技术方案：commit「[Cosmos3] Mixed W8A8/W8A16 denoising for ModelOpt FP8 checkpoints」落在 docs/source/en/api/pipelines/cosmos3.md、src/diffusers/modular_pipelines/cosmos/denoise.py、src/diffusers/modular_pipelines/cosmos/modular_blocks_cosmos3.py、src/diffusers/modular_pipelines/cosmos/modular_blocks_cosmos3_distilled.py 等 7 个文件，改动量 +966 / -130，归类为「接口与集成」。",
+      "repo": "ArcReel/ArcReel",
+      "owner": "ArcReel",
+      "name": "ArcReel",
+      "url": "https://github.com/ArcReel/ArcReel/commit/927d1125e46e9e6af6a2f0cd2f6ecaf1cedd1d6e",
+      "date": "2026-09-16",
+      "headline": "ArcReel 在文档 + 前端 / 应用层 + 界面组件提交了一次大规模重构级改动，主题集中在接口与集成：feat(market): 支持生成校验市场源并提示端点版本要求",
+      "approach": "技术方案：commit「feat(market): 支持生成校验市场源并提示端点版本要求」落在 CONTRIBUTING.md、agent_runtime_profile/.claude/skills/adapt-custom-endpoint/references/definition-format.md、frontend/src/components/pages/settings/endpoints/EndpointImportDialog.test.tsx、frontend/src/components/pages/settings/endpoints/EndpointImportDialog.tsx 等 39 个文件，改动量 +1794 / -16，归类为「接口与集成」。",
       "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 7 个文件（如 docs/source/en/api/pipelines/cosmos3.md、src/diffusers/modular_pipelines/cosmos/denoise.py、src/diffusers/modular_pipelines/cosmos/modular_blocks_cosmos3.py），新增 966 行 / 删除 130 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 39 个文件（如 CONTRIBUTING.md、agent_runtime_profile/.claude/skills/adapt-custom-endpoint/references/definition-format.md、frontend/src/components/pages/settings/endpoints/EndpointImportDialog.test.tsx），新增 1794 行 / 删除 16 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "OpenShot/openshot-qt",
-    "url": "https://github.com/OpenShot/openshot-qt/commit/83beceef8cad2e21254a2aab969cd1e490c1dfee",
-    "date": "2026-09-15",
-    "text": "openshot-qt 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在交互与可控性：Configure separate UI and engine debug logging without ZeroMQ",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +756 / -125。"
+    "repo": "wiltodelta/remove-ai-watermarks",
+    "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/c7021b900b9721b931d2c6a9f17b0ffa9c7b61bd",
+    "date": "2026-09-16",
+    "text": "remove-ai-watermarks 在文档 + 服务端接口 + 配置与参数提交了一次成块的结构性改动，主题集中在流水线与编排：Add source pipeline classifier runtime",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +607 / -70。"
   },
   "scanned": 26,
-  "candidates": 55
+  "candidates": 59
 }
