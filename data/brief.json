@@ -1,13 +1,26 @@
 {
-  "date": "2026-09-19",
-  "generatedAt": "2026-09-19T03:48:45.141Z",
+  "date": "2026-09-20",
+  "generatedAt": "2026-09-20T04:05:11.430Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：接口与集成、编辑与后期能力",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了接口与集成；hypit 推进了编辑与后期能力；ArcReel 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；diffusers 推进了接口与集成；ArcReel 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/5262062e7be20b26a7c1a4ce4be2ec3831f151d6",
+      "date": "2026-09-20",
+      "headline": "hyperframes 在前端 / 应用层 + 界面组件 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(studio): export timeline editing for a host outside EditorShell",
+      "approach": "技术方案：commit「feat(studio): export timeline editing for a host outside EditorShell」落在 packages/studio/src/components/nle/TimelinePane.tsx、packages/studio/src/hooks/timelineAudioGroupCreate.ts、packages/studio/src/hooks/timelineAudioGroupVolume.ts、packages/studio/src/hooks/timelineEditPermission.ts 等 26 个文件，改动量 +1678 / -227，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 26 个文件（如 packages/studio/src/components/nle/TimelinePane.tsx、packages/studio/src/hooks/timelineAudioGroupCreate.ts、packages/studio/src/hooks/timelineAudioGroupVolume.ts），新增 1678 行 / 删除 227 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
+    },
+    {
+      "index": "02",
       "repo": "huggingface/diffusers",
       "owner": "huggingface",
       "name": "diffusers",
@@ -18,19 +31,6 @@
       "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 19 个文件（如 docs/source/en/_toctree.yml、docs/source/en/api/models/autoencoderkl_qwenimage21.md、docs/source/en/api/models/qwenimage21_transformer2d.md），新增 4364 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "接口与集成"
-    },
-    {
-      "index": "02",
-      "repo": "hypit-ai/hypit",
-      "owner": "hypit-ai",
-      "name": "hypit",
-      "url": "https://github.com/hypit-ai/hypit/commit/a6f84f55646355782755b464b812bb1282694e81",
-      "date": "2026-09-18",
-      "headline": "hypit 在文档 + 前端 / 应用层 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(production): inspect frames and prepare retained performances",
-      "approach": "技术方案：commit「feat(production): inspect frames and prepare retained performances」落在 docs/guide/studio-companion-architecture.md、docs/guide/studio-temporal-windows.md、docs/quickstart/composition.md、docs/quickstart/preview.md 等 71 个文件，改动量 +1504 / -425，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 71 个文件（如 docs/guide/studio-companion-architecture.md、docs/guide/studio-temporal-windows.md、docs/quickstart/composition.md），新增 1504 行 / 删除 425 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
     },
     {
       "index": "03",
@@ -47,12 +47,12 @@
     }
   ],
   "watch": {
-    "repo": "heygen-com/hyperframes",
-    "url": "https://github.com/heygen-com/hyperframes/commit/a25da94b771cad984c028f609b6c5303c43b5d3e",
-    "date": "2026-09-19",
-    "text": "hyperframes 在配置与参数 + 文档 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在编辑与后期能力：refactor(studio): remove the storyboard view and its Storyboard/Preview switch",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +229 / -4190。"
+    "repo": "hypit-ai/hypit",
+    "url": "https://github.com/hypit-ai/hypit/commit/a2d13d535d37b841c37fc14c917907ca0a2f3228",
+    "date": "2026-09-20",
+    "text": "hypit 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在接口与集成：feat(beatapi): serve the installed video and image models on BeatAPI",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +794 / -1。"
   },
   "scanned": 26,
-  "candidates": 57
+  "candidates": 60
 }
