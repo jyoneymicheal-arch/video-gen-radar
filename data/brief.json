@@ -1,58 +1,58 @@
 {
-  "date": "2026-09-21",
-  "generatedAt": "2026-09-21T04:02:29.053Z",
+  "date": "2026-09-22",
+  "generatedAt": "2026-09-22T03:59:42.674Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、接口与集成",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：vllm-omni 推进了模型与推理链路；autoclip 推进了接口与集成；PySceneDetect 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、功能演进、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Concat 推进了编辑与后期能力；hyperframes 推进了功能演进；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/e36babd48ff2eee3443c16166b1a6890e62e44e0",
-      "date": "2026-09-20",
-      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Core][Diffusion] Camera interaction for diffusion streaming generation (LingBot World 2 as example)",
-      "approach": "技术方案：commit「[Core][Diffusion] Camera interaction for diffusion streaming generation (LingBot World 2 as example)」落在 docs/serving/streaming_video_output_api.md、examples/online_serving/streaming_video_generation/README.md、examples/online_serving/streaming_video_generation/camera_utils.py、examples/online_serving/streaming_video_generation/streaming_video_client.py 等 26 个文件，改动量 +2071 / -200，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 26 个文件（如 docs/serving/streaming_video_output_api.md、examples/online_serving/streaming_video_generation/README.md、examples/online_serving/streaming_video_generation/camera_utils.py），新增 2071 行 / 删除 200 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "jub0t/Concat",
+      "owner": "jub0t",
+      "name": "Concat",
+      "url": "https://github.com/jub0t/Concat/commit/013555d9688143bbb34dec34ca75b90f16e662d9",
+      "date": "2026-09-21",
+      "headline": "Concat 在服务端接口 + 文档 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(colour): a media's colour range named over its tag, and full-range export",
+      "approach": "技术方案：commit「feat(colour): a media's colour range named over its tag, and full-range export」落在 docs/api/edits.md、docs/api/methods.md、docs/api/types.md、src/crates/concat-api/src/lib.rs 等 47 个文件，改动量 +1130 / -102，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 47 个文件（如 docs/api/edits.md、docs/api/methods.md、docs/api/types.md），新增 1130 行 / 删除 102 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     },
     {
       "index": "02",
-      "repo": "zhouxiaoka/autoclip",
-      "owner": "zhouxiaoka",
-      "name": "autoclip",
-      "url": "https://github.com/zhouxiaoka/autoclip/commit/ef83c2ddf69f58e0b91d6bd17be4b185d1fe8735",
-      "date": "2026-09-20",
-      "headline": "autoclip 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在接口与集成：v1.3: weekly release tooling, DashScope international endpoint (#45), settings-page min_score reaches step3",
-      "approach": "技术方案：commit「v1.3: weekly release tooling, DashScope international endpoint (#45), settings-page min_score reaches step3」落在 .github/workflows/desktop-build.yml、CHANGELOG.md、DOCKER.md、HANDOFF.md 等 18 个文件，改动量 +562 / -197，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 18 个文件（如 .github/workflows/desktop-build.yml、CHANGELOG.md、DOCKER.md），新增 562 行 / 删除 197 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/d5e00c0e66a8e3dadf6de40e197256195eb4c8dc",
+      "date": "2026-09-22",
+      "headline": "hyperframes 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在功能演进：feat(registry): week in merges leaderboard block",
+      "approach": "技术方案：commit「feat(registry): week in merges leaderboard block」落在 docs/catalog/blocks/week-in-merges.mdx、docs/docs.json、docs/public/catalog-index.json、docs/public/catalog/blocks/week-in-merges.json 等 11 个文件，改动量 +1319 / -5，归类为「功能演进」。",
+      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 11 个文件（如 docs/catalog/blocks/week-in-merges.mdx、docs/docs.json、docs/public/catalog-index.json），新增 1319 行 / 删除 5 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "功能演进"
     },
     {
       "index": "03",
-      "repo": "Breakthrough/PySceneDetect",
-      "owner": "Breakthrough",
-      "name": "PySceneDetect",
-      "url": "https://github.com/Breakthrough/PySceneDetect/commit/0d12be7cd3c16b0ba6405949aba2e7f0fba044cc",
-      "date": "2026-09-21",
-      "headline": "PySceneDetect 在文档 + Python 后端 / 模型侧 + 测试提交了一次实质性改动，主题集中在模型与推理链路：Add a minimum fade-out duration to ThresholdDetector",
-      "approach": "技术方案：commit「Add a minimum fade-out duration to ThresholdDetector」落在 docs/cli.rst、scenedetect.cfg、scenedetect/_cli/__init__.py、scenedetect/_cli/config.py 等 7 个文件，改动量 +177 / -3，归类为「模型与推理链路」。",
+      "repo": "vllm-project/vllm-omni",
+      "owner": "vllm-project",
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/f8a00b1491ed5fa9e53698f3139b105b8e6657f9",
+      "date": "2026-09-22",
+      "headline": "vllm-omni 在文档 + 配置与参数 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Misc] Add portable MiniMax H3 skills",
+      "approach": "技术方案：commit「[Misc] Add portable MiniMax H3 skills」落在 .agents/skills/3d-animation-short-generator/SKILL.md、.agents/skills/3d-animation-short-generator/agents/openai.yaml、.agents/skills/3d-animation-short-generator/references/fallback-policy.md、.agents/skills/3d-animation-short-generator/references/model-selection.md 等 44 个文件，改动量 +2049 / -0，归类为「模型与推理链路」。",
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 7 个文件（如 docs/cli.rst、scenedetect.cfg、scenedetect/_cli/__init__.py），新增 177 行 / 删除 3 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 44 个文件（如 .agents/skills/3d-animation-short-generator/SKILL.md、.agents/skills/3d-animation-short-generator/agents/openai.yaml、.agents/skills/3d-animation-short-generator/references/fallback-policy.md），新增 2049 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "Lake1059/FFmpegFreeUI",
-    "url": "https://github.com/Lake1059/FFmpegFreeUI/commit/103979fabb9f4fd21156ba2a7ddb2e2d6ee2a941",
+    "repo": "huggingface/diffusers",
+    "url": "https://github.com/huggingface/diffusers/commit/7263f3317f6b392d62f41e9d75ed9d7e21fc5a5c",
     "date": "2026-09-21",
-    "text": "FFmpegFreeUI 在测试提交了一次实质性改动，主题集中在流水线与编排：2026/9/21-1",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +270 / -68。"
+    "text": "diffusers 在配置与参数 + 文档提交了一次成块的结构性改动，主题集中在模型与推理链路：[docs] Using diffusion pipelines",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +430 / -327。"
   },
   "scanned": 26,
-  "candidates": 39
+  "candidates": 46
 }
