@@ -1,13 +1,26 @@
 {
-  "date": "2026-09-22",
-  "generatedAt": "2026-09-22T03:59:42.674Z",
+  "date": "2026-09-23",
+  "generatedAt": "2026-09-23T03:57:10.082Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、功能演进、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Concat 推进了编辑与后期能力；hyperframes 推进了功能演进；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：交互与可控性、编辑与后期能力、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：SmartSub 推进了交互与可控性；Concat 推进了编辑与后期能力；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
+      "repo": "buxuku/SmartSub",
+      "owner": "buxuku",
+      "name": "SmartSub",
+      "url": "https://github.com/buxuku/SmartSub/commit/6120a4dbc4b842c93f7edc68667263e628f7160b",
+      "date": "2026-09-22",
+      "headline": "SmartSub 在界面组件 + 测试 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在交互与可控性：feat(proofread): improve review layout and simplify AI settings",
+      "approach": "技术方案：commit「feat(proofread): improve review layout and simplify AI settings」落在 main/helpers/fileProcessor.ts、renderer/components/__tests__/InlineAiSettings.test.tsx、renderer/components/__tests__/SpeechGapContext.test.tsx、renderer/components/__tests__/SubtitleKeyboard.test.tsx 等 33 个文件，改动量 +3000 / -885，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 33 个文件（如 main/helpers/fileProcessor.ts、renderer/components/__tests__/InlineAiSettings.test.tsx、renderer/components/__tests__/SpeechGapContext.test.tsx），新增 3000 行 / 删除 885 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
+    },
+    {
+      "index": "02",
       "repo": "jub0t/Concat",
       "owner": "jub0t",
       "name": "Concat",
@@ -20,38 +33,25 @@
       "theme": "编辑与后期能力"
     },
     {
-      "index": "02",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/d5e00c0e66a8e3dadf6de40e197256195eb4c8dc",
-      "date": "2026-09-22",
-      "headline": "hyperframes 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在功能演进：feat(registry): week in merges leaderboard block",
-      "approach": "技术方案：commit「feat(registry): week in merges leaderboard block」落在 docs/catalog/blocks/week-in-merges.mdx、docs/docs.json、docs/public/catalog-index.json、docs/public/catalog/blocks/week-in-merges.json 等 11 个文件，改动量 +1319 / -5，归类为「功能演进」。",
-      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 11 个文件（如 docs/catalog/blocks/week-in-merges.mdx、docs/docs.json、docs/public/catalog-index.json），新增 1319 行 / 删除 5 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "功能演进"
-    },
-    {
       "index": "03",
       "repo": "vllm-project/vllm-omni",
       "owner": "vllm-project",
       "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/f8a00b1491ed5fa9e53698f3139b105b8e6657f9",
-      "date": "2026-09-22",
-      "headline": "vllm-omni 在文档 + 配置与参数 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Misc] Add portable MiniMax H3 skills",
-      "approach": "技术方案：commit「[Misc] Add portable MiniMax H3 skills」落在 .agents/skills/3d-animation-short-generator/SKILL.md、.agents/skills/3d-animation-short-generator/agents/openai.yaml、.agents/skills/3d-animation-short-generator/references/fallback-policy.md、.agents/skills/3d-animation-short-generator/references/model-selection.md 等 44 个文件，改动量 +2049 / -0，归类为「模型与推理链路」。",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/3f473a358b16c6564a0745bef2c0b17aa715d48e",
+      "date": "2026-09-23",
+      "headline": "vllm-omni 在配置与参数 + 测试 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Accelerate Breeze-TTS-2 non-streaming inference",
+      "approach": "技术方案：commit「[Model] Accelerate Breeze-TTS-2 non-streaming inference」落在 .buildkite/cuda/test-merge.yml、.buildkite/cuda/test-ready.yml、benchmarks/tts/evidence/breeze_tts_2_20260918.json、benchmarks/tts/evidence/breeze_tts_2_sampling_graphs_20260918.json 等 84 个文件，改动量 +8199 / -5630，归类为「模型与推理链路」。",
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 44 个文件（如 .agents/skills/3d-animation-short-generator/SKILL.md、.agents/skills/3d-animation-short-generator/agents/openai.yaml、.agents/skills/3d-animation-short-generator/references/fallback-policy.md），新增 2049 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 84 个文件（如 .buildkite/cuda/test-merge.yml、.buildkite/cuda/test-ready.yml、benchmarks/tts/evidence/breeze_tts_2_20260918.json），新增 8199 行 / 删除 5630 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "huggingface/diffusers",
-    "url": "https://github.com/huggingface/diffusers/commit/7263f3317f6b392d62f41e9d75ed9d7e21fc5a5c",
-    "date": "2026-09-21",
-    "text": "diffusers 在配置与参数 + 文档提交了一次成块的结构性改动，主题集中在模型与推理链路：[docs] Using diffusion pipelines",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +430 / -327。"
+    "repo": "dramaclaw/dramaclaw",
+    "url": "https://github.com/dramaclaw/dramaclaw/commit/f51c2e44d01d8cac9b3b8214bcc8de3178df7d09",
+    "date": "2026-09-22",
+    "text": "dramaclaw 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次成块的结构性改动，主题集中在模型与推理链路：feat(video): add configurable video extension mode",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +562 / -42。"
   },
   "scanned": 26,
   "candidates": 46
