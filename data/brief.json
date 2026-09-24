@@ -1,57 +1,57 @@
 {
-  "date": "2026-09-23",
-  "generatedAt": "2026-09-23T03:57:10.082Z",
+  "date": "2026-09-24",
+  "generatedAt": "2026-09-24T03:50:35.993Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：交互与可控性、编辑与后期能力、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：SmartSub 推进了交互与可控性；Concat 推进了编辑与后期能力；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、模型与推理链路、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：video-shotcraft 推进了编辑与后期能力；dramaclaw 推进了模型与推理链路；FFmpegFreeUI 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "buxuku/SmartSub",
-      "owner": "buxuku",
-      "name": "SmartSub",
-      "url": "https://github.com/buxuku/SmartSub/commit/6120a4dbc4b842c93f7edc68667263e628f7160b",
-      "date": "2026-09-22",
-      "headline": "SmartSub 在界面组件 + 测试 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在交互与可控性：feat(proofread): improve review layout and simplify AI settings",
-      "approach": "技术方案：commit「feat(proofread): improve review layout and simplify AI settings」落在 main/helpers/fileProcessor.ts、renderer/components/__tests__/InlineAiSettings.test.tsx、renderer/components/__tests__/SpeechGapContext.test.tsx、renderer/components/__tests__/SubtitleKeyboard.test.tsx 等 33 个文件，改动量 +3000 / -885，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 33 个文件（如 main/helpers/fileProcessor.ts、renderer/components/__tests__/InlineAiSettings.test.tsx、renderer/components/__tests__/SpeechGapContext.test.tsx），新增 3000 行 / 删除 885 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
-    },
-    {
-      "index": "02",
-      "repo": "jub0t/Concat",
-      "owner": "jub0t",
-      "name": "Concat",
-      "url": "https://github.com/jub0t/Concat/commit/013555d9688143bbb34dec34ca75b90f16e662d9",
-      "date": "2026-09-21",
-      "headline": "Concat 在服务端接口 + 文档 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(colour): a media's colour range named over its tag, and full-range export",
-      "approach": "技术方案：commit「feat(colour): a media's colour range named over its tag, and full-range export」落在 docs/api/edits.md、docs/api/methods.md、docs/api/types.md、src/crates/concat-api/src/lib.rs 等 47 个文件，改动量 +1130 / -102，归类为「编辑与后期能力」。",
+      "repo": "Vincentwei1021/video-shotcraft",
+      "owner": "Vincentwei1021",
+      "name": "video-shotcraft",
+      "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/a1ec677cb4655a51453b01d09a27959df5ef323d",
+      "date": "2026-09-23",
+      "headline": "video-shotcraft 在配置与参数 + 文档 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在编辑与后期能力：为工作台增加可选主题侧栏、配色编辑与保存导入导出",
+      "approach": "技术方案：commit「为工作台增加可选主题侧栏、配色编辑与保存导入导出」落在 .github/workflows/pr-checks.yml、README.md、README_CN.md、template/THEMES.md 等 43 个文件，改动量 +1059 / -152，归类为「编辑与后期能力」。",
       "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 47 个文件（如 docs/api/edits.md、docs/api/methods.md、docs/api/types.md），新增 1130 行 / 删除 102 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 43 个文件（如 .github/workflows/pr-checks.yml、README.md、README_CN.md），新增 1059 行 / 删除 152 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "编辑与后期能力"
     },
     {
-      "index": "03",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/3f473a358b16c6564a0745bef2c0b17aa715d48e",
-      "date": "2026-09-23",
-      "headline": "vllm-omni 在配置与参数 + 测试 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Accelerate Breeze-TTS-2 non-streaming inference",
-      "approach": "技术方案：commit「[Model] Accelerate Breeze-TTS-2 non-streaming inference」落在 .buildkite/cuda/test-merge.yml、.buildkite/cuda/test-ready.yml、benchmarks/tts/evidence/breeze_tts_2_20260918.json、benchmarks/tts/evidence/breeze_tts_2_sampling_graphs_20260918.json 等 84 个文件，改动量 +8199 / -5630，归类为「模型与推理链路」。",
+      "index": "02",
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/f51c2e44d01d8cac9b3b8214bcc8de3178df7d09",
+      "date": "2026-09-22",
+      "headline": "dramaclaw 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次成块的结构性改动，主题集中在模型与推理链路：feat(video): add configurable video extension mode",
+      "approach": "技术方案：commit「feat(video): add configurable video extension mode」落在 frontend/public/locales/en/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json、frontend/src/__tests__/api/freezone-video-extend.test.ts 等 21 个文件，改动量 +562 / -42，归类为「模型与推理链路」。",
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 84 个文件（如 .buildkite/cuda/test-merge.yml、.buildkite/cuda/test-ready.yml、benchmarks/tts/evidence/breeze_tts_2_20260918.json），新增 8199 行 / 删除 5630 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 21 个文件（如 frontend/public/locales/en/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json），新增 562 行 / 删除 42 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
+    },
+    {
+      "index": "03",
+      "repo": "Lake1059/FFmpegFreeUI",
+      "owner": "Lake1059",
+      "name": "FFmpegFreeUI",
+      "url": "https://github.com/Lake1059/FFmpegFreeUI/commit/fa3b5dd93124bcead51d341fb138b812124688f0",
+      "date": "2026-09-22",
+      "headline": "FFmpegFreeUI 在主代码路径提交了一次成块的结构性改动，主题集中在流水线与编排：2026/9/22-1",
+      "approach": "技术方案：commit「2026/9/22-1」落在 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/Agent 智能体/Agent工具封装_v6.vb、FFmpegFreeUI/功能/Agent 智能体/Agent技能资料库_v6.vb、FFmpegFreeUI/功能/Agent 智能体/Agent本地工具_v6.vb 等 11 个文件，改动量 +704 / -260，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 11 个文件（如 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/Agent 智能体/Agent工具封装_v6.vb、FFmpegFreeUI/功能/Agent 智能体/Agent技能资料库_v6.vb），新增 704 行 / 删除 260 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     }
   ],
   "watch": {
-    "repo": "dramaclaw/dramaclaw",
-    "url": "https://github.com/dramaclaw/dramaclaw/commit/f51c2e44d01d8cac9b3b8214bcc8de3178df7d09",
-    "date": "2026-09-22",
-    "text": "dramaclaw 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次成块的结构性改动，主题集中在模型与推理链路：feat(video): add configurable video extension mode",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +562 / -42。"
+    "repo": "wiltodelta/remove-ai-watermarks",
+    "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/1dc70df2898f939d79fd6a3dc1078c8281cc3503",
+    "date": "2026-09-24",
+    "text": "remove-ai-watermarks 在文档 + 配置与参数 + 服务端接口提交了一次大规模重构级改动，主题集中在接口与集成：Upgrade to OpenCV 5 with frozen Hershey templates and tighten video marks",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1787 / -1436。"
   },
   "scanned": 26,
   "candidates": 46
