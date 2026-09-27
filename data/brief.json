@@ -1,58 +1,58 @@
 {
-  "date": "2026-09-26",
-  "generatedAt": "2026-09-26T04:10:58.163Z",
+  "date": "2026-09-27",
+  "generatedAt": "2026-09-27T04:25:45.169Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：流水线与编排、编辑与后期能力、功能演进",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了流水线与编排；Concat 推进了编辑与后期能力；mediapipe 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：流水线与编排、模型与推理链路、编辑与后期能力",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：FFmpegFreeUI 推进了流水线与编排；vllm-omni 推进了模型与推理链路；hyperframes 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "ArcReel/ArcReel",
-      "owner": "ArcReel",
-      "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/2806b635936b55c4672b1e834434392c9a27b03d",
-      "date": "2026-09-25",
-      "headline": "ArcReel 在配置与参数 + Python 后端 / 模型侧 + 服务端接口提交了一次大规模重构级改动，主题集中在流水线与编排：feat(Agent 工具集): 文本生成、内容确认与草稿 7 个工具迁入单源声明，远程文本生成退掉进度心跳",
-      "approach": "技术方案：commit「feat(Agent 工具集): 文本生成、内容确认与草稿 7 个工具迁入单源声明，远程文本生成退掉进度心跳」落在 pyproject.toml、server/agent_runtime/sdk_tools/__init__.py、server/agent_runtime/sdk_tools/text_generation.py、server/agent_toolset/script_authoring.py 等 22 个文件，改动量 +1067 / -1531，归类为「流水线与编排」。",
+      "repo": "Lake1059/FFmpegFreeUI",
+      "owner": "Lake1059",
+      "name": "FFmpegFreeUI",
+      "url": "https://github.com/Lake1059/FFmpegFreeUI/commit/383fc2436c2e917f71a91528133a1663cf7fc688",
+      "date": "2026-09-26",
+      "headline": "FFmpegFreeUI 在文档 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：2026/9/26-1",
+      "approach": "技术方案：commit「2026/9/26-1」落在 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/预设系统/预设命令行编码_v6.vb、doc/Agent-audit.md、tests/FFmpegFreeUI.RegressionTests/AgentAuditChecks.cs 等 11 个文件，改动量 +9 / -1475，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 22 个文件（如 pyproject.toml、server/agent_runtime/sdk_tools/__init__.py、server/agent_runtime/sdk_tools/text_generation.py），新增 1067 行 / 删除 1531 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 11 个文件（如 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/预设系统/预设命令行编码_v6.vb、doc/Agent-audit.md），新增 9 行 / 删除 1475 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
       "index": "02",
-      "repo": "jub0t/Concat",
-      "owner": "jub0t",
-      "name": "Concat",
-      "url": "https://github.com/jub0t/Concat/commit/9ea1252888f50ff560f7ef75b2e3066bd151569e",
-      "date": "2026-09-25",
-      "headline": "Concat 在服务端接口 + 文档 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(timeline): Reverse writes the clip's span backwards into the cache, and freeze, reverse, mirror and rotate go behind one mark on the tray",
-      "approach": "技术方案：commit「feat(timeline): Reverse writes the clip's span backwards into the cache, and freeze, reverse, mirror and rotate go behind one mark on the tray」落在 docs/api/edits.md、src/crates/concat-host/src/enhance.rs、src/crates/concat-host/src/lib.rs、src/crates/concat-host/src/reverse.rs 等 31 个文件，改动量 +1150 / -14，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 31 个文件（如 docs/api/edits.md、src/crates/concat-host/src/enhance.rs、src/crates/concat-host/src/lib.rs），新增 1150 行 / 删除 14 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "repo": "vllm-project/vllm-omni",
+      "owner": "vllm-project",
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/798d52ce550439633cae17267957e94625c5edce",
+      "date": "2026-09-27",
+      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Core][Model] Fit PersonaPlex into the Unified Full-duplex Framework (RFC #7181 PR 2)",
+      "approach": "技术方案：commit「[Core][Model] Fit PersonaPlex into the Unified Full-duplex Framework (RFC #7181 PR 2)」落在 docs/design/fullduplex-personaplex.md、docs/models/supported_models.md、docs/serving/realtime_duplex_api.md、examples/online_serving/personaplex/README.md 等 49 个文件，改动量 +3078 / -1737，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 49 个文件（如 docs/design/fullduplex-personaplex.md、docs/models/supported_models.md、docs/serving/realtime_duplex_api.md），新增 3078 行 / 删除 1737 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "03",
-      "repo": "google-ai-edge/mediapipe",
-      "owner": "google-ai-edge",
-      "name": "mediapipe",
-      "url": "https://github.com/google-ai-edge/mediapipe/commit/0a8c1e8b84ea1979e16ebe985bd18f3b50f519ff",
-      "date": "2026-09-24",
-      "headline": "mediapipe 在文档提交了一次大规模重构级改动，主题集中在功能演进：Add retrieval to MediaPipe Tasks for Web",
-      "approach": "技术方案：commit「Add retrieval to MediaPipe Tasks for Web」落在 mediapipe/tasks/web/retrieval/BUILD、mediapipe/tasks/web/retrieval/README.md、mediapipe/tasks/web/retrieval/index.ts、mediapipe/tasks/web/retrieval/semantic_retriever/BUILD 等 21 个文件，改动量 +2380 / -48，归类为「功能演进」。",
-      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 21 个文件（如 mediapipe/tasks/web/retrieval/BUILD、mediapipe/tasks/web/retrieval/README.md、mediapipe/tasks/web/retrieval/index.ts），新增 2380 行 / 删除 48 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "功能演进"
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/8dfdceb167b669985f11c65ad537dc84a8e09b50",
+      "date": "2026-09-27",
+      "headline": "hyperframes 在前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：fix(core): a CSS animation in a later clip shows the right frame after a seek",
+      "approach": "技术方案：commit「fix(core): a CSS animation in a later clip shows the right frame after a seek」落在 packages/core/src/runtime/adapters/css.test.ts、packages/core/src/runtime/adapters/css.ts、packages/core/src/runtime/adapters/waapi.test.ts、packages/core/src/runtime/adapters/waapi.ts 等 8 个文件，改动量 +685 / -73，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 8 个文件（如 packages/core/src/runtime/adapters/css.test.ts、packages/core/src/runtime/adapters/css.ts、packages/core/src/runtime/adapters/waapi.test.ts），新增 685 行 / 删除 73 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     }
   ],
   "watch": {
-    "repo": "hypit-ai/hypit",
-    "url": "https://github.com/hypit-ai/hypit/commit/089c39a012b854973b9d10e6bd8c7fcd2516cce8",
+    "repo": "wiltodelta/remove-ai-watermarks",
+    "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/b1f15818d7f5c0f29b969c0cce9b140bef7ca03b",
     "date": "2026-09-25",
-    "text": "hypit 在前端 / 应用层 + 测试 + 文档提交了一次大规模重构级改动，主题集中在编辑与后期能力：perf: localize build and render working sets",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +4649 / -599。"
+    "text": "remove-ai-watermarks 在文档 + 服务端接口 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在接口与集成：Add pinned OpenAI and Google image source classifier",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +409 / -2。"
   },
   "scanned": 26,
-  "candidates": 52
+  "candidates": 53
 }
