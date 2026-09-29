@@ -1,13 +1,26 @@
 {
-  "date": "2026-09-28",
-  "generatedAt": "2026-09-28T04:26:43.248Z",
+  "date": "2026-09-29",
+  "generatedAt": "2026-09-29T04:56:17.008Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、流水线与编排、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：video-shotcraft 推进了编辑与后期能力；FFmpegFreeUI 推进了流水线与编排；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：模型与推理链路、编辑与后期能力、交互与可控性",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了模型与推理链路；video-shotcraft 推进了编辑与后期能力；gyroflow 推进了交互与可控性。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/678a4279a31e7d92772943e9963abbd3b92a8d12",
+      "date": "2026-09-28",
+      "headline": "dramaclaw 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(video): add model-backed enhancement pipeline",
+      "approach": "技术方案：commit「feat(video): add model-backed enhancement pipeline」落在 frontend/public/locales/en/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json、frontend/src/__tests__/api/freezone-video-upscale-probe.test.ts 等 27 个文件，改动量 +1774 / -367，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 27 个文件（如 frontend/public/locales/en/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json），新增 1774 行 / 删除 367 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
+    },
+    {
+      "index": "02",
       "repo": "Vincentwei1021/video-shotcraft",
       "owner": "Vincentwei1021",
       "name": "video-shotcraft",
@@ -20,39 +33,26 @@
       "theme": "编辑与后期能力"
     },
     {
-      "index": "02",
-      "repo": "Lake1059/FFmpegFreeUI",
-      "owner": "Lake1059",
-      "name": "FFmpegFreeUI",
-      "url": "https://github.com/Lake1059/FFmpegFreeUI/commit/815f858de9255383fd25d54cc0062308870a9433",
-      "date": "2026-09-27",
-      "headline": "FFmpegFreeUI 在文档提交了一次大规模重构级改动，主题集中在流水线与编排：2026/9/27-1",
-      "approach": "技术方案：commit「2026/9/27-1」落在 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/Agent 智能体/Agent技能资料库_v6.vb、FFmpegFreeUI/功能/视频编码器数据库_v6.vb、FFmpegFreeUI/功能/音频编码器数据库_v6.vb 等 23 个文件，改动量 +3271 / -3056，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/Agent 智能体/Agent技能资料库_v6.vb、FFmpegFreeUI/功能/视频编码器数据库_v6.vb），新增 3271 行 / 删除 3056 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
-    },
-    {
       "index": "03",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/798d52ce550439633cae17267957e94625c5edce",
-      "date": "2026-09-27",
-      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Core][Model] Fit PersonaPlex into the Unified Full-duplex Framework (RFC #7181 PR 2)",
-      "approach": "技术方案：commit「[Core][Model] Fit PersonaPlex into the Unified Full-duplex Framework (RFC #7181 PR 2)」落在 docs/design/fullduplex-personaplex.md、docs/models/supported_models.md、docs/serving/realtime_duplex_api.md、examples/online_serving/personaplex/README.md 等 49 个文件，改动量 +3078 / -1737，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 49 个文件（如 docs/design/fullduplex-personaplex.md、docs/models/supported_models.md、docs/serving/realtime_duplex_api.md），新增 3078 行 / 删除 1737 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "gyroflow/gyroflow",
+      "owner": "gyroflow",
+      "name": "gyroflow",
+      "url": "https://github.com/gyroflow/gyroflow/commit/322cb3128575645d00983ab70a5c6a434fcb97a5",
+      "date": "2026-09-28",
+      "headline": "gyroflow 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Optical-only stabilization + optical gyro correction",
+      "approach": "技术方案：commit「Optical-only stabilization + optical gyro correction」落在 src/cli.rs、src/controller.rs、src/core/filtering.rs、src/core/gyro_source/file_metadata.rs 等 19 个文件，改动量 +2077 / -349，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 19 个文件（如 src/cli.rs、src/controller.rs、src/core/filtering.rs），新增 2077 行 / 删除 349 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     }
   ],
   "watch": {
-    "repo": "cclank/lanshu-create-ai-presenter-video",
-    "url": "https://github.com/cclank/lanshu-create-ai-presenter-video/commit/c76c6d3537e8abf5bd7883fd1e8198ec5d6374e8",
+    "repo": "Lake1059/FFmpegFreeUI",
+    "url": "https://github.com/Lake1059/FFmpegFreeUI/commit/815f858de9255383fd25d54cc0062308870a9433",
     "date": "2026-09-27",
-    "text": "lanshu-create-ai-presenter-video 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在流水线与编排：Harden presenter pipeline with evidence gates and verified delivery",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +842 / -108。"
+    "text": "FFmpegFreeUI 在文档提交了一次大规模重构级改动，主题集中在流水线与编排：2026/9/27-1",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3271 / -3056。"
   },
   "scanned": 26,
-  "candidates": 47
+  "candidates": 62
 }
