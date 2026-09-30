@@ -1,13 +1,26 @@
 {
-  "date": "2026-09-29",
-  "generatedAt": "2026-09-29T04:56:17.008Z",
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-30T04:42:55.032Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：模型与推理链路、编辑与后期能力、交互与可控性",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了模型与推理链路；video-shotcraft 推进了编辑与后期能力；gyroflow 推进了交互与可控性。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：流水线与编排、模型与推理链路、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：autoclip 推进了流水线与编排；dramaclaw 推进了模型与推理链路；video-shotcraft 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
+      "repo": "zhouxiaoka/autoclip",
+      "owner": "zhouxiaoka",
+      "name": "autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip/commit/e2b2e49ae4683613855aa84d83d6525d0336daa0",
+      "date": "2026-09-30",
+      "headline": "autoclip 在Python 后端 / 模型侧 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：feat(analytics): connect onboarding and Studio delivery monitoring",
+      "approach": "技术方案：commit「feat(analytics): connect onboarding and Studio delivery monitoring」落在 backend/api/v1/example_project.py、backend/api/v1/studio.py、backend/core/sentry_setup.py、backend/services/studio/jobs.py 等 51 个文件，改动量 +1899 / -112，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 51 个文件（如 backend/api/v1/example_project.py、backend/api/v1/studio.py、backend/core/sentry_setup.py），新增 1899 行 / 删除 112 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
+    },
+    {
+      "index": "02",
       "repo": "dramaclaw/dramaclaw",
       "owner": "dramaclaw",
       "name": "dramaclaw",
@@ -20,39 +33,26 @@
       "theme": "模型与推理链路"
     },
     {
-      "index": "02",
+      "index": "03",
       "repo": "Vincentwei1021/video-shotcraft",
       "owner": "Vincentwei1021",
       "name": "video-shotcraft",
-      "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/e2d8928c57ef84701f9b0119ca4a1c28a62050c1",
-      "date": "2026-09-27",
-      "headline": "video-shotcraft 在文档 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(workbench): 界面默认英文 + 中英切换按钮",
-      "approach": "技术方案：commit「feat(workbench): 界面默认英文 + 中英切换按钮」落在 references/workbench.md、workbench/README.md、workbench/index.html、workbench/scripts/gen-index.mjs 等 20 个文件，改动量 +767 / -170，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 20 个文件（如 references/workbench.md、workbench/README.md、workbench/index.html），新增 767 行 / 删除 170 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
-    },
-    {
-      "index": "03",
-      "repo": "gyroflow/gyroflow",
-      "owner": "gyroflow",
-      "name": "gyroflow",
-      "url": "https://github.com/gyroflow/gyroflow/commit/322cb3128575645d00983ab70a5c6a434fcb97a5",
+      "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/5ddbf521038b0a7accfb6dc1e0a9eb29c67277ab",
       "date": "2026-09-28",
-      "headline": "gyroflow 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Optical-only stabilization + optical gyro correction",
-      "approach": "技术方案：commit「Optical-only stabilization + optical gyro correction」落在 src/cli.rs、src/controller.rs、src/core/filtering.rs、src/core/gyro_source/file_metadata.rs 等 19 个文件，改动量 +2077 / -349，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 19 个文件（如 src/cli.rs、src/controller.rs、src/core/filtering.rs），新增 2077 行 / 删除 349 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "headline": "video-shotcraft 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在接口与集成：feat(workbench): add Russian (Русский) interface language on top of #86 i18n",
+      "approach": "技术方案：commit「feat(workbench): add Russian (Русский) interface language on top of #86 i18n」落在 references/workbench.md、workbench/README.md、workbench/i18n/ru/categories.json、workbench/i18n/ru/names.json 等 9 个文件，改动量 +842 / -50，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 9 个文件（如 references/workbench.md、workbench/README.md、workbench/i18n/ru/categories.json），新增 842 行 / 删除 50 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "Lake1059/FFmpegFreeUI",
-    "url": "https://github.com/Lake1059/FFmpegFreeUI/commit/815f858de9255383fd25d54cc0062308870a9433",
-    "date": "2026-09-27",
-    "text": "FFmpegFreeUI 在文档提交了一次大规模重构级改动，主题集中在流水线与编排：2026/9/27-1",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3271 / -3056。"
+    "repo": "HBAI-Ltd/Toonflow-app",
+    "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/ec8f54597bf6e6114ed56b832f9052cd6f735311",
+    "date": "2026-09-29",
+    "text": "Toonflow-app 在服务端接口 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：增强 Agent 素材引用、历史编辑与会话管理，优化对话虚拟渲染及大画布查询，新增节点排列、媒体历史、错误解读和版本更新弹窗，完善供应商错误透传与桌面更新流程",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3525 / -618。"
   },
   "scanned": 26,
-  "candidates": 62
+  "candidates": 69
 }
