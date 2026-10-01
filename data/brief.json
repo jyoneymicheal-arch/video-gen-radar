@@ -1,49 +1,49 @@
 {
-  "date": "2026-09-30",
-  "generatedAt": "2026-09-30T04:42:55.032Z",
+  "date": "2026-10-01",
+  "generatedAt": "2026-10-01T04:54:53.727Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：流水线与编排、模型与推理链路、接口与集成",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：autoclip 推进了流水线与编排；dramaclaw 推进了模型与推理链路；video-shotcraft 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了模型与推理链路；autoclip 推进了流水线与编排；ViMax 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "zhouxiaoka/autoclip",
-      "owner": "zhouxiaoka",
-      "name": "autoclip",
-      "url": "https://github.com/zhouxiaoka/autoclip/commit/e2b2e49ae4683613855aa84d83d6525d0336daa0",
+      "repo": "ArcReel/ArcReel",
+      "owner": "ArcReel",
+      "name": "ArcReel",
+      "url": "https://github.com/ArcReel/ArcReel/commit/f8bc95f7d54ce643fbc1d0a3aae20a4fc60036c6",
       "date": "2026-09-30",
-      "headline": "autoclip 在Python 后端 / 模型侧 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：feat(analytics): connect onboarding and Studio delivery monitoring",
-      "approach": "技术方案：commit「feat(analytics): connect onboarding and Studio delivery monitoring」落在 backend/api/v1/example_project.py、backend/api/v1/studio.py、backend/core/sentry_setup.py、backend/services/studio/jobs.py 等 51 个文件，改动量 +1899 / -112，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 51 个文件（如 backend/api/v1/example_project.py、backend/api/v1/studio.py、backend/core/sentry_setup.py），新增 1899 行 / 删除 112 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
-    },
-    {
-      "index": "02",
-      "repo": "dramaclaw/dramaclaw",
-      "owner": "dramaclaw",
-      "name": "dramaclaw",
-      "url": "https://github.com/dramaclaw/dramaclaw/commit/678a4279a31e7d92772943e9963abbd3b92a8d12",
-      "date": "2026-09-28",
-      "headline": "dramaclaw 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(video): add model-backed enhancement pipeline",
-      "approach": "技术方案：commit「feat(video): add model-backed enhancement pipeline」落在 frontend/public/locales/en/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json、frontend/src/__tests__/api/freezone-video-upscale-probe.test.ts 等 27 个文件，改动量 +1774 / -367，归类为「模型与推理链路」。",
+      "headline": "ArcReel 在前端 / 应用层 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(episodes): 「分集」视图与上传对话框取代「源文件」页",
+      "approach": "技术方案：commit「feat(episodes): 「分集」视图与上传对话框取代「源文件」页」落在 frontend/src/api.test.ts、frontend/src/api.ts、frontend/src/app-routes.ts、frontend/src/components/canvas/ConflictModal.test.tsx 等 59 个文件，改动量 +3605 / -1833，归类为「模型与推理链路」。",
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 27 个文件（如 frontend/public/locales/en/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json），新增 1774 行 / 删除 367 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 59 个文件（如 frontend/src/api.test.ts、frontend/src/api.ts、frontend/src/app-routes.ts），新增 3605 行 / 删除 1833 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
     },
     {
+      "index": "02",
+      "repo": "zhouxiaoka/autoclip",
+      "owner": "zhouxiaoka",
+      "name": "autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip/commit/8968916b70511595be87c944c730c4672a6f0f9f",
+      "date": "2026-09-30",
+      "headline": "autoclip 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次成块的结构性改动，主题集中在流水线与编排：feat(cli): 支持 opencode MCP 一键接入（autoclip mcp install opencode）",
+      "approach": "技术方案：commit「feat(cli): 支持 opencode MCP 一键接入（autoclip mcp install opencode）」落在 README-EN.md、README.md、backend/cli.py、backend/mcp_server.py 等 10 个文件，改动量 +901 / -9，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 README-EN.md、README.md、backend/cli.py），新增 901 行 / 删除 9 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
+    },
+    {
       "index": "03",
-      "repo": "Vincentwei1021/video-shotcraft",
-      "owner": "Vincentwei1021",
-      "name": "video-shotcraft",
-      "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/5ddbf521038b0a7accfb6dc1e0a9eb29c67277ab",
-      "date": "2026-09-28",
-      "headline": "video-shotcraft 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在接口与集成：feat(workbench): add Russian (Русский) interface language on top of #86 i18n",
-      "approach": "技术方案：commit「feat(workbench): add Russian (Русский) interface language on top of #86 i18n」落在 references/workbench.md、workbench/README.md、workbench/i18n/ru/categories.json、workbench/i18n/ru/names.json 等 9 个文件，改动量 +842 / -50，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 9 个文件（如 references/workbench.md、workbench/README.md、workbench/i18n/ru/categories.json），新增 842 行 / 删除 50 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
+      "repo": "HKUDS/ViMax",
+      "owner": "HKUDS",
+      "name": "ViMax",
+      "url": "https://github.com/HKUDS/ViMax/commit/fd4b72e7731be6e5f88486206d25ea59849b0285",
+      "date": "2026-09-30",
+      "headline": "ViMax 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次成块的结构性改动，主题集中在流水线与编排：feat: restore concurrent keyframe generation and VLM selection",
+      "approach": "技术方案：commit「feat: restore concurrent keyframe generation and VLM selection」落在 README_ZH.md、agent_runtime/config.py、agent_runtime/vimax_adapters.py、agents/best_image_selector.py 等 16 个文件，改动量 +673 / -40，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 16 个文件（如 README_ZH.md、agent_runtime/config.py、agent_runtime/vimax_adapters.py），新增 673 行 / 删除 40 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     }
   ],
   "watch": {
@@ -54,5 +54,5 @@
     "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3525 / -618。"
   },
   "scanned": 26,
-  "candidates": 69
+  "candidates": 50
 }
