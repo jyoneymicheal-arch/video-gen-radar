@@ -1,35 +1,35 @@
 {
-  "date": "2026-10-01",
-  "generatedAt": "2026-10-01T04:54:53.727Z",
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-02T04:45:32.831Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了模型与推理链路；autoclip 推进了流水线与编排；ViMax 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；Toonflow-app 推进了流水线与编排；ViMax 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "ArcReel/ArcReel",
-      "owner": "ArcReel",
-      "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/f8bc95f7d54ce643fbc1d0a3aae20a4fc60036c6",
-      "date": "2026-09-30",
-      "headline": "ArcReel 在前端 / 应用层 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(episodes): 「分集」视图与上传对话框取代「源文件」页",
-      "approach": "技术方案：commit「feat(episodes): 「分集」视图与上传对话框取代「源文件」页」落在 frontend/src/api.test.ts、frontend/src/api.ts、frontend/src/app-routes.ts、frontend/src/components/canvas/ConflictModal.test.tsx 等 59 个文件，改动量 +3605 / -1833，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 59 个文件（如 frontend/src/api.test.ts、frontend/src/api.ts、frontend/src/app-routes.ts），新增 3605 行 / 删除 1833 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/9244c47328e41e59034bd9bbec293fe3f7310cf6",
+      "date": "2026-10-02",
+      "headline": "hyperframes 在前端 / 应用层 + 测试 + 服务端接口提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(studio): normalize loudness and duck under voice, with a limiter report (4/8)",
+      "approach": "技术方案：commit「feat(studio): normalize loudness and duck under voice, with a limiter report (4/8)」落在 packages/cli/src/commands/normalize-audio.test.ts、packages/cli/src/commands/normalize-audio.ts、packages/cli/src/server/studioServer.test.ts、packages/cli/src/server/studioServer.ts 等 34 个文件，改动量 +1935 / -512，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 34 个文件（如 packages/cli/src/commands/normalize-audio.test.ts、packages/cli/src/commands/normalize-audio.ts、packages/cli/src/server/studioServer.test.ts），新增 1935 行 / 删除 512 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     },
     {
       "index": "02",
-      "repo": "zhouxiaoka/autoclip",
-      "owner": "zhouxiaoka",
-      "name": "autoclip",
-      "url": "https://github.com/zhouxiaoka/autoclip/commit/8968916b70511595be87c944c730c4672a6f0f9f",
-      "date": "2026-09-30",
-      "headline": "autoclip 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次成块的结构性改动，主题集中在流水线与编排：feat(cli): 支持 opencode MCP 一键接入（autoclip mcp install opencode）",
-      "approach": "技术方案：commit「feat(cli): 支持 opencode MCP 一键接入（autoclip mcp install opencode）」落在 README-EN.md、README.md、backend/cli.py、backend/mcp_server.py 等 10 个文件，改动量 +901 / -9，归类为「流水线与编排」。",
+      "repo": "HBAI-Ltd/Toonflow-app",
+      "owner": "HBAI-Ltd",
+      "name": "Toonflow-app",
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/709956ae69676f9f69fdd322898c123544f07ea6",
+      "date": "2026-10-01",
+      "headline": "Toonflow-app 在文档 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：新增 21 种语言支持，完善前后端及桌面端系统提示翻译、语言切换与组件本地化，校对多语言文档并整理目录",
+      "approach": "技术方案：commit「新增 21 种语言支持，完善前后端及桌面端系统提示翻译、语言切换与组件本地化，校对多语言文档并整理目录」落在 README.md、apps/desktop/package.json、apps/desktop/src/index.ts、apps/desktop/src/protocol.ts 等 185 个文件，改动量 +63585 / -555，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 README-EN.md、README.md、backend/cli.py），新增 901 行 / 删除 9 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 185 个文件（如 README.md、apps/desktop/package.json、apps/desktop/src/index.ts），新增 63585 行 / 删除 555 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
@@ -47,12 +47,12 @@
     }
   ],
   "watch": {
-    "repo": "HBAI-Ltd/Toonflow-app",
-    "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/ec8f54597bf6e6114ed56b832f9052cd6f735311",
-    "date": "2026-09-29",
-    "text": "Toonflow-app 在服务端接口 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：增强 Agent 素材引用、历史编辑与会话管理，优化对话虚拟渲染及大画布查询，新增节点排列、媒体历史、错误解读和版本更新弹窗，完善供应商错误透传与桌面更新流程",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3525 / -618。"
+    "repo": "ArcReel/ArcReel",
+    "url": "https://github.com/ArcReel/ArcReel/commit/27f2dc64a70a250843a3f3aba6cbffa52ce082a2",
+    "date": "2026-10-01",
+    "text": "ArcReel 在配置与参数 + 测试 + 文档提交了一次成块的结构性改动，主题集中在流水线与编排：chore: 豁免注释的行内理由改由 audit_conventions 检查，并清零存量",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +589 / -236。"
   },
   "scanned": 26,
-  "candidates": 50
+  "candidates": 52
 }
