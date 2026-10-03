@@ -1,26 +1,13 @@
 {
-  "date": "2026-10-02",
-  "generatedAt": "2026-10-02T04:45:32.831Z",
+  "date": "2026-10-03",
+  "generatedAt": "2026-10-03T04:27:45.729Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；Toonflow-app 推进了流水线与编排；ViMax 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：流水线与编排、功能演进、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Toonflow-app 推进了流水线与编排；hyperframes 推进了功能演进；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/9244c47328e41e59034bd9bbec293fe3f7310cf6",
-      "date": "2026-10-02",
-      "headline": "hyperframes 在前端 / 应用层 + 测试 + 服务端接口提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(studio): normalize loudness and duck under voice, with a limiter report (4/8)",
-      "approach": "技术方案：commit「feat(studio): normalize loudness and duck under voice, with a limiter report (4/8)」落在 packages/cli/src/commands/normalize-audio.test.ts、packages/cli/src/commands/normalize-audio.ts、packages/cli/src/server/studioServer.test.ts、packages/cli/src/server/studioServer.ts 等 34 个文件，改动量 +1935 / -512，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 34 个文件（如 packages/cli/src/commands/normalize-audio.test.ts、packages/cli/src/commands/normalize-audio.ts、packages/cli/src/server/studioServer.test.ts），新增 1935 行 / 删除 512 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
-    },
-    {
-      "index": "02",
       "repo": "HBAI-Ltd/Toonflow-app",
       "owner": "HBAI-Ltd",
       "name": "Toonflow-app",
@@ -33,26 +20,39 @@
       "theme": "流水线与编排"
     },
     {
+      "index": "02",
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/73489331114b89f42b5bc843765e610525188bcb",
+      "date": "2026-10-03",
+      "headline": "hyperframes 在前端 / 应用层 + 测试 + 配置与参数提交了一次成块的结构性改动，主题集中在功能演进：feat(cli): expose harness subscription usage to agents",
+      "approach": "技术方案：commit「feat(cli): expose harness subscription usage to agents」落在 packages/cli/src/cli.ts、packages/cli/src/commands/fixtures/usage-transport.mjs、packages/cli/src/commands/usage.test.ts、packages/cli/src/commands/usage.ts 等 14 个文件，改动量 +994 / -7，归类为「功能演进」。",
+      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 14 个文件（如 packages/cli/src/cli.ts、packages/cli/src/commands/fixtures/usage-transport.mjs、packages/cli/src/commands/usage.test.ts），新增 994 行 / 删除 7 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "功能演进"
+    },
+    {
       "index": "03",
-      "repo": "HKUDS/ViMax",
-      "owner": "HKUDS",
-      "name": "ViMax",
-      "url": "https://github.com/HKUDS/ViMax/commit/fd4b72e7731be6e5f88486206d25ea59849b0285",
-      "date": "2026-09-30",
-      "headline": "ViMax 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次成块的结构性改动，主题集中在流水线与编排：feat: restore concurrent keyframe generation and VLM selection",
-      "approach": "技术方案：commit「feat: restore concurrent keyframe generation and VLM selection」落在 README_ZH.md、agent_runtime/config.py、agent_runtime/vimax_adapters.py、agents/best_image_selector.py 等 16 个文件，改动量 +673 / -40，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 16 个文件（如 README_ZH.md、agent_runtime/config.py、agent_runtime/vimax_adapters.py），新增 673 行 / 删除 40 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "vllm-project/vllm-omni",
+      "owner": "vllm-project",
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/3bc3f1a7d0a139df23e19566e502276e5d998e49",
+      "date": "2026-10-02",
+      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Optimize MOSS Local 1.5 MRV2 serving and progressive chunks",
+      "approach": "技术方案：commit「[Model] Optimize MOSS Local 1.5 MRV2 serving and progressive chunks」落在 docs/configuration/environment_variables.md、docs/configuration/stage_configs.md、recipes/OpenMOSS/MOSS-TTS.md、tests/config/test_config_factory.py 等 70 个文件，改动量 +8516 / -344，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 70 个文件（如 docs/configuration/environment_variables.md、docs/configuration/stage_configs.md、recipes/OpenMOSS/MOSS-TTS.md），新增 8516 行 / 删除 344 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "ArcReel/ArcReel",
-    "url": "https://github.com/ArcReel/ArcReel/commit/27f2dc64a70a250843a3f3aba6cbffa52ce082a2",
-    "date": "2026-10-01",
-    "text": "ArcReel 在配置与参数 + 测试 + 文档提交了一次成块的结构性改动，主题集中在流水线与编排：chore: 豁免注释的行内理由改由 audit_conventions 检查，并清零存量",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +589 / -236。"
+    "repo": "google-ai-edge/mediapipe",
+    "url": "https://github.com/google-ai-edge/mediapipe/commit/ec391b75cc451ea1c4867fe23dc410b03f950884",
+    "date": "2026-10-02",
+    "text": "mediapipe 在Python 后端 / 模型侧 + 前端 / 应用层 + 文档提交了一次大规模重构级改动，主题集中在功能演进：No public description",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3815 / -86。"
   },
   "scanned": 26,
-  "candidates": 52
+  "candidates": 51
 }
