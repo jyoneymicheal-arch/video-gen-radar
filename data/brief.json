@@ -1,58 +1,58 @@
 {
-  "date": "2026-10-03",
-  "generatedAt": "2026-10-03T04:27:45.729Z",
+  "date": "2026-10-04",
+  "generatedAt": "2026-10-04T04:58:40.707Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：流水线与编排、功能演进、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Toonflow-app 推进了流水线与编排；hyperframes 推进了功能演进；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenMontage 推进了模型与推理链路；OpenCreator 推进了接口与集成；ArcReel 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "HBAI-Ltd/Toonflow-app",
-      "owner": "HBAI-Ltd",
-      "name": "Toonflow-app",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/709956ae69676f9f69fdd322898c123544f07ea6",
-      "date": "2026-10-01",
-      "headline": "Toonflow-app 在文档 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：新增 21 种语言支持，完善前后端及桌面端系统提示翻译、语言切换与组件本地化，校对多语言文档并整理目录",
-      "approach": "技术方案：commit「新增 21 种语言支持，完善前后端及桌面端系统提示翻译、语言切换与组件本地化，校对多语言文档并整理目录」落在 README.md、apps/desktop/package.json、apps/desktop/src/index.ts、apps/desktop/src/protocol.ts 等 185 个文件，改动量 +63585 / -555，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 185 个文件（如 README.md、apps/desktop/package.json、apps/desktop/src/index.ts），新增 63585 行 / 删除 555 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "name": "OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage/commit/b75ac8a8c0c85a7802a574f1f87178eecb1bd932",
+      "date": "2026-10-03",
+      "headline": "OpenMontage 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在模型与推理链路：feat: refresh media providers and add HeyGen Avatar V",
+      "approach": "技术方案：commit「feat: refresh media providers and add HeyGen Avatar V」落在 .agents/skills/provider-model-refresh/SKILL.md、.env.example、docs/PROVIDERS.md、docs/provider-update-plan-2026-10-03.md 等 44 个文件，改动量 +7994 / -228，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 44 个文件（如 .agents/skills/provider-model-refresh/SKILL.md、.env.example、docs/PROVIDERS.md），新增 7994 行 / 删除 228 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "02",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/73489331114b89f42b5bc843765e610525188bcb",
+      "repo": "krillinai/OpenCreator",
+      "owner": "krillinai",
+      "name": "OpenCreator",
+      "url": "https://github.com/krillinai/OpenCreator/commit/a5117d7b7c4273d7c71d94d33efb9d6230a9558d",
       "date": "2026-10-03",
-      "headline": "hyperframes 在前端 / 应用层 + 测试 + 配置与参数提交了一次成块的结构性改动，主题集中在功能演进：feat(cli): expose harness subscription usage to agents",
-      "approach": "技术方案：commit「feat(cli): expose harness subscription usage to agents」落在 packages/cli/src/cli.ts、packages/cli/src/commands/fixtures/usage-transport.mjs、packages/cli/src/commands/usage.test.ts、packages/cli/src/commands/usage.ts 等 14 个文件，改动量 +994 / -7，归类为「功能演进」。",
-      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 14 个文件（如 packages/cli/src/cli.ts、packages/cli/src/commands/fixtures/usage-transport.mjs、packages/cli/src/commands/usage.test.ts），新增 994 行 / 删除 7 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "功能演进"
+      "headline": "OpenCreator 在前端 / 应用层 + 服务端接口 + 测试提交了一次成块的结构性改动，主题集中在接口与集成：feat(creator): refine template previews and show configured models",
+      "approach": "技术方案：commit「feat(creator): refine template previews and show configured models」落在 apps/daemon/src/api/routes.creator.ts、apps/daemon/src/api/server.ts、apps/daemon/src/creator/presets/catalog.ts、apps/daemon/src/creator/presets/presentation.ts 等 13 个文件，改动量 +599 / -314，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 apps/daemon/src/api/routes.creator.ts、apps/daemon/src/api/server.ts、apps/daemon/src/creator/presets/catalog.ts），新增 599 行 / 删除 314 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     },
     {
       "index": "03",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/3bc3f1a7d0a139df23e19566e502276e5d998e49",
-      "date": "2026-10-02",
-      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Optimize MOSS Local 1.5 MRV2 serving and progressive chunks",
-      "approach": "技术方案：commit「[Model] Optimize MOSS Local 1.5 MRV2 serving and progressive chunks」落在 docs/configuration/environment_variables.md、docs/configuration/stage_configs.md、recipes/OpenMOSS/MOSS-TTS.md、tests/config/test_config_factory.py 等 70 个文件，改动量 +8516 / -344，归类为「模型与推理链路」。",
+      "repo": "ArcReel/ArcReel",
+      "owner": "ArcReel",
+      "name": "ArcReel",
+      "url": "https://github.com/ArcReel/ArcReel/commit/5096473534ac933a063bb5dfd88e19c269a727df",
+      "date": "2026-10-03",
+      "headline": "ArcReel 在界面组件 + 文档 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(project-settings): rebuild project settings with sidebar tabs, one save bar and live model override badges",
+      "approach": "技术方案：commit「feat(project-settings): rebuild project settings with sidebar tabs, one save bar and live model override badges」落在 docs/standards/frontend-ui.md、frontend/e2e/__screenshots__/1024x600/regions/project-settings.spec.ts/project-settings-agent-reset.png、frontend/e2e/__screenshots__/1024x600/regions/project-settings.spec.ts/project-settings-basics.png、frontend/e2e/__screenshots__/1024x600/regions/project-settings.spec.ts/project-settings-models.png 等 43 个文件，改动量 +2178 / -1996，归类为「模型与推理链路」。",
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 70 个文件（如 docs/configuration/environment_variables.md、docs/configuration/stage_configs.md、recipes/OpenMOSS/MOSS-TTS.md），新增 8516 行 / 删除 344 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 43 个文件（如 docs/standards/frontend-ui.md、frontend/e2e/__screenshots__/1024x600/regions/project-settings.spec.ts/project-settings-agent-reset.png、frontend/e2e/__screenshots__/1024x600/regions/project-settings.spec.ts/project-settings-basics.png），新增 2178 行 / 删除 1996 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "google-ai-edge/mediapipe",
-    "url": "https://github.com/google-ai-edge/mediapipe/commit/ec391b75cc451ea1c4867fe23dc410b03f950884",
-    "date": "2026-10-02",
-    "text": "mediapipe 在Python 后端 / 模型侧 + 前端 / 应用层 + 文档提交了一次大规模重构级改动，主题集中在功能演进：No public description",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3815 / -86。"
+    "repo": "jub0t/Concat",
+    "url": "https://github.com/jub0t/Concat/commit/21855a7409dd23717377f0e76f1bbaca77aa0437",
+    "date": "2026-10-04",
+    "text": "Concat 在配置与参数 + 界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：feat(library): a Stickers page with shapes, and a page strip that scrolls",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1496 / -278。"
   },
   "scanned": 26,
-  "candidates": 51
+  "candidates": 48
 }
