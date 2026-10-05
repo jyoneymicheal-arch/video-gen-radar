@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-04",
-  "generatedAt": "2026-10-04T04:58:40.707Z",
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-05T04:45:49.172Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、接口与集成",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenMontage 推进了模型与推理链路；OpenCreator 推进了接口与集成；ArcReel 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenMontage 推进了模型与推理链路；ArcReel 推进了流水线与编排；hyperframes 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -21,38 +21,38 @@
     },
     {
       "index": "02",
-      "repo": "krillinai/OpenCreator",
-      "owner": "krillinai",
-      "name": "OpenCreator",
-      "url": "https://github.com/krillinai/OpenCreator/commit/a5117d7b7c4273d7c71d94d33efb9d6230a9558d",
-      "date": "2026-10-03",
-      "headline": "OpenCreator 在前端 / 应用层 + 服务端接口 + 测试提交了一次成块的结构性改动，主题集中在接口与集成：feat(creator): refine template previews and show configured models",
-      "approach": "技术方案：commit「feat(creator): refine template previews and show configured models」落在 apps/daemon/src/api/routes.creator.ts、apps/daemon/src/api/server.ts、apps/daemon/src/creator/presets/catalog.ts、apps/daemon/src/creator/presets/presentation.ts 等 13 个文件，改动量 +599 / -314，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 apps/daemon/src/api/routes.creator.ts、apps/daemon/src/api/server.ts、apps/daemon/src/creator/presets/catalog.ts），新增 599 行 / 删除 314 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
-    },
-    {
-      "index": "03",
       "repo": "ArcReel/ArcReel",
       "owner": "ArcReel",
       "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/5096473534ac933a063bb5dfd88e19c269a727df",
-      "date": "2026-10-03",
-      "headline": "ArcReel 在界面组件 + 文档 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(project-settings): rebuild project settings with sidebar tabs, one save bar and live model override badges",
-      "approach": "技术方案：commit「feat(project-settings): rebuild project settings with sidebar tabs, one save bar and live model override badges」落在 docs/standards/frontend-ui.md、frontend/e2e/__screenshots__/1024x600/regions/project-settings.spec.ts/project-settings-agent-reset.png、frontend/e2e/__screenshots__/1024x600/regions/project-settings.spec.ts/project-settings-basics.png、frontend/e2e/__screenshots__/1024x600/regions/project-settings.spec.ts/project-settings-models.png 等 43 个文件，改动量 +2178 / -1996，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 43 个文件（如 docs/standards/frontend-ui.md、frontend/e2e/__screenshots__/1024x600/regions/project-settings.spec.ts/project-settings-agent-reset.png、frontend/e2e/__screenshots__/1024x600/regions/project-settings.spec.ts/project-settings-basics.png），新增 2178 行 / 删除 1996 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "url": "https://github.com/ArcReel/ArcReel/commit/404a7a4edc590d1c9feccd82acf56f3bd34ec5a9",
+      "date": "2026-10-04",
+      "headline": "ArcReel 在界面组件 + 文档 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：feat(episode): start an episode's first script plan from the plan tab — instructions, hand-off and source in one place",
+      "approach": "技术方案：commit「feat(episode): start an episode's first script plan from the plan tab — instructions, hand-off and source in one place」落在 docs/standards/frontend-ui.md、frontend/e2e/__screenshots__/1024x600/regions/reference-workbench.spec.ts/reference-workbench.png、frontend/e2e/__screenshots__/1024x600/regions/script-plan-start.spec.ts/script-plan-replan-dialog.png、frontend/e2e/__screenshots__/1024x600/regions/script-plan-start.spec.ts/script-plan-review.png 等 47 个文件，改动量 +1688 / -1019，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 47 个文件（如 docs/standards/frontend-ui.md、frontend/e2e/__screenshots__/1024x600/regions/reference-workbench.spec.ts/reference-workbench.png、frontend/e2e/__screenshots__/1024x600/regions/script-plan-start.spec.ts/script-plan-replan-dialog.png），新增 1688 行 / 删除 1019 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
+    },
+    {
+      "index": "03",
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/db12b3e022ef343d1d2318e9722f7668a1efc2c7",
+      "date": "2026-10-05",
+      "headline": "hyperframes 在前端 / 应用层 + 测试 + 服务端接口提交了一次成块的结构性改动，主题集中在流水线与编排：fix(studio): place GSAP step lists and duration-less tweens where GSAP plays them",
+      "approach": "技术方案：commit「fix(studio): place GSAP step lists and duration-less tweens where GSAP plays them」落在 packages/parsers/src/gsapConstants.ts、packages/parsers/src/gsapObjectArrayTiming.test.ts、packages/parsers/src/gsapObjectArrayTiming.ts、packages/parsers/src/gsapParser.test.ts 等 43 个文件，改动量 +1041 / -439，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 43 个文件（如 packages/parsers/src/gsapConstants.ts、packages/parsers/src/gsapObjectArrayTiming.test.ts、packages/parsers/src/gsapObjectArrayTiming.ts），新增 1041 行 / 删除 439 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     }
   ],
   "watch": {
-    "repo": "jub0t/Concat",
-    "url": "https://github.com/jub0t/Concat/commit/21855a7409dd23717377f0e76f1bbaca77aa0437",
-    "date": "2026-10-04",
-    "text": "Concat 在配置与参数 + 界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：feat(library): a Stickers page with shapes, and a page strip that scrolls",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1496 / -278。"
+    "repo": "vllm-project/vllm-omni",
+    "url": "https://github.com/vllm-project/vllm-omni/commit/bbd539d2b6496931825ac93011eb5ec0ad0e28f8",
+    "date": "2026-10-05",
+    "text": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：[feature] Enable multi-node inference through Ray backend",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1721 / -37。"
   },
   "scanned": 26,
-  "candidates": 48
+  "candidates": 47
 }
