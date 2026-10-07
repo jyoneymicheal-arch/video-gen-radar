@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-06",
-  "generatedAt": "2026-10-06T05:32:35.241Z",
+  "date": "2026-10-07",
+  "generatedAt": "2026-10-07T05:02:28.377Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、交互与可控性、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Toonflow-app 推进了编辑与后期能力；ArcReel 推进了交互与可控性；diffusers 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Toonflow-app 推进了编辑与后期能力；lanshu-create-ai-presenter-video 推进了接口与集成；hyperframes 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -21,38 +21,38 @@
     },
     {
       "index": "02",
-      "repo": "ArcReel/ArcReel",
-      "owner": "ArcReel",
-      "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/5e1f9623b9c12f4129ca078b20a2d25d26c6f74b",
-      "date": "2026-10-05",
-      "headline": "ArcReel 在文档 + 测试 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在交互与可控性：feat(overview): take an ad project's first input on the overview and edit its story setting in a video-page tab",
-      "approach": "技术方案：commit「feat(overview): take an ad project's first input on the overview and edit its story setting in a video-page tab」落在 agent_runtime_profile/CLAUDE.ad.md、frontend/e2e/__screenshots__/1024x600/regions/ad-project.spec.ts/ad-overview-brief-unsaved.png、frontend/e2e/__screenshots__/1024x600/regions/ad-project.spec.ts/ad-overview-new-products.png、frontend/e2e/__screenshots__/1024x600/regions/ad-project.spec.ts/ad-overview-products.png 等 34 个文件，改动量 +764 / -752，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 34 个文件（如 agent_runtime_profile/CLAUDE.ad.md、frontend/e2e/__screenshots__/1024x600/regions/ad-project.spec.ts/ad-overview-brief-unsaved.png、frontend/e2e/__screenshots__/1024x600/regions/ad-project.spec.ts/ad-overview-new-products.png），新增 764 行 / 删除 752 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "repo": "cclank/lanshu-create-ai-presenter-video",
+      "owner": "cclank",
+      "name": "lanshu-create-ai-presenter-video",
+      "url": "https://github.com/cclank/lanshu-create-ai-presenter-video/commit/c2e3bd755458cb2bb45f4880399e9cb983c8cd1a",
+      "date": "2026-10-06",
+      "headline": "lanshu-create-ai-presenter-video 在配置与参数 + 文档 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在接口与集成：Add the styled explainer route: nine visual explainer styles",
+      "approach": "技术方案：commit「Add the styled explainer route: nine visual explainer styles」落在 .github/workflows/validate.yml、.gitignore、README.md、README.zh-CN.md 等 235 个文件，改动量 +34635 / -30，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 235 个文件（如 .github/workflows/validate.yml、.gitignore、README.md），新增 34635 行 / 删除 30 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     },
     {
       "index": "03",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/c2798cc7859f258c6cfc5b2460e82b6cac71f235",
-      "date": "2026-10-05",
-      "headline": "diffusers 在Python 后端 / 模型侧 + 测试提交了一次成块的结构性改动，主题集中在模型与推理链路：[tests] refactor the pipeline-level attention processor tests",
-      "approach": "技术方案：commit「[tests] refactor the pipeline-level attention processor tests」落在 tests/models/autoencoders/test_models_autoencoder_kl.py、tests/models/testing_utils/attention.py、tests/models/transformers/test_models_transformer_chroma.py、tests/models/transformers/test_models_transformer_hunyuan_dit.py 等 31 个文件，改动量 +181 / -1063，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 31 个文件（如 tests/models/autoencoders/test_models_autoencoder_kl.py、tests/models/testing_utils/attention.py、tests/models/transformers/test_models_transformer_chroma.py），新增 181 行 / 删除 1063 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/cffc3aa4e1f888b4867e4b69f602d1c12dc58e32",
+      "date": "2026-10-07",
+      "headline": "hyperframes 在前端 / 应用层 + 测试 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(render): report encoding and assembling progress",
+      "approach": "技术方案：commit「feat(render): report encoding and assembling progress」落在 packages/cli/src/commands/render.test.ts、packages/cli/src/commands/render.ts、packages/cli/src/ui/progress.test.ts、packages/cli/src/ui/progress.ts 等 25 个文件，改动量 +553 / -53，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 25 个文件（如 packages/cli/src/commands/render.test.ts、packages/cli/src/commands/render.ts、packages/cli/src/ui/progress.test.ts），新增 553 行 / 删除 53 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     }
   ],
   "watch": {
-    "repo": "WyattBlue/auto-editor",
-    "url": "https://github.com/WyattBlue/auto-editor/commit/1474bfa53bf4dc3ff46a30fd4c934d96beef1c45",
-    "date": "2026-10-05",
-    "text": "auto-editor 在主代码路径提交了一次大规模重构级改动，主题集中在流水线与编排：Make auto-editor usable as a library",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1402 / -824。"
+    "repo": "FlashML-org/FreeVideo",
+    "url": "https://github.com/FlashML-org/FreeVideo/commit/5f26105f779f8116e0fd2579267e95600a1e9f24",
+    "date": "2026-10-06",
+    "text": "FreeVideo 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次成块的结构性改动，主题集中在模型与推理链路：Add optional FreeToken prompt enhancement",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1397 / -6。"
   },
   "scanned": 26,
-  "candidates": 48
+  "candidates": 47
 }
