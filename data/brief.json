@@ -1,13 +1,39 @@
 {
-  "date": "2026-10-10",
-  "generatedAt": "2026-10-10T05:00:23.925Z",
+  "date": "2026-10-11",
+  "generatedAt": "2026-10-11T04:49:04.755Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hypit 推进了模型与推理链路；Toonflow-app 推进了流水线与编排；vllm-omni 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：流水线与编排、交互与可控性、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenCreator 推进了流水线与编排；gyroflow 推进了交互与可控性；hypit 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
+      "repo": "krillinai/OpenCreator",
+      "owner": "krillinai",
+      "name": "OpenCreator",
+      "url": "https://github.com/krillinai/OpenCreator/commit/2de3715344f83eb0de09b25b8f4602b3b879ff5c",
+      "date": "2026-10-11",
+      "headline": "OpenCreator 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在流水线与编排：feat: prepare OpenCreator 3.2.6 account and YouTube improvements",
+      "approach": "技术方案：commit「feat: prepare OpenCreator 3.2.6 account and YouTube improvements」落在 apps/daemon/package.json、apps/daemon/src/api/routes.gateway-account.ts、apps/daemon/src/api/routes.platform-connections.ts、apps/daemon/src/api/server.ts 等 81 个文件，改动量 +2895 / -597，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 81 个文件（如 apps/daemon/package.json、apps/daemon/src/api/routes.gateway-account.ts、apps/daemon/src/api/routes.platform-connections.ts），新增 2895 行 / 删除 597 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
+    },
+    {
+      "index": "02",
+      "repo": "gyroflow/gyroflow",
+      "owner": "gyroflow",
+      "name": "gyroflow",
+      "url": "https://github.com/gyroflow/gyroflow/commit/1968949acded1cf69fca3bf1e6e8a0eb123264d2",
+      "date": "2026-10-11",
+      "headline": "gyroflow 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Implement tracked-points editor for optical-only stablization",
+      "approach": "技术方案：commit「Implement tracked-points editor for optical-only stablization」落在 src/cli.rs、src/controller.rs、src/core/gyro_source/optical_correction.rs、src/core/lib.rs 等 13 个文件，改动量 +3250 / -1421，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 src/cli.rs、src/controller.rs、src/core/gyro_source/optical_correction.rs），新增 3250 行 / 删除 1421 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
+    },
+    {
+      "index": "03",
       "repo": "hypit-ai/hypit",
       "owner": "hypit-ai",
       "name": "hypit",
@@ -18,41 +44,15 @@
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 300 个文件（如 .github/workflows/automation-check.yml、.github/workflows/ci.yml、.github/workflows/npm-package.yml），新增 3641 行 / 删除 2114 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
-    },
-    {
-      "index": "02",
-      "repo": "HBAI-Ltd/Toonflow-app",
-      "owner": "HBAI-Ltd",
-      "name": "Toonflow-app",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/28fe32b8a8a3d0b345fa1041b6a1f7a59279b633",
-      "date": "2026-10-09",
-      "headline": "Toonflow-app 在前端 / 应用层 + 服务端接口 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：补齐 20 种语言词条，完善设备互联、Agent 与媒体操作提示的多语言支持，新增优云智算图片和视频供应商",
-      "approach": "技术方案：commit「补齐 20 种语言词条，完善设备互联、Agent 与媒体操作提示的多语言支持，新增优云智算图片和视频供应商」落在 apps/desktop/src/connection.ts、apps/mobile/src/server.ts、apps/server/src/remoteConnection.ts、apps/server/src/routes/desktop/clipboard/read.ts 等 37 个文件，改动量 +9958 / -206，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 37 个文件（如 apps/desktop/src/connection.ts、apps/mobile/src/server.ts、apps/server/src/remoteConnection.ts），新增 9958 行 / 删除 206 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
-    },
-    {
-      "index": "03",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/2f289bb179d85671c116c10208b5c84b5c53f18f",
-      "date": "2026-10-10",
-      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Prefetch the MiniCPM-o 4.5 Code2Wav reference during Stage-2 …",
-      "approach": "技术方案：commit「[Model] Prefetch the MiniCPM-o 4.5 Code2Wav reference during Stage-2 …」落在 docs/design/feature/async_chunk.md、recipes/OpenBMB/MiniCPM-o-4_5.md、tests/core/sched/test_omni_scheduler_async_chunk_prewarm.py、tests/engine/test_async_chunk_prewarm_wire.py 等 26 个文件，改动量 +2670 / -26，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 26 个文件（如 docs/design/feature/async_chunk.md、recipes/OpenBMB/MiniCPM-o-4_5.md、tests/core/sched/test_omni_scheduler_async_chunk_prewarm.py），新增 2670 行 / 删除 26 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "lemomo-ai/lemo-opuscar",
-    "url": "https://github.com/lemomo-ai/lemo-opuscar/commit/a75e2b3384cded87955c8743b5a59db06ea491a8",
+    "repo": "HBAI-Ltd/Toonflow-app",
+    "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/28fe32b8a8a3d0b345fa1041b6a1f7a59279b633",
     "date": "2026-10-09",
-    "text": "lemo-opuscar 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在交互与可控性：OPUSCAR 98: all 98 styles open on the film page",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +7441 / -20。"
+    "text": "Toonflow-app 在前端 / 应用层 + 服务端接口 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：补齐 20 种语言词条，完善设备互联、Agent 与媒体操作提示的多语言支持，新增优云智算图片和视频供应商",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +9958 / -206。"
   },
   "scanned": 26,
-  "candidates": 53
+  "candidates": 64
 }
