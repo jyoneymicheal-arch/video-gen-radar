@@ -1,58 +1,58 @@
 {
-  "date": "2026-10-11",
-  "generatedAt": "2026-10-11T04:49:04.755Z",
+  "date": "2026-10-12",
+  "generatedAt": "2026-10-12T05:04:16.880Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：流水线与编排、交互与可控性、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenCreator 推进了流水线与编排；gyroflow 推进了交互与可控性；hypit 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：流水线与编排、模型与推理链路、功能演进",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：FFmpegFreeUI 推进了流水线与编排；vllm-omni 推进了模型与推理链路；video-shotcraft 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "krillinai/OpenCreator",
-      "owner": "krillinai",
-      "name": "OpenCreator",
-      "url": "https://github.com/krillinai/OpenCreator/commit/2de3715344f83eb0de09b25b8f4602b3b879ff5c",
+      "repo": "Lake1059/FFmpegFreeUI",
+      "owner": "Lake1059",
+      "name": "FFmpegFreeUI",
+      "url": "https://github.com/Lake1059/FFmpegFreeUI/commit/943b651cb745c98df289075d0aa0e9514c443ef9",
       "date": "2026-10-11",
-      "headline": "OpenCreator 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在流水线与编排：feat: prepare OpenCreator 3.2.6 account and YouTube improvements",
-      "approach": "技术方案：commit「feat: prepare OpenCreator 3.2.6 account and YouTube improvements」落在 apps/daemon/package.json、apps/daemon/src/api/routes.gateway-account.ts、apps/daemon/src/api/routes.platform-connections.ts、apps/daemon/src/api/server.ts 等 81 个文件，改动量 +2895 / -597，归类为「流水线与编排」。",
+      "headline": "FFmpegFreeUI 在文档 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：2026/10/12-1",
+      "approach": "技术方案：commit「2026/10/12-1」落在 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/Agent 智能体/Agent技能资料库_v6.vb、FFmpegFreeUI/功能/Agent 智能体/Agent本地工具_v6.vb、FFmpegFreeUI/功能/Agent 智能体/Agent本地工具_队列_v6.vb 等 46 个文件，改动量 +1978 / -1469，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 81 个文件（如 apps/daemon/package.json、apps/daemon/src/api/routes.gateway-account.ts、apps/daemon/src/api/routes.platform-connections.ts），新增 2895 行 / 删除 597 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 46 个文件（如 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/Agent 智能体/Agent技能资料库_v6.vb、FFmpegFreeUI/功能/Agent 智能体/Agent本地工具_v6.vb），新增 1978 行 / 删除 1469 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
       "index": "02",
-      "repo": "gyroflow/gyroflow",
-      "owner": "gyroflow",
-      "name": "gyroflow",
-      "url": "https://github.com/gyroflow/gyroflow/commit/1968949acded1cf69fca3bf1e6e8a0eb123264d2",
+      "repo": "vllm-project/vllm-omni",
+      "owner": "vllm-project",
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/198c2105930bd1bac0b0966ffd0997cdd84d4790",
       "date": "2026-10-11",
-      "headline": "gyroflow 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Implement tracked-points editor for optical-only stablization",
-      "approach": "技术方案：commit「Implement tracked-points editor for optical-only stablization」落在 src/cli.rs、src/controller.rs、src/core/gyro_source/optical_correction.rs、src/core/lib.rs 等 13 个文件，改动量 +3250 / -1421，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 src/cli.rs、src/controller.rs、src/core/gyro_source/optical_correction.rs），新增 3250 行 / 删除 1421 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "headline": "vllm-omni 在配置与参数 + 测试 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] MiniMax H3 timeline guide conditioning",
+      "approach": "技术方案：commit「[Model] MiniMax H3 timeline guide conditioning」落在 .buildkite/cuda/test-nightly.yml、tests/diffusion/models/minimax_h3/test_minimax_h3_packing.py、tests/diffusion/models/minimax_h3/test_minimax_h3_step_execution.py、tests/diffusion/models/minimax_h3/test_minimax_h3_timeline_guides.py 等 13 个文件，改动量 +1508 / -38，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 .buildkite/cuda/test-nightly.yml、tests/diffusion/models/minimax_h3/test_minimax_h3_packing.py、tests/diffusion/models/minimax_h3/test_minimax_h3_step_execution.py），新增 1508 行 / 删除 38 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "03",
-      "repo": "hypit-ai/hypit",
-      "owner": "hypit-ai",
-      "name": "hypit",
-      "url": "https://github.com/hypit-ai/hypit/commit/68f169364572bf49a4b48b09a69b8efa64115ac1",
-      "date": "2026-10-09",
-      "headline": "hypit 在配置与参数 + 前端 / 应用层 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：refactor: publish video-domain packages independently for 0.3.1",
-      "approach": "技术方案：commit「refactor: publish video-domain packages independently for 0.3.1」落在 .github/workflows/automation-check.yml、.github/workflows/ci.yml、.github/workflows/npm-package.yml、.github/workflows/publish-npm.yml 等 300 个文件，改动量 +3641 / -2114，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 300 个文件（如 .github/workflows/automation-check.yml、.github/workflows/ci.yml、.github/workflows/npm-package.yml），新增 3641 行 / 删除 2114 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "Vincentwei1021/video-shotcraft",
+      "owner": "Vincentwei1021",
+      "name": "video-shotcraft",
+      "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/e9d9b902e8948f85ed9013a631b82f45ad868708",
+      "date": "2026-10-11",
+      "headline": "video-shotcraft 在文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在功能演进：feat(publish): optional social publishing of the finished film via Upload-Post",
+      "approach": "技术方案：commit「feat(publish): optional social publishing of the finished film via Upload-Post」落在 README.md、README_CN.md、README_JA.md、SKILL.md 等 7 个文件，改动量 +972 / -0，归类为「功能演进」。",
+      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 7 个文件（如 README.md、README_CN.md、README_JA.md），新增 972 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "功能演进"
     }
   ],
   "watch": {
-    "repo": "HBAI-Ltd/Toonflow-app",
-    "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/28fe32b8a8a3d0b345fa1041b6a1f7a59279b633",
-    "date": "2026-10-09",
-    "text": "Toonflow-app 在前端 / 应用层 + 服务端接口 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：补齐 20 种语言词条，完善设备互联、Agent 与媒体操作提示的多语言支持，新增优云智算图片和视频供应商",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +9958 / -206。"
+    "repo": "jub0t/concat",
+    "url": "https://github.com/jub0t/concat/commit/132f68df45a5f1a2c961850cf5a05cd7c9e970e0",
+    "date": "2026-10-12",
+    "text": "concat 在配置与参数 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：fix(window): new projects on an iPhone, a second Untitled project, a click that moved a clip, Detach that said nothing, and no dialog under the studio borrow (#299, #151, #247, #310, #283)",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +584 / -90。"
   },
   "scanned": 26,
-  "candidates": 64
+  "candidates": 53
 }
