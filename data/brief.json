@@ -1,58 +1,58 @@
 {
-  "date": "2026-10-12",
-  "generatedAt": "2026-10-12T05:04:16.880Z",
+  "date": "2026-10-13",
+  "generatedAt": "2026-10-13T06:03:57.422Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：流水线与编排、模型与推理链路、功能演进",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：FFmpegFreeUI 推进了流水线与编排；vllm-omni 推进了模型与推理链路；video-shotcraft 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：流水线与编排、模型与推理链路、交互与可控性",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了流水线与编排；dramaclaw 推进了模型与推理链路；SmartSub 推进了交互与可控性。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "Lake1059/FFmpegFreeUI",
-      "owner": "Lake1059",
-      "name": "FFmpegFreeUI",
-      "url": "https://github.com/Lake1059/FFmpegFreeUI/commit/943b651cb745c98df289075d0aa0e9514c443ef9",
-      "date": "2026-10-11",
-      "headline": "FFmpegFreeUI 在文档 + 测试提交了一次大规模重构级改动，主题集中在流水线与编排：2026/10/12-1",
-      "approach": "技术方案：commit「2026/10/12-1」落在 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/Agent 智能体/Agent技能资料库_v6.vb、FFmpegFreeUI/功能/Agent 智能体/Agent本地工具_v6.vb、FFmpegFreeUI/功能/Agent 智能体/Agent本地工具_队列_v6.vb 等 46 个文件，改动量 +1978 / -1469，归类为「流水线与编排」。",
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/1628cb1c331741b64f67c97209ab49018e71ac70",
+      "date": "2026-10-13",
+      "headline": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次大规模重构级改动，主题集中在流水线与编排：Add SANA-WM camera-controlled image-to-video pipeline",
+      "approach": "技术方案：commit「Add SANA-WM camera-controlled image-to-video pipeline」落在 docs/source/en/_toctree.yml、docs/source/en/api/models/sana_wm_refiner_transformer3d.md、docs/source/en/api/models/sana_wm_transformer3d.md、docs/source/en/api/pipelines/sana_wm.md 等 23 个文件，改动量 +7584 / -0，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 46 个文件（如 FFmpegFreeUI/FFmpegFreeUI.vbproj、FFmpegFreeUI/功能/Agent 智能体/Agent技能资料库_v6.vb、FFmpegFreeUI/功能/Agent 智能体/Agent本地工具_v6.vb），新增 1978 行 / 删除 1469 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 docs/source/en/_toctree.yml、docs/source/en/api/models/sana_wm_refiner_transformer3d.md、docs/source/en/api/models/sana_wm_transformer3d.md），新增 7584 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
       "index": "02",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/198c2105930bd1bac0b0966ffd0997cdd84d4790",
-      "date": "2026-10-11",
-      "headline": "vllm-omni 在配置与参数 + 测试 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] MiniMax H3 timeline guide conditioning",
-      "approach": "技术方案：commit「[Model] MiniMax H3 timeline guide conditioning」落在 .buildkite/cuda/test-nightly.yml、tests/diffusion/models/minimax_h3/test_minimax_h3_packing.py、tests/diffusion/models/minimax_h3/test_minimax_h3_step_execution.py、tests/diffusion/models/minimax_h3/test_minimax_h3_timeline_guides.py 等 13 个文件，改动量 +1508 / -38，归类为「模型与推理链路」。",
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/7bea6aa83108491497182e604e37fb9620c5dddb",
+      "date": "2026-10-12",
+      "headline": "dramaclaw 在文档 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(canvas): 视频节点新增逐帧拉片、智能续写、画面裁切与深度动作捕捉",
+      "approach": "技术方案：commit「feat(canvas): 视频节点新增逐帧拉片、智能续写、画面裁切与深度动作捕捉」落在 .env.example、.hermes/skills/freezone/references/canvas-command-guide.md、frontend/.gitignore、frontend/public/locales/en/translation.json 等 111 个文件，改动量 +13083 / -402，归类为「模型与推理链路」。",
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 .buildkite/cuda/test-nightly.yml、tests/diffusion/models/minimax_h3/test_minimax_h3_packing.py、tests/diffusion/models/minimax_h3/test_minimax_h3_step_execution.py），新增 1508 行 / 删除 38 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 111 个文件（如 .env.example、.hermes/skills/freezone/references/canvas-command-guide.md、frontend/.gitignore），新增 13083 行 / 删除 402 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
     },
     {
       "index": "03",
-      "repo": "Vincentwei1021/video-shotcraft",
-      "owner": "Vincentwei1021",
-      "name": "video-shotcraft",
-      "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/e9d9b902e8948f85ed9013a631b82f45ad868708",
-      "date": "2026-10-11",
-      "headline": "video-shotcraft 在文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在功能演进：feat(publish): optional social publishing of the finished film via Upload-Post",
-      "approach": "技术方案：commit「feat(publish): optional social publishing of the finished film via Upload-Post」落在 README.md、README_CN.md、README_JA.md、SKILL.md 等 7 个文件，改动量 +972 / -0，归类为「功能演进」。",
-      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 7 个文件（如 README.md、README_CN.md、README_JA.md），新增 972 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "功能演进"
+      "repo": "buxuku/SmartSub",
+      "owner": "buxuku",
+      "name": "SmartSub",
+      "url": "https://github.com/buxuku/SmartSub/commit/882af21940b6c3a482b87cfdc484774d231f8863",
+      "date": "2026-10-13",
+      "headline": "SmartSub 在文档 + 界面组件 + 测试提交了一次成块的结构性改动，主题集中在交互与可控性：feat(summary): move the summary controls into a popover and a dialog",
+      "approach": "技术方案：commit「feat(summary): move the summary controls into a popover and a dialog」落在 docs/docs/advanced/custom-prompts.md、docs/docs/features/subtitle-translation.md、renderer/components/TaskControls.tsx、renderer/components/__tests__/GlossarySelectControl.test.tsx 等 23 个文件，改动量 +1126 / -288，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 docs/docs/advanced/custom-prompts.md、docs/docs/features/subtitle-translation.md、renderer/components/TaskControls.tsx），新增 1126 行 / 删除 288 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     }
   ],
   "watch": {
-    "repo": "jub0t/concat",
-    "url": "https://github.com/jub0t/concat/commit/132f68df45a5f1a2c961850cf5a05cd7c9e970e0",
-    "date": "2026-10-12",
-    "text": "concat 在配置与参数 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：fix(window): new projects on an iPhone, a second Untitled project, a click that moved a clip, Detach that said nothing, and no dialog under the studio borrow (#299, #151, #247, #310, #283)",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +584 / -90。"
+    "repo": "heygen-com/hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes/commit/893b4f6757f4d6e8c6a1deb9d2c4743119694b46",
+    "date": "2026-10-13",
+    "text": "hyperframes 在前端 / 应用层 + 服务端接口 + 测试提交了一次成块的结构性改动，主题集中在功能演进：feat(studio): record video state, edit targets and artifact cleanup in project history",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1403 / -38。"
   },
   "scanned": 26,
-  "candidates": 53
+  "candidates": 63
 }
