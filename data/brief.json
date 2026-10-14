@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-13",
-  "generatedAt": "2026-10-13T06:03:57.422Z",
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-14T04:07:19.689Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：流水线与编排、模型与推理链路、交互与可控性",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了流水线与编排；dramaclaw 推进了模型与推理链路；SmartSub 推进了交互与可控性。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：流水线与编排、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了流水线与编排；Toonflow-app 推进了流水线与编排；OpenCreator 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -21,38 +21,38 @@
     },
     {
       "index": "02",
-      "repo": "dramaclaw/dramaclaw",
-      "owner": "dramaclaw",
-      "name": "dramaclaw",
-      "url": "https://github.com/dramaclaw/dramaclaw/commit/7bea6aa83108491497182e604e37fb9620c5dddb",
-      "date": "2026-10-12",
-      "headline": "dramaclaw 在文档 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(canvas): 视频节点新增逐帧拉片、智能续写、画面裁切与深度动作捕捉",
-      "approach": "技术方案：commit「feat(canvas): 视频节点新增逐帧拉片、智能续写、画面裁切与深度动作捕捉」落在 .env.example、.hermes/skills/freezone/references/canvas-command-guide.md、frontend/.gitignore、frontend/public/locales/en/translation.json 等 111 个文件，改动量 +13083 / -402，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 111 个文件（如 .env.example、.hermes/skills/freezone/references/canvas-command-guide.md、frontend/.gitignore），新增 13083 行 / 删除 402 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "HBAI-Ltd/Toonflow-app",
+      "owner": "HBAI-Ltd",
+      "name": "Toonflow-app",
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/ae9e5f1ac4f37713b902fed7fa5ca87819b324ae",
+      "date": "2026-10-13",
+      "headline": "Toonflow-app 在前端 / 应用层 + 服务端接口 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：新增 v1.1.8 分集制作流程Skill，优化画布目录按需加载、跨画布引用和帮助入口，调整媒体估价展示与生成校验，并更新版本说明。",
+      "approach": "技术方案：commit「新增 v1.1.8 分集制作流程Skill，优化画布目录按需加载、跨画布引用和帮助入口，调整媒体估价展示与生成校验，并更新版本说明。」落在 apps/server/src/agent/mentionSources.ts、apps/server/src/utils/media/billing.ts、apps/server/src/utils/media/generation.ts、apps/web/src/components/agent/mentionMenu.vue 等 40 个文件，改动量 +2742 / -241，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 40 个文件（如 apps/server/src/agent/mentionSources.ts、apps/server/src/utils/media/billing.ts、apps/server/src/utils/media/generation.ts），新增 2742 行 / 删除 241 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     },
     {
       "index": "03",
-      "repo": "buxuku/SmartSub",
-      "owner": "buxuku",
-      "name": "SmartSub",
-      "url": "https://github.com/buxuku/SmartSub/commit/882af21940b6c3a482b87cfdc484774d231f8863",
-      "date": "2026-10-13",
-      "headline": "SmartSub 在文档 + 界面组件 + 测试提交了一次成块的结构性改动，主题集中在交互与可控性：feat(summary): move the summary controls into a popover and a dialog",
-      "approach": "技术方案：commit「feat(summary): move the summary controls into a popover and a dialog」落在 docs/docs/advanced/custom-prompts.md、docs/docs/features/subtitle-translation.md、renderer/components/TaskControls.tsx、renderer/components/__tests__/GlossarySelectControl.test.tsx 等 23 个文件，改动量 +1126 / -288，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 docs/docs/advanced/custom-prompts.md、docs/docs/features/subtitle-translation.md、renderer/components/TaskControls.tsx），新增 1126 行 / 删除 288 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "repo": "krillinai/OpenCreator",
+      "owner": "krillinai",
+      "name": "OpenCreator",
+      "url": "https://github.com/krillinai/OpenCreator/commit/d1d35dcbf793d732eb02c8392ea607d63cf95f6c",
+      "date": "2026-10-14",
+      "headline": "OpenCreator 在前端 / 应用层 + 服务端接口 + 测试提交了一次成块的结构性改动，主题集中在模型与推理链路：feat: decouple official model requests from the account gateway",
+      "approach": "技术方案：commit「feat: decouple official model requests from the account gateway」落在 apps/daemon/src/api/server.ts、apps/daemon/src/gateway/account-service.ts、apps/daemon/src/gateway/client.ts、apps/daemon/src/gateway/config-store.ts 等 16 个文件，改动量 +891 / -79，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 16 个文件（如 apps/daemon/src/api/server.ts、apps/daemon/src/gateway/account-service.ts、apps/daemon/src/gateway/client.ts），新增 891 行 / 删除 79 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "heygen-com/hyperframes",
-    "url": "https://github.com/heygen-com/hyperframes/commit/893b4f6757f4d6e8c6a1deb9d2c4743119694b46",
+    "repo": "hypit-ai/hypit",
+    "url": "https://github.com/hypit-ai/hypit/commit/398ce9c6d14b687180bcb272827748d31bae3e4d",
     "date": "2026-10-13",
-    "text": "hyperframes 在前端 / 应用层 + 服务端接口 + 测试提交了一次成块的结构性改动，主题集中在功能演进：feat(studio): record video state, edit targets and artifact cleanup in project history",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1403 / -38。"
+    "text": "hypit 在配置与参数 + 文档 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在交互与可控性：feat: add embeddable HTML document output",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +664 / -230。"
   },
   "scanned": 26,
-  "candidates": 63
+  "candidates": 64
 }
