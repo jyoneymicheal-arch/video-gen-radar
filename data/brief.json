@@ -1,58 +1,58 @@
 {
-  "date": "2026-10-15",
-  "generatedAt": "2026-10-15T03:49:50.333Z",
+  "date": "2026-10-16",
+  "generatedAt": "2026-10-16T03:45:22.074Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、流水线与编排、接口与集成",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；Toonflow-app 推进了流水线与编排；OpenCreator 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：流水线与编排、编辑与后期能力",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了流水线与编排；OpenCreator 推进了编辑与后期能力；concat 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/bb49858b8a4df6ae259e30cb2ce06bc77f86bbc5",
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/62cde2b0115d57492d2f5ecefab54994797df2e3",
       "date": "2026-10-15",
-      "headline": "hyperframes 在文档 + 前端 / 应用层 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(cli): hyperframes audio measures where sounds land, in film time",
-      "approach": "技术方案：commit「feat(cli): hyperframes audio measures where sounds land, in film time」落在 docs/packages/cli.mdx、packages/cli/README.md、packages/cli/src/audio/analysis/analyze.test.ts、packages/cli/src/audio/analysis/analyze.ts 等 25 个文件，改动量 +2428 / -65，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 25 个文件（如 docs/packages/cli.mdx、packages/cli/README.md、packages/cli/src/audio/analysis/analyze.test.ts），新增 2428 行 / 删除 65 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
-    },
-    {
-      "index": "02",
-      "repo": "HBAI-Ltd/Toonflow-app",
-      "owner": "HBAI-Ltd",
-      "name": "Toonflow-app",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/ae9e5f1ac4f37713b902fed7fa5ca87819b324ae",
-      "date": "2026-10-13",
-      "headline": "Toonflow-app 在前端 / 应用层 + 服务端接口 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：新增 v1.1.8 分集制作流程Skill，优化画布目录按需加载、跨画布引用和帮助入口，调整媒体估价展示与生成校验，并更新版本说明。",
-      "approach": "技术方案：commit「新增 v1.1.8 分集制作流程Skill，优化画布目录按需加载、跨画布引用和帮助入口，调整媒体估价展示与生成校验，并更新版本说明。」落在 apps/server/src/agent/mentionSources.ts、apps/server/src/utils/media/billing.ts、apps/server/src/utils/media/generation.ts、apps/web/src/components/agent/mentionMenu.vue 等 40 个文件，改动量 +2742 / -241，归类为「流水线与编排」。",
+      "headline": "diffusers 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在流水线与编排：add modular pipeline for qwen-image 2.1",
+      "approach": "技术方案：commit「add modular pipeline for qwen-image 2.1」落在 docs/source/en/api/pipelines/qwenimage21.md、src/diffusers/__init__.py、src/diffusers/modular_pipelines/__init__.py、src/diffusers/modular_pipelines/modular_pipeline.py 等 19 个文件，改动量 +4655 / -1，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 40 个文件（如 apps/server/src/agent/mentionSources.ts、apps/server/src/utils/media/billing.ts、apps/server/src/utils/media/generation.ts），新增 2742 行 / 删除 241 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 19 个文件（如 docs/source/en/api/pipelines/qwenimage21.md、src/diffusers/__init__.py、src/diffusers/modular_pipelines/__init__.py），新增 4655 行 / 删除 1 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
-      "index": "03",
+      "index": "02",
       "repo": "krillinai/OpenCreator",
       "owner": "krillinai",
       "name": "OpenCreator",
-      "url": "https://github.com/krillinai/OpenCreator/commit/4ddc637419fc67a3cd649382ea6859ad06eaa5e3",
-      "date": "2026-10-14",
-      "headline": "OpenCreator 在前端 / 应用层 + 服务端接口 + 测试提交了一次大规模重构级改动，主题集中在接口与集成：feat: expand client localization and refine creator workflows",
-      "approach": "技术方案：commit「feat: expand client localization and refine creator workflows」落在 apps/daemon/src/api/routes.settings.ts、apps/daemon/test/unit/opencreator-settings-routes.test.ts、apps/web/public/components/SOURCES.md、apps/web/public/components/faster-whisper.png 等 112 个文件，改动量 +25488 / -1765，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 112 个文件（如 apps/daemon/src/api/routes.settings.ts、apps/daemon/test/unit/opencreator-settings-routes.test.ts、apps/web/public/components/SOURCES.md），新增 25488 行 / 删除 1765 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
+      "url": "https://github.com/krillinai/OpenCreator/commit/c5be806cb8dbb18350a805c776b572b36b0181ad",
+      "date": "2026-10-15",
+      "headline": "OpenCreator 在配置与参数 + 文档提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(krillinai): add paired single-line subtitle translation",
+      "approach": "技术方案：commit「feat(krillinai): add paired single-line subtitle translation」落在 runtime/krillinai/config/config-example.toml、runtime/krillinai/config/config.go、runtime/krillinai/docs/paired-subtitle-translation.md、runtime/krillinai/go.mod 等 32 个文件，改动量 +3183 / -1099，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 32 个文件（如 runtime/krillinai/config/config-example.toml、runtime/krillinai/config/config.go、runtime/krillinai/docs/paired-subtitle-translation.md），新增 3183 行 / 删除 1099 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
+    },
+    {
+      "index": "03",
+      "repo": "jub0t/concat",
+      "owner": "jub0t",
+      "name": "concat",
+      "url": "https://github.com/jub0t/concat/commit/fc7e6a91c42fa38752faa7662640d2a8868cd113",
+      "date": "2026-10-15",
+      "headline": "concat 在文档 + 测试 + 配置与参数提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat: consolidate selected video clips through rendered media",
+      "approach": "技术方案：commit「feat: consolidate selected video clips through rendered media」落在 docs/merging-clips.md、src/crates/concat-export/src/lib.rs、src/crates/concat-export/src/resolve.rs、src/crates/concat-host/src/consolidate.rs 等 42 个文件，改动量 +1526 / -60，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 42 个文件（如 docs/merging-clips.md、src/crates/concat-export/src/lib.rs、src/crates/concat-export/src/resolve.rs），新增 1526 行 / 删除 60 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     }
   ],
   "watch": {
-    "repo": "hypit-ai/hypit",
-    "url": "https://github.com/hypit-ai/hypit/commit/398ce9c6d14b687180bcb272827748d31bae3e4d",
-    "date": "2026-10-13",
-    "text": "hypit 在配置与参数 + 文档 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在交互与可控性：feat: add embeddable HTML document output",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +664 / -230。"
+    "repo": "gyroflow/gyroflow",
+    "url": "https://github.com/gyroflow/gyroflow/commit/5fa0309a17ecd682d87746cf37d8dde333915f1a",
+    "date": "2026-10-15",
+    "text": "gyroflow 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Simplify optical correction and update translations",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +15304 / -10018。"
   },
   "scanned": 26,
-  "candidates": 65
+  "candidates": 61
 }
