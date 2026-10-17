@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-16",
-  "generatedAt": "2026-10-16T03:45:22.074Z",
+  "date": "2026-10-17",
+  "generatedAt": "2026-10-17T03:35:41.965Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：流水线与编排、编辑与后期能力",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了流水线与编排；OpenCreator 推进了编辑与后期能力；concat 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了模型与推理链路；dramaclaw 推进了流水线与编排；lemo-opuscar 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -11,48 +11,48 @@
       "repo": "huggingface/diffusers",
       "owner": "huggingface",
       "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/62cde2b0115d57492d2f5ecefab54994797df2e3",
+      "url": "https://github.com/huggingface/diffusers/commit/7ecb1e1b4fe500be7fb7381a7bb79a24d7fa3941",
       "date": "2026-10-15",
-      "headline": "diffusers 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在流水线与编排：add modular pipeline for qwen-image 2.1",
-      "approach": "技术方案：commit「add modular pipeline for qwen-image 2.1」落在 docs/source/en/api/pipelines/qwenimage21.md、src/diffusers/__init__.py、src/diffusers/modular_pipelines/__init__.py、src/diffusers/modular_pipelines/modular_pipeline.py 等 19 个文件，改动量 +4655 / -1，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 19 个文件（如 docs/source/en/api/pipelines/qwenimage21.md、src/diffusers/__init__.py、src/diffusers/modular_pipelines/__init__.py），新增 4655 行 / 删除 1 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "headline": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：Flux3 image",
+      "approach": "技术方案：commit「Flux3 image」落在 .github/workflows/benchmark.yml、.github/workflows/bot_pytest.yml、.github/workflows/build_docker_images.yml、.github/workflows/build_pr_documentation.yml 等 81 个文件，改动量 +10638 / -132，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 81 个文件（如 .github/workflows/benchmark.yml、.github/workflows/bot_pytest.yml、.github/workflows/build_docker_images.yml），新增 10638 行 / 删除 132 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "02",
-      "repo": "krillinai/OpenCreator",
-      "owner": "krillinai",
-      "name": "OpenCreator",
-      "url": "https://github.com/krillinai/OpenCreator/commit/c5be806cb8dbb18350a805c776b572b36b0181ad",
-      "date": "2026-10-15",
-      "headline": "OpenCreator 在配置与参数 + 文档提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(krillinai): add paired single-line subtitle translation",
-      "approach": "技术方案：commit「feat(krillinai): add paired single-line subtitle translation」落在 runtime/krillinai/config/config-example.toml、runtime/krillinai/config/config.go、runtime/krillinai/docs/paired-subtitle-translation.md、runtime/krillinai/go.mod 等 32 个文件，改动量 +3183 / -1099，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 32 个文件（如 runtime/krillinai/config/config-example.toml、runtime/krillinai/config/config.go、runtime/krillinai/docs/paired-subtitle-translation.md），新增 3183 行 / 删除 1099 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/a627206b3919f78769bd5efe4e6b3cd3946eeb93",
+      "date": "2026-10-16",
+      "headline": "dramaclaw 在Python 后端 / 模型侧 + 配置与参数 + 文档提交了一次大规模重构级改动，主题集中在流水线与编排：fix: converge existing audio node execution",
+      "approach": "技术方案：commit「fix: converge existing audio node execution」落在 .hermes/plugins/freezone/__init__.py、deploy/codex/dramaclaw-model-catalog-tool-search.json、deploy/codex/dramaclaw-model-catalog.json、docs/canvas-reply-outcome-contract.md 等 19 个文件，改动量 +1692 / -81，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 19 个文件（如 .hermes/plugins/freezone/__init__.py、deploy/codex/dramaclaw-model-catalog-tool-search.json、deploy/codex/dramaclaw-model-catalog.json），新增 1692 行 / 删除 81 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     },
     {
       "index": "03",
-      "repo": "jub0t/concat",
-      "owner": "jub0t",
-      "name": "concat",
-      "url": "https://github.com/jub0t/concat/commit/fc7e6a91c42fa38752faa7662640d2a8868cd113",
-      "date": "2026-10-15",
-      "headline": "concat 在文档 + 测试 + 配置与参数提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat: consolidate selected video clips through rendered media",
-      "approach": "技术方案：commit「feat: consolidate selected video clips through rendered media」落在 docs/merging-clips.md、src/crates/concat-export/src/lib.rs、src/crates/concat-export/src/resolve.rs、src/crates/concat-host/src/consolidate.rs 等 42 个文件，改动量 +1526 / -60，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 42 个文件（如 docs/merging-clips.md、src/crates/concat-export/src/lib.rs、src/crates/concat-export/src/resolve.rs），新增 1526 行 / 删除 60 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "repo": "lemomo-ai/lemo-opuscar",
+      "owner": "lemomo-ai",
+      "name": "lemo-opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar/commit/4a4563256d8faf49ff8c2d33898ba1370dd34ca1",
+      "date": "2026-10-16",
+      "headline": "lemo-opuscar 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在模型与推理链路：Evidence Films: new first category with eight styles (51 in all)",
+      "approach": "技术方案：commit「Evidence Films: new first category with eight styles (51 in all)」落在 AGENTS.md、README.md、README.zh-CN.md、docs/frames/archive-lighttable.jpg 等 232 个文件，改动量 +17213 / -102，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 232 个文件（如 AGENTS.md、README.md、README.zh-CN.md），新增 17213 行 / 删除 102 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "gyroflow/gyroflow",
-    "url": "https://github.com/gyroflow/gyroflow/commit/5fa0309a17ecd682d87746cf37d8dde333915f1a",
-    "date": "2026-10-15",
-    "text": "gyroflow 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Simplify optical correction and update translations",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +15304 / -10018。"
+    "repo": "heygen-com/hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes/commit/eab6ca15b1af7ec7bca0bbeb4cd0330e677467a5",
+    "date": "2026-10-17",
+    "text": "hyperframes 在文档 + 前端 / 应用层 + 测试提交了一次实质性改动，主题集中在编辑与后期能力：fix(cli): timeline lists clips nested in a timed element and lint flags ones that never show",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +226 / -19。"
   },
   "scanned": 26,
-  "candidates": 61
+  "candidates": 65
 }
