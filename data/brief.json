@@ -1,26 +1,39 @@
 {
-  "date": "2026-10-17",
-  "generatedAt": "2026-10-17T03:35:41.965Z",
+  "date": "2026-10-18",
+  "generatedAt": "2026-10-18T03:41:49.709Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了模型与推理链路；dramaclaw 推进了流水线与编排；lemo-opuscar 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：流水线与编排、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：remove-ai-watermarks 推进了流水线与编排；vllm-omni 推进了接口与集成；dramaclaw 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/7ecb1e1b4fe500be7fb7381a7bb79a24d7fa3941",
-      "date": "2026-10-15",
-      "headline": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：Flux3 image",
-      "approach": "技术方案：commit「Flux3 image」落在 .github/workflows/benchmark.yml、.github/workflows/bot_pytest.yml、.github/workflows/build_docker_images.yml、.github/workflows/build_pr_documentation.yml 等 81 个文件，改动量 +10638 / -132，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 81 个文件（如 .github/workflows/benchmark.yml、.github/workflows/bot_pytest.yml、.github/workflows/build_docker_images.yml），新增 10638 行 / 删除 132 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "wiltodelta/remove-ai-watermarks",
+      "owner": "wiltodelta",
+      "name": "remove-ai-watermarks",
+      "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/06c0cb1bbe090fd8989309aa73513a864c52bcd2",
+      "date": "2026-10-17",
+      "headline": "remove-ai-watermarks 在配置与参数 + 测试 + 文档提交了一次成块的结构性改动，主题集中在流水线与编排：Add Codex plugin manifest, stdlib MCP server, SHA-pinned Actions",
+      "approach": "技术方案：commit「Add Codex plugin manifest, stdlib MCP server, SHA-pinned Actions」落在 .claude-plugin/marketplace.json、.codex-plugin/plugin.json、.codexignore、.github/workflows/distribute.yml 等 41 个文件，改动量 +1288 / -76，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 41 个文件（如 .claude-plugin/marketplace.json、.codex-plugin/plugin.json、.codexignore），新增 1288 行 / 删除 76 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     },
     {
       "index": "02",
+      "repo": "vllm-project/vllm-omni",
+      "owner": "vllm-project",
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/60984a2ad760dfbf9d578f457cc472e0aee6bd20",
+      "date": "2026-10-18",
+      "headline": "vllm-omni 在配置与参数 + 测试 + 文档提交了一次成块的结构性改动，主题集中在接口与集成：[Test] Tighten reliability fault assertions and skip known API-exit cases",
+      "approach": "技术方案：commit「[Test] Tighten reliability fault assertions and skip known API-exit cases」落在 .buildkite/cuda/test-weekly.yml、docs/contributing/ci/test_writing_guide.md、tests/buildkite/test_reliability_rocm_marks.py、tests/dfx/conftest.py 等 12 个文件，改动量 +670 / -604，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 12 个文件（如 .buildkite/cuda/test-weekly.yml、docs/contributing/ci/test_writing_guide.md、tests/buildkite/test_reliability_rocm_marks.py），新增 670 行 / 删除 604 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
+    },
+    {
+      "index": "03",
       "repo": "dramaclaw/dramaclaw",
       "owner": "dramaclaw",
       "name": "dramaclaw",
@@ -31,28 +44,15 @@
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 19 个文件（如 .hermes/plugins/freezone/__init__.py、deploy/codex/dramaclaw-model-catalog-tool-search.json、deploy/codex/dramaclaw-model-catalog.json），新增 1692 行 / 删除 81 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
-    },
-    {
-      "index": "03",
-      "repo": "lemomo-ai/lemo-opuscar",
-      "owner": "lemomo-ai",
-      "name": "lemo-opuscar",
-      "url": "https://github.com/lemomo-ai/lemo-opuscar/commit/4a4563256d8faf49ff8c2d33898ba1370dd34ca1",
-      "date": "2026-10-16",
-      "headline": "lemo-opuscar 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在模型与推理链路：Evidence Films: new first category with eight styles (51 in all)",
-      "approach": "技术方案：commit「Evidence Films: new first category with eight styles (51 in all)」落在 AGENTS.md、README.md、README.zh-CN.md、docs/frames/archive-lighttable.jpg 等 232 个文件，改动量 +17213 / -102，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 232 个文件（如 AGENTS.md、README.md、README.zh-CN.md），新增 17213 行 / 删除 102 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "heygen-com/hyperframes",
-    "url": "https://github.com/heygen-com/hyperframes/commit/eab6ca15b1af7ec7bca0bbeb4cd0330e677467a5",
-    "date": "2026-10-17",
-    "text": "hyperframes 在文档 + 前端 / 应用层 + 测试提交了一次实质性改动，主题集中在编辑与后期能力：fix(cli): timeline lists clips nested in a timed element and lint flags ones that never show",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +226 / -19。"
+    "repo": "jub0t/Concat",
+    "url": "https://github.com/jub0t/Concat/commit/75fed67365b600caad0d2766540b48c76f8ac8e2",
+    "date": "2026-10-18",
+    "text": "Concat 在配置与参数 + 界面组件提交了一次实质性改动，主题集中在交互与可控性：feat(enhance): the tick turns Enhance on; a button runs it, and stops it",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +175 / -58。"
   },
   "scanned": 26,
-  "candidates": 65
+  "candidates": 51
 }
