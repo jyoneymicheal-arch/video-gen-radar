@@ -1,58 +1,58 @@
 {
-  "date": "2026-10-19",
-  "generatedAt": "2026-10-19T03:51:53.873Z",
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-20T04:03:44.586Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：模型与推理链路、性能与资源占用、接口与集成",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：vllm-omni 推进了模型与推理链路；hyperframes 推进了性能与资源占用；remove-ai-watermarks 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：流水线与编排、功能演进",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：remove-ai-watermarks 推进了流水线与编排；openfilm 推进了流水线与编排；mediapipe 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/71f0fa47acffa9fb0b352cc2644e15ce7bf623be",
-      "date": "2026-10-19",
-      "headline": "vllm-omni 在配置与参数 + 测试 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Remove Pi0.5, HiDream-I1, and LTX-2-19b distilled",
-      "approach": "技术方案：commit「[Model] Remove Pi0.5, HiDream-I1, and LTX-2-19b distilled」落在 .buildkite/amd/test-amd-merge.yml、.buildkite/amd/test-amd-nightly.yml、.buildkite/amd/test-amd-ready.yml、.buildkite/common/ci_source_file_dependencies.yml 等 44 个文件，改动量 +10 / -7022，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 44 个文件（如 .buildkite/amd/test-amd-merge.yml、.buildkite/amd/test-amd-nightly.yml、.buildkite/amd/test-amd-ready.yml），新增 10 行 / 删除 7022 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
-    },
-    {
-      "index": "02",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/8434945784b5378358a1c661aa080e1894533578",
-      "date": "2026-10-19",
-      "headline": "hyperframes 在前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在性能与资源占用：perf(cli): check and inspect skip paint waits and screenshots nothing reads",
-      "approach": "技术方案：commit「perf(cli): check and inspect skip paint waits and screenshots nothing reads」落在 packages/cli/src/capture/captureCompositionFrame.lateSubresources.browser.test.ts、packages/cli/src/capture/captureCompositionFrame.test.ts、packages/cli/src/capture/captureCompositionFrame.ts、packages/cli/src/commands/check.test.ts 等 10 个文件，改动量 +835 / -322，归类为「性能与资源占用」。",
-      "why": "为什么重要：性能改动决定这类工具能否在消费级硬件或规模化任务里真正跑起来。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 packages/cli/src/capture/captureCompositionFrame.lateSubresources.browser.test.ts、packages/cli/src/capture/captureCompositionFrame.test.ts、packages/cli/src/capture/captureCompositionFrame.ts），新增 835 行 / 删除 322 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "性能与资源占用"
-    },
-    {
-      "index": "03",
       "repo": "wiltodelta/remove-ai-watermarks",
       "owner": "wiltodelta",
       "name": "remove-ai-watermarks",
-      "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/76462f99167efd65dc02d02f019197d600a1bce9",
+      "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/7e167c3c762af84a574eb331fd89ade1694183ed",
       "date": "2026-10-19",
-      "headline": "remove-ai-watermarks 在文档 + Python 后端 / 模型侧 + 测试提交了一次成块的结构性改动，主题集中在接口与集成：Drive login-free web oracles through Playwright with a fresh proxy session",
-      "approach": "技术方案：commit「Drive login-free web oracles through Playwright with a fresh proxy session」落在 .claude/rules/development.md、.claude/skills/provider-oracles/SKILL.md、.claude/skills/signal-discovery/SKILL.md、docs/provider-oracles.md 等 9 个文件，改动量 +493 / -261，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 9 个文件（如 .claude/rules/development.md、.claude/skills/provider-oracles/SKILL.md、.claude/skills/signal-discovery/SKILL.md），新增 493 行 / 删除 261 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
+      "headline": "remove-ai-watermarks 在文档 + 服务端接口 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在流水线与编排：Fail closed on unreadable inputs, empty batches and failed strips",
+      "approach": "技术方案：commit「Fail closed on unreadable inputs, empty batches and failed strips」落在 .claude/rules/development.md、docs/cli.md、docs/known-limitations.md、docs/mcp-server.md 等 24 个文件，改动量 +636 / -116，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 24 个文件（如 .claude/rules/development.md、docs/cli.md、docs/known-limitations.md），新增 636 行 / 删除 116 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
+    },
+    {
+      "index": "02",
+      "repo": "openfilm/openfilm",
+      "owner": "openfilm",
+      "name": "openfilm",
+      "url": "https://github.com/openfilm/openfilm/commit/7d352837b96754793d7c2e7c1d129656a29cfdba",
+      "date": "2026-10-19",
+      "headline": "openfilm 在文档 + 测试 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在流水线与编排：Desktop: agents from the makers' desktop apps, and never an editor in their place",
+      "approach": "技术方案：commit「Desktop: agents from the makers' desktop apps, and never an editor in their place」落在 .changeset/agents-from-desktop-apps.md、apps/desktop/src/agent-installation.mjs、apps/desktop/src/agent-installation.test.mjs、apps/desktop/src/agent-roster.mjs 等 16 个文件，改动量 +648 / -118，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 16 个文件（如 .changeset/agents-from-desktop-apps.md、apps/desktop/src/agent-installation.mjs、apps/desktop/src/agent-installation.test.mjs），新增 648 行 / 删除 118 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
+    },
+    {
+      "index": "03",
+      "repo": "google-ai-edge/mediapipe",
+      "owner": "google-ai-edge",
+      "name": "mediapipe",
+      "url": "https://github.com/google-ai-edge/mediapipe/commit/81817034c5edbcb147938d2140e9ac52738d06a3",
+      "date": "2026-10-20",
+      "headline": "mediapipe 在底层内核 / 算子提交了一次大规模重构级改动，主题集中在功能演进：INTERNAL_CHANGE",
+      "approach": "技术方案：commit「INTERNAL_CHANGE」落在 mediapipe/tasks/cc/audio/benchmarks/BUILD、mediapipe/tasks/cc/audio/benchmarks/asr_omni_vs_mediapipe_eval_test.cc、mediapipe/tasks/cc/audio/benchmarks/eval_benchmark_utils.cc、mediapipe/tasks/cc/audio/benchmarks/eval_benchmark_utils.h 等 6 个文件，改动量 +1671 / -0，归类为「功能演进」。",
+      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 6 个文件（如 mediapipe/tasks/cc/audio/benchmarks/BUILD、mediapipe/tasks/cc/audio/benchmarks/asr_omni_vs_mediapipe_eval_test.cc、mediapipe/tasks/cc/audio/benchmarks/eval_benchmark_utils.cc），新增 1671 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "功能演进"
     }
   ],
   "watch": {
-    "repo": "getopenscreen/openscreen",
-    "url": "https://github.com/getopenscreen/openscreen/commit/9be4686c2ba7a8559efc7455e0b56f0b3e918cac",
-    "date": "2026-10-18",
-    "text": "openscreen 在配置与参数 + 界面组件 + 文档提交了一次成块的结构性改动，主题集中在交互与可控性：docs(website): publish a privacy policy",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +564 / -0。"
+    "repo": "huggingface/diffusers",
+    "url": "https://github.com/huggingface/diffusers/commit/4df4a5b35748bab1d967c0ff49ad1a144d094322",
+    "date": "2026-10-19",
+    "text": "diffusers 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次实质性改动，主题集中在接口与集成：FLUX.3: match the released BFL reference image sizing",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +268 / -121。"
   },
   "scanned": 26,
-  "candidates": 40
+  "candidates": 53
 }
