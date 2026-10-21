@@ -1,58 +1,58 @@
 {
-  "date": "2026-10-20",
-  "generatedAt": "2026-10-20T04:03:44.586Z",
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T03:52:21.900Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：流水线与编排、功能演进",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：remove-ai-watermarks 推进了流水线与编排；openfilm 推进了流水线与编排；mediapipe 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：模型与推理链路、流水线与编排、编辑与后期能力",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了模型与推理链路；Toonflow-app 推进了流水线与编排；hyperframes 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "wiltodelta/remove-ai-watermarks",
-      "owner": "wiltodelta",
-      "name": "remove-ai-watermarks",
-      "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/7e167c3c762af84a574eb331fd89ade1694183ed",
-      "date": "2026-10-19",
-      "headline": "remove-ai-watermarks 在文档 + 服务端接口 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在流水线与编排：Fail closed on unreadable inputs, empty batches and failed strips",
-      "approach": "技术方案：commit「Fail closed on unreadable inputs, empty batches and failed strips」落在 .claude/rules/development.md、docs/cli.md、docs/known-limitations.md、docs/mcp-server.md 等 24 个文件，改动量 +636 / -116，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 24 个文件（如 .claude/rules/development.md、docs/cli.md、docs/known-limitations.md），新增 636 行 / 删除 116 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/537887041938fc6fe61ad583c3ae77477c9ebac9",
+      "date": "2026-10-20",
+      "headline": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：Add RFD4-Proteina",
+      "approach": "技术方案：commit「Add RFD4-Proteina」落在 docs/source/en/_toctree.yml、docs/source/en/api/loaders/lora.md、docs/source/en/api/models/rfd4_proteina_autoencoder.md、docs/source/en/api/models/rfd4_proteina_transformer.md 等 27 个文件，改动量 +4753 / -1，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 27 个文件（如 docs/source/en/_toctree.yml、docs/source/en/api/loaders/lora.md、docs/source/en/api/models/rfd4_proteina_autoencoder.md），新增 4753 行 / 删除 1 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "02",
-      "repo": "openfilm/openfilm",
-      "owner": "openfilm",
-      "name": "openfilm",
-      "url": "https://github.com/openfilm/openfilm/commit/7d352837b96754793d7c2e7c1d129656a29cfdba",
-      "date": "2026-10-19",
-      "headline": "openfilm 在文档 + 测试 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在流水线与编排：Desktop: agents from the makers' desktop apps, and never an editor in their place",
-      "approach": "技术方案：commit「Desktop: agents from the makers' desktop apps, and never an editor in their place」落在 .changeset/agents-from-desktop-apps.md、apps/desktop/src/agent-installation.mjs、apps/desktop/src/agent-installation.test.mjs、apps/desktop/src/agent-roster.mjs 等 16 个文件，改动量 +648 / -118，归类为「流水线与编排」。",
+      "repo": "HBAI-Ltd/Toonflow-app",
+      "owner": "HBAI-Ltd",
+      "name": "Toonflow-app",
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/30139c931e80476caa718b31684b86383c6e83ce",
+      "date": "2026-10-20",
+      "headline": "Toonflow-app 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在流水线与编排：新增语音输入、音频转文本、逐帧拉片与 MCP 工具接入，优化首页、素材库、模型配置和媒体生成，修复桌面启动、外链打开及文档状态问题并更新版本说明",
+      "approach": "技术方案：commit「新增语音输入、音频转文本、逐帧拉片与 MCP 工具接入，优化首页、素材库、模型配置和媒体生成，修复桌面启动、外链打开及文档状态问题并更新版本说明」落在 .github/workflows/debug.yml、apps/desktop/scripts/build.ts、apps/desktop/scripts/localizeMac.ts、apps/desktop/scripts/macDmg.ts 等 187 个文件，改动量 +14601 / -3499，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 16 个文件（如 .changeset/agents-from-desktop-apps.md、apps/desktop/src/agent-installation.mjs、apps/desktop/src/agent-installation.test.mjs），新增 648 行 / 删除 118 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 187 个文件（如 .github/workflows/debug.yml、apps/desktop/scripts/build.ts、apps/desktop/scripts/localizeMac.ts），新增 14601 行 / 删除 3499 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
       "index": "03",
-      "repo": "google-ai-edge/mediapipe",
-      "owner": "google-ai-edge",
-      "name": "mediapipe",
-      "url": "https://github.com/google-ai-edge/mediapipe/commit/81817034c5edbcb147938d2140e9ac52738d06a3",
-      "date": "2026-10-20",
-      "headline": "mediapipe 在底层内核 / 算子提交了一次大规模重构级改动，主题集中在功能演进：INTERNAL_CHANGE",
-      "approach": "技术方案：commit「INTERNAL_CHANGE」落在 mediapipe/tasks/cc/audio/benchmarks/BUILD、mediapipe/tasks/cc/audio/benchmarks/asr_omni_vs_mediapipe_eval_test.cc、mediapipe/tasks/cc/audio/benchmarks/eval_benchmark_utils.cc、mediapipe/tasks/cc/audio/benchmarks/eval_benchmark_utils.h 等 6 个文件，改动量 +1671 / -0，归类为「功能演进」。",
-      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 6 个文件（如 mediapipe/tasks/cc/audio/benchmarks/BUILD、mediapipe/tasks/cc/audio/benchmarks/asr_omni_vs_mediapipe_eval_test.cc、mediapipe/tasks/cc/audio/benchmarks/eval_benchmark_utils.cc），新增 1671 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "功能演进"
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/8b410f1cb1b0d8e0d433da7fdc7942565c29af2c",
+      "date": "2026-10-21",
+      "headline": "hyperframes 在前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(producer): a cloud plan can leave its audio to be mixed beside its chunks",
+      "approach": "技术方案：commit「feat(producer): a cloud plan can leave its audio to be mixed beside its chunks」落在 packages/producer/src/distributed.ts、packages/producer/src/services/distributed/assemble.ts、packages/producer/src/services/distributed/chunkAudio.test.ts、packages/producer/src/services/distributed/mp4Stitch.test.ts 等 9 个文件，改动量 +435 / -94，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 9 个文件（如 packages/producer/src/distributed.ts、packages/producer/src/services/distributed/assemble.ts、packages/producer/src/services/distributed/chunkAudio.test.ts），新增 435 行 / 删除 94 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     }
   ],
   "watch": {
-    "repo": "huggingface/diffusers",
-    "url": "https://github.com/huggingface/diffusers/commit/4df4a5b35748bab1d967c0ff49ad1a144d094322",
-    "date": "2026-10-19",
-    "text": "diffusers 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次实质性改动，主题集中在接口与集成：FLUX.3: match the released BFL reference image sizing",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +268 / -121。"
+    "repo": "yi1108/printfilm",
+    "url": "https://github.com/yi1108/printfilm/commit/b3b258052860ab976263036f3d930f977381a46e",
+    "date": "2026-10-20",
+    "text": "printfilm 在前端 / 应用层 + 服务端接口 + 界面组件提交了一次成块的结构性改动，主题集中在接口与集成：feat: 管理端按增减调账并记录操作人，MiniMax-H3 开放 480p/768p",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +569 / -74。"
   },
   "scanned": 26,
-  "candidates": 53
+  "candidates": 58
 }
