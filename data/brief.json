@@ -1,39 +1,26 @@
 {
-  "date": "2026-10-22",
-  "generatedAt": "2026-10-22T03:52:32.389Z",
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T03:56:31.355Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；Toonflow-app 推进了流水线与编排；gyroflow 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、编辑与后期能力",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了模型与推理链路；gyroflow 推进了编辑与后期能力；lemo-opuscar 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/08c185d908d657f6142f3cc9ff118b9e29151616",
-      "date": "2026-10-21",
-      "headline": "hyperframes 在前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(core,producer): decide blur defects once per timeline, off on routes that cannot host it",
-      "approach": "技术方案：commit「feat(core,producer): decide blur defects once per timeline, off on routes that cannot host it」落在 packages/core/src/htmlInCanvasDefects.test.ts、packages/core/src/htmlInCanvasDefects.ts、packages/core/src/runtime/captureMotionBlur/discover.test.ts、packages/core/src/runtime/captureMotionBlur/discover.ts 等 17 个文件，改动量 +855 / -111，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 17 个文件（如 packages/core/src/htmlInCanvasDefects.test.ts、packages/core/src/htmlInCanvasDefects.ts、packages/core/src/runtime/captureMotionBlur/discover.test.ts），新增 855 行 / 删除 111 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/48cdbaef5ee3d718aaee392b44f2099ae511c4a5",
+      "date": "2026-10-22",
+      "headline": "diffusers 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：add fibo-2 LoRA training and loading",
+      "approach": "技术方案：commit「add fibo-2 LoRA training and loading」落在 docs/source/en/api/loaders/lora.md、examples/dreambooth/README_bria_fibo2.md、examples/dreambooth/requirements_bria_fibo2.txt、examples/dreambooth/test_dreambooth_lora_bria_fibo2.py 等 10 个文件，改动量 +4785 / -1，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 docs/source/en/api/loaders/lora.md、examples/dreambooth/README_bria_fibo2.md、examples/dreambooth/requirements_bria_fibo2.txt），新增 4785 行 / 删除 1 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "02",
-      "repo": "HBAI-Ltd/Toonflow-app",
-      "owner": "HBAI-Ltd",
-      "name": "Toonflow-app",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/30139c931e80476caa718b31684b86383c6e83ce",
-      "date": "2026-10-20",
-      "headline": "Toonflow-app 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次大规模重构级改动，主题集中在流水线与编排：新增语音输入、音频转文本、逐帧拉片与 MCP 工具接入，优化首页、素材库、模型配置和媒体生成，修复桌面启动、外链打开及文档状态问题并更新版本说明",
-      "approach": "技术方案：commit「新增语音输入、音频转文本、逐帧拉片与 MCP 工具接入，优化首页、素材库、模型配置和媒体生成，修复桌面启动、外链打开及文档状态问题并更新版本说明」落在 .github/workflows/debug.yml、apps/desktop/scripts/build.ts、apps/desktop/scripts/localizeMac.ts、apps/desktop/scripts/macDmg.ts 等 187 个文件，改动量 +14601 / -3499，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 187 个文件（如 .github/workflows/debug.yml、apps/desktop/scripts/build.ts、apps/desktop/scripts/localizeMac.ts），新增 14601 行 / 删除 3499 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
-    },
-    {
-      "index": "03",
       "repo": "gyroflow/gyroflow",
       "owner": "gyroflow",
       "name": "gyroflow",
@@ -44,15 +31,28 @@
       "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 25 个文件（如 src/controller.rs、src/core/calibration/mod.rs、src/core/calibration/solver.rs），新增 1449 行 / 删除 118 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "编辑与后期能力"
+    },
+    {
+      "index": "03",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "owner": "lemomo-ai",
+      "name": "lemo-opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar/commit/a401d6c26d4b3846b699257af25a85d2d45b438e",
+      "date": "2026-10-22",
+      "headline": "lemo-opuscar 在文档 + Python 后端 / 模型侧 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在模型与推理链路：Library audit: fixes, cleanup and English throughout",
+      "approach": "技术方案：commit「Library audit: fixes, cleanup and English throughout」落在 .gitignore、AGENTS.md、MAINTAINING.md、README.md 等 300 个文件，改动量 +13184 / -17259，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 300 个文件（如 .gitignore、AGENTS.md、MAINTAINING.md），新增 13184 行 / 删除 17259 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "yi1108/printfilm",
-    "url": "https://github.com/yi1108/printfilm/commit/b3b258052860ab976263036f3d930f977381a46e",
-    "date": "2026-10-20",
-    "text": "printfilm 在前端 / 应用层 + 服务端接口 + 界面组件提交了一次成块的结构性改动，主题集中在接口与集成：feat: 管理端按增减调账并记录操作人，MiniMax-H3 开放 480p/768p",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +569 / -74。"
+    "repo": "vllm-project/vllm-omni",
+    "url": "https://github.com/vllm-project/vllm-omni/commit/88c9ccd7ceb39b0380ce1257198c5e34cbe2c029",
+    "date": "2026-10-23",
+    "text": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Add JoyAI duplex tool delegation",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1718 / -14。"
   },
   "scanned": 26,
-  "candidates": 49
+  "candidates": 57
 }
