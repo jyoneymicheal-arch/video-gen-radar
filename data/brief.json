@@ -1,39 +1,26 @@
 {
-  "date": "2026-10-24",
-  "generatedAt": "2026-10-24T03:50:59.568Z",
+  "date": "2026-10-25",
+  "generatedAt": "2026-10-25T03:50:06.341Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、编辑与后期能力",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了模型与推理链路；openscreen 推进了编辑与后期能力；OpenMontage 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：交互与可控性、模型与推理链路、功能演进",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：gyroflow 推进了交互与可控性；OpenMontage 推进了模型与推理链路；hyperframes 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/48cdbaef5ee3d718aaee392b44f2099ae511c4a5",
-      "date": "2026-10-22",
-      "headline": "diffusers 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在模型与推理链路：add fibo-2 LoRA training and loading",
-      "approach": "技术方案：commit「add fibo-2 LoRA training and loading」落在 docs/source/en/api/loaders/lora.md、examples/dreambooth/README_bria_fibo2.md、examples/dreambooth/requirements_bria_fibo2.txt、examples/dreambooth/test_dreambooth_lora_bria_fibo2.py 等 10 个文件，改动量 +4785 / -1，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 docs/source/en/api/loaders/lora.md、examples/dreambooth/README_bria_fibo2.md、examples/dreambooth/requirements_bria_fibo2.txt），新增 4785 行 / 删除 1 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "gyroflow/gyroflow",
+      "owner": "gyroflow",
+      "name": "gyroflow",
+      "url": "https://github.com/gyroflow/gyroflow/commit/4decbdff9e96ec9df0f8156e65f00658453b6e5a",
+      "date": "2026-10-24",
+      "headline": "gyroflow 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Add new smoothing method: \"Optimal path\"",
+      "approach": "技术方案：commit「Add new smoothing method: \"Optimal path\"」落在 src/controller.rs、src/core/gyro_source/mod.rs、src/core/settings.rs、src/core/smoothing/mod.rs 等 12 个文件，改动量 +1894 / -85，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 12 个文件（如 src/controller.rs、src/core/gyro_source/mod.rs、src/core/settings.rs），新增 1894 行 / 删除 85 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     },
     {
       "index": "02",
-      "repo": "getopenscreen/openscreen",
-      "owner": "getopenscreen",
-      "name": "openscreen",
-      "url": "https://github.com/getopenscreen/openscreen/commit/633c6a9e637f00197aec69eddc8f9c50d9697cc8",
-      "date": "2026-10-14",
-      "headline": "openscreen 在测试 + 前端 / 应用层 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat: add stacked timeline tracks for annotations",
-      "approach": "技术方案：commit「feat: add stacked timeline tracks for annotations」落在 electron/ai-edition/agent-tools.test.ts、electron/ai-edition/agent-tools.ts、src/components/ai-edition/NewEditorShell.timelineHeight.test.tsx、src/components/ai-edition/NewEditorShell.tsx 等 31 个文件，改动量 +1097 / -98，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 31 个文件（如 electron/ai-edition/agent-tools.test.ts、electron/ai-edition/agent-tools.ts、src/components/ai-edition/NewEditorShell.timelineHeight.test.tsx），新增 1097 行 / 删除 98 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
-    },
-    {
-      "index": "03",
       "repo": "calesthio/OpenMontage",
       "owner": "calesthio",
       "name": "OpenMontage",
@@ -44,15 +31,28 @@
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 46 个文件（如 .agents/skills/elevenlabs/SKILL.md、.agents/skills/provider-model-refresh/SKILL.md、.agents/skills/provider-refresh-oct23/SKILL.md），新增 6221 行 / 删除 525 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
+    },
+    {
+      "index": "03",
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/7f19f2335a11e72340c5ac0d99d17d656c71c34f",
+      "date": "2026-10-25",
+      "headline": "hyperframes 在文档 + 服务端接口 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在功能演进：feat(studio): load GSAP from the CLI's bundled copy by default",
+      "approach": "技术方案：commit「feat(studio): load GSAP from the CLI's bundled copy by default」落在 docs/packages/cli.mdx、docs/packages/studio-server.mdx、packages/cli/scripts/build-copy.mjs、packages/cli/src/server/studioServer.previewAssets.test.ts 等 13 个文件，改动量 +585 / -47，归类为「功能演进」。",
+      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 docs/packages/cli.mdx、docs/packages/studio-server.mdx、packages/cli/scripts/build-copy.mjs），新增 585 行 / 删除 47 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "功能演进"
     }
   ],
   "watch": {
-    "repo": "gyroflow/gyroflow",
-    "url": "https://github.com/gyroflow/gyroflow/commit/d25ab16bb6d9e2516fdf1820d2232999ea053612",
-    "date": "2026-10-24",
-    "text": "gyroflow 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Update translations",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +20071 / -14817。"
+    "repo": "krillinai/OpenCreator",
+    "url": "https://github.com/krillinai/OpenCreator/commit/c99412f19d395fba8d1230d5004fa7491c0699ea",
+    "date": "2026-10-25",
+    "text": "OpenCreator 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次成块的结构性改动，主题集中在稳定性与容错：fix: harden Creator runtime builds and translation recovery",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1123 / -254。"
   },
   "scanned": 26,
-  "candidates": 64
+  "candidates": 60
 }
