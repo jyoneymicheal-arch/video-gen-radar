@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-25",
-  "generatedAt": "2026-10-25T03:50:06.341Z",
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T03:53:44.170Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：交互与可控性、模型与推理链路、功能演进",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：gyroflow 推进了交互与可控性；OpenMontage 推进了模型与推理链路；hyperframes 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：交互与可控性、模型与推理链路、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：gyroflow 推进了交互与可控性；Concat 推进了模型与推理链路；openfilm 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -21,29 +21,29 @@
     },
     {
       "index": "02",
-      "repo": "calesthio/OpenMontage",
-      "owner": "calesthio",
-      "name": "OpenMontage",
-      "url": "https://github.com/calesthio/OpenMontage/commit/e01dbf433f46eeb91d39bf905e194162921019a3",
-      "date": "2026-10-24",
-      "headline": "OpenMontage 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：Refresh media providers and repair Google and ElevenLabs transports",
-      "approach": "技术方案：commit「Refresh media providers and repair Google and ElevenLabs transports」落在 .agents/skills/elevenlabs/SKILL.md、.agents/skills/provider-model-refresh/SKILL.md、.agents/skills/provider-refresh-oct23/SKILL.md、.agents/skills/text-to-speech/SKILL.md 等 46 个文件，改动量 +6221 / -525，归类为「模型与推理链路」。",
+      "repo": "jub0t/Concat",
+      "owner": "jub0t",
+      "name": "Concat",
+      "url": "https://github.com/jub0t/Concat/commit/aa38b9d519faffab177cbcc01aa07e705bb16e04",
+      "date": "2026-10-26",
+      "headline": "Concat 在配置与参数提交了一次成块的结构性改动，主题集中在模型与推理链路：perf(enhance): run the model on the GPU in compute shaders of our own - 4.2 s a 1080p frame where ONNX Runtime took 27",
+      "approach": "技术方案：commit「perf(enhance): run the model on the GPU in compute shaders of our own - 4.2 s a 1080p frame where ONNX Runtime took 27」落在 src/Cargo.lock、src/crates/concat-host/src/enhance.rs、src/crates/concat-render/Cargo.toml、src/crates/concat-render/src/lib.rs 等 8 个文件，改动量 +1320 / -18，归类为「模型与推理链路」。",
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 46 个文件（如 .agents/skills/elevenlabs/SKILL.md、.agents/skills/provider-model-refresh/SKILL.md、.agents/skills/provider-refresh-oct23/SKILL.md），新增 6221 行 / 删除 525 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 8 个文件（如 src/Cargo.lock、src/crates/concat-host/src/enhance.rs、src/crates/concat-render/Cargo.toml），新增 1320 行 / 删除 18 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
     },
     {
       "index": "03",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/7f19f2335a11e72340c5ac0d99d17d656c71c34f",
+      "repo": "openfilm/openfilm",
+      "owner": "openfilm",
+      "name": "openfilm",
+      "url": "https://github.com/openfilm/openfilm/commit/49812381b40cf5cfa8ce57e5d506a98ae3027f23",
       "date": "2026-10-25",
-      "headline": "hyperframes 在文档 + 服务端接口 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在功能演进：feat(studio): load GSAP from the CLI's bundled copy by default",
-      "approach": "技术方案：commit「feat(studio): load GSAP from the CLI's bundled copy by default」落在 docs/packages/cli.mdx、docs/packages/studio-server.mdx、packages/cli/scripts/build-copy.mjs、packages/cli/src/server/studioServer.previewAssets.test.ts 等 13 个文件，改动量 +585 / -47，归类为「功能演进」。",
-      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 docs/packages/cli.mdx、docs/packages/studio-server.mdx、packages/cli/scripts/build-copy.mjs），新增 585 行 / 删除 47 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "功能演进"
+      "headline": "openfilm 在文档 + 测试 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：Desktop and Studio: improve project, timeline, chat and agent controls",
+      "approach": "技术方案：commit「Desktop and Studio: improve project, timeline, chat and agent controls」落在 .changeset/agent-model-efforts.md、.changeset/agent-sign-in-cancellation.md、.changeset/agent-submenu-bounds.md、.changeset/faster-agent-sign-in.md 等 68 个文件，改动量 +1854 / -445，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 68 个文件（如 .changeset/agent-model-efforts.md、.changeset/agent-sign-in-cancellation.md、.changeset/agent-submenu-bounds.md），新增 1854 行 / 删除 445 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     }
   ],
   "watch": {
@@ -54,5 +54,5 @@
     "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1123 / -254。"
   },
   "scanned": 26,
-  "candidates": 60
+  "candidates": 44
 }
