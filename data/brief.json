@@ -1,58 +1,58 @@
 {
-  "date": "2026-10-26",
-  "generatedAt": "2026-10-26T03:53:44.170Z",
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T04:15:45.761Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：交互与可控性、模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：gyroflow 推进了交互与可控性；Concat 推进了模型与推理链路；openfilm 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：流水线与编排、交互与可控性、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Toonflow-app 推进了流水线与编排；gyroflow 推进了交互与可控性；dramaclaw 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "gyroflow/gyroflow",
-      "owner": "gyroflow",
-      "name": "gyroflow",
-      "url": "https://github.com/gyroflow/gyroflow/commit/4decbdff9e96ec9df0f8156e65f00658453b6e5a",
-      "date": "2026-10-24",
-      "headline": "gyroflow 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Add new smoothing method: \"Optimal path\"",
-      "approach": "技术方案：commit「Add new smoothing method: \"Optimal path\"」落在 src/controller.rs、src/core/gyro_source/mod.rs、src/core/settings.rs、src/core/smoothing/mod.rs 等 12 个文件，改动量 +1894 / -85，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 12 个文件（如 src/controller.rs、src/core/gyro_source/mod.rs、src/core/settings.rs），新增 1894 行 / 删除 85 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "repo": "HBAI-Ltd/Toonflow-app",
+      "owner": "HBAI-Ltd",
+      "name": "Toonflow-app",
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/c7ffb491227600e1a90c63cfbd61e25579a4fdc2",
+      "date": "2026-10-27",
+      "headline": "Toonflow-app 在配置与参数 + 文档 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：新增 Agent 消息队列、队友协作与代码沙盒，支持节点素材引用、网络代理及 1 GB 项目 ZIP 导出，完善桌面退出确认，优化媒体生成、多语言并更新公告",
+      "approach": "技术方案：commit「新增 Agent 消息队列、队友协作与代码沙盒，支持节点素材引用、网络代理及 1 GB 项目 ZIP 导出，完善桌面退出确认，优化媒体生成、多语言并更新公告」落在 .github/workflows/release.yml、CONTRIBUTING.md、Dockerfile、README.md 等 277 个文件，改动量 +20157 / -2713，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 277 个文件（如 .github/workflows/release.yml、CONTRIBUTING.md、Dockerfile），新增 20157 行 / 删除 2713 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     },
     {
       "index": "02",
-      "repo": "jub0t/Concat",
-      "owner": "jub0t",
-      "name": "Concat",
-      "url": "https://github.com/jub0t/Concat/commit/aa38b9d519faffab177cbcc01aa07e705bb16e04",
+      "repo": "gyroflow/gyroflow",
+      "owner": "gyroflow",
+      "name": "gyroflow",
+      "url": "https://github.com/gyroflow/gyroflow/commit/6914b6fcfa0ed81ae4ae66930d2899607652c575",
       "date": "2026-10-26",
-      "headline": "Concat 在配置与参数提交了一次成块的结构性改动，主题集中在模型与推理链路：perf(enhance): run the model on the GPU in compute shaders of our own - 4.2 s a 1080p frame where ONNX Runtime took 27",
-      "approach": "技术方案：commit「perf(enhance): run the model on the GPU in compute shaders of our own - 4.2 s a 1080p frame where ONNX Runtime took 27」落在 src/Cargo.lock、src/crates/concat-host/src/enhance.rs、src/crates/concat-render/Cargo.toml、src/crates/concat-render/src/lib.rs 等 8 个文件，改动量 +1320 / -18，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 8 个文件（如 src/Cargo.lock、src/crates/concat-host/src/enhance.rs、src/crates/concat-render/Cargo.toml），新增 1320 行 / 删除 18 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "headline": "gyroflow 在配置与参数 + 界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Add sigma fp Sup CDNG gyro data support, update telemetry-parser and improve general parser robustness",
+      "approach": "技术方案：commit「Add sigma fp Sup CDNG gyro data support, update telemetry-parser and improve general parser robustness」落在 Cargo.lock、Cargo.toml、src/controller.rs、src/core/Cargo.lock 等 30 个文件，改动量 +1887 / -277，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 30 个文件（如 Cargo.lock、Cargo.toml、src/controller.rs），新增 1887 行 / 删除 277 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     },
     {
       "index": "03",
-      "repo": "openfilm/openfilm",
-      "owner": "openfilm",
-      "name": "openfilm",
-      "url": "https://github.com/openfilm/openfilm/commit/49812381b40cf5cfa8ce57e5d506a98ae3027f23",
-      "date": "2026-10-25",
-      "headline": "openfilm 在文档 + 测试 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：Desktop and Studio: improve project, timeline, chat and agent controls",
-      "approach": "技术方案：commit「Desktop and Studio: improve project, timeline, chat and agent controls」落在 .changeset/agent-model-efforts.md、.changeset/agent-sign-in-cancellation.md、.changeset/agent-submenu-bounds.md、.changeset/faster-agent-sign-in.md 等 68 个文件，改动量 +1854 / -445，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 68 个文件（如 .changeset/agent-model-efforts.md、.changeset/agent-sign-in-cancellation.md、.changeset/agent-submenu-bounds.md），新增 1854 行 / 删除 445 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/2e54e8315fceac473011a25168ef2d3769259f0d",
+      "date": "2026-10-26",
+      "headline": "dramaclaw 在配置与参数 + 前端 / 应用层 + 界面组件提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(i18n): add complete European Portuguese localization",
+      "approach": "技术方案：commit「feat(i18n): add complete European Portuguese localization」落在 frontend/public/locales/en/translation.json、frontend/public/locales/pt/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json 等 83 个文件，改动量 +10513 / -932，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 83 个文件（如 frontend/public/locales/en/translation.json、frontend/public/locales/pt/translation.json、frontend/public/locales/vi/translation.json），新增 10513 行 / 删除 932 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "krillinai/OpenCreator",
-    "url": "https://github.com/krillinai/OpenCreator/commit/c99412f19d395fba8d1230d5004fa7491c0699ea",
-    "date": "2026-10-25",
-    "text": "OpenCreator 在配置与参数 + 前端 / 应用层 + 服务端接口提交了一次成块的结构性改动，主题集中在稳定性与容错：fix: harden Creator runtime builds and translation recovery",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1123 / -254。"
+    "repo": "storytold/filmcraft",
+    "url": "https://github.com/storytold/filmcraft/commit/34dc5a5c4af47eb31c5aff74d36570ae105489ff",
+    "date": "2026-10-26",
+    "text": "filmcraft 在界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：refactor(ui-egui): split app.rs into app/{gpu,ime,prefs,window,playback,textures,files,input,keys,commands,control,frame}",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +2454 / -2402。"
   },
   "scanned": 26,
-  "candidates": 44
+  "candidates": 51
 }
