@@ -1,58 +1,58 @@
 {
-  "date": "2026-10-28",
-  "generatedAt": "2026-10-28T04:44:57.250Z",
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T04:56:48.403Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：流水线与编排、交互与可控性",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Toonflow-app 推进了流水线与编排；gyroflow 推进了交互与可控性；printfilm 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；ArcReel 推进了接口与集成；diffusers 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "HBAI-Ltd/Toonflow-app",
-      "owner": "HBAI-Ltd",
-      "name": "Toonflow-app",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app/commit/c7ffb491227600e1a90c63cfbd61e25579a4fdc2",
-      "date": "2026-10-27",
-      "headline": "Toonflow-app 在配置与参数 + 文档 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：新增 Agent 消息队列、队友协作与代码沙盒，支持节点素材引用、网络代理及 1 GB 项目 ZIP 导出，完善桌面退出确认，优化媒体生成、多语言并更新公告",
-      "approach": "技术方案：commit「新增 Agent 消息队列、队友协作与代码沙盒，支持节点素材引用、网络代理及 1 GB 项目 ZIP 导出，完善桌面退出确认，优化媒体生成、多语言并更新公告」落在 .github/workflows/release.yml、CONTRIBUTING.md、Dockerfile、README.md 等 277 个文件，改动量 +20157 / -2713，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 277 个文件（如 .github/workflows/release.yml、CONTRIBUTING.md、Dockerfile），新增 20157 行 / 删除 2713 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/1c3fcf4d237d031107baa6a5646b5bb1ee82cc2a",
+      "date": "2026-10-29",
+      "headline": "hyperframes 在配置与参数 + 文档 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(telemetry): identify signed-in CLI users by their HyperFrames user id, and say signed-in usage is not anonymous",
+      "approach": "技术方案：commit「feat(telemetry): identify signed-in CLI users by their HyperFrames user id, and say signed-in usage is not anonymous」落在 .github/workflows/ci.yml、docs/packages/cli.mdx、packages/cli/src/auth/telemetryIdentity.test.ts、packages/cli/src/auth/telemetryIdentity.ts 等 27 个文件，改动量 +415 / -111，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 27 个文件（如 .github/workflows/ci.yml、docs/packages/cli.mdx、packages/cli/src/auth/telemetryIdentity.test.ts），新增 415 行 / 删除 111 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     },
     {
       "index": "02",
-      "repo": "gyroflow/gyroflow",
-      "owner": "gyroflow",
-      "name": "gyroflow",
-      "url": "https://github.com/gyroflow/gyroflow/commit/6914b6fcfa0ed81ae4ae66930d2899607652c575",
-      "date": "2026-10-26",
-      "headline": "gyroflow 在配置与参数 + 界面组件提交了一次大规模重构级改动，主题集中在交互与可控性：Add sigma fp Sup CDNG gyro data support, update telemetry-parser and improve general parser robustness",
-      "approach": "技术方案：commit「Add sigma fp Sup CDNG gyro data support, update telemetry-parser and improve general parser robustness」落在 Cargo.lock、Cargo.toml、src/controller.rs、src/core/Cargo.lock 等 30 个文件，改动量 +1887 / -277，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 30 个文件（如 Cargo.lock、Cargo.toml、src/controller.rs），新增 1887 行 / 删除 277 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "repo": "ArcReel/ArcReel",
+      "owner": "ArcReel",
+      "name": "ArcReel",
+      "url": "https://github.com/ArcReel/ArcReel/commit/4c9433a94c23e9b1bfc8d7e62643c3c45bb9ca84",
+      "date": "2026-10-27",
+      "headline": "ArcReel 在前端 / 应用层 + 服务端接口 + 测试提交了一次成块的结构性改动，主题集中在接口与集成：feat(reference): 参考模式「补齐视频」提交前确认名单、跳过项与预估费用，时长档位并入同一次确认",
+      "approach": "技术方案：commit「feat(reference): 参考模式「补齐视频」提交前确认名单、跳过项与预估费用，时长档位并入同一次确认」落在 frontend/src/api.test.ts、frontend/src/api.ts、frontend/src/components/canvas/reference/ReferenceBatchPreviewDialog.tsx、frontend/src/components/canvas/reference/ReferenceVideoCanvas.test.tsx 等 13 个文件，改动量 +703 / -87，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 frontend/src/api.test.ts、frontend/src/api.ts、frontend/src/components/canvas/reference/ReferenceBatchPreviewDialog.tsx），新增 703 行 / 删除 87 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     },
     {
       "index": "03",
-      "repo": "yi1108/printfilm",
-      "owner": "yi1108",
-      "name": "printfilm",
-      "url": "https://github.com/yi1108/printfilm/commit/f60ae2253101e5082467ec475ec960294ec9923d",
+      "repo": "huggingface/diffusers",
+      "owner": "huggingface",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers/commit/f23eedf6029aa52c6e578734afd9dc395a39c2d0",
       "date": "2026-10-27",
-      "headline": "printfilm 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次大规模重构级改动，主题集中在流水线与编排：feat(short-video): 完善参考图生图与分阶段视频制作",
-      "approach": "技术方案：commit「feat(short-video): 完善参考图生图与分阶段视频制作」落在 README.md、README_EN.md、backend/app/api/projects.py、backend/app/services/ark.py 等 26 个文件，改动量 +1388 / -113，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 26 个文件（如 README.md、README_EN.md、backend/app/api/projects.py），新增 1388 行 / 删除 113 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "headline": "diffusers 在服务端接口 + 文档 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在接口与集成：[core] move latent upscalers and condition embedders out of pipelines",
+      "approach": "技术方案：commit「[core] move latent upscalers and condition embedders out of pipelines」落在 docs/source/en/api/pipelines/ltx2.md、docs/source/en/api/pipelines/ltx_video.md、scripts/convert_ace_step_to_diffusers.py、scripts/convert_ltx2_to_diffusers.py 等 60 个文件，改动量 +2670 / -1932，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 60 个文件（如 docs/source/en/api/pipelines/ltx2.md、docs/source/en/api/pipelines/ltx_video.md、scripts/convert_ace_step_to_diffusers.py），新增 2670 行 / 删除 1932 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "dramaclaw/dramaclaw",
-    "url": "https://github.com/dramaclaw/dramaclaw/commit/2e54e8315fceac473011a25168ef2d3769259f0d",
-    "date": "2026-10-26",
-    "text": "dramaclaw 在配置与参数 + 前端 / 应用层 + 界面组件提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(i18n): add complete European Portuguese localization",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +10513 / -932。"
+    "repo": "gyroflow/gyroflow",
+    "url": "https://github.com/gyroflow/gyroflow/commit/a9fb5b89b6b95a3ce374bd44d7ec117d4c5a7ae0",
+    "date": "2026-10-29",
+    "text": "gyroflow 在配置与参数 + 界面组件提交了一次大规模重构级改动，主题集中在编辑与后期能力：- New default sync offset method \"Optical analysis\" (using GPU KLT)",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +5510 / -1393。"
   },
   "scanned": 26,
-  "candidates": 61
+  "candidates": 63
 }
