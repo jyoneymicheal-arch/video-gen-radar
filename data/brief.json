@@ -1,58 +1,58 @@
 {
-  "date": "2026-10-30",
-  "generatedAt": "2026-10-30T04:56:33.220Z",
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-31T04:43:17.418Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了模型与推理链路；video-shotcraft 推进了流水线与编排；gyroflow 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：接口与集成、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了接口与集成；remove-ai-watermarks 推进了流水线与编排；stickman-video-director 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/d0b9b1b5a540e5f9df2f8ec236347bf9c5aa7d1f",
-      "date": "2026-10-29",
-      "headline": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：Pika h3 flex",
-      "approach": "技术方案：commit「Pika h3 flex」落在 docs/source/en/_toctree.yml、docs/source/en/api/loaders/lora.md、docs/source/en/api/pipelines/pika_h3_flex.md、scripts/convert_pika_h3_flex_to_diffusers.py 等 23 个文件，改动量 +5942 / -14，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 docs/source/en/_toctree.yml、docs/source/en/api/loaders/lora.md、docs/source/en/api/pipelines/pika_h3_flex.md），新增 5942 行 / 删除 14 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/b1a424b12da8caf9e43445f1aee0567888d6b69d",
+      "date": "2026-10-30",
+      "headline": "dramaclaw 在配置与参数 + 前端 / 应用层 + 界面组件提交了一次大规模重构级改动，主题集中在接口与集成：feat(credits): add subscription checkout, benefits and recoverable billing",
+      "approach": "技术方案：commit「feat(credits): add subscription checkout, benefits and recoverable billing」落在 frontend/public/locales/en/translation.json、frontend/public/locales/pt/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json 等 39 个文件，改动量 +6892 / -485，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 39 个文件（如 frontend/public/locales/en/translation.json、frontend/public/locales/pt/translation.json、frontend/public/locales/vi/translation.json），新增 6892 行 / 删除 485 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     },
     {
       "index": "02",
-      "repo": "Vincentwei1021/video-shotcraft",
-      "owner": "Vincentwei1021",
-      "name": "video-shotcraft",
-      "url": "https://github.com/Vincentwei1021/video-shotcraft/commit/1266a3ec4831289c4d893d42dd5102723658039a",
-      "date": "2026-10-29",
-      "headline": "video-shotcraft 在配置与参数 + 文档 + 界面组件提交了一次大规模重构级改动，主题集中在流水线与编排：Source project SFX from Freesound and acknowledge vibe-motion/sound",
-      "approach": "技术方案：commit「Source project SFX from Freesound and acknowledge vibe-motion/sound」落在 .github/workflows/pr-checks.yml、README.md、README_CN.md、README_JA.md 等 176 个文件，改动量 +969 / -1032，归类为「流水线与编排」。",
+      "repo": "wiltodelta/remove-ai-watermarks",
+      "owner": "wiltodelta",
+      "name": "remove-ai-watermarks",
+      "url": "https://github.com/wiltodelta/remove-ai-watermarks/commit/ce08f066f5907c1a047b411d05dd74865b7d3484",
+      "date": "2026-10-30",
+      "headline": "remove-ai-watermarks 在文档 + 服务端接口 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在流水线与编排：Add qwen21-zimage non-commercial invisible watermark removal pipeline",
+      "approach": "技术方案：commit「Add qwen21-zimage non-commercial invisible watermark removal pipeline」落在 README.md、data/evaluations/fidelity/README.md、docs/chroma1-engine-research.md、docs/cli.md 等 20 个文件，改动量 +1005 / -142，归类为「流水线与编排」。",
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 176 个文件（如 .github/workflows/pr-checks.yml、README.md、README_CN.md），新增 969 行 / 删除 1032 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 20 个文件（如 README.md、data/evaluations/fidelity/README.md、docs/chroma1-engine-research.md），新增 1005 行 / 删除 142 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
     },
     {
       "index": "03",
-      "repo": "gyroflow/gyroflow",
-      "owner": "gyroflow",
-      "name": "gyroflow",
-      "url": "https://github.com/gyroflow/gyroflow/commit/eae2669e369586e3eb1251ac224b8d6424fe204f",
-      "date": "2026-10-29",
-      "headline": "gyroflow 在配置与参数 + 界面组件提交了一次大规模重构级改动，主题集中在模型与推理链路：- Move optical corretion point drawing from Canvas to GPU",
-      "approach": "技术方案：commit「- Move optical corretion point drawing from Canvas to GPU」落在 Cargo.lock、Cargo.toml、src/cli.rs、src/controller.rs 等 50 个文件，改动量 +1348 / -1716，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 50 个文件（如 Cargo.lock、Cargo.toml、src/cli.rs），新增 1348 行 / 删除 1716 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "kaomei/stickman-video-director",
+      "owner": "kaomei",
+      "name": "stickman-video-director",
+      "url": "https://github.com/kaomei/stickman-video-director/commit/828b865b37cbff61464b9c00e04bce79f79b3b5c",
+      "date": "2026-10-30",
+      "headline": "stickman-video-director 在文档 + Python 后端 / 模型侧 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：feat: add A6 Amber Noir workflow and multilingual showcase",
+      "approach": "技术方案：commit「feat: add A6 Amber Noir workflow and multilingual showcase」落在 README.en.md、README.fr.md、README.id.md、README.ja.md 等 27 个文件，改动量 +1035 / -113，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 27 个文件（如 README.en.md、README.fr.md、README.id.md），新增 1035 行 / 删除 113 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     }
   ],
   "watch": {
-    "repo": "Lake1059/FFmpegFreeUI",
-    "url": "https://github.com/Lake1059/FFmpegFreeUI/commit/16cc179a537ee895fac3745cb7dfe1afec4727bc",
-    "date": "2026-10-29",
-    "text": "FFmpegFreeUI 在测试 + 文档 + 界面组件提交了一次成块的结构性改动，主题集中在交互与可控性：2026/10/29-1",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +82 / -1260。"
+    "repo": "google-ai-edge/mediapipe",
+    "url": "https://github.com/google-ai-edge/mediapipe/commit/68392c4d368d14186566256d80067d8fc146f5c9",
+    "date": "2026-10-31",
+    "text": "mediapipe 在底层内核 / 算子 + 界面组件 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：No public description",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +660 / -660。"
   },
   "scanned": 26,
-  "candidates": 61
+  "candidates": 54
 }
