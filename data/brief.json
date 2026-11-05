@@ -1,58 +1,58 @@
 {
-  "date": "2026-11-04",
-  "generatedAt": "2026-11-04T05:27:47.475Z",
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T05:47:12.267Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：接口与集成、流水线与编排、编辑与后期能力",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：diffusers 推进了接口与集成；stickman-video-director 推进了流水线与编排；Concat 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、模型与推理链路、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：stickman-video-director 推进了编辑与后期能力；vllm-omni 推进了模型与推理链路；Concat 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "huggingface/diffusers",
-      "owner": "huggingface",
-      "name": "diffusers",
-      "url": "https://github.com/huggingface/diffusers/commit/c55ec27943462eeeb65c177d6ff7d8272d21d7a7",
-      "date": "2026-11-03",
-      "headline": "diffusers 在配置与参数 + 服务端接口 + 文档提交了一次大规模重构级改动，主题集中在接口与集成：Add P-H3-Image",
-      "approach": "技术方案：commit「Add P-H3-Image」落在 docs/source/en/_toctree.yml、docs/source/en/api/models/autoencoderkl_p_h3_image.md、docs/source/en/api/pipelines/p_h3_image.md、src/diffusers/__init__.py 等 25 个文件，改动量 +4645 / -0，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 25 个文件（如 docs/source/en/_toctree.yml、docs/source/en/api/models/autoencoderkl_p_h3_image.md、docs/source/en/api/pipelines/p_h3_image.md），新增 4645 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
-    },
-    {
-      "index": "02",
       "repo": "kaomei/stickman-video-director",
       "owner": "kaomei",
       "name": "stickman-video-director",
-      "url": "https://github.com/kaomei/stickman-video-director/commit/54a68449589599abf8b3c3012242a996ac8b370e",
-      "date": "2026-11-03",
-      "headline": "stickman-video-director 在文档 + 测试 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在流水线与编排：feat(b3): release retro TV workflow, local animation runtime and galleries",
-      "approach": "技术方案：commit「feat(b3): release retro TV workflow, local animation runtime and galleries」落在 README.en.md、README.fr.md、README.id.md、README.ja.md 等 23 个文件，改动量 +832 / -70，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 README.en.md、README.fr.md、README.id.md），新增 832 行 / 删除 70 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "url": "https://github.com/kaomei/stickman-video-director/commit/eb24085d20aea0efe37c0862cfcd0516b57dadf7",
+      "date": "2026-11-04",
+      "headline": "stickman-video-director 在文档 + 配置与参数 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(b4): ship installed production runtime and multilingual showcase",
+      "approach": "技术方案：commit「feat(b4): ship installed production runtime and multilingual showcase」落在 CHANGELOG.zh-CN.md、README.en.md、README.fr.md、README.id.md 等 62 个文件，改动量 +3212 / -790，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 62 个文件（如 CHANGELOG.zh-CN.md、README.en.md、README.fr.md），新增 3212 行 / 删除 790 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
+    },
+    {
+      "index": "02",
+      "repo": "vllm-project/vllm-omni",
+      "owner": "vllm-project",
+      "name": "vllm-omni",
+      "url": "https://github.com/vllm-project/vllm-omni/commit/4e7bdd4de81a3dbf66571709b478941d2b0e19ee",
+      "date": "2026-11-05",
+      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Add Alpamayo 2 Super",
+      "approach": "技术方案：commit「[Model] Add Alpamayo 2 Super」落在 docs/models/supported_models.md、recipes/NVIDIA/Alpamayo2-Super-H200.md、recipes/README.md、tests/diffusion/models/alpamayo2_super/__init__.py 等 23 个文件，改动量 +1990 / -0，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 docs/models/supported_models.md、recipes/NVIDIA/Alpamayo2-Super-H200.md、recipes/README.md），新增 1990 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "03",
       "repo": "jub0t/Concat",
       "owner": "jub0t",
       "name": "Concat",
-      "url": "https://github.com/jub0t/Concat/commit/9ce13ffff72c6bcbb515344e424026237dedfec3",
-      "date": "2026-11-03",
-      "headline": "Concat 在配置与参数 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(transitions): a transition is a clip on the timeline, placed, moved and trimmed like any other",
-      "approach": "技术方案：commit「feat(transitions): a transition is a clip on the timeline, placed, moved and trimmed like any other」落在 src/crates/concat-export/src/flatten.rs、src/crates/concat-export/src/lib.rs、src/crates/concat-project/src/commands/clips.rs、src/crates/concat-project/src/commands/mod.rs 等 38 个文件，改动量 +543 / -119，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 38 个文件（如 src/crates/concat-export/src/flatten.rs、src/crates/concat-export/src/lib.rs、src/crates/concat-project/src/commands/clips.rs），新增 543 行 / 删除 119 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "url": "https://github.com/jub0t/Concat/commit/80ed94572d989c115e1d1b8c92816b5a0550c35a",
+      "date": "2026-11-05",
+      "headline": "Concat 在服务端接口 + 配置与参数提交了一次实质性改动，主题集中在接口与集成：feat(api): concat --schema prints the whole API contract as JSON Schema",
+      "approach": "技术方案：commit「feat(api): concat --schema prints the whole API contract as JSON Schema」落在 src/crates/concat-api/Cargo.toml、src/crates/concat-api/src/contract.rs、src/crates/concat-api/src/lib.rs、src/crates/concat-api/src/message.rs 等 12 个文件，改动量 +228 / -3，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 12 个文件（如 src/crates/concat-api/Cargo.toml、src/crates/concat-api/src/contract.rs、src/crates/concat-api/src/lib.rs），新增 228 行 / 删除 3 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "vllm-project/vllm-omni",
-    "url": "https://github.com/vllm-project/vllm-omni/commit/01c3f711a8d7ef58a23b5efbf2c37ab0d7da678d",
-    "date": "2026-11-04",
-    "text": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Add experimental Physis Same-Step Wan, LTX and MiniMax-H3",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +2531 / -1。"
+    "repo": "storytold/filmcraft",
+    "url": "https://github.com/storytold/filmcraft/commit/85448940efe97c295650dcc7c49f09c9433467de",
+    "date": "2026-11-05",
+    "text": "filmcraft 在测试 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：render: turn display-rotated video on the GPU (#3467)",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +485 / -72。"
   },
   "scanned": 26,
-  "candidates": 50
+  "candidates": 52
 }
