@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-05",
-  "generatedAt": "2026-11-05T05:47:12.267Z",
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06T05:43:29.514Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、模型与推理链路、接口与集成",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：stickman-video-director 推进了编辑与后期能力；vllm-omni 推进了模型与推理链路；Concat 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、功能演进、接口与集成",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：stickman-video-director 推进了编辑与后期能力；hyperframes 推进了功能演进；hypit 推进了接口与集成。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -21,38 +21,38 @@
     },
     {
       "index": "02",
-      "repo": "vllm-project/vllm-omni",
-      "owner": "vllm-project",
-      "name": "vllm-omni",
-      "url": "https://github.com/vllm-project/vllm-omni/commit/4e7bdd4de81a3dbf66571709b478941d2b0e19ee",
-      "date": "2026-11-05",
-      "headline": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Model] Add Alpamayo 2 Super",
-      "approach": "技术方案：commit「[Model] Add Alpamayo 2 Super」落在 docs/models/supported_models.md、recipes/NVIDIA/Alpamayo2-Super-H200.md、recipes/README.md、tests/diffusion/models/alpamayo2_super/__init__.py 等 23 个文件，改动量 +1990 / -0，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 23 个文件（如 docs/models/supported_models.md、recipes/NVIDIA/Alpamayo2-Super-H200.md、recipes/README.md），新增 1990 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/f54b2227fd0f695d1a14d94fb6e1ad1017866bb5",
+      "date": "2026-11-06",
+      "headline": "hyperframes 在配置与参数 + 文档 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在功能演进：feat(share): extract shared review kernel for local hosts",
+      "approach": "技术方案：commit「feat(share): extract shared review kernel for local hosts」落在 .github/workflows/ci.yml、.github/workflows/publish.yml、bun.lock、package.json 等 43 个文件，改动量 +5130 / -32，归类为「功能演进」。",
+      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 43 个文件（如 .github/workflows/ci.yml、.github/workflows/publish.yml、bun.lock），新增 5130 行 / 删除 32 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "功能演进"
     },
     {
       "index": "03",
-      "repo": "jub0t/Concat",
-      "owner": "jub0t",
-      "name": "Concat",
-      "url": "https://github.com/jub0t/Concat/commit/80ed94572d989c115e1d1b8c92816b5a0550c35a",
+      "repo": "hypit-ai/hypit",
+      "owner": "hypit-ai",
+      "name": "hypit",
+      "url": "https://github.com/hypit-ai/hypit/commit/9b7a97729e912c673ec1a777bc321b33ec60aeb3",
       "date": "2026-11-05",
-      "headline": "Concat 在服务端接口 + 配置与参数提交了一次实质性改动，主题集中在接口与集成：feat(api): concat --schema prints the whole API contract as JSON Schema",
-      "approach": "技术方案：commit「feat(api): concat --schema prints the whole API contract as JSON Schema」落在 src/crates/concat-api/Cargo.toml、src/crates/concat-api/src/contract.rs、src/crates/concat-api/src/lib.rs、src/crates/concat-api/src/message.rs 等 12 个文件，改动量 +228 / -3，归类为「接口与集成」。",
+      "headline": "hypit 在配置与参数 + 文档 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在接口与集成：feat(bach): add model package and HypiHub provider support",
+      "approach": "技术方案：commit「feat(bach): add model package and HypiHub provider support」落在 package.json、packages/bach/README.md、packages/bach/package.json、packages/bach/src/activation.ts 等 12 个文件，改动量 +556 / -5，归类为「接口与集成」。",
       "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 12 个文件（如 src/crates/concat-api/Cargo.toml、src/crates/concat-api/src/contract.rs、src/crates/concat-api/src/lib.rs），新增 228 行 / 删除 3 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 12 个文件（如 package.json、packages/bach/README.md、packages/bach/package.json），新增 556 行 / 删除 5 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "接口与集成"
     }
   ],
   "watch": {
-    "repo": "storytold/filmcraft",
-    "url": "https://github.com/storytold/filmcraft/commit/85448940efe97c295650dcc7c49f09c9433467de",
+    "repo": "kajisho5/ffmpeg-skill",
+    "url": "https://github.com/kajisho5/ffmpeg-skill/commit/a3536dd7554c9067a6f6ac4c0d3751018296a32a",
     "date": "2026-11-05",
-    "text": "filmcraft 在测试 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：render: turn display-rotated video on the GPU (#3467)",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +485 / -72。"
+    "text": "ffmpeg-skill 在文档 + Python 后端 / 模型侧 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：Subtitles, transcription, timeline export, Windows fonts and contract drift (#414)",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1027 / -77。"
   },
   "scanned": 26,
-  "candidates": 52
+  "candidates": 64
 }
