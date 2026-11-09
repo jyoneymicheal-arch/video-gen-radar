@@ -1,57 +1,57 @@
 {
-  "date": "2026-11-08",
-  "generatedAt": "2026-11-08T05:09:56.107Z",
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-09T05:21:27.687Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：openscreen 推进了编辑与后期能力；ffmpeg-skill 推进了编辑与后期能力；ArcReel 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenCreator 推进了编辑与后期能力；stickman-video-director 推进了编辑与后期能力；hyperframes 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "getopenscreen/openscreen",
-      "owner": "getopenscreen",
-      "name": "openscreen",
-      "url": "https://github.com/getopenscreen/openscreen/commit/28639d738e3e340e2bb2d820f691040c626e60ff",
-      "date": "2026-10-27",
-      "headline": "openscreen 在测试 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(ai): show persistent execution steps and render chat Markdown",
-      "approach": "技术方案：commit「feat(ai): show persistent execution steps and render chat Markdown」落在 electron/ai-edition/chat-execution.test.ts、electron/ai-edition/chat-execution.ts、electron/ai-edition/chat-persistence.ts、electron/ai-edition/chat-service.execution.test.ts 等 35 个文件，改动量 +2597 / -110，归类为「编辑与后期能力」。",
+      "repo": "krillinai/OpenCreator",
+      "owner": "krillinai",
+      "name": "OpenCreator",
+      "url": "https://github.com/krillinai/OpenCreator/commit/a3ded2b2ba212e5f7197f9f4b86cc6ad73d1fb19",
+      "date": "2026-11-08",
+      "headline": "OpenCreator 在前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(creator): improve dubbing and subtitle composition",
+      "approach": "技术方案：commit「feat(creator): improve dubbing and subtitle composition」落在 apps/daemon/src/creator/download/executor.ts、apps/daemon/src/creator/krillin/adapter.ts、apps/daemon/src/creator/krillin/cli-runner.ts、apps/daemon/src/creator/presets/module-schemas.ts 等 31 个文件，改动量 +1136 / -186，归类为「编辑与后期能力」。",
       "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 35 个文件（如 electron/ai-edition/chat-execution.test.ts、electron/ai-edition/chat-execution.ts、electron/ai-edition/chat-persistence.ts），新增 2597 行 / 删除 110 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 31 个文件（如 apps/daemon/src/creator/download/executor.ts、apps/daemon/src/creator/krillin/adapter.ts、apps/daemon/src/creator/krillin/cli-runner.ts），新增 1136 行 / 删除 186 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "编辑与后期能力"
     },
     {
       "index": "02",
-      "repo": "kajisho5/ffmpeg-skill",
-      "owner": "kajisho5",
-      "name": "ffmpeg-skill",
-      "url": "https://github.com/kajisho5/ffmpeg-skill/commit/56480deba17720a988c5d18eb79c316002207463",
-      "date": "2026-11-07",
-      "headline": "ffmpeg-skill 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：Alpha-preserving path, broadcast legal levels, smart cut (#433, carries #432 and #434)",
-      "approach": "技术方案：commit「Alpha-preserving path, broadcast legal levels, smart cut (#433, carries #432 and #434)」落在 CHANGELOG.md、README.md、SKILL.md、demos/build.py 等 35 个文件，改动量 +3508 / -208，归类为「编辑与后期能力」。",
+      "repo": "kaomei/stickman-video-director",
+      "owner": "kaomei",
+      "name": "stickman-video-director",
+      "url": "https://github.com/kaomei/stickman-video-director/commit/8658f9e9467952efa7dfd98f6c7e2602060a2f66",
+      "date": "2026-11-09",
+      "headline": "stickman-video-director 在文档 + 配置与参数 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat: publish B5 Character Explainer",
+      "approach": "技术方案：commit「feat: publish B5 Character Explainer」落在 README.en.md、README.fr.md、README.id.md、README.ja.md 等 122 个文件，改动量 +4100 / -28，归类为「编辑与后期能力」。",
       "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 35 个文件（如 CHANGELOG.md、README.md、SKILL.md），新增 3508 行 / 删除 208 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 122 个文件（如 README.en.md、README.fr.md、README.id.md），新增 4100 行 / 删除 28 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "编辑与后期能力"
     },
     {
       "index": "03",
-      "repo": "ArcReel/ArcReel",
-      "owner": "ArcReel",
-      "name": "ArcReel",
-      "url": "https://github.com/ArcReel/ArcReel/commit/59c8b1acfd4cba2bf84c07f05663469a88b62efd",
-      "date": "2026-11-06",
-      "headline": "ArcReel 在配置与参数 + 测试 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在模型与推理链路：feat(catalog): show official models that need a newer ArcReel version in settings instead of hiding them",
-      "approach": "技术方案：commit「feat(catalog): show official models that need a newer ArcReel version in settings instead of hiding them」落在 frontend/e2e/fixtures/recorded/provider-gemini-aistudio-models.json、frontend/e2e/regions/providers.spec.ts、frontend/src/components/pages/settings/AddModelDialog.tsx、frontend/src/components/pages/settings/CustomProviderForm.test.tsx 等 22 个文件，改动量 +374 / -94，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 22 个文件（如 frontend/e2e/fixtures/recorded/provider-gemini-aistudio-models.json、frontend/e2e/regions/providers.spec.ts、frontend/src/components/pages/settings/AddModelDialog.tsx），新增 374 行 / 删除 94 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "name": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes/commit/c14f258907252cc4b44e79b7f92e2cc870bb6259",
+      "date": "2026-11-09",
+      "headline": "hyperframes 在前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在流水线与编排：feat(cli): detect more agent runtimes in telemetry",
+      "approach": "技术方案：commit「feat(cli): detect more agent runtimes in telemetry」落在 packages/cli/src/telemetry/agent_runtime.test.ts、packages/cli/src/telemetry/agent_runtime.ts、packages/cli/src/telemetry/system.test.ts、packages/cli/src/telemetry/system.ts 等 5 个文件，改动量 +610 / -68，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 5 个文件（如 packages/cli/src/telemetry/agent_runtime.test.ts、packages/cli/src/telemetry/agent_runtime.ts、packages/cli/src/telemetry/system.test.ts），新增 610 行 / 删除 68 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     }
   ],
   "watch": {
-    "repo": "heygen-com/hyperframes",
-    "url": "https://github.com/heygen-com/hyperframes/commit/3151fd21330e7e955210bfd3f557bc8d78d243c5",
-    "date": "2026-11-08",
-    "text": "hyperframes 在配置与参数 + 文档 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在稳定性与容错：fix(studio): bound recovery and verify full-quality playback",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1256 / -33。"
+    "repo": "kajisho5/ffmpeg-skill",
+    "url": "https://github.com/kajisho5/ffmpeg-skill/commit/56480deba17720a988c5d18eb79c316002207463",
+    "date": "2026-11-07",
+    "text": "ffmpeg-skill 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：Alpha-preserving path, broadcast legal levels, smart cut (#433, carries #432 and #434)",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +3508 / -208。"
   },
   "scanned": 26,
   "candidates": 55
