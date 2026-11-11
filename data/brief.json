@@ -1,26 +1,13 @@
 {
-  "date": "2026-11-10",
-  "generatedAt": "2026-11-10T06:33:45.908Z",
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T05:20:14.010Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：编辑与后期能力、接口与集成、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenCreator 推进了编辑与后期能力；OpenMontage 推进了接口与集成；hypit 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：接口与集成、模型与推理链路、稳定性与容错",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：OpenMontage 推进了接口与集成；hypit 推进了模型与推理链路；Concat 推进了稳定性与容错。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "krillinai/OpenCreator",
-      "owner": "krillinai",
-      "name": "OpenCreator",
-      "url": "https://github.com/krillinai/OpenCreator/commit/a3ded2b2ba212e5f7197f9f4b86cc6ad73d1fb19",
-      "date": "2026-11-08",
-      "headline": "OpenCreator 在前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(creator): improve dubbing and subtitle composition",
-      "approach": "技术方案：commit「feat(creator): improve dubbing and subtitle composition」落在 apps/daemon/src/creator/download/executor.ts、apps/daemon/src/creator/krillin/adapter.ts、apps/daemon/src/creator/krillin/cli-runner.ts、apps/daemon/src/creator/presets/module-schemas.ts 等 31 个文件，改动量 +1136 / -186，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 31 个文件（如 apps/daemon/src/creator/download/executor.ts、apps/daemon/src/creator/krillin/adapter.ts、apps/daemon/src/creator/krillin/cli-runner.ts），新增 1136 行 / 删除 186 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
-    },
-    {
-      "index": "02",
       "repo": "OpenMontageInc/OpenMontage",
       "owner": "OpenMontageInc",
       "name": "OpenMontage",
@@ -33,7 +20,7 @@
       "theme": "接口与集成"
     },
     {
-      "index": "03",
+      "index": "02",
       "repo": "hypit-ai/hypit",
       "owner": "hypit-ai",
       "name": "hypit",
@@ -44,15 +31,28 @@
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 15 个文件（如 docs/guide/service-partners.md、docs/zh/guide/service-partners.md、package.json），新增 909 行 / 删除 0 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
+    },
+    {
+      "index": "03",
+      "repo": "jub0t/Concat",
+      "owner": "jub0t",
+      "name": "Concat",
+      "url": "https://github.com/jub0t/Concat/commit/a42e6963c76eabd2b47d4b4d11f56b8d10d684e5",
+      "date": "2026-11-11",
+      "headline": "Concat 在文档 + 配置与参数提交了一次大规模重构级改动，主题集中在稳定性与容错：feat(log): the run's log rewritten - a line is when, how bad, what about and what happened, whole in the file before a crash can take it (#594, #330)",
+      "approach": "技术方案：commit「feat(log): the run's log rewritten - a line is when, how bad, what about and what happened, whole in the file before a crash can take it (#594, #330)」落在 docs/LOGGING.md、scripts/ci/smoke-ios.sh、src/Cargo.lock、src/Cargo.toml 等 18 个文件，改动量 +2801 / -412，归类为「稳定性与容错」。",
+      "why": "为什么重要：持续的容错修复通常出现在真实用户量上来之后，是投产程度的侧面证据。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 18 个文件（如 docs/LOGGING.md、scripts/ci/smoke-ios.sh、src/Cargo.lock），新增 2801 行 / 删除 412 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "稳定性与容错"
     }
   ],
   "watch": {
-    "repo": "kaomei/stickman-video-director",
-    "url": "https://github.com/kaomei/stickman-video-director/commit/8658f9e9467952efa7dfd98f6c7e2602060a2f66",
+    "repo": "GetStream/Vision-Agents",
+    "url": "https://github.com/GetStream/Vision-Agents/commit/1efe0b8d76d2ceb4d2a606cfd36f1b2a0b2ba014",
     "date": "2026-11-09",
-    "text": "stickman-video-director 在文档 + 配置与参数 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat: publish B5 Character Explainer",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +4100 / -28。"
+    "text": "Vision-Agents 在配置与参数 + 文档 + 服务端接口提交了一次大规模重构级改动，主题集中在接口与集成：[AI-1892] Publish the Go SDK from main (sdks/go v0.1.0)",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +126723 / -1。"
   },
   "scanned": 26,
-  "candidates": 68
+  "candidates": 65
 }
