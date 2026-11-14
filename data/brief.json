@@ -1,39 +1,13 @@
 {
-  "date": "2026-11-13",
-  "generatedAt": "2026-11-13T05:44:30.000Z",
+  "date": "2026-11-14",
+  "generatedAt": "2026-11-14T05:34:28.598Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：hyperframes 推进了编辑与后期能力；InvokeAI 推进了流水线与编排；ArcReel 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：流水线与编排、模型与推理链路、功能演进",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ArcReel 推进了流水线与编排；InvokeAI 推进了模型与推理链路；mediapipe 推进了功能演进。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "heygen-com/hyperframes",
-      "owner": "heygen-com",
-      "name": "hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes/commit/7e04f3cce8a4d3e7c4e04590828104c37c2be8cb",
-      "date": "2026-11-13",
-      "headline": "hyperframes 在前端 / 应用层 + 测试 + 界面组件提交了一次大规模重构级改动，主题集中在编辑与后期能力：feat(studio): canvas click, hover and timeline select read an opaque preview over its channel",
-      "approach": "技术方案：commit「feat(studio): canvas click, hover and timeline select read an opaque preview over its channel」落在 packages/core/src/runtime/editingAgent.test.ts、packages/core/src/runtime/editingAgent.ts、packages/core/src/runtime/editingElement.ts、packages/core/src/runtime/editingHandles.test.ts 等 34 个文件，改动量 +1010 / -519，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 34 个文件（如 packages/core/src/runtime/editingAgent.test.ts、packages/core/src/runtime/editingAgent.ts、packages/core/src/runtime/editingElement.ts），新增 1010 行 / 删除 519 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
-    },
-    {
-      "index": "02",
-      "repo": "invoke-ai/InvokeAI",
-      "owner": "invoke-ai",
-      "name": "InvokeAI",
-      "url": "https://github.com/invoke-ai/InvokeAI/commit/033317f500ea9d530e7e04b265f3bfc8f822b0b3",
-      "date": "2026-11-12",
-      "headline": "InvokeAI 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次大规模重构级改动，主题集中在流水线与编排：feat(flux3): run the prompt upsampler inside FLUX.3 generations",
-      "approach": "技术方案：commit「feat(flux3): run the prompt upsampler inside FLUX.3 generations」落在 docs/src/content/docs/Users Guide/03.Models/Local Models/flux-3.mdx、docs/src/content/docs/Users Guide/04.Image Generation/generate-panel.mdx、docs/src/content/docs/Users Guide/04.Image Generation/prompt-tools.md、invokeai/app/invocations/flux3/flux3_prompt_upsampler.py 等 40 个文件，改动量 +2904 / -64，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 40 个文件（如 docs/src/content/docs/Users Guide/03.Models/Local Models/flux-3.mdx、docs/src/content/docs/Users Guide/04.Image Generation/generate-panel.mdx、docs/src/content/docs/Users Guide/04.Image Generation/prompt-tools.md），新增 2904 行 / 删除 64 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
-    },
-    {
-      "index": "03",
       "repo": "ArcReel/ArcReel",
       "owner": "ArcReel",
       "name": "ArcReel",
@@ -44,15 +18,41 @@
       "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 37 个文件（如 docs/api-docs/endpoints/README.md、docs/api-docs/endpoints/ark-agent-plan-tts.md、docs/api-docs/providers/ark-agent-plan.md），新增 1206 行 / 删除 19 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "流水线与编排"
+    },
+    {
+      "index": "02",
+      "repo": "invoke-ai/InvokeAI",
+      "owner": "invoke-ai",
+      "name": "InvokeAI",
+      "url": "https://github.com/invoke-ai/InvokeAI/commit/9ee34cd61d73e75a9467abd0c86aadf4666c9799",
+      "date": "2026-11-14",
+      "headline": "InvokeAI 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次成块的结构性改动，主题集中在模型与推理链路：feat(krea-2): read edit references with a GGUF encoder through the mmproj vision tower",
+      "approach": "技术方案：commit「feat(krea-2): read edit references with a GGUF encoder through the mmproj vision tower」落在 docs/src/content/docs/Users Guide/03.Models/03.model-format-support.mdx、docs/src/content/docs/Users Guide/03.Models/Local Models/krea-2.mdx、invokeai/app/invocations/krea2/krea2_model_loader.py、invokeai/app/invocations/model.py 等 24 个文件，改动量 +570 / -97，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 24 个文件（如 docs/src/content/docs/Users Guide/03.Models/03.model-format-support.mdx、docs/src/content/docs/Users Guide/03.Models/Local Models/krea-2.mdx、invokeai/app/invocations/krea2/krea2_model_loader.py），新增 570 行 / 删除 97 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
+    },
+    {
+      "index": "03",
+      "repo": "google-ai-edge/mediapipe",
+      "owner": "google-ai-edge",
+      "name": "mediapipe",
+      "url": "https://github.com/google-ai-edge/mediapipe/commit/02cb751b2d4b40eb519b22bd1b88c4b65585ad61",
+      "date": "2026-11-14",
+      "headline": "mediapipe 在底层内核 / 算子 + 测试提交了一次大规模重构级改动，主题集中在功能演进：Add pure Swift legacy interactive segmenter and remove Objective-C wrapper",
+      "approach": "技术方案：commit「Add pure Swift legacy interactive segmenter and remove Objective-C wrapper」落在 mediapipe/tasks/c/vision/interactive_segmenter_legacy/interactive_segmenter_legacy.h、mediapipe/tasks/ios/MediaPipeTasksSPMSmokeTest.swift.template、mediapipe/tasks/ios/test/vision/interactive_segmenter_legacy/BUILD、mediapipe/tasks/ios/test/vision/interactive_segmenter_legacy/InteractiveSegmenterLegacySmokeTests.swift 等 21 个文件，改动量 +468 / -1387，归类为「功能演进」。",
+      "why": "为什么重要：常规功能推进，反映项目仍在按路线图迭代。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 21 个文件（如 mediapipe/tasks/c/vision/interactive_segmenter_legacy/interactive_segmenter_legacy.h、mediapipe/tasks/ios/MediaPipeTasksSPMSmokeTest.swift.template、mediapipe/tasks/ios/test/vision/interactive_segmenter_legacy/BUILD），新增 468 行 / 删除 1387 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "功能演进"
     }
   ],
   "watch": {
-    "repo": "JuneYaooo/rea-video",
-    "url": "https://github.com/JuneYaooo/rea-video/commit/3974260fb52476b453b5992f667e7dc1dd83c6eb",
-    "date": "2026-11-12",
-    "text": "rea-video 在文档 + 配置与参数 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在模型与推理链路：Add per-model prompt notes",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +814 / -34。"
+    "repo": "jub0t/Concat",
+    "url": "https://github.com/jub0t/Concat/commit/30b33fc1be1a9036b08f64d047945f1bd0313ed1",
+    "date": "2026-11-13",
+    "text": "Concat 在界面组件提交了一次成块的结构性改动，主题集中在交互与可控性：feat(ui): the notice is a card that wraps, waits under the pointer and keeps a failure up",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +493 / -95。"
   },
   "scanned": 26,
-  "candidates": 77
+  "candidates": 71
 }
