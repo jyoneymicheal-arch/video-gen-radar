@@ -1,58 +1,58 @@
 {
-  "date": "2026-11-18",
-  "generatedAt": "2026-11-18T06:33:40.104Z",
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T06:34:54.847Z",
   "lede": {
-    "bold": "今天的开源信号集中在3 个方向：流水线与编排、交互与可控性、编辑与后期能力",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：InvokeAI 推进了流水线与编排；openmotion 推进了交互与可控性；Concat 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了模型与推理链路；InvokeAI 推进了模型与推理链路；Agents 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "invoke-ai/InvokeAI",
-      "owner": "invoke-ai",
-      "name": "InvokeAI",
-      "url": "https://github.com/invoke-ai/InvokeAI/commit/147b15773f90f156ce33cd4a2bc07891af2e222e",
-      "date": "2026-11-17",
-      "headline": "InvokeAI 在配置与参数 + 文档 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在流水线与编排：feat(canvas): add transform resampling controls",
-      "approach": "技术方案：commit「feat(canvas): add transform resampling controls」落在 invokeai/frontend/webv2/public/locales/en.json、invokeai/frontend/webv2/scripts/run-browser-smoke.mjs、invokeai/frontend/webv2/src/features/queue/README.md、invokeai/frontend/webv2/src/features/queue/runtime/utilityGraph.test.ts 等 32 个文件，改动量 +2104 / -179，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 32 个文件（如 invokeai/frontend/webv2/public/locales/en.json、invokeai/frontend/webv2/scripts/run-browser-smoke.mjs、invokeai/frontend/webv2/src/features/queue/README.md），新增 2104 行 / 删除 179 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "dramaclaw/dramaclaw",
+      "owner": "dramaclaw",
+      "name": "dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw/commit/1a5a8298eb323c15c12dd6fd9c23bf3bea949fee",
+      "date": "2026-11-19",
+      "headline": "dramaclaw 在配置与参数 + 前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在模型与推理链路：feat(previz): redesign editor chrome and polish the model library",
+      "approach": "技术方案：commit「feat(previz): redesign editor chrome and polish the model library」落在 frontend/public/locales/en/translation.json、frontend/public/locales/pt/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json 等 57 个文件，改动量 +674 / -391，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 57 个文件（如 frontend/public/locales/en/translation.json、frontend/public/locales/pt/translation.json、frontend/public/locales/vi/translation.json），新增 674 行 / 删除 391 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "02",
-      "repo": "nexu-io/openmotion",
-      "owner": "nexu-io",
-      "name": "openmotion",
-      "url": "https://github.com/nexu-io/openmotion/commit/b537672352517ef76f34775298340b8033cfba8c",
-      "date": "2026-11-18",
-      "headline": "openmotion 在文档 + 配置与参数 + 测试提交了一次大规模重构级改动，主题集中在交互与可控性：feat(library): add 96 style Skills and their Skills-page cards",
-      "approach": "技术方案：commit「feat(library): add 96 style Skills and their Skills-page cards」落在 docs/product/architecture.md、docs/product/changes.md、docs/skills.md、library/README.md 等 300 个文件，改动量 +11071 / -43，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 300 个文件（如 docs/product/architecture.md、docs/product/changes.md、docs/skills.md），新增 11071 行 / 删除 43 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "repo": "invoke-ai/InvokeAI",
+      "owner": "invoke-ai",
+      "name": "InvokeAI",
+      "url": "https://github.com/invoke-ai/InvokeAI/commit/4237c3aefca37facb766d59af51e37549bf3364f",
+      "date": "2026-11-19",
+      "headline": "InvokeAI 在配置与参数 + 测试 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：refactor(models): own the architecture table and link VAEs as the backend serves them",
+      "approach": "技术方案：commit「refactor(models): own the architecture table and link VAEs as the backend serves them」落在 .github/workflows/python-tests.yml、docs/src/content/docs/contributing/new-model-integration.mdx、invokeai/frontend/webv2/.oxfmtrc.json、invokeai/frontend/webv2/ARCHITECTURE.md 等 154 个文件，改动量 +1409 / -819，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 154 个文件（如 .github/workflows/python-tests.yml、docs/src/content/docs/contributing/new-model-integration.mdx、invokeai/frontend/webv2/.oxfmtrc.json），新增 1409 行 / 删除 819 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     },
     {
       "index": "03",
-      "repo": "jub0t/Concat",
-      "owner": "jub0t",
-      "name": "Concat",
-      "url": "https://github.com/jub0t/Concat/commit/1921b95cff0e703e13e5248c8b1136df7b94b873",
+      "repo": "GetStream/Agents",
+      "owner": "GetStream",
+      "name": "Agents",
+      "url": "https://github.com/GetStream/Agents/commit/0b5c829c1f89b3c7c17708eafd22d9c237c4b868",
       "date": "2026-11-18",
-      "headline": "Concat 在测试 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(keyframes): a clip's width and height can be keyed, as its scale is",
-      "approach": "技术方案：commit「feat(keyframes): a clip's width and height can be keyed, as its scale is」落在 src/crates/concat-core/src/animate.rs、src/crates/concat-export/src/flatten.rs、src/crates/concat-export/src/lib.rs、src/crates/concat-export/src/resolve.rs 等 19 个文件，改动量 +574 / -120，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 19 个文件（如 src/crates/concat-core/src/animate.rs、src/crates/concat-export/src/flatten.rs、src/crates/concat-export/src/lib.rs），新增 574 行 / 删除 120 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "headline": "Agents 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在流水线与编排：feat(examples): settings, booking cards and ‹ i/n › versions in the React Native assistant",
+      "approach": "技术方案：commit「feat(examples): settings, booking cards and ‹ i/n › versions in the React Native assistant」落在 examples/voice_agents/react_native_assistant/README.md、examples/voice_agents/react_native_assistant/agent/UIComponents.json、examples/voice_agents/react_native_assistant/agent/replyFormat.ts、examples/voice_agents/react_native_assistant/app/_layout.tsx 等 13 个文件，改动量 +646 / -81，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 examples/voice_agents/react_native_assistant/README.md、examples/voice_agents/react_native_assistant/agent/UIComponents.json、examples/voice_agents/react_native_assistant/agent/replyFormat.ts），新增 646 行 / 删除 81 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     }
   ],
   "watch": {
-    "repo": "huggingface/diffusers",
-    "url": "https://github.com/huggingface/diffusers/commit/d9586a3dc62cce5091bdb7cff981d725f4a6dfe5",
-    "date": "2026-11-17",
-    "text": "diffusers 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在性能与资源占用：feat: implement cache_context for pab and fastercache.",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1220 / -989。"
+    "repo": "jub0t/Concat",
+    "url": "https://github.com/jub0t/Concat/commit/9a3736305738175b6e636c78dd614144535f1566",
+    "date": "2026-11-19",
+    "text": "Concat 在配置与参数 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：test(corpus): small projects built through the API export to exactly the source frames their media says they should",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1976 / -0。"
   },
   "scanned": 26,
-  "candidates": 65
+  "candidates": 72
 }
