@@ -1,58 +1,58 @@
 {
-  "date": "2026-11-19",
-  "generatedAt": "2026-11-19T06:34:54.847Z",
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T06:22:21.691Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：dramaclaw 推进了模型与推理链路；InvokeAI 推进了模型与推理链路；Agents 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：接口与集成、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：mediapipe 推进了接口与集成；InvokeAI 推进了模型与推理链路；Concat 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "dramaclaw/dramaclaw",
-      "owner": "dramaclaw",
-      "name": "dramaclaw",
-      "url": "https://github.com/dramaclaw/dramaclaw/commit/1a5a8298eb323c15c12dd6fd9c23bf3bea949fee",
+      "repo": "google-ai-edge/mediapipe",
+      "owner": "google-ai-edge",
+      "name": "mediapipe",
+      "url": "https://github.com/google-ai-edge/mediapipe/commit/765234f66025df65192fbb249f6bb50a234cd2bf",
       "date": "2026-11-19",
-      "headline": "dramaclaw 在配置与参数 + 前端 / 应用层 + 测试提交了一次成块的结构性改动，主题集中在模型与推理链路：feat(previz): redesign editor chrome and polish the model library",
-      "approach": "技术方案：commit「feat(previz): redesign editor chrome and polish the model library」落在 frontend/public/locales/en/translation.json、frontend/public/locales/pt/translation.json、frontend/public/locales/vi/translation.json、frontend/public/locales/zh/translation.json 等 57 个文件，改动量 +674 / -391，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 57 个文件（如 frontend/public/locales/en/translation.json、frontend/public/locales/pt/translation.json、frontend/public/locales/vi/translation.json），新增 674 行 / 删除 391 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "headline": "mediapipe 在底层内核 / 算子 + 测试 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在接口与集成：Add user_data and error_msg to the live-stream result callbacks of the Tasks C API, and free tasks on close even if closing fails. This change is source-incompatible for C callers: a callback needs the two new parameters.",
+      "approach": "技术方案：commit「Add user_data and error_msg to the live-stream result callbacks of the Tasks C API, and free tasks on close even if closing fails. This change is source-incompatible for C callers: a callback needs the two new parameters.」落在 mediapipe/tasks/c/audio/audio_classifier/BUILD、mediapipe/tasks/c/audio/audio_classifier/audio_classifier.cc、mediapipe/tasks/c/audio/audio_classifier/audio_classifier.h、mediapipe/tasks/c/audio/audio_embedder/audio_embedder.cc 等 108 个文件，改动量 +2078 / -1119，归类为「接口与集成」。",
+      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 108 个文件（如 mediapipe/tasks/c/audio/audio_classifier/BUILD、mediapipe/tasks/c/audio/audio_classifier/audio_classifier.cc、mediapipe/tasks/c/audio/audio_classifier/audio_classifier.h），新增 2078 行 / 删除 1119 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "接口与集成"
     },
     {
       "index": "02",
       "repo": "invoke-ai/InvokeAI",
       "owner": "invoke-ai",
       "name": "InvokeAI",
-      "url": "https://github.com/invoke-ai/InvokeAI/commit/4237c3aefca37facb766d59af51e37549bf3364f",
+      "url": "https://github.com/invoke-ai/InvokeAI/commit/345d15d3d9b1f6949295c0013e7a93e58bd1feac",
       "date": "2026-11-19",
-      "headline": "InvokeAI 在配置与参数 + 测试 + 文档提交了一次大规模重构级改动，主题集中在模型与推理链路：refactor(models): own the architecture table and link VAEs as the backend serves them",
-      "approach": "技术方案：commit「refactor(models): own the architecture table and link VAEs as the backend serves them」落在 .github/workflows/python-tests.yml、docs/src/content/docs/contributing/new-model-integration.mdx、invokeai/frontend/webv2/.oxfmtrc.json、invokeai/frontend/webv2/ARCHITECTURE.md 等 154 个文件，改动量 +1409 / -819，归类为「模型与推理链路」。",
+      "headline": "InvokeAI 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(nodes): add native metadata input and output across denoise invocations",
+      "approach": "技术方案：commit「feat(nodes): add native metadata input and output across denoise invocations」落在 docs/src/content/docs/contributing/new-model-integration.mdx、docs/src/content/docs/development/Architecture/media-metadata.mdx、invokeai/app/AGENTS.md、invokeai/app/invocations/anima/anima_denoise.py 等 86 个文件，改动量 +8918 / -960，归类为「模型与推理链路」。",
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 154 个文件（如 .github/workflows/python-tests.yml、docs/src/content/docs/contributing/new-model-integration.mdx、invokeai/frontend/webv2/.oxfmtrc.json），新增 1409 行 / 删除 819 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 86 个文件（如 docs/src/content/docs/contributing/new-model-integration.mdx、docs/src/content/docs/development/Architecture/media-metadata.mdx、invokeai/app/AGENTS.md），新增 8918 行 / 删除 960 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
     },
     {
       "index": "03",
-      "repo": "GetStream/Agents",
-      "owner": "GetStream",
-      "name": "Agents",
-      "url": "https://github.com/GetStream/Agents/commit/0b5c829c1f89b3c7c17708eafd22d9c237c4b868",
-      "date": "2026-11-18",
-      "headline": "Agents 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在流水线与编排：feat(examples): settings, booking cards and ‹ i/n › versions in the React Native assistant",
-      "approach": "技术方案：commit「feat(examples): settings, booking cards and ‹ i/n › versions in the React Native assistant」落在 examples/voice_agents/react_native_assistant/README.md、examples/voice_agents/react_native_assistant/agent/UIComponents.json、examples/voice_agents/react_native_assistant/agent/replyFormat.ts、examples/voice_agents/react_native_assistant/app/_layout.tsx 等 13 个文件，改动量 +646 / -81，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 examples/voice_agents/react_native_assistant/README.md、examples/voice_agents/react_native_assistant/agent/UIComponents.json、examples/voice_agents/react_native_assistant/agent/replyFormat.ts），新增 646 行 / 删除 81 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "jub0t/Concat",
+      "owner": "jub0t",
+      "name": "Concat",
+      "url": "https://github.com/jub0t/Concat/commit/178eb64c22ae3a092ce735be44de86a246226e06",
+      "date": "2026-11-20",
+      "headline": "Concat 在配置与参数 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(doc): concat-doc, ticks, typed ids and a document of shared snapshots with transactions and undo",
+      "approach": "技术方案：commit「feat(doc): concat-doc, ticks, typed ids and a document of shared snapshots with transactions and undo」落在 src/Cargo.lock、src/Cargo.toml、src/crates/concat-doc/Cargo.toml、src/crates/concat-doc/examples/map_bench.rs 等 16 个文件，改动量 +9207 / -5，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 16 个文件（如 src/Cargo.lock、src/Cargo.toml、src/crates/concat-doc/Cargo.toml），新增 9207 行 / 删除 5 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "jub0t/Concat",
-    "url": "https://github.com/jub0t/Concat/commit/9a3736305738175b6e636c78dd614144535f1566",
+    "repo": "GetStream/Agents",
+    "url": "https://github.com/GetStream/Agents/commit/9fc96ff9deed76e0d014d1555959f194fc0d28cf",
     "date": "2026-11-19",
-    "text": "Concat 在配置与参数 + 测试提交了一次大规模重构级改动，主题集中在编辑与后期能力：test(corpus): small projects built through the API export to exactly the source frames their media says they should",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1976 / -0。"
+    "text": "Agents 在文档 + 服务端接口 + 配置与参数提交了一次大规模重构级改动，主题集中在流水线与编排：feat(tools): show what a tool call is doing",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1771 / -96。"
   },
   "scanned": 26,
-  "candidates": 72
+  "candidates": 78
 }
