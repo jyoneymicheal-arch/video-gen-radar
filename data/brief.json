@@ -1,39 +1,26 @@
 {
-  "date": "2026-11-20",
-  "generatedAt": "2026-11-20T06:22:21.691Z",
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-21T06:12:24.496Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：接口与集成、模型与推理链路",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：mediapipe 推进了接口与集成；InvokeAI 推进了模型与推理链路；Concat 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在3 个方向：交互与可控性、模型与推理链路、流水线与编排",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：InvokeAI 推进了交互与可控性；Concat 推进了模型与推理链路；Agents 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "google-ai-edge/mediapipe",
-      "owner": "google-ai-edge",
-      "name": "mediapipe",
-      "url": "https://github.com/google-ai-edge/mediapipe/commit/765234f66025df65192fbb249f6bb50a234cd2bf",
-      "date": "2026-11-19",
-      "headline": "mediapipe 在底层内核 / 算子 + 测试 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在接口与集成：Add user_data and error_msg to the live-stream result callbacks of the Tasks C API, and free tasks on close even if closing fails. This change is source-incompatible for C callers: a callback needs the two new parameters.",
-      "approach": "技术方案：commit「Add user_data and error_msg to the live-stream result callbacks of the Tasks C API, and free tasks on close even if closing fails. This change is source-incompatible for C callers: a callback needs the two new parameters.」落在 mediapipe/tasks/c/audio/audio_classifier/BUILD、mediapipe/tasks/c/audio/audio_classifier/audio_classifier.cc、mediapipe/tasks/c/audio/audio_classifier/audio_classifier.h、mediapipe/tasks/c/audio/audio_embedder/audio_embedder.cc 等 108 个文件，改动量 +2078 / -1119，归类为「接口与集成」。",
-      "why": "为什么重要：接口层收敛说明项目开始被别的系统当作依赖来集成，而不只是独立跑。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 108 个文件（如 mediapipe/tasks/c/audio/audio_classifier/BUILD、mediapipe/tasks/c/audio/audio_classifier/audio_classifier.cc、mediapipe/tasks/c/audio/audio_classifier/audio_classifier.h），新增 2078 行 / 删除 1119 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "接口与集成"
-    },
-    {
-      "index": "02",
       "repo": "invoke-ai/InvokeAI",
       "owner": "invoke-ai",
       "name": "InvokeAI",
-      "url": "https://github.com/invoke-ai/InvokeAI/commit/345d15d3d9b1f6949295c0013e7a93e58bd1feac",
-      "date": "2026-11-19",
-      "headline": "InvokeAI 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(nodes): add native metadata input and output across denoise invocations",
-      "approach": "技术方案：commit「feat(nodes): add native metadata input and output across denoise invocations」落在 docs/src/content/docs/contributing/new-model-integration.mdx、docs/src/content/docs/development/Architecture/media-metadata.mdx、invokeai/app/AGENTS.md、invokeai/app/invocations/anima/anima_denoise.py 等 86 个文件，改动量 +8918 / -960，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 86 个文件（如 docs/src/content/docs/contributing/new-model-integration.mdx、docs/src/content/docs/development/Architecture/media-metadata.mdx、invokeai/app/AGENTS.md），新增 8918 行 / 删除 960 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "url": "https://github.com/invoke-ai/InvokeAI/commit/7b783591bcdd7e8772ffa645093052166caffd4b",
+      "date": "2026-11-21",
+      "headline": "InvokeAI 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次大规模重构级改动，主题集中在交互与可控性：feat(models): default component models per main model",
+      "approach": "技术方案：commit「feat(models): default component models per main model」落在 docs/src/content/docs/Users Guide/03.Models/01.introduction.mdx、docs/src/content/docs/Users Guide/04.Image Generation/generate-panel.mdx、invokeai/app/api/routers/model_manager.py、invokeai/app/services/model_install/model_install_default.py 等 88 个文件，改动量 +3815 / -401，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 88 个文件（如 docs/src/content/docs/Users Guide/03.Models/01.introduction.mdx、docs/src/content/docs/Users Guide/04.Image Generation/generate-panel.mdx、invokeai/app/api/routers/model_manager.py），新增 3815 行 / 删除 401 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
     },
     {
-      "index": "03",
+      "index": "02",
       "repo": "jub0t/Concat",
       "owner": "jub0t",
       "name": "Concat",
@@ -44,15 +31,28 @@
       "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 16 个文件（如 src/Cargo.lock、src/Cargo.toml、src/crates/concat-doc/Cargo.toml），新增 9207 行 / 删除 5 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "模型与推理链路"
+    },
+    {
+      "index": "03",
+      "repo": "GetStream/Agents",
+      "owner": "GetStream",
+      "name": "Agents",
+      "url": "https://github.com/GetStream/Agents/commit/9c30106bccd9eab18da5e18d440a150768710fe1",
+      "date": "2026-11-20",
+      "headline": "Agents 在文档 + 服务端接口 + 配置与参数提交了一次成块的结构性改动，主题集中在流水线与编排：feat: tool call updates carry a title and custom data in every SDK",
+      "approach": "技术方案：commit「feat: tool call updates carry a title and custom data in every SDK」落在 .claude/skills/sdk/SKILL.md、CHANGELOG.md、acceleration/api/openapi.yaml、acceleration/internal/agent/compose_failure_test.go 等 68 个文件，改动量 +1186 / -164，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 68 个文件（如 .claude/skills/sdk/SKILL.md、CHANGELOG.md、acceleration/api/openapi.yaml），新增 1186 行 / 删除 164 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     }
   ],
   "watch": {
-    "repo": "GetStream/Agents",
-    "url": "https://github.com/GetStream/Agents/commit/9fc96ff9deed76e0d014d1555959f194fc0d28cf",
-    "date": "2026-11-19",
-    "text": "Agents 在文档 + 服务端接口 + 配置与参数提交了一次大规模重构级改动，主题集中在流水线与编排：feat(tools): show what a tool call is doing",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +1771 / -96。"
+    "repo": "heygen-com/hyperframes",
+    "url": "https://github.com/heygen-com/hyperframes/commit/7df3ae0a516c106abfc605aca183bc99eb1785d7",
+    "date": "2026-11-21",
+    "text": "hyperframes 在前端 / 应用层 + 服务端接口 + 测试提交了一次成块的结构性改动，主题集中在交互与可控性：fix(studio-server): an undo never deletes a file a page it leaves still names",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +809 / -351。"
   },
   "scanned": 26,
-  "candidates": 78
+  "candidates": 71
 }
