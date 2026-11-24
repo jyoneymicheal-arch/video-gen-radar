@@ -1,58 +1,58 @@
 {
-  "date": "2026-11-23",
-  "generatedAt": "2026-11-23T06:32:41.725Z",
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-24T09:01:32.396Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：模型与推理链路、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：InvokeAI 推进了模型与推理链路；Concat 推进了模型与推理链路；openmotion 推进了流水线与编排。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、性能与资源占用",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：filmcraft 推进了编辑与后期能力；InvokeAI 推进了性能与资源占用；Concat 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "invoke-ai/InvokeAI",
-      "owner": "invoke-ai",
-      "name": "InvokeAI",
-      "url": "https://github.com/invoke-ai/InvokeAI/commit/320fee5693682e333bdbf744809590c35ee17812",
+      "repo": "storytold/filmcraft",
+      "owner": "storytold",
+      "name": "filmcraft",
+      "url": "https://github.com/storytold/filmcraft/commit/ba6fe10529c7bf5d2a9283f9de2e35c0ccff926c",
       "date": "2026-11-23",
-      "headline": "InvokeAI 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(krea2): support Krea-2 Control LoRAs",
-      "approach": "技术方案：commit「feat(krea2): support Krea-2 Control LoRAs」落在 docs/src/content/docs/Users Guide/03.Models/02.model-families.mdx、docs/src/content/docs/Users Guide/03.Models/03.model-format-support.mdx、docs/src/content/docs/Users Guide/03.Models/Local Models/krea-2.mdx、docs/src/content/docs/Users Guide/07.Canvas/01.introduction.mdx 等 34 个文件，改动量 +2679 / -72，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 34 个文件（如 docs/src/content/docs/Users Guide/03.Models/02.model-families.mdx、docs/src/content/docs/Users Guide/03.Models/03.model-format-support.mdx、docs/src/content/docs/Users Guide/03.Models/Local Models/krea-2.mdx），新增 2679 行 / 删除 72 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "headline": "filmcraft 在测试 + 界面组件提交了一次成块的结构性改动，主题集中在编辑与后期能力：export: GPU-rendered SDR exports read back the finished sRGB RGBA8 frame (1.6x faster NVENC export)",
+      "approach": "技术方案：commit「export: GPU-rendered SDR exports read back the finished sRGB RGBA8 frame (1.6x faster NVENC export)」落在 apps/filmcraft-cli/src/main.rs、apps/filmcraft/src/main.rs、crates/export/src/pipeline.rs、crates/export/src/registry.rs 等 10 个文件，改动量 +1139 / -54，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 10 个文件（如 apps/filmcraft-cli/src/main.rs、apps/filmcraft/src/main.rs、crates/export/src/pipeline.rs），新增 1139 行 / 删除 54 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     },
     {
       "index": "02",
-      "repo": "jub0t/Concat",
-      "owner": "jub0t",
-      "name": "Concat",
-      "url": "https://github.com/jub0t/Concat/commit/8f0359c2eeb13235638cb65955792f7d80797359",
-      "date": "2026-11-23",
-      "headline": "Concat 在文档 + 服务端接口 + 界面组件提交了一次大规模重构级改动，主题集中在模型与推理链路：feat(android): the editor in Concat's own look - lime, Lucide, filmstrips, waveforms, editing on the preview, a home of project cards",
-      "approach": "技术方案：commit「feat(android): the editor in Concat's own look - lime, Lucide, filmstrips, waveforms, editing on the preview, a home of project cards」落在 android-native/README.md、android-native/app/build.gradle.kts、android-native/app/src/main/assets/licenses/LICENSE-Inter.txt、android-native/app/src/main/java/app/concat/editor/spike/ConcatApplication.kt 等 30 个文件，改动量 +4251 / -705，归类为「模型与推理链路」。",
-      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 30 个文件（如 android-native/README.md、android-native/app/build.gradle.kts、android-native/app/src/main/assets/licenses/LICENSE-Inter.txt），新增 4251 行 / 删除 705 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "模型与推理链路"
+      "repo": "invoke-ai/InvokeAI",
+      "owner": "invoke-ai",
+      "name": "InvokeAI",
+      "url": "https://github.com/invoke-ai/InvokeAI/commit/c9a2392a176423dd77d18b6d90d0fd9c483711b2",
+      "date": "2026-11-24",
+      "headline": "InvokeAI 在文档 + 配置与参数 + 前端 / 应用层提交了一次成块的结构性改动，主题集中在性能与资源占用：feat(canvas): pan and pinch-zoom on trackpads, detected per gesture",
+      "approach": "技术方案：commit「feat(canvas): pan and pinch-zoom on trackpads, detected per gesture」落在 docs/src/content/docs/Users Guide/07.Canvas/02.canvas-guide.mdx、invokeai/frontend/webv2/performance/browser-baseline.json、invokeai/frontend/webv2/public/locales/en.json、invokeai/frontend/webv2/src/workbench/canvas-engine/ARCHITECTURE.md 等 26 个文件，改动量 +1192 / -132，归类为「性能与资源占用」。",
+      "why": "为什么重要：性能改动决定这类工具能否在消费级硬件或规模化任务里真正跑起来。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 26 个文件（如 docs/src/content/docs/Users Guide/07.Canvas/02.canvas-guide.mdx、invokeai/frontend/webv2/performance/browser-baseline.json、invokeai/frontend/webv2/public/locales/en.json），新增 1192 行 / 删除 132 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "性能与资源占用"
     },
     {
       "index": "03",
-      "repo": "nexu-io/openmotion",
-      "owner": "nexu-io",
-      "name": "openmotion",
-      "url": "https://github.com/nexu-io/openmotion/commit/216e12abfe1d0ab7fd79bacd78da25f1cd00d050",
-      "date": "2026-11-23",
-      "headline": "openmotion 在文档 + Python 后端 / 模型侧 + 配置与参数提交了一次大规模重构级改动，主题集中在流水线与编排：feat(super-agent): add Super Agent workspace, Artifact Viewer, unified resource hub, and Agent Runtimes",
-      "approach": "技术方案：commit「feat(super-agent): add Super Agent workspace, Artifact Viewer, unified resource hub, and Agent Runtimes」落在 .agents/skills/odui-check/SKILL.md、.github/scripts/npm-package-size.py、.github/workflows/ci.yml、.github/workflows/desktop-release.yml 等 203 个文件，改动量 +69517 / -535，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 203 个文件（如 .agents/skills/odui-check/SKILL.md、.github/scripts/npm-package-size.py、.github/workflows/ci.yml），新增 69517 行 / 删除 535 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "jub0t/Concat",
+      "owner": "jub0t",
+      "name": "Concat",
+      "url": "https://github.com/jub0t/Concat/commit/4a4b309d99dfd5806b811658e5ccec04b46f7400",
+      "date": "2026-11-24",
+      "headline": "Concat 在文档 + 服务端接口提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat(captions): captions live on a caption lane with one look, placed and restyled as one edit each",
+      "approach": "技术方案：commit「feat(captions): captions live on a caption lane with one look, placed and restyled as one edit each」落在 docs/MCP.md、src/crates/concat-api/src/lib.rs、src/crates/concat-host/src/captions.rs、src/crates/concat-mcp/src/schema.rs 等 13 个文件，改动量 +406 / -137，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 docs/MCP.md、src/crates/concat-api/src/lib.rs、src/crates/concat-host/src/captions.rs），新增 406 行 / 删除 137 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     }
   ],
   "watch": {
-    "repo": "JuneYaooo/rea-video",
-    "url": "https://github.com/JuneYaooo/rea-video/commit/9572a00bbccf0baa272983893b5c0c3589875088",
-    "date": "2026-11-23",
-    "text": "rea-video 在文档 + 配置与参数 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在流水线与编排：Use Gemini directly and keep evals local",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +78 / -2334。"
+    "repo": "nexu-io/openmotion",
+    "url": "https://github.com/nexu-io/openmotion/commit/9e39ef8b224d15dd028372ee25770b1c0f6ec3f3",
+    "date": "2026-11-24",
+    "text": "openmotion 在界面组件 + 文档 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在交互与可控性：Ship editable color bindings for six registry blocks",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +4106 / -5。"
   },
   "scanned": 26,
-  "candidates": 62
+  "candidates": 72
 }
