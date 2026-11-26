@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-25",
-  "generatedAt": "2026-11-25T07:39:43.868Z",
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T07:29:41.785Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、流水线与编排",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Concat 推进了编辑与后期能力；drama-skills 推进了流水线与编排；filmcraft 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：编辑与后期能力、模型与推理链路",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：Concat 推进了编辑与后期能力；ffmpeg-skill 推进了编辑与后期能力；InvokeAI 推进了模型与推理链路。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
@@ -21,38 +21,38 @@
     },
     {
       "index": "02",
-      "repo": "zenstory-ai/drama-skills",
-      "owner": "zenstory-ai",
-      "name": "drama-skills",
-      "url": "https://github.com/zenstory-ai/drama-skills/commit/82a1ce5750138ada79be6904d1ec72d6a285105d",
-      "date": "2026-11-24",
-      "headline": "drama-skills 在文档 + 配置与参数 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在流水线与编排：feat: 全流程脚本软门禁修复与网文语感知识层升级",
-      "approach": "技术方案：commit「feat: 全流程脚本软门禁修复与网文语感知识层升级」落在 .agents/notes/implemented/feature/2026-11-24-pipeline-fixes-and-web-novel-craft.md、.clawhub/publish.json、CHANGELOG.md、skills/short-drama-develop/SKILL.md 等 26 个文件，改动量 +2537 / -89，归类为「流水线与编排」。",
-      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 26 个文件（如 .agents/notes/implemented/feature/2026-11-24-pipeline-fixes-and-web-novel-craft.md、.clawhub/publish.json、CHANGELOG.md），新增 2537 行 / 删除 89 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "流水线与编排"
+      "repo": "kajisho5/ffmpeg-skill",
+      "owner": "kajisho5",
+      "name": "ffmpeg-skill",
+      "url": "https://github.com/kajisho5/ffmpeg-skill/commit/867707ad286d3ea4c6beec14812bda65b68ad05c",
+      "date": "2026-11-25",
+      "headline": "ffmpeg-skill 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在编辑与后期能力：feat: measure, apply and verify reference pacing",
+      "approach": "技术方案：commit「feat: measure, apply and verify reference pacing」落在 .github/code-budget.json、docs/contract.md、references/scripts.md、scripts/_common/emit.py 等 13 个文件，改动量 +994 / -9，归类为「编辑与后期能力」。",
+      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 13 个文件（如 .github/code-budget.json、docs/contract.md、references/scripts.md），新增 994 行 / 删除 9 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "编辑与后期能力"
     },
     {
       "index": "03",
-      "repo": "storytold/filmcraft",
-      "owner": "storytold",
-      "name": "filmcraft",
-      "url": "https://github.com/storytold/filmcraft/commit/740adb32cc38a9c685ef531c2d6a8e57cde66203",
-      "date": "2026-11-25",
-      "headline": "filmcraft 在配置与参数 + 界面组件 + 文档提交了一次大规模重构级改动，主题集中在编辑与后期能力：FilmCraft: move to craft-libs next (minimal port)",
-      "approach": "技术方案：commit「FilmCraft: move to craft-libs next (minimal port)」落在 Cargo.lock、Cargo.toml、apps/filmcraft-web/Cargo.toml、apps/filmcraft-web/src/lib.rs 等 193 个文件，改动量 +6267 / -7753，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 193 个文件（如 Cargo.lock、Cargo.toml、apps/filmcraft-web/Cargo.toml），新增 6267 行 / 删除 7753 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
+      "repo": "invoke-ai/InvokeAI",
+      "owner": "invoke-ai",
+      "name": "InvokeAI",
+      "url": "https://github.com/invoke-ai/InvokeAI/commit/f879d201a5056a3d7cf65b452e8d0a63684193c9",
+      "date": "2026-11-26",
+      "headline": "InvokeAI 在文档 + Python 后端 / 模型侧 + 服务端接口提交了一次大规模重构级改动，主题集中在模型与推理链路：fix(model-manager): isolate shared weights by FP8 storage policy",
+      "approach": "技术方案：commit「fix(model-manager): isolate shared weights by FP8 storage policy」落在 docs/src/content/docs/configuration/Optimization/fp8-storage.mdx、invokeai/app/services/working_memory_calibration/working_memory_calibration_fits.py、invokeai/backend/model_manager/cache_key.py、invokeai/backend/model_manager/load/load_default.py 等 57 个文件，改动量 +2295 / -302，归类为「模型与推理链路」。",
+      "why": "为什么重要：模型侧改动直接决定输出画质与可控性，是能力边界的变化，而不是界面调整。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 57 个文件（如 docs/src/content/docs/configuration/Optimization/fp8-storage.mdx、invokeai/app/services/working_memory_calibration/working_memory_calibration_fits.py、invokeai/backend/model_manager/cache_key.py），新增 2295 行 / 删除 302 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "模型与推理链路"
     }
   ],
   "watch": {
-    "repo": "vllm-project/vllm-omni",
-    "url": "https://github.com/vllm-project/vllm-omni/commit/95513b5322fc78fe3b47bd02b9244d30ba6f0e20",
+    "repo": "storytold/filmcraft",
+    "url": "https://github.com/storytold/filmcraft/commit/2d1d1b6920cf14c166e1b2bc73ba8208def150c9",
     "date": "2026-11-25",
-    "text": "vllm-omni 在文档 + Python 后端 / 模型侧 + 测试提交了一次大规模重构级改动，主题集中在模型与推理链路：[Core][LoRA] Engine-side LoRA merge phase 2: hardening, capability interface, and endpoint fusion",
-    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +5424 / -152。"
+    "text": "filmcraft 在配置与参数 + 文档 + 测试提交了一次大规模重构级改动，主题集中在交互与可控性：packaging(linux): support co-installable nightly packages",
+    "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +6991 / -85。"
   },
   "scanned": 26,
-  "candidates": 78
+  "candidates": 62
 }
