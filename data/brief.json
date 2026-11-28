@@ -1,26 +1,39 @@
 {
-  "date": "2026-11-27",
-  "generatedAt": "2026-11-27T07:26:08.757Z",
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T06:56:28.307Z",
   "lede": {
-    "bold": "今天的开源信号集中在2 个方向：交互与可控性、编辑与后期能力",
-    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：openmotion 推进了交互与可控性；LiveTalking 推进了交互与可控性；Concat 推进了编辑与后期能力。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
+    "bold": "今天的开源信号集中在2 个方向：流水线与编排、交互与可控性",
+    "body": "值得关注的不是单纯 Star 增长，而是已经落到代码里的变化：ViMax 推进了流水线与编排；openmotion 推进了交互与可控性；LiveTalking 推进了交互与可控性。以下结论全部基于当日 commit 的 diff 元数据，可点击卡片核对原始提交。"
   },
   "cards": [
     {
       "index": "01",
-      "repo": "nexu-io/openmotion",
-      "owner": "nexu-io",
-      "name": "openmotion",
-      "url": "https://github.com/nexu-io/openmotion/commit/68fa773d02c571097dfcb0ff6899547fd3ef27a0",
+      "repo": "HKUDS/ViMax",
+      "owner": "HKUDS",
+      "name": "ViMax",
+      "url": "https://github.com/HKUDS/ViMax/commit/01b4696ebb54805dc465f5f815f5ee87891909d8",
       "date": "2026-11-27",
-      "headline": "openmotion 在配置与参数 + 前端 / 应用层 + 界面组件提交了一次成块的结构性改动，主题集中在交互与可控性：feat(studio): port Black Friday conversion cards, console plan panel, and Pricing back-nav fix",
-      "approach": "技术方案：commit「feat(studio): port Black Friday conversion cards, console plan panel, and Pricing back-nav fix」落在 packages/design-system/tokens.css、packages/design-system/tokens.json、studio/src/i18n/I18n.tsx、studio/src/i18n/assets-ui.json 等 28 个文件，改动量 +1037 / -142，归类为「交互与可控性」。",
-      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 28 个文件（如 packages/design-system/tokens.css、packages/design-system/tokens.json、studio/src/i18n/I18n.tsx），新增 1037 行 / 删除 142 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "交互与可控性"
+      "headline": "ViMax 在配置与参数 + 文档 + Python 后端 / 模型侧提交了一次成块的结构性改动，主题集中在流水线与编排：Add ViMax plugins for Codex and Claude Code",
+      "approach": "技术方案：commit「Add ViMax plugins for Codex and Claude Code」落在 .agents/plugins/marketplace.json、README_ZH.md、agent_runtime/mcp_agent.py、agent_runtime/mcp_jobs.py 等 18 个文件，改动量 +1353 / -82，归类为「流水线与编排」。",
+      "why": "为什么重要：编排层改动意味着从\"单点能力\"往\"可复用生产流程\"演进。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 18 个文件（如 .agents/plugins/marketplace.json、README_ZH.md、agent_runtime/mcp_agent.py），新增 1353 行 / 删除 82 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "流水线与编排"
     },
     {
       "index": "02",
+      "repo": "nexu-io/openmotion",
+      "owner": "nexu-io",
+      "name": "openmotion",
+      "url": "https://github.com/nexu-io/openmotion/commit/595979d24e723670d6534cd0e5e35cd94df3c767",
+      "date": "2026-11-27",
+      "headline": "openmotion 在界面组件 + 配置与参数 + 前端 / 应用层提交了一次大规模重构级改动，主题集中在交互与可控性：feat(studio): add Black Friday MAGI-2 launch video modal across all locales",
+      "approach": "技术方案：commit「feat(studio): add Black Friday MAGI-2 launch video modal across all locales」落在 studio/src/i18n/campaign-ui.json、studio/src/motion/ExploreBlackFridayHero.tsx、studio/src/motion/Magi2LaunchModal.module.css、studio/src/motion/Magi2LaunchModal.test.tsx 等 9 个文件，改动量 +1676 / -30，归类为「交互与可控性」。",
+      "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
+      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 9 个文件（如 studio/src/i18n/campaign-ui.json、studio/src/motion/ExploreBlackFridayHero.tsx、studio/src/motion/Magi2LaunchModal.module.css），新增 1676 行 / 删除 30 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
+      "theme": "交互与可控性"
+    },
+    {
+      "index": "03",
       "repo": "lipku/LiveTalking",
       "owner": "lipku",
       "name": "LiveTalking",
@@ -31,19 +44,6 @@
       "why": "为什么重要：把隐藏行为暴露成用户可见开关，是从\"能跑\"走向\"可控可信\"的关键一步。",
       "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 9 个文件（如 app.py、server/admin_db.py、server/admin_routes.py），新增 1750 行 / 删除 6 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
       "theme": "交互与可控性"
-    },
-    {
-      "index": "03",
-      "repo": "jub0t/Concat",
-      "owner": "jub0t",
-      "name": "Concat",
-      "url": "https://github.com/jub0t/Concat/commit/4dbd3ebc44ea378bdf5d4f049acb19d4fd9be069",
-      "date": "2026-11-27",
-      "headline": "Concat 在文档 + 配置与参数 + Python 后端 / 模型侧提交了一次大规模重构级改动，主题集中在编辑与后期能力：refactor: Concat builds for Windows, macOS, Linux and Android",
-      "approach": "技术方案：commit「refactor: Concat builds for Windows, macOS, Linux and Android」落在 .claude/skills/run-concat/SKILL.md、.github/ISSUE_TEMPLATE/bug_report.yml、.github/release-notes.sh、.github/workflows/mobile.yml 等 128 个文件，改动量 +331 / -2453，归类为「编辑与后期能力」。",
-      "why": "为什么重要：编辑能力的颗粒度决定成品能否直接交付，而不是只停留在 demo 素材。",
-      "evidence": "证据边界：结论仅来自该 commit 的 diff 元数据 —— 涉及 128 个文件（如 .claude/skills/run-concat/SKILL.md、.github/ISSUE_TEMPLATE/bug_report.yml、.github/release-notes.sh），新增 331 行 / 删除 2453 行。未验证运行效果与实际产出质量，判断以代码结构变化为准。",
-      "theme": "编辑与后期能力"
     }
   ],
   "watch": {
@@ -54,5 +54,5 @@
     "risk": "风险提示：单次 commit 不足以判断长期方向，需观察后续是否形成连续投入。改动量 +998 / -150。"
   },
   "scanned": 26,
-  "candidates": 65
+  "candidates": 69
 }
